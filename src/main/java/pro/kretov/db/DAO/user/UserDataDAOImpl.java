@@ -1,0 +1,107 @@
+package pro.kretov.db.DAO.user;
+
+import pro.kretov.common.PersistType;
+import pro.kretov.common.Result;
+import pro.kretov.db.POJO.UserData;
+import pro.kretov.db.connectionManager.ConnectionManager;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import static pro.kretov.common.PersistType.NEW;
+import static pro.kretov.common.PersistType.RESTORE;
+
+public class UserDataDAOImpl implements UserDataDAO {
+
+    ConnectionManager connectionManager;
+
+    public UserDataDAOImpl(ConnectionManager connectionManager) {
+        this.connectionManager = connectionManager;
+    }
+
+    @Override
+    public Result<List<UserData>> getAll() {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(
+                        "SELECT id," +
+                                "person_id, " +
+                                "user_login, " +
+                                "user_password, " +
+                                "state_id, " +
+                                "date_reg " +
+                                "FROM user_data"
+                );
+
+                List<UserData> personList = new ArrayList<>();
+                while (resultSet.next()) {
+                    UserData user = new UserData(
+                            resultSet.getInt("id"),
+                            resultSet.getInt("person_id"),
+                            resultSet.getString("user_login"),
+                            resultSet.getString("user_password"),
+                            resultSet.getInt("state_id"),
+                            (Date) resultSet.getObject("date_reg")
+                    );
+                    personList.add(user);
+                }
+                return new Result<>(personList, true, "Success");
+            } catch (ClassNotFoundException e) {
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public Result<String> persist(UserData user, PersistType persistType) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement preparedStatement = null;
+                String sql = null;
+                if (persistType == NEW) {
+                    preparedStatement = connection.prepareStatement(
+                            "INSERT INTO user_data (person_id, user_login, user_password, state_id) " +
+                                    "VALUES (?, ?, ?, ?)"
+                    );
+                    preparedStatement.setInt(1, user.getPersonId());
+                    preparedStatement.setString(2, user.getLogin());
+                    preparedStatement.setString(3, user.getPassword());
+                    preparedStatement.setInt(4, user.getStateId());
+
+                } else if (persistType == RESTORE) {
+                    preparedStatement = connection.prepareStatement(
+                            "INSERT INTO user_data (id, person_id, user_login, user_password, state_id) " +
+                                    "VALUES (?, ?, ?, ?, ?)"
+                    );
+                    preparedStatement.setInt(1, user.getPersonId());
+                    preparedStatement.setInt(2, user.getPersonId());
+                    preparedStatement.setString(3, user.getLogin());
+                    preparedStatement.setString(4, user.getPassword());
+                    preparedStatement.setInt(5, user.getStateId());
+                }
+                preparedStatement.addBatch();
+                int[] counts = preparedStatement.executeBatch();
+
+                return new Result<>("Success",
+                        true, String.format( "Inserted %d lines",
+                        counts[0])
+                    );
+
+            } catch (ClassNotFoundException e) {
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+            }
+        }
+    }
+}
