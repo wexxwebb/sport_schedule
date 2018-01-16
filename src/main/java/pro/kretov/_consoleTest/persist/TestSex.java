@@ -1,4 +1,4 @@
-package pro.kretov.main;
+package pro.kretov._consoleTest.persist;
 
 import pro.kretov.common.Result;
 import pro.kretov.db.DAO.sex.SexDAO;

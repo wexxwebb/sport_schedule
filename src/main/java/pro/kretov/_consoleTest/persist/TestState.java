@@ -1,10 +1,9 @@
-package pro.kretov.main;
+package pro.kretov._consoleTest.persist;
 
-import pro.kretov.common.PersistType;
 import pro.kretov.common.Result;
-import pro.kretov.db.DAO.admin.AdminDAO;
-import pro.kretov.db.DAO.admin.AdminDAOImpl;
-import pro.kretov.db.POJO.AdminData;
+import pro.kretov.db.DAO.state.StateDAO;
+import pro.kretov.db.DAO.state.StateDAOImpl;
+import pro.kretov.db.POJO.State;
 import pro.kretov.db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
@@ -12,17 +11,16 @@ import java.util.List;
 import static pro.kretov.common.PersistType.NEW;
 import static pro.kretov.common.PersistType.RESTORE;
 
-public class TestAdmin {
+public class TestState {
     public static void main(String[] args) {
-
-        AdminDAO adminDAO = new AdminDAOImpl(
+        StateDAO stateDAO = new StateDAOImpl(
                 ConnectionManagerImpl.getInstance()
         );
 
         {
-            AdminData adminData = new AdminData(1);
+            State state = new State("normal");
             Result<String> result;
-            if ((result = adminDAO.persist(adminData, NEW)).isSuccess()) {
+            if ((result = stateDAO.persist(state, NEW)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
@@ -30,23 +28,21 @@ public class TestAdmin {
         }
 
         {
-            AdminData adminData = new AdminData(25, 25);
+            State state = new State(25, "blocked");
             Result<String> result;
-            if ((result = adminDAO.persist(adminData, RESTORE)).isSuccess()) {
+            if ((result = stateDAO.persist(state, RESTORE)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
             }
         }
 
-        Result<List<AdminData>> result = adminDAO.getAll();
+        Result<List<State>> result = stateDAO.getAll();
         if (result != null && result.isSuccess()) {
-            for (AdminData adminData : result.getResult()) {
-                System.out.println(adminData.getId() + " " + adminData.getUserId());
+            for (State state : result.getResult()) {
+                System.out.println(state.getId() + " " + state.getState());
             }
-        } else
-
-        {
+        } else {
             System.out.println(result.getMessage());
         }
 

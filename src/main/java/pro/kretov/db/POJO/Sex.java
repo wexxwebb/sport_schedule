@@ -1,9 +1,14 @@
 package pro.kretov.db.POJO;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
+@XmlRootElement
+@XmlType(propOrder = {"id", "sex"})
 public class Sex {
 
     private int id;
+
     private String sex;
 
     public Sex() {
@@ -26,7 +31,6 @@ public class Sex {
     public void setId(int id) {
         this.id = id;
     }
-
 
     public String getSex() {
         return sex;

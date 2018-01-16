@@ -1,4 +1,4 @@
-package pro.kretov.main;
+package pro.kretov._consoleTest.get;
 
 import pro.kretov.db.DAO.admin.AdminDAO;
 import pro.kretov.db.DAO.admin.AdminDAOImpl;
@@ -18,7 +18,7 @@ import pro.kretov.db.DAO.user.UserDataDAO;
 import pro.kretov.db.DAO.user.UserDataDAOImpl;
 import pro.kretov.db.connectionManager.ConnectionManagerImpl;
 
-public class TestPrintAll {
+public class TestGetAll {
     public static void main(String[] args) {
         System.out.println("Sex");
         SexDAO sexDAO =

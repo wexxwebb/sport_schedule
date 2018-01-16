@@ -37,7 +37,7 @@ public class UserDataDAOImpl implements UserDataDAO {
                                 "FROM user_data"
                 );
 
-                List<UserData> personList = new ArrayList<>();
+                List<UserData> userDataList = new ArrayList<>();
                 while (resultSet.next()) {
                     UserData user = new UserData(
                             resultSet.getInt("id"),
@@ -47,9 +47,9 @@ public class UserDataDAOImpl implements UserDataDAO {
                             resultSet.getInt("state_id"),
                             (Date) resultSet.getObject("date_reg")
                     );
-                    personList.add(user);
+                    userDataList.add(user);
                 }
-                return new Result<>(personList, true, "Success");
+                return new Result<>(userDataList, true, "Success");
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
@@ -91,11 +91,92 @@ public class UserDataDAOImpl implements UserDataDAO {
                 preparedStatement.addBatch();
                 int[] counts = preparedStatement.executeBatch();
 
-                return new Result<>("Success",
+                return new Result<>(
+                        "Success",
                         true, String.format( "Inserted %d lines",
                         counts[0])
                     );
 
+            } catch (ClassNotFoundException e) {
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public Result<UserData> getById(int id) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(
+                        "SELECT id," +
+                                "person_id, " +
+                                "user_login, " +
+                                "user_password, " +
+                                "state_id, " +
+                                "date_reg " +
+                                "FROM user_data WHERE id = ?"
+                );
+                preparedStatement.setInt(1, id);
+                ResultSet resultSet = preparedStatement.executeQuery();
+
+                if (resultSet.next()) {
+                    UserData userData = new UserData(
+                            resultSet.getInt("id"),
+                            resultSet.getInt("person_id"),
+                            resultSet.getString("user_login"),
+                            resultSet.getString("user_password"),
+                            resultSet.getInt("state_id"),
+                            (Date) resultSet.getObject("date_reg")
+                    );
+                    return new Result<>(userData, true, "Success");
+                } else {
+                    return new Result<>(null, false, String.format("User with id = %d not found", id));
+                }
+            } catch (ClassNotFoundException e) {
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public Result<UserData> getByLogin(String login) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(
+                        "SELECT id," +
+                                "person_id, " +
+                                "user_login, " +
+                                "user_password, " +
+                                "state_id, " +
+                                "date_reg " +
+                                "FROM user_data WHERE user_login = ?"
+                );
+                preparedStatement.setString(1, login);
+                ResultSet resultSet = preparedStatement.executeQuery();
+
+                if (resultSet.next()) {
+                    UserData userData = new UserData(
+                            resultSet.getInt("id"),
+                            resultSet.getInt("person_id"),
+                            resultSet.getString("user_login"),
+                            resultSet.getString("user_password"),
+                            resultSet.getInt("state_id"),
+                            (Date) resultSet.getObject("date_reg")
+                    );
+                    return new Result<>(userData, true, "Success");
+                } else {
+                    return new Result<>(null, false, String.format("User with login = %s not found", login));
+                }
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {

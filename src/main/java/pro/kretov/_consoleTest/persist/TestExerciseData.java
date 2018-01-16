@@ -1,9 +1,9 @@
-package pro.kretov.main;
+package pro.kretov._consoleTest.persist;
 
 import pro.kretov.common.Result;
-import pro.kretov.db.DAO.state.StateDAO;
-import pro.kretov.db.DAO.state.StateDAOImpl;
-import pro.kretov.db.POJO.State;
+import pro.kretov.db.DAO.exerciseData.ExerciseDataDAO;
+import pro.kretov.db.DAO.exerciseData.ExerciseDataDAOImpl;
+import pro.kretov.db.POJO.ExerciseData;
 import pro.kretov.db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
@@ -11,16 +11,17 @@ import java.util.List;
 import static pro.kretov.common.PersistType.NEW;
 import static pro.kretov.common.PersistType.RESTORE;
 
-public class TestState {
+public class TestExerciseData {
     public static void main(String[] args) {
-        StateDAO stateDAO = new StateDAOImpl(
+
+        ExerciseDataDAO exerciseDataDAO = new ExerciseDataDAOImpl(
                 ConnectionManagerImpl.getInstance()
         );
 
         {
-            State state = new State("normal");
+            ExerciseData exerciseData = new ExerciseData("Жим лежа");
             Result<String> result;
-            if ((result = stateDAO.persist(state, NEW)).isSuccess()) {
+            if ((result = exerciseDataDAO.persist(exerciseData, NEW)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
@@ -28,19 +29,19 @@ public class TestState {
         }
 
         {
-            State state = new State(25, "blocked");
+            ExerciseData exerciseData = new ExerciseData(25,"Гиперэкстензия");
             Result<String> result;
-            if ((result = stateDAO.persist(state, RESTORE)).isSuccess()) {
+            if ((result = exerciseDataDAO.persist(exerciseData, RESTORE)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
             }
         }
 
-        Result<List<State>> result = stateDAO.getAll();
+        Result<List<ExerciseData>> result = exerciseDataDAO.getAll();
         if (result != null && result.isSuccess()) {
-            for (State state : result.getResult()) {
-                System.out.println(state.getId() + " " + state.getState());
+            for (ExerciseData exerciseData : result.getResult()) {
+                System.out.println(exerciseData);
             }
         } else {
             System.out.println(result.getMessage());
