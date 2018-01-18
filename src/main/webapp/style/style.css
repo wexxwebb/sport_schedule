@@ -1,0 +1,30 @@
+
+.h-main {
+    text-align: center;
+}
+
+.log-in-btn {
+    margin-right: 15px;
+}
+
+.log-in-group {
+    text-align: center;
+    
+}
+
+
+
+.inline-block {
+    display: inline-block;
+}
+
+.check {
+    position: relative;
+    top: 2px;
+}
+
+.iput-auth {
+    width: 250px;
+}
+
+

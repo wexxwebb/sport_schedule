@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userDataTable>
+    <userDataList>
+        <id>1</id>
+        <personId>1</personId>
+        <login>alex</login>
+        <password>passsword</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-16</dateReg>
+    </userDataList>
+    <userDataList>
+        <id>25</id>
+        <personId>25</personId>
+        <login>nat</login>
+        <password>passsword</password>
+        <stateId>25</stateId>
+        <dateReg>2018-01-16</dateReg>
+    </userDataList>
+</userDataTable>

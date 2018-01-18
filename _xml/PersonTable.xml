@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<personTable>
+    <Person>
+        <id>2</id>
+        <firstName>Александр</firstName>
+        <lastName>Кретов</lastName>
+        <sexId>1</sexId>
+        <birthday>1989-01-08</birthday>
+    </Person>
+    <Person>
+        <id>1</id>
+        <firstName>Александр</firstName>
+        <lastName>Кретов</lastName>
+        <sexId>1</sexId>
+        <birthday>1989-01-08</birthday>
+    </Person>
+    <Person>
+        <id>25</id>
+        <firstName>Натали</firstName>
+        <lastName>Портман</lastName>
+        <sexId>25</sexId>
+        <birthday>1990-06-02</birthday>
+    </Person>
+</personTable>
