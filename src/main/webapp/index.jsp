@@ -33,7 +33,7 @@
         </div>
         <div class="row" style="margin-top: 125px;">
             <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
-                <form method="post" action="/auth">
+                <form method="post" action="${pageContext.request.contextPath}/auth">
                     <div class="log-in-group">
                         <div class="form-group" style="display: inline-block">
                             <input type="login" name="login" class="form-control iput-auth" id="exampleInputEmail1" placeholder="Имя пользователя">

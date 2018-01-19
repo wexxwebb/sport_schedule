@@ -29,4 +29,14 @@ public class PersonTable {
     public void setPersonList(List<Person> personList) {
         this.personList = personList;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (this == obj) return true;
+            if (!(obj instanceof PersonTable)) return false;
+            if (this.personList.equals(((PersonTable) obj).personList)) return true;
+        }
+        return false;
+    }
 }

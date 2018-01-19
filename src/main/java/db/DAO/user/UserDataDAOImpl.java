@@ -49,6 +49,7 @@ public class UserDataDAOImpl implements UserDataDAO {
                     );
                     userDataList.add(user);
                 }
+                connection.close();
                 return new Result<>(userDataList, true, "Success");
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
@@ -91,6 +92,7 @@ public class UserDataDAOImpl implements UserDataDAO {
                 preparedStatement.addBatch();
                 int[] counts = preparedStatement.executeBatch();
 
+                connection.close();
                 return new Result<>(
                         "Success",
                         true, String.format( "Inserted %d lines",
@@ -185,4 +187,5 @@ public class UserDataDAOImpl implements UserDataDAO {
             }
         }
     }
+
 }

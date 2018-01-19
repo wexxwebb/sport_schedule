@@ -49,6 +49,21 @@ public class TestPerson {
             }
         }
 
+        {
+            Person person = new Person(
+                    "Арнольд",
+                    "Шварцнеггер",
+                    "1970-01-08",
+                    1);
+
+            Result<String> result;
+            if ((result = personDAO.persist(person, NEW)).isSuccess()) {
+                System.out.println(result.getMessage());
+            } else {
+                System.out.println(result.getMessage());
+            }
+        }
+
         Result<List<Person>> result;
         if ((result = personDAO.getAll()).isSuccess()) {
             for (Person person : result.getResult()) {

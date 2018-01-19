@@ -2,12 +2,17 @@ package db.xml.xmlWrapper;
 
 import db.POJO.Training;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class TrainingTable {
 
+    @XmlElement(name = "Training")
     private List<Training> trainingList;
 
     public TrainingTable() {

@@ -10,8 +10,8 @@ import java.util.List;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-//@XmlType(propOrder = {"sexList", "personList", "stateList", "userDataList", "trainingList", "exerciseList", "exerciseDataList"})
 public class DataBaseObject {
+
     @XmlElement(name = "Sex")
     private List<Sex> sexList;
     @XmlElement(name = "Person")
@@ -30,26 +30,7 @@ public class DataBaseObject {
     private List<ExerciseData> exerciseDataList;
 
     public DataBaseObject() {
-    }
 
-    public DataBaseObject(
-            List<Sex> sexList,
-            List<Person> personList,
-            List<State> stateList,
-            List<UserData> userDataList,
-            List<AdminData> adminDataList,
-            List<Training> trainingList,
-            List<Exercise> exerciseList,
-            List<ExerciseData> exerciseDataList
-    ) {
-        this.sexList = sexList;
-        this.personList = personList;
-        this.stateList = stateList;
-        this.userDataList = userDataList;
-        this.adminDataList = adminDataList;
-        this.trainingList = trainingList;
-        this.exerciseList = exerciseList;
-        this.exerciseDataList = exerciseDataList;
     }
 
     public List<Sex> getSexList() {
@@ -92,7 +73,7 @@ public class DataBaseObject {
                     for (Method method : object.getClass().getMethods()) {
                         if (method.getGenericReturnType().getTypeName().equals(field.getGenericType().getTypeName())) {
                             try {
-                                thisField.set(this, method.invoke(object,null));
+                                thisField.set(this, method.invoke(object, (Object[]) null));
                                 return true;
                             } catch (IllegalAccessException e) {
                                 return false;

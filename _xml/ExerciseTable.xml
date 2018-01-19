@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <exerciseTable>
-    <exerciseList>
+    <Exercise>
         <approach>3</approach>
         <exerciseId>1</exerciseId>
         <id>1</id>
         <repetition>10</repetition>
         <trainingId>1</trainingId>
         <weigth>5</weigth>
-    </exerciseList>
-    <exerciseList>
+    </Exercise>
+    <Exercise>
         <approach>3</approach>
         <exerciseId>25</exerciseId>
         <id>25</id>
         <repetition>15</repetition>
         <trainingId>25</trainingId>
         <weigth>2</weigth>
-    </exerciseList>
+    </Exercise>
 </exerciseTable>

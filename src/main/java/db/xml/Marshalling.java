@@ -155,7 +155,15 @@ public class Marshalling {
                         )
                 );
 
-        while (!future.isDone());
+        synchronized (Marshalling.class) {
+            try {
+                Marshalling.class.wait();
+            } catch (InterruptedException e) {
+                System.out.println("Exit whit error");
+                return;
+            }
+        }
+        //while (!future.isDone());
 
         exec.shutdown();
 

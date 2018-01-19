@@ -85,4 +85,41 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
             }
         }
     }
+
+    public Result<List<ExerciseData>> getSearch(String term) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                Statement statement = connection.createStatement();
+
+                PreparedStatement ps = connection.prepareStatement(
+                        "SELECT " +
+                                "id, " +
+                                "name " +
+                                "FROM exercise_data WHERE name ILIKE ?"
+                );
+
+                ps.setString(1, "%" + term + "%");
+                ps.addBatch();
+
+                ResultSet result = ps.executeQuery();
+
+                List<ExerciseData> exerciseDataList = new ArrayList<>();
+                while (result.next()) {
+                    ExerciseData exerciseDataData = new ExerciseData(
+                            result.getInt("id"),
+                            result.getString("name")
+                    );
+                    exerciseDataList.add(exerciseDataData);
+                }
+                return new Result<>(exerciseDataList, true, "Success");
+            } catch (ClassNotFoundException e) {
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+            }
+        }
+    }
 }

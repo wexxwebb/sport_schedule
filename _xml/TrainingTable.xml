@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <trainingTable>
-    <trainingList>
+    <Training>
         <createDate>2018-01-16</createDate>
         <id>1</id>
         <trainingDate>2018-01-18</trainingDate>
         <userId>1</userId>
-    </trainingList>
-    <trainingList>
+    </Training>
+    <Training>
         <createDate>2018-01-19</createDate>
         <id>25</id>
         <trainingDate>2018-01-30</trainingDate>
         <userId>25</userId>
-    </trainingList>
+    </Training>
+    <Training>
+        <createDate>2018-01-19</createDate>
+        <id>2</id>
+        <trainingDate>2018-01-18</trainingDate>
+        <userId>1</userId>
+    </Training>
 </trainingTable>

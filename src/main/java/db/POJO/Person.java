@@ -100,8 +100,23 @@ public class Person {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", birthday=" + birthday.toString() +
+                ", birthday=" + birthday +
                 ", sexId=" + sexId +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj == this) return true;
+            if (obj instanceof Person) {
+                if (this.id == ((Person) obj).getId())
+                    if (this.getFirstName().equals(((Person) obj).getFirstName()))
+                        if (this.getLastName().equals(((Person) obj).getLastName()))
+                            if (this.getSexId() == ((Person) obj).getSexId())
+                                if (this.getBirthday().equals(((Person) obj).getBirthday())) return true;
+            }
+        }
+        return false;
     }
 }

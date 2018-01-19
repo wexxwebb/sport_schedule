@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{html5shiv, jquery, respond}" />
-    <file url="file://$PROJECT_DIR$/src/main" libraries="{html5shiv, jquery, respond}" />
-    <file url="file://$PROJECT_DIR$/src/test" libraries="{html5shiv, jquery, respond}" />
+    <file url="file://$PROJECT_DIR$" libraries="{html5shiv, jquery, jquery-1.12.4, jquery-ui, respond}" />
+    <file url="file://$PROJECT_DIR$/src/main" libraries="{html5shiv, jquery, jquery-1.12.4, jquery-ui, respond}" />
+    <file url="file://$PROJECT_DIR$/src/test" libraries="{html5shiv, jquery, jquery-1.12.4, jquery-ui, respond}" />
   </component>
 </project>

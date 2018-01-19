@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <adminDataTable>
-    <adminDataList>
+    <AdminData>
         <id>1</id>
         <userId>1</userId>
-    </adminDataList>
-    <adminDataList>
+    </AdminData>
+    <AdminData>
         <id>25</id>
         <userId>25</userId>
-    </adminDataList>
+    </AdminData>
 </adminDataTable>

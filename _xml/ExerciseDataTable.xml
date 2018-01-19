@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <exerciseDataTable>
-    <exerciseDataList>
+    <ExerxiseData>
         <id>1</id>
         <name>Жим лежа</name>
-    </exerciseDataList>
-    <exerciseDataList>
+    </ExerxiseData>
+    <ExerxiseData>
         <id>25</id>
         <name>Гиперэкстензия</name>
-    </exerciseDataList>
+    </ExerxiseData>
 </exerciseDataTable>
