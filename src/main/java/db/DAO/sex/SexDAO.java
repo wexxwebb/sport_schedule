@@ -9,6 +9,6 @@ import java.util.List;
 public interface SexDAO {
 
     Result<List<Sex>> getAll();
-    Result<String> persist(Sex sex, PersistType persistType);
+    Result<String> insert(Sex sex, PersistType persistType);
     
 }

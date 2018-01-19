@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface PersonDAO {
     Result<List<Person>> getAll();
-    Result<String> persist(Person person, PersistType persistType);
+    Result<String> insert(Person person, PersistType persistType);
 }

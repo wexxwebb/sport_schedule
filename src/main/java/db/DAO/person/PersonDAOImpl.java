@@ -64,7 +64,7 @@ public class PersonDAOImpl implements PersonDAO {
     }
 
     @Override
-    public Result<String> persist(Person person, PersistType persistType) {
+    public Result<String> insert(Person person, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {

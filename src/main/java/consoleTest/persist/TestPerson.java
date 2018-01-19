@@ -1,7 +1,6 @@
 package consoleTest.persist;
 
 import common.Result;
-import common.SDF;
 import db.DAO.person.PersonDAO;
 import db.DAO.person.PersonDAOImpl;
 import db.POJO.Person;
@@ -26,7 +25,7 @@ public class TestPerson {
                     1);
 
             Result<String> result;
-            if ((result = personDAO.persist(person, NEW)).isSuccess()) {
+            if ((result = personDAO.insert(person, NEW)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {
                 System.out.println(result.getMessage());
@@ -42,7 +41,7 @@ public class TestPerson {
                     25);
 
             Result<String> result;
-            if ((result = personDAO.persist(person, RESTORE)).isSuccess()) {
+            if ((result = personDAO.insert(person, RESTORE)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {
                 System.out.println(result.getMessage());
@@ -57,7 +56,7 @@ public class TestPerson {
                     1);
 
             Result<String> result;
-            if ((result = personDAO.persist(person, NEW)).isSuccess()) {
+            if ((result = personDAO.insert(person, NEW)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {
                 System.out.println(result.getMessage());

@@ -1,7 +1,6 @@
 package consoleTest.persist;
 
 import common.Result;
-import common.SDF;
 import db.DAO.training.TrainingDAO;
 import db.DAO.training.TrainingDAOImpl;
 import db.POJO.Training;
@@ -21,7 +20,7 @@ public class TestTraining {
                     1,
                     "2018-01-18"
             );
-            Result<String> result = trainingDAO.persist(training, NEW);
+            Result<String> result = trainingDAO.insert(training, NEW);
             System.out.println(result.getMessage());
 
         }
@@ -33,7 +32,7 @@ public class TestTraining {
                     "2018-01-19",
                     "2018-01-30"
             );
-            Result<String> result = trainingDAO.persist(training, RESTORE);
+            Result<String> result = trainingDAO.insert(training, RESTORE);
             System.out.println(result.getMessage());
 
         }

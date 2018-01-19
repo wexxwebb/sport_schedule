@@ -61,7 +61,7 @@ public class UserDataDAOImpl implements UserDataDAO {
     }
 
     @Override
-    public Result<String> persist(UserData user, PersistType persistType) {
+    public Result<String> insert(UserData user, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {

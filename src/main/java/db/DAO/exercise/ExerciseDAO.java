@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface ExerciseDAO {
     Result<List<Exercise>> getAll();
-    Result<String> persist(Exercise exercise, PersistType persistType);
+    Result<String> insert(Exercise exercise, PersistType persistType);
 }

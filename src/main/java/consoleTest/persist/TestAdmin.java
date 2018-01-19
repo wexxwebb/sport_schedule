@@ -21,7 +21,7 @@ public class TestAdmin {
         {
             AdminData adminData = new AdminData(1);
             Result<String> result;
-            if ((result = adminDAO.persist(adminData, NEW)).isSuccess()) {
+            if ((result = adminDAO.insert(adminData, NEW)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
@@ -31,7 +31,7 @@ public class TestAdmin {
         {
             AdminData adminData = new AdminData(25, 25);
             Result<String> result;
-            if ((result = adminDAO.persist(adminData, RESTORE)).isSuccess()) {
+            if ((result = adminDAO.insert(adminData, RESTORE)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());

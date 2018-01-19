@@ -1,7 +1,6 @@
 package consoleTest.persist;
 
 import common.Result;
-import common.SDF;
 import db.DAO.user.UserDataDAO;
 import db.DAO.user.UserDataDAOImpl;
 import db.POJO.UserData;
@@ -23,7 +22,7 @@ public class TestUser {
                     "passsword",
                     1
             );
-            Result<String> result = userDataDAO.persist(user, NEW);
+            Result<String> result = userDataDAO.insert(user, NEW);
             System.out.println(result.getMessage());
         }
 
@@ -36,7 +35,7 @@ public class TestUser {
                     25,
                     "2018-01-01"
             );
-            Result<String> result = userDataDAO.persist(user, RESTORE);
+            Result<String> result = userDataDAO.insert(user, RESTORE);
             System.out.println(result.getMessage());
 
         }

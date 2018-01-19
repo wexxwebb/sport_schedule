@@ -34,7 +34,7 @@ public class TableMarshallerTest {
         MarshallingResult result = tableMarshaller.call();
         if (result.isSuccess()) {
             TableUnmarshaller tableUnmarshaller = new TableUnmarshaller(path, PersonTable.class);
-            UnmarshalingResult unmarshalingResult = tableUnmarshaller.getResult();
+            UnmarshalingResult unmarshalingResult = tableUnmarshaller.call();
             if (unmarshalingResult.isSuccess()) {
                 PersonTable personTableUnmarsh = (PersonTable) unmarshalingResult.getObject();
 

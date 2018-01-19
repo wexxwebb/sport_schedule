@@ -20,7 +20,7 @@ public class TestState {
         {
             State state = new State("normal");
             Result<String> result;
-            if ((result = stateDAO.persist(state, NEW)).isSuccess()) {
+            if ((result = stateDAO.insert(state, NEW)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
@@ -30,7 +30,7 @@ public class TestState {
         {
             State state = new State(25, "blocked");
             Result<String> result;
-            if ((result = stateDAO.persist(state, RESTORE)).isSuccess()) {
+            if ((result = stateDAO.insert(state, RESTORE)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());

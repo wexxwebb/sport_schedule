@@ -28,56 +28,56 @@ import static common.PersistType.RESTORE;
 public class Unmarshalling {
 
     public static void main(String[] args) {
-        Path path = Paths.get("_xml/DataBaseObject.xml");
+        Path path = Paths.get("_xml/databaseXML/DataBaseObject.xml");
         TableUnmarshaller tableUnmarshaller = new TableUnmarshaller(path, DataBaseObject.class);
-        DataBaseObject dataBaseObject = (DataBaseObject) tableUnmarshaller.getResult().getObject();
+        DataBaseObject dataBaseObject = (DataBaseObject) tableUnmarshaller.call().getObject();
 
         SexDAO sexDAO =
                 new SexDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getSexList().forEach(
-                sex -> sexDAO.persist(sex, RESTORE)
+                sex -> sexDAO.insert(sex, RESTORE)
         );
 
         PersonDAO personDAO =
                 new PersonDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getPersonList().forEach(
-                person -> personDAO.persist(person, RESTORE)
+                person -> personDAO.insert(person, RESTORE)
         );
 
         StateDAO stateDAO =
                 new StateDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getStateList().forEach(
-                state -> stateDAO.persist(state, RESTORE)
+                state -> stateDAO.insert(state, RESTORE)
         );
 
         UserDataDAO userDataDAO =
                 new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getUserDataList().forEach(
-                userData -> userDataDAO.persist(userData, RESTORE)
+                userData -> userDataDAO.insert(userData, RESTORE)
         );
 
         AdminDAO adminDAO =
                 new AdminDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getAdminDataList().forEach(
-                adminData -> adminDAO.persist(adminData, RESTORE)
+                adminData -> adminDAO.insert(adminData, RESTORE)
         );
 
         TrainingDAO trainingDAO =
                 new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getTrainingList().forEach(
-                training -> trainingDAO.persist(training, RESTORE)
+                training -> trainingDAO.insert(training, RESTORE)
         );
 
         ExerciseDAO exerciseDAO =
                 new ExerciseDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getExerciseList().forEach(
-                exercise -> exerciseDAO.persist(exercise, RESTORE)
+                exercise -> exerciseDAO.insert(exercise, RESTORE)
         );
 
         ExerciseDataDAO exerciseDataDAO =
                 new ExerciseDataDAOImpl(ConnectionManagerImpl.getInstance());
         dataBaseObject.getExerciseDataList().forEach(
-                exerciseData -> exerciseDataDAO.persist(exerciseData, RESTORE)
+                exerciseData -> exerciseDataDAO.insert(exerciseData, RESTORE)
         );
     }
 }

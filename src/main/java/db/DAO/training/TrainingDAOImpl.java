@@ -56,7 +56,7 @@ public class TrainingDAOImpl implements TrainingDAO {
     }
 
     @Override
-    public Result<String> persist(Training training, PersistType persistType) {
+    public Result<String> insert(Training training, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {

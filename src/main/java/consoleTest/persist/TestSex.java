@@ -21,7 +21,7 @@ public class TestSex {
         {
             Sex sex = new Sex("men");
             Result<String> result;
-            if ((result = sexDAO.persist(sex, NEW)).isSuccess()) {
+            if ((result = sexDAO.insert(sex, NEW)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());
@@ -31,7 +31,7 @@ public class TestSex {
         {
             Sex sex = new Sex(25, "woman");
             Result<String> result;
-            if ((result = sexDAO.persist(sex, RESTORE)).isSuccess()) {
+            if ((result = sexDAO.insert(sex, RESTORE)).isSuccess()) {
                 System.out.println(result.getResult());
             } else {
                 System.out.println(result.getMessage());

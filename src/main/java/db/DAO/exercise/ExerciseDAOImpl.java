@@ -60,7 +60,7 @@ public class ExerciseDAOImpl implements ExerciseDAO {
     }
 
     @Override
-    public Result<String> persist(Exercise exercise, PersistType persistType) {
+    public Result<String> insert(Exercise exercise, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {

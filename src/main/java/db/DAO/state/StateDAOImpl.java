@@ -55,7 +55,7 @@ public class StateDAOImpl implements StateDAO {
     }
 
     @Override
-    public Result<String> persist(State state, PersistType persistType) {
+    public Result<String> insert(State state, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {

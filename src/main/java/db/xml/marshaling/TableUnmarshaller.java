@@ -5,8 +5,9 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.nio.file.Path;
+import java.util.concurrent.Callable;
 
-public class TableUnmarshaller {
+public class TableUnmarshaller implements Callable<UnmarshalingResult> {
 
     private Path path;
     private Class unmarshClass;
@@ -16,8 +17,8 @@ public class TableUnmarshaller {
         this.unmarshClass = unmarshClass;
     }
 
-    public UnmarshalingResult getResult() {
-
+    @Override
+    public UnmarshalingResult call() {
         try {
             JAXBContext context = JAXBContext.newInstance(unmarshClass);
             File file = path.toFile();
@@ -28,7 +29,6 @@ public class TableUnmarshaller {
         } catch (JAXBException e) {
             return new UnmarshalingResult(null, null, false, e.getMessage());
         }
-
 
 
     }

@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface TrainingDAO {
     Result<List<Training>> getAll();
-    Result<String> persist(Training training, PersistType persistType);
+    Result<String> insert(Training training, PersistType persistType);
 }

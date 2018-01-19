@@ -55,7 +55,7 @@ public class SexDAOImpl implements SexDAO {
     }
 
     @Override
-    public Result<String> persist(Sex sex, PersistType persistType) {
+    public Result<String> insert(Sex sex, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {

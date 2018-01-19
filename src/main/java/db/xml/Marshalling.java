@@ -133,7 +133,7 @@ public class Marshalling {
                             formatAndPrint(future.get());
                             TableUnmarshaller tableUnmarshaller =
                                     new TableUnmarshaller(future.get().getPath(), future.get().getaClass());
-                            dataBase.setObject(tableUnmarshaller.getResult().getObject());
+                            dataBase.setObject(tableUnmarshaller.call().getObject());
                         }
                         futureList.remove(future);
                     } catch (InterruptedException | ExecutionException e) {
@@ -150,7 +150,7 @@ public class Marshalling {
         Future<MarshallingResult> future =
                 exec.submit(
                         new TableMarshaller(
-                                getPath(dataBase.getClass().getSimpleName()),
+                                getPath("dataBaseXML/" + dataBase.getClass().getSimpleName()),
                                 dataBase
                         )
                 );
@@ -163,7 +163,6 @@ public class Marshalling {
                 return;
             }
         }
-        //while (!future.isDone());
 
         exec.shutdown();
 

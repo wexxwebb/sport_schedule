@@ -27,7 +27,7 @@ public class TestExercise {
             );
 
             Result<String> result;
-            if ((result = exerciseDAO.persist(exercise, NEW)).isSuccess()) {
+            if ((result = exerciseDAO.insert(exercise, NEW)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {
                 System.out.println(result.getMessage());
@@ -45,7 +45,7 @@ public class TestExercise {
             );
 
             Result<String> result;
-            if ((result = exerciseDAO.persist(exercise, RESTORE)).isSuccess()) {
+            if ((result = exerciseDAO.insert(exercise, RESTORE)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {
                 System.out.println(result.getMessage());

@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface UserDataDAO {
     Result<List<UserData>> getAll();
-    Result<String> persist(UserData user, PersistType persistType);
+    Result<String> insert(UserData user, PersistType persistType);
     Result<UserData> getById(int id);
     Result<UserData> getByLogin(String login);
 }

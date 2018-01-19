@@ -10,38 +10,38 @@
     </Sex>
     <Person>
         <id>5</id>
-        <firstName>Арнольд</firstName>
-        <lastName>Шварцнеггер</lastName>
+        <firstName>Арья</firstName>
+        <lastName>Старк</lastName>
         <sexId>1</sexId>
-        <birthday>1970-01-08</birthday>
+        <birthday>1995-01-08</birthday>
     </Person>
     <Person>
         <id>4</id>
-        <firstName>Александр</firstName>
-        <lastName>Кретов</lastName>
+        <firstName>Леонард</firstName>
+        <lastName>Хофстедер</lastName>
         <sexId>1</sexId>
         <birthday>1989-01-08</birthday>
+    </Person>
+    <Person>
+        <id>1</id>
+        <firstName>Стивен</firstName>
+        <lastName>Спилберг</lastName>
+        <sexId>1</sexId>
+        <birthday>1989-01-08</birthday>
+    </Person>
+    <Person>
+        <id>2</id>
+        <firstName>Кристофер</firstName>
+        <lastName>Нолан</lastName>
+        <sexId>1</sexId>
+        <birthday>1975-01-08</birthday>
     </Person>
     <Person>
         <id>3</id>
         <firstName>Арнольд</firstName>
         <lastName>Шварцнеггер</lastName>
         <sexId>1</sexId>
-        <birthday>1970-01-08</birthday>
-    </Person>
-    <Person>
-        <id>1</id>
-        <firstName>Александр</firstName>
-        <lastName>Кретов</lastName>
-        <sexId>1</sexId>
-        <birthday>1989-01-08</birthday>
-    </Person>
-    <Person>
-        <id>2</id>
-        <firstName>Александр</firstName>
-        <lastName>Кретов</lastName>
-        <sexId>1</sexId>
-        <birthday>1989-01-08</birthday>
+        <birthday>1971-01-08</birthday>
     </Person>
     <Person>
         <id>25</id>

@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface StateDAO {
     Result<List<State>> getAll();
-    Result<String> persist(State state, PersistType persistType);
+    Result<String> insert(State state, PersistType persistType);
 }

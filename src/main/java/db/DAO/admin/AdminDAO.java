@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface AdminDAO {
     Result<List<AdminData>> getAll();
-    Result<String> persist(AdminData adminData, PersistType persistType);
+    Result<String> insert(AdminData adminData, PersistType persistType);
 }

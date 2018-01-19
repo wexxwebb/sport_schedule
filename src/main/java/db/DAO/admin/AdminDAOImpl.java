@@ -52,7 +52,7 @@ public class AdminDAOImpl implements AdminDAO {
     }
 
     @Override
-    public Result<String> persist(AdminData adminData, PersistType persistType) {
+    public Result<String> insert(AdminData adminData, PersistType persistType) {
         int retry = 0;
         while (true) {
             try {
