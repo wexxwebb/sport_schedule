@@ -1,6 +1,6 @@
 package db.DAO.person;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.Person;
 import db.POJO.Sex;
@@ -10,12 +10,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class PersonDAOImpl implements PersonDAO {
 
-    ConnectionManager connectionManager;
+    private ConnectionManager connectionManager;
 
     public PersonDAOImpl(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
@@ -64,24 +64,23 @@ public class PersonDAOImpl implements PersonDAO {
     }
 
     @Override
-    public Result<String> insert(Person person, PersistType persistType) {
+    public Result<Person> insert(Person person, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
-                Statement statement = connection.createStatement();
                 PreparedStatement preparedStatement = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO person (first_name, last_name, birthday, sex_id) " +
-                                 "VALUES (?, ?, to_date(?, 'YYYY-MM-DD'), ?)"
+                                    "VALUES (?, ?, to_date(?, 'YYYY-MM-DD'), ?) RETURNING id"
                     );
                     preparedStatement.setString(1, person.getFirstName());
                     preparedStatement.setString(2, person.getLastName());
-                    preparedStatement.setString(3, person.getBirthday().toString());
+                    preparedStatement.setString(3, person.getBirthday());
                     preparedStatement.setInt(4, person.getSexId());
 
-                } else if (persistType == RESTORE) {
+                } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO person (id, first_name, last_name, birthday, sex_id) " +
                                     "VALUES (?, ?, ?, to_date(?, 'YYYY-MM-DD'), ?)"
@@ -89,18 +88,20 @@ public class PersonDAOImpl implements PersonDAO {
                     preparedStatement.setInt(1, person.getId());
                     preparedStatement.setString(2, person.getFirstName());
                     preparedStatement.setString(3, person.getLastName());
-                    preparedStatement.setString(4, person.getBirthday().toString());
+                    preparedStatement.setString(4, person.getBirthday());
                     preparedStatement.setInt(5, person.getSexId());
 
                 }
                 preparedStatement.addBatch();
-                int[] counts = preparedStatement.executeBatch();
 
-                return new Result<>(
-                        String.format("Inserted %d lines", counts[0]),
-                        true,
-                        "Success"
-                );
+                ResultSet resultSet = preparedStatement.executeQuery();
+
+                if (resultSet.next()) {
+                    person.setId(resultSet.getInt("id"));
+                    return new Result<>(person, true, "Success");
+                } else {
+                    return new Result<>(null, false, "Success");
+                }
 
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());

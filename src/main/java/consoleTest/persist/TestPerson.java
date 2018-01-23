@@ -8,8 +8,7 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
 
 public class TestPerson {
 
@@ -17,37 +16,37 @@ public class TestPerson {
         PersonDAO personDAO =
                 new PersonDAOImpl(ConnectionManagerImpl.getInstance());
 
-        {
-            Person person = new Person(
-                    "Александр",
-                    "Кретов",
-                    "1989-01-08",
-                    1);
+//        {
+//            Person person = new Person(
+//                    "Александр",
+//                    "Кретов",
+//                    "1989-01-08",
+//                    1);
+//
+//            Result<Person> result;
+//            if ((result = personDAO.insert(person, NEW)).isSuccess()) {
+//                System.out.println(result.getMessage());
+//            } else {
+//                System.out.println(result.getMessage());
+//            }
+//        }
 
-            Result<String> result;
-            if ((result = personDAO.insert(person, NEW)).isSuccess()) {
-                System.out.println(result.getMessage());
-            } else {
-                System.out.println(result.getMessage());
-            }
-        }
-
-        {
-            Person person = new Person(
-                    25,
-                    "Натали",
-                    "Портман",
-                    "1990-06-02",
-                    25);
-
-            Result<String> result;
-            if ((result = personDAO.insert(person, RESTORE)).isSuccess()) {
-                System.out.println(result.getMessage());
-            } else {
-                System.out.println(result.getMessage());
-            }
-        }
-
+//        {
+//            Person person = new Person(
+//                    25,
+//                    "Натали",
+//                    "Портман",
+//                    "1990-06-02",
+//                    25);
+//
+//            Result<Person> result;
+//            if ((result = personDAO.insert(person, RESTORE)).isSuccess()) {
+//                System.out.println(result.getMessage());
+//            } else {
+//                System.out.println(result.getMessage());
+//            }
+//        }
+//
         {
             Person person = new Person(
                     "Арнольд",
@@ -55,9 +54,9 @@ public class TestPerson {
                     "1970-01-08",
                     1);
 
-            Result<String> result;
+            Result<Person> result;
             if ((result = personDAO.insert(person, NEW)).isSuccess()) {
-                System.out.println(result.getMessage());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -65,7 +64,7 @@ public class TestPerson {
 
         Result<List<Person>> result;
         if ((result = personDAO.getAll()).isSuccess()) {
-            for (Person person : result.getResult()) {
+            for (Person person : result.get()) {
                 System.out.println(person);
             }
         } else {

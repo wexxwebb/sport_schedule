@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestExerciseData {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class TestExerciseData {
             ExerciseData exerciseData = new ExerciseData("Жим лежа");
             Result<String> result;
             if ((result = exerciseDataDAO.insert(exerciseData, NEW)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -32,7 +32,7 @@ public class TestExerciseData {
             ExerciseData exerciseData = new ExerciseData(25,"Гиперэкстензия");
             Result<String> result;
             if ((result = exerciseDataDAO.insert(exerciseData, RESTORE)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -40,7 +40,7 @@ public class TestExerciseData {
 
         Result<List<ExerciseData>> result = exerciseDataDAO.getAll();
         if (result != null && result.isSuccess()) {
-            for (ExerciseData exerciseData : result.getResult()) {
+            for (ExerciseData exerciseData : result.get()) {
                 System.out.println(exerciseData);
             }
         } else {

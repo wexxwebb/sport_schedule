@@ -1,10 +1,8 @@
 package controllers;
 
-import common.Result;
-import db.DAO.user.UserDataDAO;
-import db.DAO.user.UserDataDAOImpl;
-import db.POJO.UserData;
-import db.connectionManager.ConnectionManagerImpl;
+import db.POJO.Training;
+import services.DashboardService;
+import services.impl.DashboardServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -14,17 +12,20 @@ import java.io.IOException;
 import java.util.List;
 
 public class DashboardController extends HttpServlet {
+
+    private DashboardService dashboardService = new DashboardServiceImpl();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
-        Result<List<UserData>> userDataList = userDataDAO.getAll();
-        List<UserData> user = userDataList.getResult();
-        req.setAttribute("users", user);
-        req.getRequestDispatcher("/page.jsp").forward(req, resp);
+        List<Training> trainingList = dashboardService.getTrainingList();
+        req.setAttribute("trainingList", trainingList);
+        req.getRequestDispatcher("/inner/dashboard.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+//        List<Training> trainingList = dashboardService.getTrainingList();
+//        req.setAttribute("trainingList", trainingList);
+//        req.getRequestDispatcher("/inner/dashboard.jsp").forward(req, resp);
     }
 }

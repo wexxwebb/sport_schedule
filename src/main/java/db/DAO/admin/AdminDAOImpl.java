@@ -1,6 +1,6 @@
 package db.DAO.admin;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.AdminData;
 import db.connectionManager.ConnectionManager;
@@ -9,9 +9,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.RESTORE;
+import static common.InsertType.RESTORE;
 
 public class AdminDAOImpl implements AdminDAO {
+
     private ConnectionManager connectionManager;
 
     public AdminDAOImpl(ConnectionManager connectionManager) {
@@ -52,13 +53,13 @@ public class AdminDAOImpl implements AdminDAO {
     }
 
     @Override
-    public Result<String> insert(AdminData adminData, PersistType persistType) {
+    public Result<String> insert(AdminData adminData, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
                 int[] count;
-                if (persistType == RESTORE) {
+                if (insertType == RESTORE) {
                     PreparedStatement preparedStatement = connection.prepareStatement(
                             "INSERT INTO admin_data (id, user_id) VALUES (?, ?)"
                     );

@@ -4,36 +4,34 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-    <display-name>Autentication</display-name>
-
     <servlet>
-        <servlet-name>Autentication</servlet-name>
-        <servlet-class>servlets.Autentication</servlet-class>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>controllers.LoginController</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Autentication</servlet-name>
-        <url-pattern>/auth</url-pattern>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Registrer</servlet-name>
+        <servlet-class>controllers.RegistrerController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Registrer</servlet-name>
+        <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>ExerciseAjax</servlet-name>
-        <servlet-class>servlets.ExerciseAjax</servlet-class>
+        <servlet-class>controllers.ExerciseSearchController</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>ExerciseAjax</servlet-name>
         <url-pattern>/getExerciseDataList</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>LoginController</servlet-name>
-        <servlet-class>controllers.LoginController</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>LoginController</servlet-name>
-        <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -43,7 +41,7 @@
 
     <servlet-mapping>
         <servlet-name>DashboardController</servlet-name>
-        <url-pattern>/inner/page</url-pattern>
+        <url-pattern>/inner/dashboard</url-pattern>
     </servlet-mapping>
 
     <filter>

@@ -23,7 +23,7 @@ import db.xml.xmlWrapper.DataBaseObject;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static common.PersistType.RESTORE;
+import static common.InsertType.RESTORE;
 
 public class Unmarshalling {
 

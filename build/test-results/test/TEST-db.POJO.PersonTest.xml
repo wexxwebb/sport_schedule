@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="db.POJO.PersonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-19T07:13:13" hostname="DESKTOP-BO8H4UB" time="0.016">
+<testsuite name="db.POJO.PersonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-21T15:27:14" hostname="DESKTOP-BO8H4UB" time="0.0">
   <properties/>
-  <testcase name="equals" classname="db.POJO.PersonTest" time="0.016"/>
+  <testcase name="equals" classname="db.POJO.PersonTest" time="0.0"/>
   <system-out><![CDATA[Test)) 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

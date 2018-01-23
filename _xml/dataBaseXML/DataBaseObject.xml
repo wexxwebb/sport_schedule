@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <dataBaseObject>
     <Sex>
-        <id>1</id>
-        <sex>men</sex>
+        <id>25</id>
+        <sex>Женский</sex>
     </Sex>
     <Sex>
-        <id>25</id>
-        <sex>woman</sex>
+        <id>1</id>
+        <sex>Мужской</sex>
     </Sex>
+    <Person>
+        <id>11</id>
+        <firstName>Мила</firstName>
+        <lastName>Йовович</lastName>
+        <sexId>25</sexId>
+        <birthday>1980-02-13</birthday>
+    </Person>
+    <Person>
+        <id>25</id>
+        <firstName>Натали</firstName>
+        <lastName>Портман</lastName>
+        <sexId>25</sexId>
+        <birthday>1990-06-02</birthday>
+    </Person>
+    <Person>
+        <id>13</id>
+        <firstName>Скарлет</firstName>
+        <lastName>Йохансон</lastName>
+        <sexId>1</sexId>
+        <birthday>1989-02-22</birthday>
+    </Person>
+    <Person>
+        <id>12</id>
+        <firstName>Ренат</firstName>
+        <lastName>Хабиров</lastName>
+        <sexId>1</sexId>
+        <birthday>1993-03-11</birthday>
+    </Person>
+    <Person>
+        <id>9</id>
+        <firstName>Mark</firstName>
+        <lastName>Cucerberg</lastName>
+        <sexId>1</sexId>
+        <birthday>1989-02-22</birthday>
+    </Person>
+    <Person>
+        <id>8</id>
+        <firstName>Арнольд</firstName>
+        <lastName>Шварцнеггер</lastName>
+        <sexId>1</sexId>
+        <birthday>1970-01-08</birthday>
+    </Person>
+    <Person>
+        <id>7</id>
+        <firstName>Арнольд</firstName>
+        <lastName>Шварцнеггер</lastName>
+        <sexId>1</sexId>
+        <birthday>1970-01-08</birthday>
+    </Person>
+    <Person>
+        <id>6</id>
+        <firstName>Арнольд</firstName>
+        <lastName>Шварцнеггер</lastName>
+        <sexId>1</sexId>
+        <birthday>1970-01-08</birthday>
+    </Person>
     <Person>
         <id>5</id>
         <firstName>Арья</firstName>
@@ -43,13 +99,6 @@
         <sexId>1</sexId>
         <birthday>1971-01-08</birthday>
     </Person>
-    <Person>
-        <id>25</id>
-        <firstName>Натали</firstName>
-        <lastName>Портман</lastName>
-        <sexId>25</sexId>
-        <birthday>1990-06-02</birthday>
-    </Person>
     <State>
         <id>1</id>
         <state>normal</state>
@@ -73,6 +122,30 @@
         <password>password</password>
         <stateId>25</stateId>
         <dateReg>2018-01-17</dateReg>
+    </UserData>
+    <UserData>
+        <id>4</id>
+        <personId>11</personId>
+        <login>mila</login>
+        <password>mila</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-21</dateReg>
+    </UserData>
+    <UserData>
+        <id>5</id>
+        <personId>12</personId>
+        <login>renat</login>
+        <password>renat</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-21</dateReg>
+    </UserData>
+    <UserData>
+        <id>6</id>
+        <personId>13</personId>
+        <login>scarlet</login>
+        <password>scarlet</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-21</dateReg>
     </UserData>
     <AdminData>
         <id>1</id>
@@ -123,5 +196,13 @@
     <ExerciseData>
         <id>25</id>
         <name>Гиперэкстензия</name>
+    </ExerciseData>
+    <ExerciseData>
+        <id>3</id>
+        <name>Отжимание</name>
+    </ExerciseData>
+    <ExerciseData>
+        <id>4</id>
+        <name>Пресс</name>
     </ExerciseData>
 </dataBaseObject>

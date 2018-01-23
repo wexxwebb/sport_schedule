@@ -75,9 +75,7 @@ public class DataBaseObject {
                             try {
                                 thisField.set(this, method.invoke(object, (Object[]) null));
                                 return true;
-                            } catch (IllegalAccessException e) {
-                                return false;
-                            } catch (InvocationTargetException e) {
+                            } catch (IllegalAccessException | InvocationTargetException e) {
                                 return false;
                             }
                         }

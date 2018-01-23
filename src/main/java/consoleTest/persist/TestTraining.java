@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestTraining {
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class TestTraining {
         }
         Result<List<Training>> trainings = trainingDAO.getAll();
         if (trainings != null && trainings.isSuccess()) {
-            for (Training training : trainings.getResult()) {
+            for (Training training : trainings.get()) {
                 System.out.println(training);
             }
         } else {

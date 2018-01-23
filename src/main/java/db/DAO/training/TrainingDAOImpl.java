@@ -1,6 +1,6 @@
 package db.DAO.training;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.Training;
 import db.connectionManager.ConnectionManager;
@@ -9,8 +9,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TrainingDAOImpl implements TrainingDAO {
     ConnectionManager connectionManager;
@@ -31,7 +31,7 @@ public class TrainingDAOImpl implements TrainingDAO {
                                 "user_id, " +
                                 "create_date, " +
                                 "training_date " +
-                                "FROM training"
+                                "FROM training tr"
                 );
 
                 List<Training> trainingList = new ArrayList<>();
@@ -56,13 +56,13 @@ public class TrainingDAOImpl implements TrainingDAO {
     }
 
     @Override
-    public Result<String> insert(Training training, PersistType persistType) {
+    public Result<String> insert(Training training, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO training (user_id, training_date) " +
                                     "VALUES (?, to_date(?, 'YYYY-MM-DD'))"
@@ -70,7 +70,7 @@ public class TrainingDAOImpl implements TrainingDAO {
                     preparedStatement.setInt(1, training.getUserId());
                     preparedStatement.setString(2, training.getTrainingDate().toString());
 
-                } else if (persistType == RESTORE) {
+                } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO training (id, user_id, create_date, training_date) " +
                                     "VALUES (?, ?, to_date(?, 'YYYY-MM-DD'), to_date(?, 'YYYY-MM-DD'))"

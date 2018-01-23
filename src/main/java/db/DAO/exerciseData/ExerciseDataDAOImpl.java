@@ -1,6 +1,6 @@
 package db.DAO.exerciseData;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.ExerciseData;
 import db.connectionManager.ConnectionManager;
@@ -9,8 +9,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     private ConnectionManager connectionManager;
@@ -53,18 +53,18 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     }
 
     @Override
-    public Result<String> insert(ExerciseData exerciseDataData, PersistType persistType) {
+    public Result<String> insert(ExerciseData exerciseDataData, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO exercise_data (name) VALUES (?)"
                     );
                     preparedStatement.setString(1, exerciseDataData.getName());
-                } else if (persistType == RESTORE) {
+                } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO exercise_data (id, name) VALUES (?, ?)"
                     );

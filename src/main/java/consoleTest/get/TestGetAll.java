@@ -23,54 +23,54 @@ public class TestGetAll {
         System.out.println("Sex");
         SexDAO sexDAO =
                 new SexDAOImpl(ConnectionManagerImpl.getInstance());
-        sexDAO.getAll().getResult().forEach(
+        sexDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("Person");
         PersonDAO personDAO =
                 new PersonDAOImpl(ConnectionManagerImpl.getInstance());
-        personDAO.getAll().getResult().forEach(
+        personDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("State");
         StateDAO stateDAO =
                 new StateDAOImpl(ConnectionManagerImpl.getInstance());
-        stateDAO.getAll().getResult().forEach(
+        stateDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("UserData");
         UserDataDAO userDataDAO =
                 new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
-        userDataDAO.getAll().getResult().forEach(
+        userDataDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("Admin");
         AdminDAO adminDAO =
                 new AdminDAOImpl(ConnectionManagerImpl.getInstance());
-        adminDAO.getAll().getResult().forEach(
+        adminDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("Training");
         TrainingDAO trainingDAO =
                 new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
-        trainingDAO.getAll().getResult().forEach(
+        trainingDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("Exercise");
         ExerciseDAO exerciseDAO = new ExerciseDAOImpl(ConnectionManagerImpl.getInstance());
-        exerciseDAO.getAll().getResult().forEach(
+        exerciseDAO.getAll().get().forEach(
                 System.out::println
         );
 
         System.out.println("ExerciseData");
         ExerciseDataDAO exerciseDataDAO = new ExerciseDataDAOImpl(ConnectionManagerImpl.getInstance());
-        exerciseDataDAO.getAll().getResult().forEach(
+        exerciseDataDAO.getAll().get().forEach(
                 System.out::println
         );
     }

@@ -16,7 +16,6 @@ public class TrainingTable {
     private List<Training> trainingList;
 
     public TrainingTable() {
-
     }
 
     public TrainingTable(List<Training> trainingList) {

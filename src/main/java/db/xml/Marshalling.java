@@ -1,26 +1,14 @@
 package db.xml;
 
-import db.DAO.admin.AdminDAO;
-import db.DAO.admin.AdminDAOImpl;
-import db.DAO.exercise.ExerciseDAO;
-import db.DAO.exercise.ExerciseDAOImpl;
-import db.DAO.exerciseData.ExerciseDataDAO;
-import db.DAO.exerciseData.ExerciseDataDAOImpl;
-import db.DAO.person.PersonDAO;
-import db.DAO.person.PersonDAOImpl;
 import db.DAO.sex.SexDAO;
 import db.DAO.sex.SexDAOImpl;
-import db.DAO.state.StateDAO;
-import db.DAO.state.StateDAOImpl;
-import db.DAO.training.TrainingDAO;
-import db.DAO.training.TrainingDAOImpl;
-import db.DAO.user.UserDataDAO;
-import db.DAO.user.UserDataDAOImpl;
 import db.connectionManager.ConnectionManagerImpl;
 import db.xml.marshaling.MarshallingResult;
 import db.xml.marshaling.TableMarshaller;
 import db.xml.marshaling.TableUnmarshaller;
-import db.xml.xmlWrapper.*;
+import db.xml.xmlWrapper.DataBaseObject;
+import db.xml.xmlWrapper.SexTable;
+import db.xml.xmlWrapper.Table;
 
 import javax.xml.bind.JAXBException;
 import java.nio.file.Path;
@@ -38,13 +26,9 @@ public class Marshalling {
 
     private static void threadStart(Object object, ExecutorService execServ, BlockingQueue<Future<MarshallingResult>> futures) {
         try {
-            futures.add(
-                    execServ.submit(
-                            new TableMarshaller(
-                                    getPath(object.getClass().getSimpleName()), object
-                            )
-                    )
-            );
+            Future<MarshallingResult> futureMarsh =
+                    execServ.submit(new TableMarshaller(getPath(object.getClass().getSimpleName()), object));
+            futures.add(futureMarsh);
         } catch (JAXBException e) {
             e.printStackTrace();
         }
@@ -55,69 +39,64 @@ public class Marshalling {
         ExecutorService execService = Executors.newFixedThreadPool(8);
         BlockingQueue<Future<MarshallingResult>> futureList = new ArrayBlockingQueue<>(8);
 
+
         SexDAO sexDAO =
                 new SexDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new SexTable(sexDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
+        Table sexTable = new SexTable(sexDAO.getAll().get());
+        sexTable.addListener("PersonTable");
 
-        PersonDAO personDAO =
-                new PersonDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new PersonTable(personDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
+        threadStart(sexTable, execService, futureList);
 
-        StateDAO stateDAO =
-                new StateDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new StateTable(stateDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
 
-        UserDataDAO userDataDAO =
-                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new UserDataTable(userDataDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
-
-        AdminDAO adminDAO =
-                new AdminDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new AdminDataTable(adminDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
-
-        TrainingDAO trainingDAO =
-                new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new TrainingTable(trainingDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
-
-        ExerciseDAO exerciseDAO =
-                new ExerciseDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new ExerciseTable(exerciseDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
-
-        ExerciseDataDAO exerciseDataDAO =
-                new ExerciseDataDAOImpl(ConnectionManagerImpl.getInstance());
-        threadStart(
-                new ExerciseDataTable(exerciseDataDAO.getAll().getResult()),
-                execService,
-                futureList
-        );
+//        PersonDAO personDAO =
+//                new PersonDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new PersonTable(personDAO.getAll().get()), execService, futureList);
+//
+//        StateDAO stateDAO =
+//                new StateDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new StateTable(stateDAO.getAll().get()), execService, futureList);
+//
+//        UserDataDAO userDataDAO =
+//                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new UserDataTable(userDataDAO.getAll().get()),
+//                execService,
+//                futureList
+//        );
+//
+//        AdminDAO adminDAO =
+//                new AdminDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new AdminDataTable(adminDAO.getAll().get()),
+//                execService,
+//                futureList
+//        );
+//
+//        TrainingDAO trainingDAO =
+//                new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new TrainingTable(trainingDAO.getAll().get()),
+//                execService,
+//                futureList
+//        );
+//
+//        ExerciseDAO exerciseDAO =
+//                new ExerciseDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new ExerciseTable(exerciseDAO.getAll().get()),
+//                execService,
+//                futureList
+//        );
+//
+//        ExerciseDataDAO exerciseDataDAO =
+//                new ExerciseDataDAOImpl(ConnectionManagerImpl.getInstance());
+//        threadStart(
+//                new ExerciseDataTable(exerciseDataDAO.getAll().get()),
+//                execService,
+//                futureList
+//        );
 
         DataBaseObject dataBase = new DataBaseObject();
 

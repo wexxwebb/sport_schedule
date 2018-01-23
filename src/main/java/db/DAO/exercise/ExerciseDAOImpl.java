@@ -1,6 +1,6 @@
 package db.DAO.exercise;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.Exercise;
 import db.connectionManager.ConnectionManager;
@@ -9,8 +9,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class ExerciseDAOImpl implements ExerciseDAO {
 
@@ -60,7 +60,7 @@ public class ExerciseDAOImpl implements ExerciseDAO {
     }
 
     @Override
-    public Result<String> insert(Exercise exercise, PersistType persistType) {
+    public Result<String> insert(Exercise exercise, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
@@ -68,7 +68,7 @@ public class ExerciseDAOImpl implements ExerciseDAO {
                 String sql = null;
 
                 PreparedStatement preparedStatement = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO exercise (exercise_id, training_id, approach, repetition, weigth) " +
                                     "VALUES (?, ?, ?, ?, ?)"
@@ -79,7 +79,7 @@ public class ExerciseDAOImpl implements ExerciseDAO {
                     preparedStatement.setInt(4, exercise.getRepetition());
                     preparedStatement.setInt(5, exercise.getWeigth());
 
-                } else if (persistType == RESTORE) {
+                } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO exercise (id, exercise_id, training_id, approach, repetition, weigth) " +
                                     "VALUES (?, ?, ?, ?, ?, ?)"

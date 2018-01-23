@@ -52,14 +52,14 @@ DROP TABLE IF EXISTS user_data CASCADE
 
 CREATE TABLE admin_data
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	user_id integer NOT NULL
 )
 ;
 
 CREATE TABLE exercise
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	exercise_id integer NOT NULL,
 	training_id integer NOT NULL,
 	approach integer NOT NULL,
@@ -70,14 +70,14 @@ CREATE TABLE exercise
 
 CREATE TABLE exercise_data
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	name varchar(100) NOT NULL
 )
 ;
 
 CREATE TABLE person
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	first_name varchar(100) NOT NULL,
 	last_name varchar(100) NOT NULL,
 	birthday date NOT NULL,
@@ -87,21 +87,21 @@ CREATE TABLE person
 
 CREATE TABLE sex
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	sex varchar(50) NOT NULL
 )
 ;
 
 CREATE TABLE state
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	state varchar(50) NOT NULL
 )
 ;
 
 CREATE TABLE training
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	user_id integer NOT NULL,
 	create_date date NOT NULL   DEFAULT NOW(),
 	training_date date NOT NULL
@@ -110,7 +110,7 @@ CREATE TABLE training
 
 CREATE TABLE user_data
 (
-	id serial NOT NULL,
+	value serial NOT NULL,
 	person_id integer NOT NULL,
 	user_login varchar(50) NOT NULL,
 	user_password varchar(50) NOT NULL,
@@ -122,7 +122,7 @@ CREATE TABLE user_data
 /* Create Primary Keys, Indexes, Uniques, Checks */
 
 ALTER TABLE admin_data ADD CONSTRAINT PK_admins
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE admin_data 
@@ -130,11 +130,11 @@ ALTER TABLE admin_data
 ;
 
 ALTER TABLE exercise ADD CONSTRAINT PK_exercises
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE exercise_data ADD CONSTRAINT PK_s_exercises
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE exercise_data 
@@ -142,11 +142,11 @@ ALTER TABLE exercise_data
 ;
 
 ALTER TABLE person ADD CONSTRAINT PK_persons
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE sex ADD CONSTRAINT PK_s_sex
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE sex 
@@ -154,7 +154,7 @@ ALTER TABLE sex
 ;
 
 ALTER TABLE state ADD CONSTRAINT PK_s_state
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE state 
@@ -162,11 +162,11 @@ ALTER TABLE state
 ;
 
 ALTER TABLE training ADD CONSTRAINT PK_trainings
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE user_data ADD CONSTRAINT PK_users
-	PRIMARY KEY (id)
+	PRIMARY KEY (value)
 ;
 
 ALTER TABLE user_data 
@@ -176,31 +176,31 @@ ALTER TABLE user_data
 /* Create Foreign Key Constraints */
 
 ALTER TABLE admin_data ADD CONSTRAINT FK_admins_users
-	FOREIGN KEY (user_id) REFERENCES user_data (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (user_id) REFERENCES user_data (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 ALTER TABLE exercise ADD CONSTRAINT FK_exercises_s_exercises
-	FOREIGN KEY (exercise_id) REFERENCES exercise_data (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (exercise_id) REFERENCES exercise_data (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 ALTER TABLE exercise ADD CONSTRAINT FK_exercises_trainings
-	FOREIGN KEY (training_id) REFERENCES training (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (training_id) REFERENCES training (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 ALTER TABLE person ADD CONSTRAINT FK_person_s_sex
-	FOREIGN KEY (sex_id) REFERENCES sex (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (sex_id) REFERENCES sex (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 ALTER TABLE training ADD CONSTRAINT FK_trainings_users
-	FOREIGN KEY (user_id) REFERENCES user_data (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (user_id) REFERENCES user_data (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 ALTER TABLE user_data ADD CONSTRAINT FK_users_persons
-	FOREIGN KEY (person_id) REFERENCES person (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (person_id) REFERENCES person (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 ALTER TABLE user_data ADD CONSTRAINT FK_users_s_state
-	FOREIGN KEY (state_id) REFERENCES state (id) ON DELETE Restrict ON UPDATE Cascade
+	FOREIGN KEY (state_id) REFERENCES state (value) ON DELETE Restrict ON UPDATE Cascade
 ;
 
 /* Create Table Comments, Sequences for Autonumber Columns */

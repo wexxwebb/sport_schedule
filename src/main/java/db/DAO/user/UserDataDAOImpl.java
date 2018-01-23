@@ -1,6 +1,6 @@
 package db.DAO.user;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.UserData;
 import db.connectionManager.ConnectionManager;
@@ -9,8 +9,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class UserDataDAOImpl implements UserDataDAO {
 
@@ -61,14 +61,14 @@ public class UserDataDAOImpl implements UserDataDAO {
     }
 
     @Override
-    public Result<String> insert(UserData user, PersistType persistType) {
+    public Result<String> insert(UserData user, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 String sql = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO user_data (person_id, user_login, user_password, state_id) " +
                                     "VALUES (?, ?, ?, ?)"
@@ -78,7 +78,7 @@ public class UserDataDAOImpl implements UserDataDAO {
                     preparedStatement.setString(3, user.getPassword());
                     preparedStatement.setInt(4, user.getStateId());
 
-                } else if (persistType == RESTORE) {
+                } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO user_data (id, person_id, user_login, user_password, state_id) " +
                                     "VALUES (?, ?, ?, ?, ?)"

@@ -1,19 +1,23 @@
 package db.DAO.sex;
 
-import common.PersistType;
+import common.InsertType;
+import common.Log;
 import common.Result;
 import db.POJO.Sex;
 import db.connectionManager.ConnectionManager;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 
 public class SexDAOImpl implements SexDAO {
+
+    private Logger logger = Logger.getLogger(SexDAOImpl.class);
 
     private ConnectionManager connectionManager;
 
@@ -55,19 +59,19 @@ public class SexDAOImpl implements SexDAO {
     }
 
     @Override
-    public Result<String> insert(Sex sex, PersistType persistType) {
+    public Result<String> insert(Sex sex, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO sex (sex) VALUES (?)"
                     );
 
                     preparedStatement.setString(1, sex.getSex());
-                } else if (persistType == RESTORE) {
+                } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO sex (id, sex) VALUES (?, ?)"
                     );
@@ -81,10 +85,12 @@ public class SexDAOImpl implements SexDAO {
                 return new Result<>(String.format("Inserted %d lines", count[0]), true, "Success");
 
             } catch (ClassNotFoundException e) {
+                logger.error(new Log(e, sex));
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, sex, "retry = " + retry));
             }
         }
     }

@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestUser {
     public static void main(String[] args) {
@@ -41,7 +41,7 @@ public class TestUser {
         }
         Result<List<UserData>> users = userDataDAO.getAll();
         if (users != null && users.isSuccess()) {
-            for (UserData user : users.getResult()) {
+            for (UserData user : users.get()) {
                 System.out.println(user);
             }
         } else {

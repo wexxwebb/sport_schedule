@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestState {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class TestState {
             State state = new State("normal");
             Result<String> result;
             if ((result = stateDAO.insert(state, NEW)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -31,7 +31,7 @@ public class TestState {
             State state = new State(25, "blocked");
             Result<String> result;
             if ((result = stateDAO.insert(state, RESTORE)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -39,7 +39,7 @@ public class TestState {
 
         Result<List<State>> result = stateDAO.getAll();
         if (result != null && result.isSuccess()) {
-            for (State state : result.getResult()) {
+            for (State state : result.get()) {
                 System.out.println(state.getId() + " " + state.getState());
             }
         } else {

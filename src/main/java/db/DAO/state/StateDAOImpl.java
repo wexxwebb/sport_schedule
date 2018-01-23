@@ -1,6 +1,6 @@
 package db.DAO.state;
 
-import common.PersistType;
+import common.InsertType;
 import common.Result;
 import db.POJO.State;
 import db.connectionManager.ConnectionManager;
@@ -9,8 +9,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 
 public class StateDAOImpl implements StateDAO {
@@ -55,19 +55,19 @@ public class StateDAOImpl implements StateDAO {
     }
 
     @Override
-    public Result<String> insert(State state, PersistType persistType) {
+    public Result<String> insert(State state, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
-                if (persistType == NEW) {
+                if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO state (state) VALUES (?)"
                     );
 
                     preparedStatement.setString(1, state.getState());
-                } else if (persistType == RESTORE){
+                } else if (insertType == RESTORE){
                     preparedStatement = connection.prepareStatement(
                             "INSERT INTO state (id, state) VALUES (?, ?)"
                     );

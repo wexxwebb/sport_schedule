@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestAdmin {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class TestAdmin {
             AdminData adminData = new AdminData(1);
             Result<String> result;
             if ((result = adminDAO.insert(adminData, NEW)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -32,7 +32,7 @@ public class TestAdmin {
             AdminData adminData = new AdminData(25, 25);
             Result<String> result;
             if ((result = adminDAO.insert(adminData, RESTORE)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -40,7 +40,7 @@ public class TestAdmin {
 
         Result<List<AdminData>> result = adminDAO.getAll();
         if (result != null && result.isSuccess()) {
-            for (AdminData adminData : result.getResult()) {
+            for (AdminData adminData : result.get()) {
                 System.out.println(adminData.getId() + " " + adminData.getUserId());
             }
         } else

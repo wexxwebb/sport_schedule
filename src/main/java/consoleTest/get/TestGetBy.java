@@ -13,7 +13,7 @@ public class TestGetBy {
             UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
             Result<UserData> result = userDataDAO.getById(1);
             if (result.isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -23,7 +23,7 @@ public class TestGetBy {
             UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
             Result<UserData> result = userDataDAO.getByLogin("alex");
             if (result.isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }

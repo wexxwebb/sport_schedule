@@ -12,7 +12,7 @@ public class Result<T> {
         Message = message;
     }
 
-    public T getResult() {
+    public T get() {
         return result;
     }
 

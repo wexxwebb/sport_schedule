@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestSex {
 
@@ -22,7 +22,7 @@ public class TestSex {
             Sex sex = new Sex("men");
             Result<String> result;
             if ((result = sexDAO.insert(sex, NEW)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -32,7 +32,7 @@ public class TestSex {
             Sex sex = new Sex(25, "woman");
             Result<String> result;
             if ((result = sexDAO.insert(sex, RESTORE)).isSuccess()) {
-                System.out.println(result.getResult());
+                System.out.println(result.get());
             } else {
                 System.out.println(result.getMessage());
             }
@@ -40,7 +40,7 @@ public class TestSex {
 
         Result<List<Sex>> result = sexDAO.getAll();
         if (result != null && result.isSuccess()) {
-            for (Sex sex : result.getResult()) {
+            for (Sex sex : result.get()) {
                 System.out.println(sex.getId() + " " + sex.getSex());
             }
         } else {

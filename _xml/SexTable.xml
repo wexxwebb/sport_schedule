@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SexTable>
     <Sex>
-        <id>1</id>
-        <sex>men</sex>
+        <id>25</id>
+        <sex>Женский</sex>
     </Sex>
     <Sex>
-        <id>25</id>
-        <sex>woman</sex>
+        <id>1</id>
+        <sex>Мужской</sex>
     </Sex>
+    <Listener>Person</Listener>
 </SexTable>

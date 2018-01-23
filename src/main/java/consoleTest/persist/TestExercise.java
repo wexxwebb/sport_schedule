@@ -8,8 +8,8 @@ import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
 
-import static common.PersistType.NEW;
-import static common.PersistType.RESTORE;
+import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestExercise {
     public static void main(String[] args) {
@@ -54,7 +54,7 @@ public class TestExercise {
 
         Result<List<Exercise>> result;
         if ((result = exerciseDAO.getAll()).isSuccess()) {
-            for (Exercise exercise : result.getResult()) {
+            for (Exercise exercise : result.get()) {
                 System.out.println(exercise);
             }
         } else {

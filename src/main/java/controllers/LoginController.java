@@ -1,6 +1,7 @@
 package controllers;
 
-import services.UserService;
+import services.LoginService;
+import services.impl.LoginServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,26 +11,33 @@ import java.io.IOException;
 
 public class LoginController extends HttpServlet {
 
-    private static UserService userService = new UserService();
+    private LoginService loginService = new LoginServiceImpl();
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("message", "hello");
-//        if (req.getParameter("error")  != null) {
-//            req.setAttribute("errorMsg", req.getParameter("error"));
-//        }
-        req.getRequestDispatcher("/login.jsp").forward(req, resp);
+    public LoginService getLoginService() {
+        return loginService;
+    }
+
+    public void setLoginService(LoginServiceImpl loginService) {
+        this.loginService = loginService;
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String login = req.getParameter("login");
-        String password = req.getParameter("password");
-        if (userService.checkAuth(login, password)) {
-            req.getSession().setAttribute("login", login);
-            resp.sendRedirect("/inner/page");
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher(request.getContextPath() + "/index.jsp").forward(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("UTF-8");
+        String login = request.getParameter("login");
+        String password = request.getParameter("password");
+        if (loginService.checkAuth(login, password)) {
+            request.getSession().setAttribute("login", login);
+            response.sendRedirect(request.getContextPath() + "/inner/dashboard");
         } else {
-            req.getRequestDispatcher("/login.jsp?error=invalid_auth").forward(req, resp);
+            request.setAttribute("authError", "Некорректный логин или пароль");
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
         }
     }
 }
