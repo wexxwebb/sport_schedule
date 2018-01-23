@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SexTable>
+    <Listener>UserDataTable</Listener>
     <Sex>
         <id>25</id>
         <sex>Женский</sex>
@@ -8,5 +9,4 @@
         <id>1</id>
         <sex>Мужской</sex>
     </Sex>
-    <Listener>Person</Listener>
 </SexTable>

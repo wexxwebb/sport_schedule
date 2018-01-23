@@ -1,19 +1,55 @@
 package db.xml.xmlWrapper;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
+import java.util.stream.Collectors;
 
-public interface Table extends Callable<Boolean> {
+public abstract class Table implements Callable<Boolean> {
 
-    void insertId(int id);
+    @XmlElement(name = "Listener")
+    private Set<String> listenerNameList = new HashSet<>();
 
-    void dispach(int id);
+    @XmlTransient
+    private Set<Table> listenerSet = new HashSet<>();
 
-    void addListener(String name);
+    @XmlTransient
+    protected BlockingQueue<Integer> idCanInsert = new ArrayBlockingQueue<>(10);
 
-    void addListenerTable(Table table);
+    public boolean isReady() {
+        List<String> classNames =
+                this.getListenerTables().stream().map(table -> table.getClass().getSimpleName()).collect(Collectors.toList());
+        return classNames.containsAll(this.getListenerNameList());
+    }
 
-    Set<String> getListenerNameList();
+    public void dispatch(int id) {
+        listenerSet.forEach((table) -> table.insertId(id));
+    }
 
-    Set<Table> getListenerTables();
+    public void insertId(int id) {
+        idCanInsert.add(id);
+    }
+
+    public void addListener(String name) {
+        this.listenerNameList.add(name);
+    }
+
+    public void addListenerTable(Table table) {
+        this.listenerSet.add(table);
+    }
+
+    public Set<String> getListenerNameList() {
+        return listenerNameList;
+    }
+
+    public Set<Table> getListenerTables() {
+        return listenerSet;
+    }
+
 }

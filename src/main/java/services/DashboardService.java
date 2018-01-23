@@ -1,6 +1,6 @@
 package services;
 
-import db.POJO.Training;
+import db.pojo.Training;
 
 import java.util.List;
 

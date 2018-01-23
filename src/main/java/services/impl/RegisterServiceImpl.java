@@ -1,12 +1,12 @@
 package services.impl;
 
 import common.RegisterDataCheck;
-import db.DAO.person.PersonDAO;
-import db.DAO.person.PersonDAOImpl;
-import db.DAO.user.UserDataDAO;
-import db.DAO.user.UserDataDAOImpl;
-import db.POJO.Person;
-import db.POJO.UserData;
+import db.dao.person.PersonDAO;
+import db.dao.person.PersonDAOImpl;
+import db.dao.user.UserDataDAO;
+import db.dao.user.UserDataDAOImpl;
+import db.pojo.Person;
+import db.pojo.UserData;
 import db.connectionManager.ConnectionManagerImpl;
 import org.apache.log4j.Logger;
 import services.RegisterService;

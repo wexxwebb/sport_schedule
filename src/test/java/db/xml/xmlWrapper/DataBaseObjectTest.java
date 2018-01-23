@@ -1,7 +1,6 @@
 package db.xml.xmlWrapper;
 
-import db.POJO.Person;
-import db.POJO.Sex;
+import db.pojo.Person;
 import org.junit.Test;
 
 

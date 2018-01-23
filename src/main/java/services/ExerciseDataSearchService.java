@@ -1,6 +1,6 @@
 package services;
 
-import db.POJO.ExerciseData;
+import db.pojo.ExerciseData;
 
 import java.util.List;
 

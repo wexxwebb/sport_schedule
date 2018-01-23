@@ -1,9 +1,9 @@
 package services.impl;
 
 import common.Result;
-import db.DAO.training.TrainingDAO;
-import db.DAO.training.TrainingDAOImpl;
-import db.POJO.Training;
+import db.dao.training.TrainingDAO;
+import db.dao.training.TrainingDAOImpl;
+import db.pojo.Training;
 import db.connectionManager.ConnectionManagerImpl;
 import services.DashboardService;
 

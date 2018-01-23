@@ -1,9 +1,9 @@
 package consoleTest.persist;
 
 import common.Result;
-import db.DAO.exercise.ExerciseDAO;
-import db.DAO.exercise.ExerciseDAOImpl;
-import db.POJO.Exercise;
+import db.dao.exercise.ExerciseDAO;
+import db.dao.exercise.ExerciseDAOImpl;
+import db.pojo.Exercise;
 import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;

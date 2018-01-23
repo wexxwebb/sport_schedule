@@ -1,6 +1,6 @@
 package db.xml.xmlWrapper;
 
-import db.POJO.Person;
+import db.pojo.Person;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

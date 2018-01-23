@@ -1,6 +1,6 @@
 package controllers;
 
-import db.POJO.Training;
+import db.pojo.Training;
 import services.DashboardService;
 import services.impl.DashboardServiceImpl;
 

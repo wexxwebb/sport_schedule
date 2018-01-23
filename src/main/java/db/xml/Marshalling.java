@@ -1,14 +1,17 @@
 package db.xml;
 
-import db.DAO.sex.SexDAO;
-import db.DAO.sex.SexDAOImpl;
+import db.dao.sex.SexDAO;
+import db.dao.sex.SexDAOImpl;
 import db.connectionManager.ConnectionManagerImpl;
+import db.dao.user.UserDataDAO;
+import db.dao.user.UserDataDAOImpl;
 import db.xml.marshaling.MarshallingResult;
 import db.xml.marshaling.TableMarshaller;
 import db.xml.marshaling.TableUnmarshaller;
 import db.xml.xmlWrapper.DataBaseObject;
 import db.xml.xmlWrapper.SexTable;
 import db.xml.xmlWrapper.Table;
+import db.xml.xmlWrapper.UserDataTable;
 
 import javax.xml.bind.JAXBException;
 import java.nio.file.Path;
@@ -43,8 +46,7 @@ public class Marshalling {
         SexDAO sexDAO =
                 new SexDAOImpl(ConnectionManagerImpl.getInstance());
         Table sexTable = new SexTable(sexDAO.getAll().get());
-        sexTable.addListener("PersonTable");
-
+        sexTable.addListener("UserDataTable");
         threadStart(sexTable, execService, futureList);
 
 
@@ -58,13 +60,10 @@ public class Marshalling {
 //        threadStart(
 //                new StateTable(stateDAO.getAll().get()), execService, futureList);
 //
-//        UserDataDAO userDataDAO =
-//                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
-//        threadStart(
-//                new UserDataTable(userDataDAO.getAll().get()),
-//                execService,
-//                futureList
-//        );
+        UserDataDAO userDataDAO =
+                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+        Table userDataTable = new UserDataTable(userDataDAO.getAll().get());
+        threadStart(userDataTable, execService, futureList);
 //
 //        AdminDAO adminDAO =
 //                new AdminDAOImpl(ConnectionManagerImpl.getInstance());

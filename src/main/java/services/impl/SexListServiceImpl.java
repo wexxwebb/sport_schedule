@@ -1,8 +1,8 @@
 package services.impl;
 
-import db.DAO.sex.SexDAO;
-import db.DAO.sex.SexDAOImpl;
-import db.POJO.Sex;
+import db.dao.sex.SexDAO;
+import db.dao.sex.SexDAOImpl;
+import db.pojo.Sex;
 import db.connectionManager.ConnectionManagerImpl;
 import services.SexListService;
 

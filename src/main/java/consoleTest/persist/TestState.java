@@ -1,9 +1,9 @@
 package consoleTest.persist;
 
 import common.Result;
-import db.DAO.state.StateDAO;
-import db.DAO.state.StateDAOImpl;
-import db.POJO.State;
+import db.dao.state.StateDAO;
+import db.dao.state.StateDAOImpl;
+import db.pojo.State;
 import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;

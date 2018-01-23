@@ -1,6 +1,6 @@
 package services;
 
-import db.POJO.Sex;
+import db.pojo.Sex;
 
 import java.util.List;
 

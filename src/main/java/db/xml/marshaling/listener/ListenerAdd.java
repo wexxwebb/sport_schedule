@@ -3,12 +3,13 @@ package db.xml.marshaling.listener;
 import db.xml.xmlWrapper.Table;
 
 import java.util.List;
+import java.util.concurrent.BlockingQueue;
 
 public class ListenerAdd {
 
-    List<Table> tables;
+    private BlockingQueue<Table> tables;
 
-    public ListenerAdd(List<Table> tables) {
+    public ListenerAdd(BlockingQueue<Table> tables) {
         this.tables = tables;
     }
 

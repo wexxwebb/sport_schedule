@@ -2,9 +2,9 @@ package services.impl;
 
 import common.RegisterDataCheck;
 import common.Result;
-import db.DAO.user.UserDataDAO;
-import db.DAO.user.UserDataDAOImpl;
-import db.POJO.UserData;
+import db.dao.user.UserDataDAO;
+import db.dao.user.UserDataDAOImpl;
+import db.pojo.UserData;
 import db.connectionManager.ConnectionManagerImpl;
 import org.apache.log4j.Logger;
 import org.junit.Test;

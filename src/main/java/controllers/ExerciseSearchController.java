@@ -2,7 +2,7 @@ package controllers;
 
 import com.google.gson.Gson;
 import common.Autocomplete;
-import db.POJO.ExerciseData;
+import db.pojo.ExerciseData;
 import services.impl.ExerciseDataSearchServiceImpl;
 
 import javax.servlet.ServletException;

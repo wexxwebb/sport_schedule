@@ -1,9 +1,9 @@
 package services.impl;
 
 import common.Result;
-import db.DAO.person.PersonDAO;
-import db.DAO.person.PersonDAOImpl;
-import db.POJO.Person;
+import db.dao.person.PersonDAO;
+import db.dao.person.PersonDAOImpl;
+import db.pojo.Person;
 import db.connectionManager.ConnectionManager;
 import db.connectionManager.ConnectionManagerImpl;
 

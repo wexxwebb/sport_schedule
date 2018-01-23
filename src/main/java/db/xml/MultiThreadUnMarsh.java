@@ -5,18 +5,18 @@ import db.xml.fileFounder.FileFounder;
 import db.xml.fileFounder.Founder;
 import db.xml.marshaling.TableUnmarshaller;
 import db.xml.marshaling.UnmarshalingResult;
+import db.xml.marshaling.insert.InsertStarter;
 import db.xml.marshaling.listener.ListenerAdd;
-import db.xml.marshaling.listener.ListenerCheck;
 import db.xml.xmlWrapper.Table;
 import org.apache.log4j.Logger;
 
-import javax.management.ListenerNotFoundException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MultiThreadUnMarsh {
 
@@ -48,9 +48,14 @@ public class MultiThreadUnMarsh {
         }
         logger.info("Tables unmarshaling started");
 
-        List<Table> tableList = new ArrayList<>();
+        BlockingQueue<Table> tableList = new ArrayBlockingQueue<>(unMarshFutureList.size());
         ListenerAdd listenerAdd = new ListenerAdd(tableList);
-        ListenerCheck listenerCheck = new ListenerCheck();
+        AtomicBoolean insertStarterPlay = new AtomicBoolean(true);
+        ExecutorService exec = Executors.newFixedThreadPool(unMarshFutureList.size());
+        List<Future<Boolean>> insertFutureList = new CopyOnWriteArrayList<>();
+        InsertStarter insertStarter = new InsertStarter(insertStarterPlay, tableList, exec, insertFutureList);
+        Thread insertStarterThread = new Thread(insertStarter);
+
         {
             boolean play = true;
             while (play) {
@@ -59,10 +64,12 @@ public class MultiThreadUnMarsh {
                     try {
                         Future<UnmarshalingResult> unMarshFuture = it.next();
                         if (unMarshFuture.isDone()) {
+                            if (!insertStarterThread.isAlive()) {
+                                insertStarterThread.start();
+                            }
                             if (unMarshFuture.get().isSuccess()) {
                                 Table table = (Table) unMarshFuture.get().getObject();
                                 listenerAdd.add(table);
-
                                 tableList.add(table);
                             }
                             it.remove();
@@ -78,7 +85,7 @@ public class MultiThreadUnMarsh {
         }
 
 
-        logger.info("Table insertion started");
+
         unMarshExec.shutdown();
 
 //        ExecutorService insertTableExec = Executors.newFixedThreadPool(unMarshFutureList.size());

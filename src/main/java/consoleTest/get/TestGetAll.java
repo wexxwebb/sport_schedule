@@ -1,21 +1,21 @@
 package consoleTest.get;
 
-import db.DAO.admin.AdminDAO;
-import db.DAO.admin.AdminDAOImpl;
-import db.DAO.exercise.ExerciseDAO;
-import db.DAO.exercise.ExerciseDAOImpl;
-import db.DAO.exerciseData.ExerciseDataDAO;
-import db.DAO.exerciseData.ExerciseDataDAOImpl;
-import db.DAO.person.PersonDAO;
-import db.DAO.person.PersonDAOImpl;
-import db.DAO.sex.SexDAO;
-import db.DAO.sex.SexDAOImpl;
-import db.DAO.state.StateDAO;
-import db.DAO.state.StateDAOImpl;
-import db.DAO.training.TrainingDAO;
-import db.DAO.training.TrainingDAOImpl;
-import db.DAO.user.UserDataDAO;
-import db.DAO.user.UserDataDAOImpl;
+import db.dao.admin.AdminDAO;
+import db.dao.admin.AdminDAOImpl;
+import db.dao.exercise.ExerciseDAO;
+import db.dao.exercise.ExerciseDAOImpl;
+import db.dao.exerciseData.ExerciseDataDAO;
+import db.dao.exerciseData.ExerciseDataDAOImpl;
+import db.dao.person.PersonDAO;
+import db.dao.person.PersonDAOImpl;
+import db.dao.sex.SexDAO;
+import db.dao.sex.SexDAOImpl;
+import db.dao.state.StateDAO;
+import db.dao.state.StateDAOImpl;
+import db.dao.training.TrainingDAO;
+import db.dao.training.TrainingDAOImpl;
+import db.dao.user.UserDataDAO;
+import db.dao.user.UserDataDAOImpl;
 import db.connectionManager.ConnectionManagerImpl;
 
 public class TestGetAll {

@@ -1,6 +1,6 @@
 package db.xml.xmlWrapper;
 
-import db.POJO.Exercise;
+import db.pojo.Exercise;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

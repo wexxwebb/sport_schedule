@@ -1,6 +1,6 @@
 package db.xml.marshaling;
 
-import db.POJO.Person;
+import db.pojo.Person;
 import db.xml.xmlWrapper.PersonTable;
 import org.junit.Test;
 

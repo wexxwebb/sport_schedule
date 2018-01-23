@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userDataTable>
+    <UserData>
+        <id>1</id>
+        <personId>1</personId>
+        <login>alex</login>
+        <password>password</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-17</dateReg>
+    </UserData>
+    <UserData>
+        <id>25</id>
+        <personId>25</personId>
+        <login>nat</login>
+        <password>password</password>
+        <stateId>25</stateId>
+        <dateReg>2018-01-17</dateReg>
+    </UserData>
+    <UserData>
+        <id>4</id>
+        <personId>11</personId>
+        <login>mila</login>
+        <password>mila</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-21</dateReg>
+    </UserData>
+    <UserData>
+        <id>5</id>
+        <personId>12</personId>
+        <login>renat</login>
+        <password>renat</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-21</dateReg>
+    </UserData>
+    <UserData>
+        <id>6</id>
+        <personId>13</personId>
+        <login>scarlet</login>
+        <password>scarlet</password>
+        <stateId>1</stateId>
+        <dateReg>2018-01-21</dateReg>
+    </UserData>
+</userDataTable>

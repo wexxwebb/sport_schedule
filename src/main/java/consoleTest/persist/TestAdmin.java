@@ -1,9 +1,9 @@
 package consoleTest.persist;
 
 import common.Result;
-import db.DAO.admin.AdminDAO;
-import db.DAO.admin.AdminDAOImpl;
-import db.POJO.AdminData;
+import db.dao.admin.AdminDAO;
+import db.dao.admin.AdminDAOImpl;
+import db.pojo.AdminData;
 import db.connectionManager.ConnectionManagerImpl;
 
 import java.util.List;
