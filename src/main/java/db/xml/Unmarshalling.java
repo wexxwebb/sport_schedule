@@ -51,7 +51,7 @@ public class Unmarshalling {
         );
 
         UserDataDAO userDataDAO =
-                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+                new UserDataDAOImpl();
         dataBaseObject.getUserDataList().forEach(
                 userData -> userDataDAO.insert(userData, RESTORE)
         );

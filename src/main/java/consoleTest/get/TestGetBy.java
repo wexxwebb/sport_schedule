@@ -10,7 +10,7 @@ public class TestGetBy {
     public static void main(String[] args) {
         {
             System.out.println("UserData");
-            UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+            UserDataDAO userDataDAO = new UserDataDAOImpl();
             Result<UserData> result = userDataDAO.getById(1);
             if (result.isSuccess()) {
                 System.out.println(result.get());
@@ -20,7 +20,7 @@ public class TestGetBy {
         }
         {
             System.out.println("UserData");
-            UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+            UserDataDAO userDataDAO = new UserDataDAOImpl();
             Result<UserData> result = userDataDAO.getByLogin("alex");
             if (result.isSuccess()) {
                 System.out.println(result.get());

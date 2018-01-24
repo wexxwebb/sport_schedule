@@ -25,7 +25,7 @@ public class RegisterServiceImplTest {
                 UserDataDAOImpl.class.getClassLoader(),
                 UserDataDAOImpl.class.getInterfaces(),
                 (proxy, method, args) -> {
-                    UserDataDAO trueUserDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+                    UserDataDAO trueUserDataDAO = new UserDataDAOImpl();
                     if (method.getName().equals("getByLogin")) {
                         return new Result<UserData>(null, false, "Test");
                     }

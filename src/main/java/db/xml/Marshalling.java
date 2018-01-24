@@ -61,7 +61,7 @@ public class Marshalling {
 //                new StateTable(stateDAO.getAll().get()), execService, futureList);
 //
         UserDataDAO userDataDAO =
-                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+                new UserDataDAOImpl();
         Table userDataTable = new UserDataTable(userDataDAO.getAll().get());
         threadStart(userDataTable, execService, futureList);
 //

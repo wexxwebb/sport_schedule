@@ -23,7 +23,7 @@ public class UserDataTable extends Table {
     List<UserData> userDataList;
 
     @XmlTransient
-    private UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+    private UserDataDAO userDataDAO = new UserDataDAOImpl();
 
     @XmlTransient
     private Logger logger = Logger.getLogger(UserData.class);

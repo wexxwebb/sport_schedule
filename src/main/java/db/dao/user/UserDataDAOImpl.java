@@ -6,6 +6,8 @@ import common.Result;
 import db.connectionManager.ConnectionManager;
 import db.pojo.UserData;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,12 +16,19 @@ import java.util.List;
 import static common.InsertType.NEW;
 import static common.InsertType.RESTORE;
 
+@Component
 public class UserDataDAOImpl implements UserDataDAO {
 
     private static Logger logger = Logger.getLogger(UserDataDAOImpl.class);
+
+    @Autowired
     private ConnectionManager connectionManager;
 
-    public UserDataDAOImpl(ConnectionManager connectionManager) {
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
     }
 

@@ -16,8 +16,8 @@
     <title>Расписание спортивных тренировок</title>
 
     <!-- Bootstrap -->
-    <link href="style/css/bootstrap.min.css" rel="stylesheet">
-    <link href=style/style.css rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/style/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/style/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,7 +34,7 @@
         <div class="row" style="margin-top: 125px;">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div style="width: 250px; margin: auto">
-                    <form method="post" action="${pageContext.request.contextPath}/login">
+                    <form method="post" action="${pageContext.request.contextPath}/public/auth">
                         <div class="log-in-group">
                             <div class="form-group" style="display: inline-block">
                                 <input type="login" name="login" class="form-control iput-auth" placeholder="Имя пользователя">
@@ -48,7 +48,7 @@
                                 <input class="check" type="checkbox"> Запомнить меня
                             </div>
                             <div style="margin-top: 15px;">
-                                <a href="${pageContext.request.contextPath}/register">Регистрация</a>
+                                <a href="${pageContext.request.contextPath}/public/register">Регистрация</a>
                             </div>
                         </div>
                     </form>
@@ -60,6 +60,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="style/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/style/js/bootstrap.min.js"></script>
 </body>
 </html>

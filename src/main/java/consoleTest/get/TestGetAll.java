@@ -43,7 +43,7 @@ public class TestGetAll {
 
         System.out.println("UserData");
         UserDataDAO userDataDAO =
-                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+                new UserDataDAOImpl();
         userDataDAO.getAll().get().forEach(
                 System.out::println
         );

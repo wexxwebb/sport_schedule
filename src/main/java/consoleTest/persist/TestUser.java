@@ -14,7 +14,7 @@ import static common.InsertType.RESTORE;
 public class TestUser {
     public static void main(String[] args) {
         UserDataDAO userDataDAO =
-                new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+                new UserDataDAOImpl();
         {
             UserData user = new UserData(
                     1,

@@ -7,76 +7,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a8c52d-4a73-4d29-92dc-045b79103faf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/db/xml/marshaling/insert/InsertStarter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/db/xml/xmlWrapper/TableTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_4_3_12_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controller_spring/AuthController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controller_spring/RegisterController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/services/impl/LoginServiceImplTest.java" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___pro_kretov___sport_schedule_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___pro_kretov___sport_schedule_1_0_SNAPSHOT_war__exploded_.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sport_schedule_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/sport_schedule_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sport_schedule_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/sport_schedule_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_xml/SexTable.xml" afterPath="$PROJECT_DIR$/_xml/SexTable.xml" />
-      <change beforePath="$PROJECT_DIR$/_xml/dataBaseXML/DataBaseObject.xml" afterPath="$PROJECT_DIR$/_xml/dataBaseXML/DataBaseObject.xml" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/db.POJO.PersonTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/db.POJO.PersonTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/db.xml.fileFounder.FileFounderTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/db.xml.fileFounder.FileFounderTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/db.xml.marshaling.TableMarshallerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/db.xml.marshaling.TableMarshallerTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/db.xml.xmlWrapper.DataBaseObjectTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/db.xml.xmlWrapper.DataBaseObjectTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/services.impl.RegisterServiceImplTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/services.impl.RegisterServiceImplTest.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/db.POJO.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/db.POJO.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/db.xml.fileFounder.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/db.xml.fileFounder.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/db.xml.marshaling.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/db.xml.marshaling.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/db.xml.xmlWrapper.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/db.xml.xmlWrapper.html" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/services.impl.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/services.impl.html" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/log4j.properties" afterPath="$PROJECT_DIR$/build/resources/test/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-db.POJO.PersonTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-db.POJO.PersonTest.xml" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-db.xml.fileFounder.FileFounderTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-db.xml.fileFounder.FileFounderTest.xml" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-db.xml.marshaling.TableMarshallerTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-db.xml.marshaling.TableMarshallerTest.xml" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-db.xml.xmlWrapper.DataBaseObjectTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-db.xml.xmlWrapper.DataBaseObjectTest.xml" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-services.impl.RegisterServiceImplTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-services.impl.RegisterServiceImplTest.xml" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetAll.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetAll.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetBy.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetBy.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestAdmin.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestAdmin.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestExercise.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestExercise.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestExerciseData.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestExerciseData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestPerson.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestPerson.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestSex.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestSex.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestState.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestState.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestTraining.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestTraining.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestUser.java" afterPath="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/DashboardController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/DashboardController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ExerciseSearchController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/ExerciseSearchController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/admin/AdminDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/admin/AdminDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/admin/AdminDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/exercise/ExerciseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/exercise/ExerciseDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/exercise/ExerciseDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/exercise/ExerciseDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/exerciseData/ExerciseDataDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/exerciseData/ExerciseDataDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/exerciseData/ExerciseDataDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/person/PersonDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/person/PersonDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/person/PersonDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/person/PersonDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/sex/SexDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/sex/SexDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/sex/SexDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/sex/SexDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/state/StateDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/state/StateDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/state/StateDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/state/StateDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/training/TrainingDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/training/TrainingDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/training/TrainingDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/training/TrainingDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/user/UserDataDAO.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DAO/user/UserDataDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/AdminData.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/AdminData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/Exercise.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/Exercise.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/ExerciseData.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/ExerciseData.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/Person.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/Person.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/Sex.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/Sex.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/State.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/State.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/Training.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/Training.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/POJO/UserData.java" afterPath="$PROJECT_DIR$/src/main/java/db/pojo/UserData.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/Marshalling.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/Marshalling.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/MultiThreadUnMarsh.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/MultiThreadUnMarsh.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/Unmarshalling.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/Unmarshalling.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/marshaling/listener/ListenerAdd.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/marshaling/listener/ListenerAdd.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/table/TableImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/AdminDataTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/AdminDataTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/DataBaseObject.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/DataBaseObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/ExerciseDataTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/ExerciseDataTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/ExerciseTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/ExerciseTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/PersonTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/PersonTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/SexTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/SexTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/StateTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/StateTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/Table.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/Table.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/TrainingTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/TrainingTable.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/UserDataTable.java" afterPath="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/UserDataTable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/DashboardService.java" afterPath="$PROJECT_DIR$/src/main/java/services/DashboardService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ExerciseDataSearchService.java" afterPath="$PROJECT_DIR$/src/main/java/services/ExerciseDataSearchService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/SexListService.java" afterPath="$PROJECT_DIR$/src/main/java/services/SexListService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/AuthService.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/AuthService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/DashboardServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/DashboardServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/ExerciseDataSearchServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/ExerciseDataSearchServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/LoginServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/LoginServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/PersonList.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/PersonList.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/RegisterServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/RegisterServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/impl/SexListServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/impl/SexListServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/POJO/PersonTest.java" afterPath="$PROJECT_DIR$/src/test/java/db/pojo/PersonTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/xml/marshaling/TableMarshallerTest.java" afterPath="$PROJECT_DIR$/src/test/java/db/xml/marshaling/TableMarshallerTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listnerCheck/ListenerCheckTest.java" afterPath="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerCheckTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/xml/xmlWrapper/DataBaseObjectTest.java" afterPath="$PROJECT_DIR$/src/test/java/db/xml/xmlWrapper/DataBaseObjectTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/public/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerAddTest.java" afterPath="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerAddTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/services/impl/RegisterServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/services/impl/RegisterServiceImplTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -196,6 +186,11 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sport_schedule" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -205,11 +200,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller_spring/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="64" />
+            <state relative-caret-position="339">
+              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -224,8 +219,9 @@
         <option value="JUnit5 Test Class" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
+        <option value="spring-beans.schema" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -427,8 +423,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4548847012187" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="4109125861" />
+        <entry key="$PROJECT_DIR$" value="4549043007641" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2129926093" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
       </map>
     </option>
@@ -599,24 +595,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/db/DAO/sex/SexDAO.java" />
-        <option value="$PROJECT_DIR$/_xml/AdminDataTable.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/db/DAO/sex/LogObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/LogObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/DAO/sex/SexDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/Log.java" />
-        <option value="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listnerCheck/ListnerCheckTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/marshaling/listnerCheck/ListnerCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/marshaling/listner/ListnerAdd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/TrainingTable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listnerCheck/ListenerCheckTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerAddTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/wrapper/XmlWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/wrapper/Tableimpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/wrapper/TableImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/POJO/POJO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/POJO/AdminData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/POJO/Exercise.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/POJO/ExerciseData.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/POJO/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/POJO/Sex.java" />
@@ -640,16 +618,34 @@
         <option value="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/DataBaseObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/xml/marshaling/listener/ListenerCheck.java" />
         <option value="$PROJECT_DIR$/_xml/SexTable.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/Marshalling.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/xml/marshaling/listener/ListenerAdd.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/xml/MultiThreadUnMarsh.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/xml/marshaling/insert/InsertStarter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/UserDataTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/db/xml/xmlWrapper/TableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/SexTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/Table.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerAddTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/consoleTest/persist/TestUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/xml/Marshalling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/impl/RegisterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetAll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/xml/Unmarshalling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/UserDataTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/impl/AuthService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetBy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/services/impl/LoginServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/services/impl/RegisterServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/RegistrerController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller_spring/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controller_spring/AuthController.java" />
       </list>
     </option>
   </component>
@@ -666,11 +662,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1292" />
-    <option name="height" value="733" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -702,11 +698,6 @@
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="_xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -728,106 +719,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="sex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="fileFounder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="marshaling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="marshaling" type="462c0819:PsiDirectoryNode" />
-              <item name="insert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="marshaling" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlWrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="controller_spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
@@ -835,14 +727,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="inner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
@@ -851,67 +735,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="marshaling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="marshaling" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlWrapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -929,7 +752,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32988507" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../logger_sample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -938,10 +761,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="services.impl" />
       <recent name="db.xml.xmlWrapper" />
       <recent name="db.xml.marshaling.listener" />
       <recent name="db.xml.marshaling.listnerCheck" />
-      <recent name="services.impl" />
       <recent name="db.xml.fileFounder" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -951,11 +774,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp" />
+      <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp\public" />
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\resources" />
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp\inner" />
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\_xml\databaseXML" />
-      <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp" />
-      <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\java\pro\kretov\db\xml" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp\inner" />
@@ -980,32 +803,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MultiThreadUnMarsh">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="Marshalling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="db.xml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="db.xml.Marshalling" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sport_schedule_main" />
-      <envs />
     </configuration>
     <configuration name="MultiThreadUnMarsh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1040,69 +844,74 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="FileFounderTest.getResourcesList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="db.xml.fileFounder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sport_schedule_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="db.xml.fileFounder" />
-      <option name="MAIN_CLASS_NAME" value="db.xml.fileFounder.FileFounderTest" />
-      <option name="METHOD_NAME" value="getResourcesList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration name="sport_schedule [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="ListenerAddTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="db.xml.marshaling.listener.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sport_schedule_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="db.xml.marshaling.listener" />
-      <option name="MAIN_CLASS_NAME" value="db.xml.marshaling.listener.ListenerAddTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration name="sport_schedule [clean build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
-    <configuration name="ListenerCheckTest.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="sport_schedule [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="LoginServiceImplTest.checkAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="db.xml.marshaling.listener.*" />
+          <option name="PATTERN" value="services.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="sport_schedule_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="db.xml.marshaling.listener" />
-      <option name="MAIN_CLASS_NAME" value="db.xml.marshaling.listener.ListenerCheckTest" />
-      <option name="METHOD_NAME" value="check" />
+      <option name="PACKAGE_NAME" value="services.impl" />
+      <option name="MAIN_CLASS_NAME" value="services.impl.LoginServiceImplTest" />
+      <option name="METHOD_NAME" value="checkAuth" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1174,7 +983,7 @@
       <deployment>
         <artifact name="Gradle : pro.kretov : sport_schedule-1.0-SNAPSHOT.war (exploded)">
           <settings>
-            <option name="CONTEXT_PATH" value="/schedule" />
+            <option name="CONTEXT_PATH" value="/sport_schedule" />
           </settings>
         </artifact>
       </deployment>
@@ -1267,19 +1076,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FileFounderTest.getResourcesList" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MultiThreadUnMarsh" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Marshalling" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ListenerCheckTest.check" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ListenerAddTest.add" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MultiThreadUnMarsh" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginServiceImplTest.checkAuth" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.sport_schedule [clean]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.sport_schedule [build]" />
+      <item index="5" class="java.lang.String" itemvalue="Gradle.sport_schedule [clean build]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MultiThreadUnMarsh" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Marshalling" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ListenerAddTest.add" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ListenerCheckTest.check" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FileFounderTest.getResourcesList" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.sport_schedule [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.sport_schedule [clean build]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.sport_schedule [clean]" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginServiceImplTest.checkAuth" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MultiThreadUnMarsh" />
       </list>
     </recent_temporary>
   </component>
@@ -1299,23 +1108,11 @@
       <workItem from="1516111685005" duration="68680000" />
       <workItem from="1516298270747" duration="51106000" />
       <workItem from="1516504292820" duration="31821000" />
-      <workItem from="1516558774652" duration="55297000" />
+      <workItem from="1516558774652" duration="71620000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ListenerAddTest_add - 2018.01.23 at 00h 41m 32s.xml">
-      <configuration name="ListenerAddTest.add" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListenerAddTest_add - 2018.01.23 at 00h 41m 39s.xml">
-      <configuration name="ListenerAddTest.add" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListenerAddTest_add - 2018.01.23 at 08h 13m 04s.xml">
-      <configuration name="ListenerAddTest.add" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListenerAddTest_add - 2018.01.23 at 08h 33m 19s.xml">
-      <configuration name="ListenerAddTest.add" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ListenerAddTest_add - 2018.01.23 at 08h 34m 18s.xml">
       <configuration name="ListenerAddTest.add" configurationId="JUnit" />
     </history-entry>
@@ -1334,9 +1131,21 @@
     <history-entry file="ListenerAddTest_add - 2018.01.23 at 14h 40m 53s.xml">
       <configuration name="ListenerAddTest.add" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginServiceImplTest_checkAuth - 2018.01.24 at 09h 02m 12s.xml">
+      <configuration name="LoginServiceImplTest.checkAuth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginServiceImplTest_checkAuth - 2018.01.24 at 09h 03m 16s.xml">
+      <configuration name="LoginServiceImplTest.checkAuth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginServiceImplTest_checkAuth - 2018.01.24 at 09h 04m 39s.xml">
+      <configuration name="LoginServiceImplTest.checkAuth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginServiceImplTest_checkAuth - 2018.01.24 at 09h 05m 32s.xml">
+      <configuration name="LoginServiceImplTest.checkAuth" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206904000" />
+    <option name="totallyTimeSpent" value="223227000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1348,7 +1157,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1357,11 +1166,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33646113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21961933" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25260416" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3686327" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3528646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1369,56 +1179,57 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24869792" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22526042" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3424479" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16536458" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18667643" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21669106" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33646113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33646113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17349927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33646113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21961933" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2680965" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3686327" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3528646" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29758713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23046875" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24231333" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27479893" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16536458" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18667643" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21669106" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1450,11 +1261,23 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/services/impl/LoginServiceImpl.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller_spring/AuthController.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1468,192 +1291,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_xml/AdminDataTable.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/marshaling/TableUnmarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/marshaling/UnmarshalingResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/ExerciseTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/onewrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/AdminDataTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/dao/admin/AdminDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="55" column="76" lean-forward="true" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="76" />
-          <folding>
-            <marker date="1516687898471" expanded="true" signature="831:976" ph="SELECT id, u... admin_data" />
-            <marker date="1516687898471" expanded="true" signature="2119:2169" ph="INSERT INTO admin_data... " />
-            <marker date="1516687898471" expanded="true" signature="2587:2630" ph="INSERT INTO admin_data... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/dao/dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/Pojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/table/TableImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/AdminData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/Exercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/ExerciseData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/Sex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/Training.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/DataBaseObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerCheckTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerAddTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -1708,42 +1345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/Unmarshalling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/marshaling/listener/ListenerAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/Marshalling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_xml/SexTable.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/UserDataTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1761,13 +1366,6 @@
         <state relative-caret-position="120">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/1c03af07/1fe210c4-f665-4a1d-bbb4-f6a0aec85c57/sport_schedule.public.user_data">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1791,35 +1389,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="109" column="47" lean-forward="true" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-          <folding>
-            <marker date="1516712968517" expanded="true" signature="1003:1306" ph="SELECT id,pe... user_data" />
-            <marker date="1516712968517" expanded="true" signature="2760:2891" ph="INSERT INTO user_data... " />
-            <marker date="1516712968517" expanded="true" signature="3345:3483" ph="INSERT INTO user_data... " />
-            <marker date="1516712968517" expanded="true" signature="4917:5233" ph="SELECT id,pe... user_data" />
-            <marker date="1516712968517" expanded="true" signature="6684:7008" ph="SELECT id,pe... user_data" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_xml/UserDataTable.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/MultiThreadUnMarsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1885,30 +1459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="75" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/inner/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1920,14 +1470,285 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/inner/users.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/impl/DashboardServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/marshaling/listener/ListenerAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#259#260#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/xml/marshaling/listener/ListenerAddTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1c03af07/1fe210c4-f665-4a1d-bbb4-f6a0aec85c57/sport_schedule.public.user_data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/connectionManager/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/connectionManager/ConnectionManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/dao/user/UserDataDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#716#717#0" expanded="false" />
+            <element signature="e#756#757#0" expanded="false" />
+            <marker date="1516777188997" expanded="true" signature="1247:1550" ph="SELECT id,pe... user_data" />
+            <marker date="1516777188997" expanded="true" signature="3004:3135" ph="INSERT INTO user_data... " />
+            <marker date="1516777188997" expanded="true" signature="3589:3727" ph="INSERT INTO user_data... " />
+            <marker date="1516777188997" expanded="true" signature="5161:5477" ph="SELECT id,pe... user_data" />
+            <marker date="1516777188997" expanded="true" signature="6928:7252" ph="SELECT id,pe... user_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/consoleTest/persist/TestUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/Marshalling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/impl/RegisterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/Unmarshalling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/xmlWrapper/UserDataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/services/impl/LoginServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/services/impl/RegisterServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/consoleTest/get/TestGetAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/SuppressWarnings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.12.RELEASE/da4662aca663b3aca9320106a5af776edb51d0f8/spring-context-4.3.12.RELEASE-sources.jar!/org/springframework/stereotype/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/RegistrerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="46" column="66" lean-forward="false" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/impl/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/xml/MultiThreadUnMarsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller_spring/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller_spring/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean build" />
   </component>
   <component name="masterDetails">
     <states>

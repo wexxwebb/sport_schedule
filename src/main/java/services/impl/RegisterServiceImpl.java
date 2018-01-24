@@ -17,7 +17,7 @@ public class RegisterServiceImpl implements RegisterService {
 
     private Logger logger = Logger.getLogger(RegisterServiceImpl.class);
 
-    private UserDataDAO userDataDAO = new UserDataDAOImpl(ConnectionManagerImpl.getInstance());
+    private UserDataDAO userDataDAO = new UserDataDAOImpl();
 
     private PersonDAO personDAO = new PersonDAOImpl(ConnectionManagerImpl.getInstance());
 

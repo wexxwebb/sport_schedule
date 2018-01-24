@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="services.impl.RegisterServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-21T15:27:16" hostname="DESKTOP-BO8H4UB" time="0.016">
+<testsuite name="services.impl.RegisterServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-24T10:43:41" hostname="DESKTOP-BO8H4UB" time="0.026">
   <properties/>
-  <testcase name="checkData" classname="services.impl.RegisterServiceImplTest" time="0.016"/>
-  <system-out><![CDATA[2018-01-21 18:27:16 INFO  RegisterServiceImplTest:50 - Checked
+  <testcase name="checkData" classname="services.impl.RegisterServiceImplTest" time="0.026"/>
+  <system-out><![CDATA[2018-01-24 13:43:42 INFO  RegisterServiceImplTest:50 - Checked
  ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

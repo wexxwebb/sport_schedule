@@ -17,7 +17,7 @@ public class AuthService {
 
     public boolean auth(String login, String password) {
         UserDataDAO userDataDAO =
-                new UserDataDAOImpl(connectionManager);
+                new UserDataDAOImpl();
         Result<UserData> result = userDataDAO.getByLogin(login);
         if (result.isSuccess()) {
             if (result.get().getPassword().equals(password)) {

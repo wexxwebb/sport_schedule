@@ -17,9 +17,9 @@
     <title></title>
 
     <!-- Bootstrap -->
-    <link href="style/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css" rel="stylesheet">
-    <link href="style/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="../style/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <link href="../style/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,8 +82,8 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="style/datepicker/js/bootstrap-datepicker.js"></script>
-    <script src="style/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
+    <script src="../style/datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="../style/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
 
     <script>
         $('#datepicker').datepicker({
@@ -94,6 +94,6 @@
         });
     </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="style/js/bootstrap.min.js"></script>
+    <script src="../style/js/bootstrap.min.js"></script>
 </body>
 </html>
