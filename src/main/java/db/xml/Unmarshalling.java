@@ -63,7 +63,7 @@ public class Unmarshalling {
         );
 
         TrainingDAO trainingDAO =
-                new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
+                new TrainingDAOImpl();
         dataBaseObject.getTrainingList().forEach(
                 training -> trainingDAO.insert(training, RESTORE)
         );
@@ -75,7 +75,7 @@ public class Unmarshalling {
         );
 
         ExerciseDataDAO exerciseDataDAO =
-                new ExerciseDataDAOImpl(ConnectionManagerImpl.getInstance());
+                new ExerciseDataDAOImpl();
         dataBaseObject.getExerciseDataList().forEach(
                 exerciseData -> exerciseDataDAO.insert(exerciseData, RESTORE)
         );

@@ -13,11 +13,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title></title>
+        <title>Список тренировок</title>
 
         <!-- Bootstrap -->
-        <link href="../style/css/bootstrap.min.css" rel="stylesheet">
-        <link href=../style/style.css rel="stylesheet">
+        <link href="../../style/css/bootstrap.min.css" rel="stylesheet">
+        <link href=../../style/style.css rel="stylesheet">
 
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
         <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
@@ -49,7 +49,7 @@
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="../style/js/bootstrap.min.js"></script>
+        <script src="../../style/js/bootstrap.min.js"></script>
         <script>
 
             $('#searchExercise').autocomplete({

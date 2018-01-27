@@ -2,11 +2,11 @@ package common;
 
 public class Autocomplete {
     private String label;
-    private int value;
+    private String id;
 
-    public Autocomplete(String label, int value) {
+    public Autocomplete(String label, String id) {
         this.label = label;
-        this.value = value;
+        this.id = id;
     }
 
     public String getLabel() {
@@ -17,11 +17,11 @@ public class Autocomplete {
         this.label = label;
     }
 
-    public int getValue() {
-        return value;
+    public String getId() {
+        return id;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setId(String id) {
+        this.id = id;
     }
 }

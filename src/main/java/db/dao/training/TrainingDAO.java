@@ -8,5 +8,7 @@ import java.util.List;
 
 public interface TrainingDAO {
     Result<List<Training>> getAll();
-    Result<String> insert(Training training, InsertType insertType);
+    Result<Training> insert(Training training, InsertType insertType);
+    Result<String> delete(int id);
+    public Result<Training> getByid(int id);
 }

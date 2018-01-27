@@ -14,9 +14,7 @@ import static common.InsertType.RESTORE;
 public class TestExerciseData {
     public static void main(String[] args) {
 
-        ExerciseDataDAO exerciseDataDAO = new ExerciseDataDAOImpl(
-                ConnectionManagerImpl.getInstance()
-        );
+        ExerciseDataDAO exerciseDataDAO = new ExerciseDataDAOImpl();
 
         {
             ExerciseData exerciseData = new ExerciseData("Жим лежа");

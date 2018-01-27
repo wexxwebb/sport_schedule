@@ -19,7 +19,7 @@ public class TestSex {
         );
 
         {
-            Sex sex = new Sex("men");
+            Sex sex = new Sex("Муж");
             Result<String> result;
             if ((result = sexDAO.insert(sex, NEW)).isSuccess()) {
                 System.out.println(result.get());
@@ -29,7 +29,7 @@ public class TestSex {
         }
 
         {
-            Sex sex = new Sex(25, "woman");
+            Sex sex = new Sex(25, "Жен");
             Result<String> result;
             if ((result = sexDAO.insert(sex, RESTORE)).isSuccess()) {
                 System.out.println(result.get());

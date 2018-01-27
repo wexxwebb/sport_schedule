@@ -2,14 +2,12 @@ package services.impl;
 
 import common.Result;
 import db.dao.user.UserDataDAO;
-import db.dao.user.UserDataDAOImpl;
 import db.pojo.UserData;
-import db.connectionManager.ConnectionManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import services.LoginService;
 
-@Service
+@Component
 public class LoginServiceImpl implements LoginService {
 
     @Autowired

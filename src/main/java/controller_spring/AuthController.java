@@ -34,17 +34,17 @@ public class AuthController {
                        Model model) {
         if (loginService.checkAuth(login, password)) {
             request.getSession().setAttribute("login", login);
-            return "inner/dashboard";
+            return "redirect:/dashboard";
         } else {
             model.addAttribute("authError", "Некорректный логин или пароль");
-            return "/index.jsp";
+            return "login";
         }
     }
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String index() {
         logger.info("index");
-        return "/index.jsp";
+        return "login";
     }
 
 }

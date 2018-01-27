@@ -17,6 +17,15 @@ public class Exercise {
     public Exercise() {
     }
 
+    public Exercise(int id, ExerciseData exercise, int trainingId, int approach, int repetition, int weigth) {
+        this.id = id;
+        this.exercise = exercise;
+        this.trainingId = trainingId;
+        this.approach = approach;
+        this.repetition = repetition;
+        this.weigth = weigth;
+    }
+
     public Exercise(int id, int exerciseId, int trainingId, int approach, int repetition, int weigth) {
         this.id = id;
         this.exerciseId = exerciseId;
@@ -61,11 +70,11 @@ public class Exercise {
         this.exerciseId = exerciseId;
     }
 
-    public ExerciseData getExercise() {
+    public ExerciseData getExerciseData() {
         return exercise;
     }
 
-    public void setExercise(ExerciseData exercise) {
+    public void setExerciseData(ExerciseData exercise) {
         this.exercise = exercise;
     }
 

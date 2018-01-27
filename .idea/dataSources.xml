@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="postgres@sport_schedule" uuid="1fe210c4-f665-4a1d-bbb4-f6a0aec85c57">
+    <data-source source="LOCAL" name="sport_schedule@localhost" uuid="e98f84b0-aaeb-4410-8183-04144d4b10e6">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/sport_schedule</jdbc-url>
-      <driver-properties>
-        <property name="ApplicationName" value="DataGrip" />
-      </driver-properties>
     </data-source>
   </component>
 </project>

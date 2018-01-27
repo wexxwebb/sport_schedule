@@ -119,7 +119,7 @@ public class UserData {
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", stateId=" + stateId +
-                ", dateReg=" + dateReg.toString() +
+                ", dateReg=" + dateReg +
                 '}';
     }
 }

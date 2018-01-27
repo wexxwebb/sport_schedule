@@ -26,7 +26,7 @@ public class TestExercise {
                     5
             );
 
-            Result<String> result;
+            Result<Exercise> result;
             if ((result = exerciseDAO.insert(exercise, NEW)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {
@@ -44,7 +44,7 @@ public class TestExercise {
                     2
             );
 
-            Result<String> result;
+            Result<Exercise> result;
             if ((result = exerciseDAO.insert(exercise, RESTORE)).isSuccess()) {
                 System.out.println(result.getMessage());
             } else {

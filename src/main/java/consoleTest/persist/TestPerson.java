@@ -9,6 +9,7 @@ import db.connectionManager.ConnectionManagerImpl;
 import java.util.List;
 
 import static common.InsertType.NEW;
+import static common.InsertType.RESTORE;
 
 public class TestPerson {
 
@@ -16,37 +17,37 @@ public class TestPerson {
         PersonDAO personDAO =
                 new PersonDAOImpl(ConnectionManagerImpl.getInstance());
 
-//        {
-//            Person person = new Person(
-//                    "Александр",
-//                    "Кретов",
-//                    "1989-01-08",
-//                    1);
-//
-//            Result<Person> result;
-//            if ((result = personDAO.insert(person, NEW)).isSuccess()) {
-//                System.out.println(result.getMessage());
-//            } else {
-//                System.out.println(result.getMessage());
-//            }
-//        }
+        {
+            Person person = new Person(
+                    "Александр",
+                    "Кретов",
+                    "1989-01-08",
+                    1);
 
-//        {
-//            Person person = new Person(
-//                    25,
-//                    "Натали",
-//                    "Портман",
-//                    "1990-06-02",
-//                    25);
-//
-//            Result<Person> result;
-//            if ((result = personDAO.insert(person, RESTORE)).isSuccess()) {
-//                System.out.println(result.getMessage());
-//            } else {
-//                System.out.println(result.getMessage());
-//            }
-//        }
-//
+            Result<Person> result;
+            if ((result = personDAO.insert(person, NEW)).isSuccess()) {
+                System.out.println(result.getMessage());
+            } else {
+                System.out.println(result.getMessage());
+            }
+        }
+
+        {
+            Person person = new Person(
+                    25,
+                    "Натали",
+                    "Портман",
+                    "1990-06-02",
+                    25);
+
+            Result<Person> result;
+            if ((result = personDAO.insert(person, RESTORE)).isSuccess()) {
+                System.out.println(result.getMessage());
+            } else {
+                System.out.println(result.getMessage());
+            }
+        }
+
         {
             Person person = new Person(
                     "Арнольд",

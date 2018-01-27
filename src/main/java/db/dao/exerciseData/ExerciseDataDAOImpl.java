@@ -2,8 +2,10 @@ package db.dao.exerciseData;
 
 import common.InsertType;
 import common.Result;
+import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.ExerciseData;
 import db.connectionManager.ConnectionManager;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,11 +14,21 @@ import java.util.List;
 import static common.InsertType.NEW;
 import static common.InsertType.RESTORE;
 
+@Component
 public class ExerciseDataDAOImpl implements ExerciseDataDAO {
+
     private ConnectionManager connectionManager;
 
-    public ExerciseDataDAOImpl(ConnectionManager connectionManager) {
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
+    }
+
+    public ExerciseDataDAOImpl() {
+        this.connectionManager = ConnectionManagerImpl.getInstance();
     }
 
     @Override
@@ -86,7 +98,7 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
         }
     }
 
-    public Result<List<ExerciseData>> getSearch(String term) {
+    public Result<List<ExerciseData>> searchByName(String term) {
         int retry = 0;
         while (true) {
             try {

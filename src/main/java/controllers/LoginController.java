@@ -23,7 +23,7 @@ public class LoginController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher(request.getContextPath() + "/index.jsp").forward(request, response);
+        request.getRequestDispatcher(request.getContextPath() + "/login.jsp").forward(request, response);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class LoginController extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/inner/dashboard");
         } else {
             request.setAttribute("authError", "Некорректный логин или пароль");
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
     }
 }

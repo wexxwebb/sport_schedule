@@ -4,6 +4,7 @@ import common.InsertType;
 import common.Log;
 import common.Result;
 import db.connectionManager.ConnectionManager;
+import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.UserData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,8 @@ public class UserDataDAOImpl implements UserDataDAO {
 
     private static Logger logger = Logger.getLogger(UserDataDAOImpl.class);
 
-    @Autowired
-    private ConnectionManager connectionManager;
+    //@Autowired
+    private ConnectionManager connectionManager = ConnectionManagerImpl.getInstance();
 
     public ConnectionManager getConnectionManager() {
         return connectionManager;

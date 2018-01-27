@@ -79,11 +79,11 @@ public class Training {
 
     @Override
     public String toString() {
-        return "Training{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", createDate=" + createDate +
-                ", trainingDate=" + trainingDate +
-                '}';
+        return "{" +
+                "\"id\": " + id +
+                ", \"userId\": " + userId +
+                ", \"createDate\": " + "\"" + createDate + "\"" +
+                ", \"trainingDate\": " + "\"" + trainingDate + "\"" +
+                "}";
     }
 }

@@ -14,13 +14,13 @@ import static common.InsertType.RESTORE;
 public class TestTraining {
     public static void main(String[] args) {
         TrainingDAO trainingDAO =
-                new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
+                new TrainingDAOImpl();
         {
             Training training = new Training(
                     1,
                     "2018-01-18"
             );
-            Result<String> result = trainingDAO.insert(training, NEW);
+            Result<Training> result = trainingDAO.insert(training, NEW);
             System.out.println(result.getMessage());
 
         }
@@ -32,7 +32,7 @@ public class TestTraining {
                     "2018-01-19",
                     "2018-01-30"
             );
-            Result<String> result = trainingDAO.insert(training, RESTORE);
+            Result<Training> result = trainingDAO.insert(training, RESTORE);
             System.out.println(result.getMessage());
 
         }

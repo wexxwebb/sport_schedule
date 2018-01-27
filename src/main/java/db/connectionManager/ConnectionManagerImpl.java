@@ -1,9 +1,12 @@
 package db.connectionManager;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+//@Component
 public class ConnectionManagerImpl implements ConnectionManager {
 
     private ConnectionManagerImpl() {

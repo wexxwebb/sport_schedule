@@ -57,7 +57,7 @@ public class TestGetAll {
 
         System.out.println("Training");
         TrainingDAO trainingDAO =
-                new TrainingDAOImpl(ConnectionManagerImpl.getInstance());
+                new TrainingDAOImpl();
         trainingDAO.getAll().get().forEach(
                 System.out::println
         );
@@ -69,7 +69,7 @@ public class TestGetAll {
         );
 
         System.out.println("ExerciseData");
-        ExerciseDataDAO exerciseDataDAO = new ExerciseDataDAOImpl(ConnectionManagerImpl.getInstance());
+        ExerciseDataDAO exerciseDataDAO = new ExerciseDataDAOImpl();
         exerciseDataDAO.getAll().get().forEach(
                 System.out::println
         );
