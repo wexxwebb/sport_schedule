@@ -3,6 +3,7 @@ package db.dao.training;
 import common.InsertType;
 import common.Log;
 import common.Result;
+import common.TimePeriod;
 import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Training;
 import db.connectionManager.ConnectionManager;
@@ -28,8 +29,18 @@ public class TrainingDAOImpl implements TrainingDAO {
     public TrainingDAOImpl() {
     }
 
+    private String chooseTime(TimePeriod timePeriod) {
+        switch (timePeriod) {
+            case ALL: return "";
+            case FUTURE: return " WHERE training_date > current_date";
+            case TODAY: return " WHERE training_date = current_date";
+            case PAST: return " WHERE training_date < current_date";
+        }
+        return "";
+    }
+
     @Override
-    public Result<List<Training>> getAll() {
+    public Result<List<Training>> getAll(TimePeriod timePeriod) {
         int retry = 0;
         while (true) {
             try {
@@ -40,7 +51,7 @@ public class TrainingDAOImpl implements TrainingDAO {
                                 "user_id, " +
                                 "create_date, " +
                                 "training_date " +
-                                "FROM training tr"
+                                "FROM training tr " + chooseTime(timePeriod)
                 );
 
                 List<Training> trainingList = new ArrayList<>();
@@ -118,7 +129,7 @@ public class TrainingDAOImpl implements TrainingDAO {
                                     "VALUES (?, to_date(?, 'YYYY-MM-DD')) RETURNING id, create_date"
                     );
                     preparedStatement.setInt(1, training.getUserId());
-                    preparedStatement.setString(2, training.getTrainingDate().toString());
+                    preparedStatement.setString(2, training.getTrainingDate());
 
                 } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
@@ -127,8 +138,8 @@ public class TrainingDAOImpl implements TrainingDAO {
                     );
                     preparedStatement.setInt(1, training.getId());
                     preparedStatement.setInt(2, training.getUserId());
-                    preparedStatement.setString(3, training.getCreateDate().toString());
-                    preparedStatement.setString(4, training.getTrainingDate().toString());
+                    preparedStatement.setString(3, training.getCreateDate());
+                    preparedStatement.setString(4, training.getTrainingDate());
 
                 }
 

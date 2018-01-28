@@ -18,7 +18,7 @@ public class TestExerciseData {
 
         {
             ExerciseData exerciseData = new ExerciseData("Жим лежа");
-            Result<String> result;
+            Result<ExerciseData> result;
             if ((result = exerciseDataDAO.insert(exerciseData, NEW)).isSuccess()) {
                 System.out.println(result.get());
             } else {
@@ -28,7 +28,7 @@ public class TestExerciseData {
 
         {
             ExerciseData exerciseData = new ExerciseData(25,"Гиперэкстензия");
-            Result<String> result;
+            Result<ExerciseData> result;
             if ((result = exerciseDataDAO.insert(exerciseData, RESTORE)).isSuccess()) {
                 System.out.println(result.get());
             } else {

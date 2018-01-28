@@ -4,13 +4,18 @@ import db.dao.sex.SexDAO;
 import db.dao.sex.SexDAOImpl;
 import db.pojo.Sex;
 import db.connectionManager.ConnectionManagerImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import services.SexListService;
 
 import java.util.List;
 
+@Service
 public class SexListServiceImpl implements SexListService {
 
-    private SexDAO sexDAO = new SexDAOImpl(ConnectionManagerImpl.getInstance());
+    @Autowired
+    private SexDAO sexDAO;
 
     public SexDAO getSexDAO() {
         return sexDAO;

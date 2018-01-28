@@ -8,10 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import services.ExerciseServise;
 import services.TrainingService;
 
+import java.io.PipedOutputStream;
 import java.util.List;
 
 @Controller
@@ -61,5 +63,30 @@ public class ExerciseController {
             modelAndView.addObject("error", exerciseResult.getMessage());
             return modelAndView;
         }
+    }
+
+    @RequestMapping(value = "/addExercise", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addExercise(@RequestParam(value = "exercise_id") int exerciseid,
+                              @RequestParam(value = "training_id") int trainingId,
+                              @RequestParam(value = "approach") int approach,
+                              @RequestParam(value = "repetition") int repetition,
+                              @RequestParam(value = "weigth") int weigth) {
+
+        Result<String> result =
+                exerciseServise.addExercise(exerciseid, trainingId,
+                        approach, repetition, weigth);
+        if (result.isSuccess()) {
+            return result.get();
+        } else {
+            return "";
+        }
+    }
+
+    @RequestMapping(value = "/delExercise", method = RequestMethod.POST)
+    @ResponseBody
+    public String delExercise(@RequestParam(value = "id") int id) {
+        Result<String> result = exerciseServise.delExercise(id);
+        return result.get();
     }
 }

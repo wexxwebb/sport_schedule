@@ -182,4 +182,35 @@ public class ExerciseDAOImpl implements ExerciseDAO {
             }
         }
     }
+
+    @Override
+    public Result<String> delete(int id) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(
+                        "DELETE FROM exercise WHERE id = ?"
+                );
+                preparedStatement.setInt(1, id);
+                preparedStatement.addBatch();
+
+                int[] rows = preparedStatement.executeBatch();
+                if (rows[0] == 1) {
+                    return new Result<>("1", true, "Success");
+                }
+                logger.error(new Log("Ошибка при удалении", "id = " + id));
+                return new Result<>("0", true, "Невозможно удалить");
+
+            } catch (ClassNotFoundException e) {
+                logger.error(e);
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, "id = " + id, "retry = " + retry));
+            }
+        }
+    }
+
 }

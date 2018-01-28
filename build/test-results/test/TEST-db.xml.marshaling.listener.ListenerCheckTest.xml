@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="db.xml.marshaling.listener.ListenerCheckTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-01-26T11:06:39" hostname="sa-W65-67SF" time="0.176">
+<testsuite name="db.xml.marshaling.listener.ListenerCheckTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-01-28T09:51:36" hostname="sa-W65-67SF" time="0.93">
   <properties/>
-  <testcase name="check" classname="db.xml.marshaling.listener.ListenerCheckTest" time="0.176">
+  <testcase name="check" classname="db.xml.marshaling.listener.ListenerCheckTest" time="0.93">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)

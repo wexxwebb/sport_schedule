@@ -1,10 +1,12 @@
 package db.dao.exerciseData;
 
 import common.InsertType;
+import common.Log;
 import common.Result;
 import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.ExerciseData;
 import db.connectionManager.ConnectionManager;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -16,6 +18,8 @@ import static common.InsertType.RESTORE;
 
 @Component
 public class ExerciseDataDAOImpl implements ExerciseDataDAO {
+
+    private static Logger logger = Logger.getLogger(ExerciseDataDAO.class);
 
     private ConnectionManager connectionManager;
 
@@ -65,35 +69,42 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     }
 
     @Override
-    public Result<String> insert(ExerciseData exerciseDataData, InsertType insertType) {
+    public Result<ExerciseData> insert(ExerciseData exerciseDataData, InsertType insertType) {
         int retry = 0;
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
-                PreparedStatement preparedStatement = null;
+                PreparedStatement ps = null;
                 if (insertType == NEW) {
-                    preparedStatement = connection.prepareStatement(
-                            "INSERT INTO exercise_data (name) VALUES (?)"
+                    ps = connection.prepareStatement(
+                            "INSERT INTO exercise_data (name) VALUES (?) RETURNING id"
                     );
-                    preparedStatement.setString(1, exerciseDataData.getName());
+
+                    ps.setString(1, exerciseDataData.getName());
+
                 } else if (insertType == RESTORE) {
-                    preparedStatement = connection.prepareStatement(
-                            "INSERT INTO exercise_data (id, name) VALUES (?, ?)"
+                    ps = connection.prepareStatement(
+                            "INSERT INTO exercise_data (id, name) VALUES (?, ?) RETURNING id"
                     );
-                    preparedStatement.setInt(1, exerciseDataData.getId());
-                    preparedStatement.setString(2, exerciseDataData.getName());
+                    ps.setInt(1, exerciseDataData.getId());
+                    ps.setString(2, exerciseDataData.getName());
                 }
-
-                preparedStatement.addBatch();
-                int[] count = preparedStatement.executeBatch();
-
-                return new Result<>(String.format("Inserted %d lines", count[0]), true, "Success");
+                ps.addBatch();
+                ResultSet resultSet = ps.executeQuery();
+                if (resultSet.next()) {
+                    if (insertType == NEW) exerciseDataData.setId(resultSet.getInt("id"));
+                    return new Result<>(exerciseDataData, true, "Success");
+                }
+                logger.error(new Log("Ошибка при вставке", exerciseDataData));
+                return new Result<>(null, false, "Ошибка при вставке");
 
             } catch (ClassNotFoundException e) {
+                logger.error(e);
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, exerciseDataData, "retry = " + retry));
             }
         }
     }
@@ -103,7 +114,6 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
         while (true) {
             try {
                 Connection connection = connectionManager.getConnection();
-                Statement statement = connection.createStatement();
 
                 PreparedStatement ps = connection.prepareStatement(
                         "SELECT " +
@@ -131,6 +141,109 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public Result<ExerciseData> getById(int id) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement ps = connection.prepareStatement(
+                        "SELECT " +
+                                "id, " +
+                                "name " +
+                                "FROM exercise_data WHERE id = ?"
+                );
+
+                ps.setInt(1, id);
+                ps.addBatch();
+
+                ResultSet result = ps.executeQuery();
+
+                if (result.next()) {
+                    ExerciseData exerciseData = new ExerciseData(
+                            result.getInt("id"),
+                            result.getString("name")
+                    );
+                    return new Result<>(exerciseData, true, "Success");
+                }
+                logger.info(new Log("id = " + id, "Нет данных для отображения"));
+                return new Result<>(null, false, "Нет данных для отображения");
+            } catch (ClassNotFoundException e) {
+                logger.error(e);
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, "id =" + id, "retry = " + retry));
+            }
+        }
+    }
+
+    @Override
+    public Result<String> delete(int id) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement ps = connection.prepareStatement(
+                        "DELETE FROM exercise_data " +
+                                "WHERE id = ?"
+                );
+
+                ps.setInt(1, id);
+                ps.addBatch();
+                ps.executeBatch();
+
+                logger.info(new Log("id = " + id, "Невозможно удалить"));
+                return new Result<>("1", true, "Success");
+
+            } catch (ClassNotFoundException e) {
+                logger.error(e);
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, "id =" + id, "delete retry = " + retry));
+            }
+        }
+    }
+
+    @Override
+    public Result<ExerciseData> update(ExerciseData exerciseData) {
+        int retry = 0;
+        while (true) {
+            try {
+                Connection connection = connectionManager.getConnection();
+                PreparedStatement ps = connection.prepareStatement(
+                        "UPDATE exercise_data SET name = ? WHERE id = ? RETURNING id, name"
+                );
+
+                ps.setInt(1, exerciseData.getId());
+                ps.setString(2, exerciseData.getName());
+                ps.addBatch();
+
+                ResultSet result = ps.executeQuery();
+
+                if (result.next()) {
+                    ExerciseData updatedExerciseData = new ExerciseData(
+                            result.getInt("id"),
+                            result.getString("name")
+                    );
+                    return new Result<>(updatedExerciseData, true, "Success");
+                }
+                logger.info(new Log(exerciseData, "Невозможно обновить"));
+                return new Result<>(null, false, "Невозможно обновить");
+            } catch (ClassNotFoundException e) {
+                logger.error(e);
+                return new Result<>(null, false, e.getMessage());
+            } catch (SQLException e) {
+                retry++;
+                if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, exerciseData, "update retry = " + retry));
             }
         }
     }

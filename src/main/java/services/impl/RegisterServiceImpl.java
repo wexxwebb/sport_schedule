@@ -1,45 +1,34 @@
 package services.impl;
 
 import common.RegisterDataCheck;
+import common.Result;
 import db.dao.person.PersonDAO;
-import db.dao.person.PersonDAOImpl;
 import db.dao.user.UserDataDAO;
-import db.dao.user.UserDataDAOImpl;
 import db.pojo.Person;
 import db.pojo.UserData;
-import db.connectionManager.ConnectionManagerImpl;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import services.RegisterService;
+
+import java.util.Map;
 
 import static common.InsertType.NEW;
 
+@Service
 public class RegisterServiceImpl implements RegisterService {
 
-    private Logger logger = Logger.getLogger(RegisterServiceImpl.class);
+    static private Logger logger = Logger.getLogger(RegisterServiceImpl.class);
 
-    private UserDataDAO userDataDAO = new UserDataDAOImpl();
+    @Autowired
+    private PersonDAO personDAO;
 
-    private PersonDAO personDAO = new PersonDAOImpl(ConnectionManagerImpl.getInstance());
+    @Autowired
+    private UserDataDAO userDataDAO;
 
-    public UserDataDAO getUserDataDAO() {
-        return userDataDAO;
-    }
-
-    public void setUserDataDAO(UserDataDAO userDataDAO) {
-        this.userDataDAO = userDataDAO;
-    }
-
-    public PersonDAO getPersonDAO() {
-        return personDAO;
-    }
-
-    public void setPersonDAO(PersonDAO personDAO) {
-        this.personDAO = personDAO;
-    }
-
-    public RegisterDataCheck register(
-            String login, String password, String passwordApprove, String name,
-            String lastName, String sex, String birthday) {
+    @Override
+    public Result<Map<String, String>> register(String login, String password, String passwordApprove,
+                                                String name, String lastName, String sex, String birthday) {
 
         RegisterDataCheck regCheck = checkData(login, password, passwordApprove, name, lastName, sex, birthday);
         if (regCheck.isValid()) {
@@ -50,7 +39,6 @@ public class RegisterServiceImpl implements RegisterService {
                     Integer.parseInt(sex)
             );
             person = personDAO.insert(person, NEW).get();
-            logger.info(person);
             UserData userData = new UserData(
                     person.getId(),
                     login,
@@ -59,10 +47,34 @@ public class RegisterServiceImpl implements RegisterService {
             );
             userDataDAO.insert(userData, NEW);
             logger.info("New registration");
-        } else {
-            logger.info("Registration data denied");
+            return new Result<>(null, true, "New registration");
         }
-        return regCheck;
+
+        if (!regCheck.isLogin()) {
+            regCheck.getMessages().put("loginError", "Некорректный логин");
+        } else regCheck.getMessages().put("login", login);
+
+        if (!regCheck.isPassword()) {
+            regCheck.getMessages().put("passwordError", "Пароли не совпадают или пустой пароль");
+        } else {
+            regCheck.getMessages().put("password", password);
+            regCheck.getMessages().put("passwordApprove", passwordApprove);
+        }
+        if (!regCheck.isName()) {
+            regCheck.getMessages().put("nameError", "Имя обязательно");
+        } else regCheck.getMessages().put("name", name);
+        if (!regCheck.isLastName()) {
+            regCheck.getMessages().put("lastNameError", "Фамилия обязательна");
+        } else regCheck.getMessages().put("lastName", lastName);
+        if (!regCheck.isSex()) {
+            regCheck.getMessages().put("sexError", "Выберете пол");
+        } else regCheck.getMessages().put("sex", sex);
+        if (!regCheck.isBirthday()) {
+            regCheck.getMessages().put("dateError", "Некорректная дата");
+        } else regCheck.getMessages().put("birthday", birthday);
+
+        logger.info("Registration data denied");
+        return new Result<>(regCheck.getMessages(), false, "Registration data denied");
     }
 
     private RegisterDataCheck checkData(
@@ -71,7 +83,8 @@ public class RegisterServiceImpl implements RegisterService {
 
         RegisterDataCheck regCheck = new RegisterDataCheck();
 
-        if (login != null && !login.isEmpty()) if (!userDataDAO.getByLogin(login).isSuccess()) regCheck.setLogin(true);
+        if (login != null && !login.isEmpty())
+            if (!userDataDAO.getByLogin(login).isSuccess()) regCheck.setLogin(true);
 
         if (password != null && passwordApprove != null && !password.isEmpty() && !passwordApprove.isEmpty())
             if (password.equals(passwordApprove)) regCheck.setPassword(true);

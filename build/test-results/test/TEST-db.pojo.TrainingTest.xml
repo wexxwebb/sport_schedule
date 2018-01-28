@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="db.pojo.TrainingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T09:51:30" hostname="sa-W65-67SF" time="0.002">
+  <properties/>
+  <testcase name="toStringTest" classname="db.pojo.TrainingTest" time="0.002"/>
+  <system-out><![CDATA[{"id": 1, "userId": 25, "createDate": "2012-12-21", "trainingDate": "2012-12-21"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

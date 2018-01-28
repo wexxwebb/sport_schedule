@@ -4,14 +4,15 @@ import com.google.gson.Gson;
 import common.Autocomplete;
 import common.Result;
 import db.dao.exerciseData.ExerciseDataDAO;
+import db.pojo.Exercise;
 import db.pojo.ExerciseData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services.ExerciseDataService;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static common.InsertType.NEW;
 
 @Service
 public class ExerciseDataServiceImpl implements ExerciseDataService {
@@ -19,12 +20,14 @@ public class ExerciseDataServiceImpl implements ExerciseDataService {
     @Autowired
     private ExerciseDataDAO exerciseDataDAO;
 
+    @Autowired
+    private Gson gson;
+
     public ExerciseDataServiceImpl() {
     }
 
     public String searchExerciseData(String term) {
         Result<List<ExerciseData>> result = exerciseDataDAO.searchByName(term);
-        Gson gson = new Gson();
         if (result.isSuccess()) {
             Autocomplete[] autocompletes = new Autocomplete[result.get().size()];
             for (int i = 0; i < result.get().size(); i++) {
@@ -35,5 +38,33 @@ public class ExerciseDataServiceImpl implements ExerciseDataService {
             return gson.toJson(autocompletes);
         } else
             return "";
+    }
+
+    @Override
+    public String addExerciseData(String name) {
+        ExerciseData exerciseData = new ExerciseData(name);
+        Result<ExerciseData> result = exerciseDataDAO.insert(exerciseData, NEW);
+        if (result.isSuccess()) {
+            return gson.toJson(result.get());
+        }
+        return "0";
+    }
+
+    @Override
+    public String delExerciseData(int id) {
+        Result<String> result = exerciseDataDAO.delete(id);
+        if (result.isSuccess()) {
+            return result.get();
+        }
+        return "0";
+    }
+
+    @Override
+    public List<ExerciseData> getExerciseDatalist() {
+        Result<List<ExerciseData>> result = exerciseDataDAO.getAll();
+        if (result.isSuccess()) {
+            return result.get();
+        }
+        return null;
     }
 }

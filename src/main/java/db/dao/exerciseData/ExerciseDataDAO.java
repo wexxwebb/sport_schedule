@@ -10,7 +10,13 @@ public interface ExerciseDataDAO {
 
     Result<List<ExerciseData>> getAll();
 
-    Result<String> insert(ExerciseData exerciseData, InsertType insertType);
+    Result<ExerciseData> insert(ExerciseData exerciseData, InsertType insertType);
 
     Result<List<ExerciseData>> searchByName(String term);
+
+    Result<ExerciseData> getById(int id);
+
+    Result<String> delete(int id);
+
+    Result<ExerciseData> update(ExerciseData exerciseData);
 }

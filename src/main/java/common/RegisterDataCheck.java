@@ -1,5 +1,8 @@
 package common;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class RegisterDataCheck {
 
     private boolean login = false;
@@ -8,6 +11,15 @@ public class RegisterDataCheck {
     private boolean lastName = false;
     private boolean sex = false;
     private boolean birthday = false;
+    private Map<String, String> messages = new HashMap<>();
+
+    public Map<String, String> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(Map<String, String> messages) {
+        this.messages = messages;
+    }
 
     public boolean isBirthday() {
         return birthday;

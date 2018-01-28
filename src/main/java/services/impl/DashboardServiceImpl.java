@@ -13,6 +13,11 @@ import services.DashboardService;
 import java.util.ArrayList;
 import java.util.List;
 
+import static common.TimePeriod.FUTURE;
+import static common.TimePeriod.TODAY;
+import static common.TimePeriod.PAST;
+
+
 @Component
 public class DashboardServiceImpl implements DashboardService {
 
@@ -31,13 +36,32 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getTrainingList() {
+    public List<Training> getTodayTrainingList() {
         Result<List<Training>> result;
-        if ((result = trainingDAO.getAll()).isSuccess()) {
+        if ((result = trainingDAO.getAll(TODAY)).isSuccess()) {
             return result.get();
         } else {
             return new ArrayList<>();
         }
+    }
 
+    @Override
+    public List<Training> getFutureTrainingList() {
+        Result<List<Training>> result;
+        if ((result = trainingDAO.getAll(FUTURE)).isSuccess()) {
+            return result.get();
+        } else {
+            return new ArrayList<>();
+        }
+    }
+
+    @Override
+    public List<Training> getPastTriningList() {
+        Result<List<Training>> result;
+        if ((result = trainingDAO.getAll(PAST)).isSuccess()) {
+            return result.get();
+        } else {
+            return new ArrayList<>();
+        }
     }
 }

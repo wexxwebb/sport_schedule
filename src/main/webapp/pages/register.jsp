@@ -42,35 +42,35 @@
                         <div class="log-in-group">
                             <div class="form-group" style="display: inline-block">
                                 <input name="login" type="text" class="form-control iput-auth" placeholder="Имя пользователя" value="${requestScope.login}">
-                                <span class="reg-error">${requestScope.loginError}</span>
+                                <span class="reg-error">${loginError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <input name="password" type="password" class="form-control iput-auth" placeholder="Пароль" value="${requestScope.password}">
-                                <span class="reg-error">${requestScope.passwordError}</span>
+                                <span class="reg-error">${passwordError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <input name="password_approve" type="password" class="form-control iput-auth" placeholder="Подтверждение пароля" value="${requestScope.passwordApprove}">
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <input name="name" type="text" class="form-control iput-auth" placeholder="Имя" value="${requestScope.name}">
-                                <span class="reg-error">${requestScope.nameError}</span>
+                                <span class="reg-error">${nameError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <input name="last_name" type="text" class="form-control iput-auth" placeholder="Фамилия" value="${requestScope.lastName}">
-                                <span class="reg-error">${requestScope.lastNameError}</span>
+                                <span class="reg-error">${lastNameError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <select name="sex" class="form-control iput-auth">
                                     <option value="" disabled selected>Пол</option>
-                                    <c:forEach var="sex" items="${requestScope.sexList}">
+                                    <c:forEach var="sex" items="${sexList}">
                                         <option ${sex.id == requestScope.sex ? "selected" : ""} value="${sex.id}">${sex.sex}</option>
                                     </c:forEach>
                                 </select>
-                                <span class="reg-error">${requestScope.sexError}</span>
+                                <span class="reg-error">${sexError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <input name="birthday"  id="datepicker" class="form-control iput-auth" data-provide="datepicker" placeholder="Дата рождения" value="${requestScope.birthday}">
-                                <span class="reg-error">${requestScope.dateError}</span>
+                                <span class="reg-error">${dateError}</span>
                             </div>
                             <div class="inline-block">
                                 <input type="submit" class="btn btn-primary" value="Регистрация">
@@ -84,8 +84,9 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="${pageContext.request.contextPath}/style/datepicker/js/bootstrap-datepicker.js"/>
-    <script src="${pageContext.request.contextPath}/style/datepicker/locales/bootstrap-datepicker.ru.min.js"/>
+    <script src="${pageContext.request.contextPath}/style/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/style/datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="${pageContext.request.contextPath}/style/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
 
     <script>
         $('#datepicker').datepicker({

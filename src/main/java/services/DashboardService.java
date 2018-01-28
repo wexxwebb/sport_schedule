@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface DashboardService {
 
-    List<Training> getTrainingList();
+    List<Training> getTodayTrainingList();
+    List<Training> getFutureTrainingList();
+    List<Training> getPastTriningList();
 }

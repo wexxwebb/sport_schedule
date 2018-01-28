@@ -13,4 +13,6 @@ public interface ExerciseDAO {
     Result<Exercise> insert(Exercise exercise, InsertType insertType);
 
     Result<List<Exercise>> getByTrainingId(int trainingId);
+
+    Result<String> delete(int id);
 }

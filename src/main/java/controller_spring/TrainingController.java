@@ -24,7 +24,7 @@ public class TrainingController {
         this.trainingService = trainingService;
     }
 
-    @RequestMapping(value = "/addTraining", method = RequestMethod.POST)
+    @RequestMapping(value = "/addTraining", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addTraining(@RequestParam(value = "user_id") int userId,
                               @RequestParam(value = "date") String date) {

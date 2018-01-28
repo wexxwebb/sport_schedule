@@ -2,9 +2,11 @@ package db.dao.person;
 
 import common.InsertType;
 import common.Result;
+import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Person;
 import db.pojo.Sex;
 import db.connectionManager.ConnectionManager;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,12 +15,17 @@ import java.util.List;
 import static common.InsertType.NEW;
 import static common.InsertType.RESTORE;
 
+@Component
 public class PersonDAOImpl implements PersonDAO {
 
     private ConnectionManager connectionManager;
 
     public PersonDAOImpl(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
+    }
+
+    public PersonDAOImpl() {
+        this.connectionManager = ConnectionManagerImpl.getInstance();
     }
 
     @Override

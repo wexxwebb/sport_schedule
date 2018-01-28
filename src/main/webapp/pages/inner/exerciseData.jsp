@@ -35,7 +35,7 @@
                 <li role="presentation">
                     <a href="${pageContext.request.contextPath}/dashboard"><span class="glyphicon glyphicon-home"></span></a>
                 </li>
-                <li role="presentation">
+                <li role="presentation" class="active">
                     <a href="${pageContext.request.contextPath}/exerciseData">Список упражнений</a>
                 </li>
                 <li role="presentation">
@@ -46,33 +46,26 @@
 
         <div class="container">
             <div class="row">
-                <h3 class="h-main">План тренировки #${training.id}, дата '${training.trainingDate}'</h3>
-                <h5 style="color: grey;" class="h-main">дата создания '${training.createDate}'</h5>
+                <h3 class="h-main">Список упражнений</h3>
             </div>
             <div class="row" style="margin-top: 30px">
                 <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                    <table id="exercise" class="table table-hover">
+                    <table id="exercise" class="table table-hover" style="width: 350px; margin: auto;">
                         <thead>
                             <tr>
-                                <th style="display: none"></th>
+                                <th>ID</th>
                                 <th>Название</th>
-                                <th>Подходов</th>
-                                <th>Повторений</th>
-                                <th>Вес</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                        <c:forEach var="exercise" items="${exerciseList}">
+                        <c:forEach var="exerciseData" items="${exerciseDataList}">
                                 <tr>
-                                    <td style="display: none;">${exercise.id}</td>
-                                    <td>${exercise.exerciseData.name}</td>
-                                    <td>${exercise.approach}</td>
-                                    <td>${exercise.repetition}</td>
-                                    <td>${exercise.weigth}</td>
+                                    <td>${exerciseData.id}</td>
+                                    <td>${exerciseData.name}</td>
                                     <td style="text-align: right;">
                                         <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
-                                              aria-hidden="true" onclick="del(${exercise.id})"/>
+                                              aria-hidden="true" onclick="del(${exerciseData.id})"/>
                                     </td>
                                 </tr>
                             </c:forEach>
@@ -81,38 +74,23 @@
                     <div style="height: 30px;"></div>
                     <h4 style="text-align: center">Добавить упражнение</h4>
                     <div style="height: 25px;"></div>
-                    <div style="text-align: center">
-                        <table style="display: inline-block" class="table table-hover">
+                    <div>
+                        <table style="width: 350px; margin: auto;" class="table table-hover">
                             <thead>
                                 <th>Название</th>
-                                <th>Подходов</th>
-                                <th>Повторений</th>
-                                <th>Вес</th>
                                 <th style="widht: 10%"></th>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td style="text-align: center;">
                                         <input type="text" name="exercise_name" onclick="this.select()"
-                                               class="form-control iput-auth" id="searchExercise" placeholder="Название упражнения">
+                                               class="form-control iput-auth" id="exerciseDataName" placeholder="Название упражнения">
                                         <input id="exercise_id" name="exerciseDataId" type="hidden">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="approach" onclick="this.select()"
-                                               id="approach" class="form-control" placeholder="Подходов">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="repetition" onclick="this.select()"
-                                               id="repetition" class="form-control" placeholder="Повторений">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="weigth" onclick="this.select()"
-                                               id="weight" class="form-control" placeholder="Вес нагрузки">
                                     </td>
                                     <td style="text-align: right;" >
                                         <span style="cursor: pointer; font-size: 20px;
                                                 color: limegreen; position: relative; top: 6px;"
-                                                    class="glyphicon glyphicon-plus" onclick="addExcercise()"></span>
+                                                    class="glyphicon glyphicon-plus" onclick="addExcerciseData()"></span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -127,31 +105,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="${pageContext.request.contextPath}/style/js/bootstrap.min.js"></script>
-        <script src="${pageContext.request.contextPath}/style/datepicker/js/bootstrap-datepicker.js"></script>
-        <script src="${pageContext.request.contextPath}/style/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-        <script>
-            $('#searchExercise').autocomplete({
-                source: "${pageContext.request.contextPath}/searchExerciseData", // url-адрес
-                minLength: 1,
-                select: function(event, ui) {
-                    $('#exercise_id').val(ui.item.id);
-                }
-            });
-        </script>
 
         <script>
 
-            function del(exerciseId) {
-                $.ajax({url: "${pageContext.request.contextPath}/delExercise",
+            function del(exerciseDataId) {
+                $.ajax({url: "${pageContext.request.contextPath}/delExerciseData",
                         method: "POST",
-                        data: {id: exerciseId},
+                        data: {id: exerciseDataId},
                         success: function (result) {
                             if (result == 1) {
                                 var tbody = document.getElementById("exercise");
                                 for (var i = 1; i < tbody.rows.length; i++) {
-                                    if (tbody.rows[i].cells[0].textContent == exerciseId) {
+                                    if (tbody.rows[i].cells[0].textContent == exerciseDataId) {
                                         tbody.deleteRow(i);
                                         break;
                                     }
@@ -164,44 +129,28 @@
 
             }
 
-            function addExcercise() {
-                $.ajax({url: "${pageContext.request.contextPath}/addExercise",
+            function addExcerciseData() {
+                $.ajax({url: "${pageContext.request.contextPath}/addExerciseData",
                         method: "POST",
-                        data: { exercise_id: $('#exercise_id').val(),
-                                training_id: ${training.id},
-                                approach: $("#approach").val(),
-                                repetition: $("#repetition").val(),
-                                weigth: $("#weight").val()
+                        data: { name: $('#exerciseDataName').val()
                             },
                         success: function (result) {
-                            //{"id":16,"exerciseId":25,"exercise":{"id":25,"name":"Гиперэкстензия"},"trainingId":1,"approach":3,"repetition":10,"weigth":10}
+                            //{"id":25,"name":"Гиперэкстензия"}
                             var tbody = document.getElementById("exercise");
                             var row = tbody.insertRow(tbody.rows.lenth);
-                            var exercise = result;
+                            var exerciseData = result;
                             var hidden = row.insertCell(0);
-                            hidden.setAttribute("style", "display: none");
-                            hidden.innerHTML = String(exercise.id);
+                            hidden.innerHTML = String(exerciseData.id);
                             var name = row.insertCell(1);
-                            name.innerHTML = String(exercise.exercise.name);
-                            var approach = row.insertCell(2);
-                            approach.innerHTML = String(exercise.approach);
-                            var repetition = row.insertCell(3);
-                            repetition.innerHTML = String(exercise.repetition);
-                            var weigth = row.insertCell(4);
-                            weigth.innerHTML = String(exercise.weigth);
-                            var icon = row.insertCell(5);
+                            name.innerHTML = String(exerciseData.name);
+                            var icon = row.insertCell(2);
                             icon.setAttribute("style", "text-align: right;");
                             icon.innerHTML = "<span style='cursor: pointer;font-size: 20px; color: red;' class='glyphicon glyphicon-remove'" +
-                                "aria-hidden='true' onclick='del(" + String(exercise.id) + ")'/>";
+                                "aria-hidden='true' onclick='del(" + String(exerciseData.id) + ")'/>";
                         }
                 });
             }
 
-            $('#datepicker').datepicker({
-                format: "yyyy-mm-dd",
-                language: "ru",
-                autoclose: true
-            });
         </script>
     </body>
 </html>

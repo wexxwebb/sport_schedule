@@ -30,12 +30,26 @@
     </head>
     <body>
         <div class="container">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" class="active">
+                    <a href="${pageContext.request.contextPath}/dashboard"><span class="glyphicon glyphicon-home"></span></a>
+                </li>
+                <li role="presentation">
+                    <a href="${pageContext.request.contextPath}/exerciseData">Список упражнений</a>
+                </li>
+                <li role="presentation">
+                    <a href="${pageContext.request.contextPath}/logout">Выйти</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
             <div class="row">
                 <h3 class="h-main">Список тренировок</h3>
             </div>
             <div class="row" style="margin-top: 30px">
                 <div class="col-md-4 col-lg-4">
-                    <table id="training" class="table table-hover">
+                    <h4 class="h-main">Прошедшие тренировки</h4>
+                    <table id="pastTraining" class="table table-hover">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -45,23 +59,86 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <c:forEach var="training" items="${trainingList}">
+                        <c:forEach var="training" items="${pastTrainingList}">
                                 <tr>
                                     <td>${training.id}</td>
                                     <td>${training.trainingDate}</td>
                                     <td>
                                         <a href="${pageContext.request.contextPath}/trainingConsist?trainingId=${training.id}">
-                                            <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"/>
+                                            <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"></span>
                                         </a>
                                     </td>
                                     <td style="text-align: right;">
                                         <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
-                                              aria-hidden="true" onclick="del(${training.id})"/>
+                                              aria-hidden="true" onclick="del(${training.id}, 'pastTraining')"></span>
                                     </td>
                                 </tr>
                             </c:forEach>
                         </tbody>
                     </table>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h4 class="h-main">Сегодня</h4>
+                    <table id="todayTraining" class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Дата</th>
+                            <th style="width: 10%"></th>
+                            <th style="width: 10%;"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:forEach var="training" items="${todayTrainingList}">
+                            <tr>
+                                <td>${training.id}</td>
+                                <td>${training.trainingDate}</td>
+                                <td>
+                                    <a href="${pageContext.request.contextPath}/trainingConsist?trainingId=${training.id}">
+                                        <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"></span>
+                                    </a>
+                                </td>
+                                <td style="text-align: right;">
+                                        <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
+                                              aria-hidden="true" onclick="del(${training.id}, 'todayTraining')"></span>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h4 class="h-main">Запланированные тренировки</h4>
+                    <table id="futureTraining" class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Дата</th>
+                            <th style="width: 10%"></th>
+                            <th style="width: 10%;"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:forEach var="training" items="${futureTrainingList}">
+                            <tr>
+                                <td>${training.id}</td>
+                                <td>${training.trainingDate}</td>
+                                <td>
+                                    <a href="${pageContext.request.contextPath}/trainingConsist?trainingId=${training.id}">
+                                        <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"></span>
+                                    </a>
+                                </td>
+                                <td style="text-align: right;">
+                                        <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
+                                              aria-hidden="true" onclick="del(${training.id}, 'futureTraining')"></span>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <div>
                     <div style="height: 30px;"></div>
                     <h4 style="text-align: center">Добавить тренировку</h4>
                     <div style="height: 25px;"></div>
@@ -72,12 +149,12 @@
                                     <form>
                                         <input name="date_training" id="datepicker" class="form-control iput-auth"
                                                data-provide="datepicker" style="text-align: center; display: inline-block"
-                                               placeholder="Дата тренировки" value="${requestScope.birthday}">
+                                               placeholder="Дата тренировки" >
                                         <input id="user_id" name="user_id" value="1" type="hidden">
                                     </form>
                                 </td>
                                 <td style="text-align: right; width: 20%" >
-                                    <span style="cursor: pointer; font-size: 20px; color: limegreen; position: relative; top: 6px;" class="glyphicon glyphicon-plus" onclick="addTraining()"/>
+                                    <span style="cursor: pointer; font-size: 20px; color: limegreen; position: relative; top: 6px;" class="glyphicon glyphicon-plus" onclick="addTraining()"></span>
                                 </td>
                             </tr>
                         </table>
@@ -94,15 +171,16 @@
         <script src="${pageContext.request.contextPath}/style/datepicker/js/bootstrap-datepicker.js"></script>
         <script src="${pageContext.request.contextPath}/style/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
 
+<%--suppress EqualityComparisonWithCoercionJS --%>
         <script>
 
-            function del(trainingId) {
+            function del(trainingId, timePeriod) {
                 $.ajax({url: "${pageContext.request.contextPath}/delTraining",
                         method: "POST",
                         data: {id: trainingId},
                         success: function (result) {
                             if (result == 1) {
-                                var tbody = document.getElementById("training");
+                                var tbody = document.getElementById(timePeriod);
                                 for (var i = 1; i < tbody.rows.length; i++) {
                                     if (tbody.rows[i].cells[0].textContent == trainingId) {
                                         tbody.deleteRow(i);
@@ -122,20 +200,36 @@
                         method: "POST",
                         data: {user_id: 1, date: document.getElementById("datepicker").value},
                         success: function (result) {
+                            var currentDay = new Date();
+                            currentDay.setHours(0, 0, 0, 0);
+                            var newDate = new Date(document.getElementById("datepicker").value);
+                            newDate.setHours(0, 0, 0, 0);
+                            var tbody;
+                            if (newDate.getTime() < currentDay.getTime()) {
+                                tbody = document.getElementById("pastTraining");
+                            }
+                            if (newDate.getTime() == currentDay.getTime()) {
+                                tbody = document.getElementById("todayTraining");
+                            }
+                            if (newDate.getTime() > currentDay.getTime()) {
+                                tbody = document.getElementById("futureTraining");
+                            }
                             //alert(result);
-                            var tbody = document.getElementById("training");
+
                             var row = tbody.insertRow(tbody.rows.lenth);
-                            var training = JSON.parse(result);
+                            var training = result;
                             var id = row.insertCell(0);
                             id.innerHTML = String(training.id);
                             var date = row.insertCell(1);
                             date.innerHTML = String(training.trainingDate);
-                            var create_date = row.insertCell(2);
-                            create_date.innerHTML = String(training.createDate);
-                            var icon = row.insertCell(3);
-                            icon.setAttribute("style", "text-align: right;");
-                            icon.innerHTML = "<span style=' cursor: pointer; font-size: 20px; color: red;' class='glyphicon glyphicon-remove'" +
-                                "aria-hidden='true' onclick='del(" + String(training.id) + ")'/>";
+                            var open_icon = row.insertCell(2);
+                            open_icon.innerHTML = "<a href='${pageContext.request.contextPath}/trainingConsist?trainingId=" + String(training.id) + "'>" +
+                                " <span style='color: yellow; font-size: 20px;' class='glyphicon glyphicon-edit'/> " +
+                                "</a>";
+                            var del_icon = row.insertCell(3);
+                            del_icon.setAttribute("style", "text-align: right;");
+                            del_icon.innerHTML = "<span style=' cursor: pointer; font-size: 20px; color: red;' class='glyphicon glyphicon-remove'" +
+                                "aria-hidden='true' onclick='del(" + String(training.id) + ")'></span>";
                         }
                 });
             }
@@ -143,7 +237,8 @@
             $('#datepicker').datepicker({
                 format: "yyyy-mm-dd",
                 language: "ru",
-                autoclose: true
+                autoclose: true,
+                todayBtn: "linked"
             });
         </script>
     </body>

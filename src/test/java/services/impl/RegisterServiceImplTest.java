@@ -5,7 +5,6 @@ import common.Result;
 import db.dao.user.UserDataDAO;
 import db.dao.user.UserDataDAOImpl;
 import db.pojo.UserData;
-import db.connectionManager.ConnectionManagerImpl;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
@@ -34,7 +33,7 @@ public class RegisterServiceImplTest {
         );
 
         RegisterServiceImpl registerServiceImpl = new RegisterServiceImpl();
-        registerServiceImpl.setUserDataDAO(userDataDAO);
+        //registerServiceImpl.setUserDataDAO(userDataDAO);
 
         try {
 

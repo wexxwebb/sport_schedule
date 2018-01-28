@@ -3,9 +3,11 @@ package db.dao.sex;
 import common.InsertType;
 import common.Log;
 import common.Result;
+import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Sex;
 import db.connectionManager.ConnectionManager;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,7 +16,7 @@ import java.util.List;
 import static common.InsertType.NEW;
 import static common.InsertType.RESTORE;
 
-
+@Component
 public class SexDAOImpl implements SexDAO {
 
     private Logger logger = Logger.getLogger(SexDAOImpl.class);
@@ -23,6 +25,10 @@ public class SexDAOImpl implements SexDAO {
 
     public SexDAOImpl(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
+    }
+
+    public SexDAOImpl() {
+        connectionManager = ConnectionManagerImpl.getInstance();
     }
 
     @Override
