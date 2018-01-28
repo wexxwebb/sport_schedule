@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="db.xml.fileFounder.FileFounderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T09:51:30" hostname="sa-W65-67SF" time="1.951">
+<testsuite name="db.xml.fileFounder.FileFounderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T15:38:44" hostname="sa-W65-67SF" time="0.021">
   <properties/>
-  <testcase name="getResourcesList" classname="db.xml.fileFounder.FileFounderTest" time="1.951"/>
+  <testcase name="getResourcesList" classname="db.xml.fileFounder.FileFounderTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

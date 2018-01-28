@@ -1,6 +1,5 @@
-package controller_spring;
+package controller;
 
-import common.Result;
 import db.pojo.ExerciseData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

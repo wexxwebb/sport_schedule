@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="db.dao.exercise.ExerciseDAOImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T09:51:37" hostname="sa-W65-67SF" time="0.0">
+<testsuite name="db.dao.exercise.ExerciseDAOImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T15:38:44" hostname="sa-W65-67SF" time="0.001">
   <properties/>
-  <testcase name="getByTrainingId" classname="db.dao.exercise.ExerciseDAOImplTest" time="0.0"/>
+  <testcase name="getByTrainingId" classname="db.dao.exercise.ExerciseDAOImplTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

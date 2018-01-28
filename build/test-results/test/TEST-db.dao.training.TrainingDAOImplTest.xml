@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="db.dao.training.TrainingDAOImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T09:51:37" hostname="sa-W65-67SF" time="0.892">
+<testsuite name="db.dao.training.TrainingDAOImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T15:38:44" hostname="sa-W65-67SF" time="0.228">
   <properties/>
-  <testcase name="getAll" classname="db.dao.training.TrainingDAOImplTest" time="0.892"/>
+  <testcase name="getAll" classname="db.dao.training.TrainingDAOImplTest" time="0.228"/>
   <system-out><![CDATA[{"id": 25, "userId": 25, "createDate": "2018-01-19", "trainingDate": "2018-01-30"}
 {"id": 1, "userId": 1, "createDate": "2018-01-26", "trainingDate": "2018-01-18"}
 {"id": 23, "userId": 1, "createDate": "2018-01-27", "trainingDate": "2018-01-18"}
 {"id": 24, "userId": 1, "createDate": "2018-01-27", "trainingDate": "2012-12-21"}
 {"id": 26, "userId": 1, "createDate": "2018-01-27", "trainingDate": "2018-01-31"}
 {"id": 27, "userId": 1, "createDate": "2018-01-27", "trainingDate": "2018-01-12"}
-{"id": 28, "userId": 1, "createDate": "2018-01-27", "trainingDate": "2018-01-20"}
 {"id": 30, "userId": 1, "createDate": "2018-01-27", "trainingDate": "2018-01-12"}
 {"id": 31, "userId": 1, "createDate": "2018-01-28", "trainingDate": "2018-01-28"}
+{"id": 32, "userId": 1, "createDate": "2018-01-28", "trainingDate": "2018-02-28"}
+{"id": 36, "userId": 1, "createDate": "2018-01-28", "trainingDate": "2018-01-31"}
+{"id": 43, "userId": 1, "createDate": "2018-01-28", "trainingDate": "2018-01-11"}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

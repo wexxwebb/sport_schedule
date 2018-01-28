@@ -1,4 +1,4 @@
-package controller_spring;
+package controller;
 
 import common.Result;
 import org.springframework.beans.factory.annotation.Autowired;

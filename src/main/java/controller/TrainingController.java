@@ -1,6 +1,5 @@
-package controller_spring;
+package controller;
 
-import com.google.gson.Gson;
 import common.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

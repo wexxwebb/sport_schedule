@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="services.impl.RegisterServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T09:51:38" hostname="sa-W65-67SF" time="0.349">
+<testsuite name="services.impl.RegisterServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-28T15:38:44" hostname="sa-W65-67SF" time="0.011">
   <properties/>
-  <testcase name="checkData" classname="services.impl.RegisterServiceImplTest" time="0.349"/>
+  <testcase name="checkData" classname="services.impl.RegisterServiceImplTest" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

@@ -35,6 +35,10 @@ public class ExerciseServiseImpl implements ExerciseServise {
         this.exerciseDAO = exerciseDAO;
     }
 
+    public ExerciseServiseImpl() {
+    }
+
+
     @Override
     public Result<String> addExercise(int exerciseId, int trainingId, int approach, int repetition, int weight) {
 

@@ -1,4 +1,4 @@
-package controller_spring;
+package controller;
 
 import common.Result;
 import db.pojo.Exercise;
@@ -13,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 import services.ExerciseServise;
 import services.TrainingService;
 
-import java.io.PipedOutputStream;
 import java.util.List;
 
 @Controller
@@ -23,7 +22,7 @@ public class ExerciseController {
     private ExerciseServise exerciseServise;
 
     @Autowired
-    TrainingService trainingService;
+    private TrainingService trainingService;
 
     public ExerciseServise getExerciseServise() {
         return exerciseServise;
