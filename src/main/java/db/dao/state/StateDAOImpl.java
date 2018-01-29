@@ -30,9 +30,8 @@ public class StateDAOImpl implements StateDAO {
                 Statement statement = connection.createStatement();
 
                 ResultSet result = statement.executeQuery(
-                        "SELECT " +
-                                "id, " +
-                                "state " +
+                        "SELECT id, state," +
+                                "enabled, role " +
                                 "FROM state "
                 );
 
@@ -40,7 +39,9 @@ public class StateDAOImpl implements StateDAO {
                 while (result.next()) {
                     State state = new State(
                             result.getInt("id"),
-                            result.getString("state")
+                            result.getString("state"),
+                            result.getBoolean("enabled"),
+                            result.getString("role")
                     );
                     sexList.add(state);
                 }

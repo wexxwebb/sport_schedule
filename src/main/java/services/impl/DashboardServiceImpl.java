@@ -1,11 +1,8 @@
 package services.impl;
 
 import common.Result;
-import db.connectionManager.ConnectionManager;
 import db.dao.training.TrainingDAO;
-import db.dao.training.TrainingDAOImpl;
 import db.pojo.Training;
-import db.connectionManager.ConnectionManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import services.DashboardService;

@@ -1,13 +1,10 @@
 package services.impl;
 
 import common.Result;
-import db.connectionManager.ConnectionManagerImpl;
 import db.dao.user.UserDataDAO;
 import db.dao.user.UserDataDAOImpl;
 import db.pojo.UserData;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class LoginServiceImplTest {
 

@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-//@Component
+@Component
 public class ConnectionManagerImpl implements ConnectionManager {
 
     private ConnectionManagerImpl() {

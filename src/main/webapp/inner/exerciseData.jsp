@@ -33,10 +33,10 @@
         <div class="container">
             <ul class="nav nav-tabs nav-justified">
                 <li role="presentation">
-                    <a href="${pageContext.request.contextPath}/dashboard"><span class="glyphicon glyphicon-home"></span></a>
+                    <a href="${pageContext.request.contextPath}/inner/dashboard"><span class="glyphicon glyphicon-home"></span></a>
                 </li>
                 <li role="presentation" class="active">
-                    <a href="${pageContext.request.contextPath}/exerciseData">Список упражнений</a>
+                    <a href="${pageContext.request.contextPath}/inner/exerciseData">Список упражнений</a>
                 </li>
                 <li role="presentation">
                     <a href="${pageContext.request.contextPath}/logout">Выйти</a>
@@ -109,7 +109,7 @@
         <script>
 
             function del(exerciseDataId) {
-                $.ajax({url: "${pageContext.request.contextPath}/delExerciseData",
+                $.ajax({url: "${pageContext.request.contextPath}/inner/delExerciseData",
                         method: "POST",
                         data: {id: exerciseDataId},
                         success: function (result) {
@@ -130,7 +130,7 @@
             }
 
             function addExcerciseData() {
-                $.ajax({url: "${pageContext.request.contextPath}/addExerciseData",
+                $.ajax({url: "${pageContext.request.contextPath}/inner/addExerciseData",
                         method: "POST",
                         data: { name: $('#exerciseDataName').val()
                             },

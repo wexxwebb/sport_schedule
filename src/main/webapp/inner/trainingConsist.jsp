@@ -33,10 +33,10 @@
         <div class="container">
             <ul class="nav nav-tabs nav-justified">
                 <li role="presentation">
-                    <a href="${pageContext.request.contextPath}/dashboard"><span class="glyphicon glyphicon-home"></span></a>
+                    <a href="${pageContext.request.contextPath}/inner/dashboard"><span class="glyphicon glyphicon-home"></span></a>
                 </li>
                 <li role="presentation">
-                    <a href="${pageContext.request.contextPath}/exerciseData">Список упражнений</a>
+                    <a href="${pageContext.request.contextPath}/inner/exerciseData">Список упражнений</a>
                 </li>
                 <li role="presentation">
                     <a href="${pageContext.request.contextPath}/logout">Выйти</a>
@@ -133,7 +133,7 @@
 
         <script>
             $('#searchExercise').autocomplete({
-                source: "${pageContext.request.contextPath}/searchExerciseData", // url-адрес
+                source: "${pageContext.request.contextPath}/inner/searchExerciseData", // url-адрес
                 minLength: 1,
                 select: function(event, ui) {
                     $('#exercise_id').val(ui.item.id);
@@ -144,7 +144,7 @@
         <script>
 
             function del(exerciseId) {
-                $.ajax({url: "${pageContext.request.contextPath}/delExercise",
+                $.ajax({url: "${pageContext.request.contextPath}/inner/delExercise",
                         method: "POST",
                         data: {id: exerciseId},
                         success: function (result) {
@@ -165,7 +165,7 @@
             }
 
             function addExcercise() {
-                $.ajax({url: "${pageContext.request.contextPath}/addExercise",
+                $.ajax({url: "${pageContext.request.contextPath}/inner/addExercise",
                         method: "POST",
                         data: { exercise_id: $('#exercise_id').val(),
                                 training_id: ${training.id},

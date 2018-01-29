@@ -37,7 +37,7 @@
         <div class="row" style="margin-top: 125px;">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div style="width: 250px; margin: auto">
-                    <form method="post" action="${pageContext.request.contextPath}/auth">
+                    <form method="post" action="${pageContext.request.contextPath}/login">
                         <div class="log-in-group">
                             <div class="form-group" style="display: inline-block">
                                 <input type="login" name="login" class="form-control iput-auth" placeholder="Имя пользователя">

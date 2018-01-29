@@ -9,8 +9,6 @@ import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 
 import static common.InsertType.RESTORE;
 

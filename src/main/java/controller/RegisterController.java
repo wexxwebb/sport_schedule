@@ -24,7 +24,7 @@ public class RegisterController {
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView getRegister() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("/register");
+        modelAndView.setViewName("public/register");
         modelAndView.addObject("sexList", sexListService.getSexList());
         return modelAndView;
     }
@@ -46,7 +46,7 @@ public class RegisterController {
             modelAndView.setViewName("/login");
             return modelAndView;
         }
-        modelAndView.setViewName("/register");
+        modelAndView.setViewName("public/register");
         modelAndView.addAllObjects(result.get());
         modelAndView.addObject("sexList", sexListService.getSexList());
         return modelAndView;

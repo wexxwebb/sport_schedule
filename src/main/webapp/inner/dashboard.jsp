@@ -32,10 +32,10 @@
         <div class="container">
             <ul class="nav nav-tabs nav-justified">
                 <li role="presentation" class="active">
-                    <a href="${pageContext.request.contextPath}/dashboard"><span class="glyphicon glyphicon-home"></span></a>
+                    <a href="${pageContext.request.contextPath}/inner/dashboard"><span class="glyphicon glyphicon-home"></span></a>
                 </li>
                 <li role="presentation">
-                    <a href="${pageContext.request.contextPath}/exerciseData">Список упражнений</a>
+                    <a href="${pageContext.request.contextPath}/inner/exerciseData">Список упражнений</a>
                 </li>
                 <li role="presentation">
                     <a href="${pageContext.request.contextPath}/logout">Выйти</a>
@@ -64,13 +64,13 @@
                                     <td>${training.id}</td>
                                     <td>${training.trainingDate}</td>
                                     <td>
-                                        <a href="${pageContext.request.contextPath}/trainingConsist?trainingId=${training.id}">
+                                        <a href="${pageContext.request.contextPath}/inner/trainingConsist?trainingId=${training.id}">
                                             <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"></span>
                                         </a>
                                     </td>
                                     <td style="text-align: right;">
                                         <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
-                                              aria-hidden="true" onclick="del(${training.id}, 'pastTraining')"></span>
+                                              aria-hidden="true" onclick="del(${training.id}, 0)"></span>
                                     </td>
                                 </tr>
                             </c:forEach>
@@ -94,13 +94,13 @@
                                 <td>${training.id}</td>
                                 <td>${training.trainingDate}</td>
                                 <td>
-                                    <a href="${pageContext.request.contextPath}/trainingConsist?trainingId=${training.id}">
+                                    <a href="${pageContext.request.contextPath}/inner/trainingConsist?trainingId=${training.id}">
                                         <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"></span>
                                     </a>
                                 </td>
                                 <td style="text-align: right;">
                                         <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
-                                              aria-hidden="true" onclick="del(${training.id}, 'todayTraining')"></span>
+                                              aria-hidden="true" onclick="del(${training.id}, 1)"></span>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -124,13 +124,13 @@
                                 <td>${training.id}</td>
                                 <td>${training.trainingDate}</td>
                                 <td>
-                                    <a href="${pageContext.request.contextPath}/trainingConsist?trainingId=${training.id}">
+                                    <a href="${pageContext.request.contextPath}/inner/trainingConsist?trainingId=${training.id}">
                                         <span style="color: yellow; font-size: 20px;" class="glyphicon glyphicon-edit"></span>
                                     </a>
                                 </td>
                                 <td style="text-align: right;">
                                         <span style="cursor: pointer; font-size: 20px; color: red;" class="glyphicon glyphicon-remove"
-                                              aria-hidden="true" onclick="del(${training.id}, 'futureTraining')"></span>
+                                              aria-hidden="true" onclick="del(${training.id}, 2)"></span>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -175,12 +175,17 @@
         <script>
 
             function del(trainingId, timePeriod) {
-                $.ajax({url: "${pageContext.request.contextPath}/delTraining",
+                $.ajax({url: "${pageContext.request.contextPath}/inner/delTraining",
                         method: "POST",
                         data: {id: trainingId},
                         success: function (result) {
                             if (result == 1) {
-                                var tbody = document.getElementById(timePeriod);
+                                var tbody;
+                                switch (timePeriod) {
+                                    case 0: tbody = document.getElementById('pastTraining'); break;
+                                    case 1: tbody = document.getElementById('todayTraining'); break;
+                                    case 2: tbody = document.getElementById('futureTraining'); break;
+                                }
                                 for (var i = 1; i < tbody.rows.length; i++) {
                                     if (tbody.rows[i].cells[0].textContent == trainingId) {
                                         tbody.deleteRow(i);
@@ -196,7 +201,7 @@
             }
 
             function addTraining() {
-                $.ajax({url: "${pageContext.request.contextPath}/addTraining",
+                $.ajax({url: "${pageContext.request.contextPath}/inner/addTraining",
                         method: "POST",
                         data: {user_id: 1, date: document.getElementById("datepicker").value},
                         success: function (result) {
@@ -205,14 +210,18 @@
                             var newDate = new Date(document.getElementById("datepicker").value);
                             newDate.setHours(0, 0, 0, 0);
                             var tbody;
+                            var cur_table;
                             if (newDate.getTime() < currentDay.getTime()) {
                                 tbody = document.getElementById("pastTraining");
+                                cur_table = 0;
                             }
                             if (newDate.getTime() == currentDay.getTime()) {
                                 tbody = document.getElementById("todayTraining");
+                                cur_table = 1;
                             }
                             if (newDate.getTime() > currentDay.getTime()) {
                                 tbody = document.getElementById("futureTraining");
+                                cur_table = 2;
                             }
                             //alert(result);
 
@@ -223,13 +232,13 @@
                             var date = row.insertCell(1);
                             date.innerHTML = String(training.trainingDate);
                             var open_icon = row.insertCell(2);
-                            open_icon.innerHTML = "<a href='${pageContext.request.contextPath}/trainingConsist?trainingId=" + String(training.id) + "'>" +
+                            open_icon.innerHTML = "<a href='${pageContext.request.contextPath}/inner/trainingConsist?trainingId=" + String(training.id) + "'>" +
                                 " <span style='color: yellow; font-size: 20px;' class='glyphicon glyphicon-edit'/> " +
                                 "</a>";
                             var del_icon = row.insertCell(3);
                             del_icon.setAttribute("style", "text-align: right;");
                             del_icon.innerHTML = "<span style=' cursor: pointer; font-size: 20px; color: red;' class='glyphicon glyphicon-remove'" +
-                                "aria-hidden='true' onclick='del(" + String(training.id) + ")'></span>";
+                                "aria-hidden='true' onclick='del(" + String(training.id) + ", " + String(cur_table) + ")'></span>";
                         }
                 });
             }

@@ -40,7 +40,7 @@ public class ExerciseController {
         this.trainingService = trainingService;
     }
 
-    @RequestMapping(value = "/trainingConsist", method = RequestMethod.GET)
+    @RequestMapping(value = "/inner/trainingConsist", method = RequestMethod.GET)
     public ModelAndView getTrainingConsist(@RequestParam(value = "trainingId") int trainingId) {
 
         ModelAndView modelAndView = new ModelAndView();
@@ -64,7 +64,7 @@ public class ExerciseController {
         }
     }
 
-    @RequestMapping(value = "/addExercise", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/addExercise", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addExercise(@RequestParam(value = "exercise_id") int exerciseid,
                               @RequestParam(value = "training_id") int trainingId,
@@ -82,7 +82,7 @@ public class ExerciseController {
         }
     }
 
-    @RequestMapping(value = "/delExercise", method = RequestMethod.POST)
+    @RequestMapping(value = "/inner/delExercise", method = RequestMethod.POST)
     @ResponseBody
     public String delExercise(@RequestParam(value = "id") int id) {
         Result<String> result = exerciseServise.delExercise(id);

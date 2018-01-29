@@ -23,7 +23,7 @@ public class TrainingController {
         this.trainingService = trainingService;
     }
 
-    @RequestMapping(value = "/addTraining", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "inner/addTraining", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addTraining(@RequestParam(value = "user_id") int userId,
                               @RequestParam(value = "date") String date) {
@@ -35,7 +35,7 @@ public class TrainingController {
         }
     }
 
-    @RequestMapping(value = "/delTraining", method = RequestMethod.POST)
+    @RequestMapping(value = "inner/delTraining", method = RequestMethod.POST)
     @ResponseBody
     public String delTraining(@RequestParam(value = "id") int id) {
 

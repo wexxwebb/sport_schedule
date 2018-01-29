@@ -26,14 +26,14 @@ public class ExerciseDataController {
         this.exerciseDataService = exerciseDataService;
     }
 
-    @RequestMapping(value = "/searchExerciseData", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/searchExerciseData", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String searchExerciseData(@RequestParam(value = "term") String term) {
         return exerciseDataService.searchExerciseData(term);
     }
 
 
-    @RequestMapping(value = "/exerciseData", method = RequestMethod.GET)
+    @RequestMapping(value = "/inner/exerciseData", method = RequestMethod.GET)
     public ModelAndView getExerciseDataList() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/exerciseData");
@@ -46,13 +46,13 @@ public class ExerciseDataController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/addExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/addExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addExerciseData(@RequestParam(value = "name") String name) {
         return exerciseDataService.addExerciseData(name);
     }
 
-    @RequestMapping(value = "/delExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/delExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String delExerciseData(@RequestParam(value = "id") int id) {
         return exerciseDataService.delExerciseData(id);

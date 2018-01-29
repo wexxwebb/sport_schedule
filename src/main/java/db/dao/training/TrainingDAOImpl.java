@@ -8,7 +8,6 @@ import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Training;
 import db.connectionManager.ConnectionManager;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;

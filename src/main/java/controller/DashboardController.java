@@ -24,7 +24,7 @@ public class DashboardController {
         this.dashboardService = dashboardService;
     }
 
-    @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+    @RequestMapping(value = "/inner/dashboard", method = RequestMethod.GET)
     public ModelAndView getDashboard() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/dashboard");

@@ -1,17 +1,12 @@
 package db.xml.xmlWrapper;
 
-import db.connectionManager.ConnectionManagerImpl;
 import db.dao.user.UserDataDAO;
 import db.dao.user.UserDataDAOImpl;
 import db.pojo.UserData;
 import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 
 import static common.InsertType.RESTORE;
 

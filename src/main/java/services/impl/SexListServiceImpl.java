@@ -1,11 +1,8 @@
 package services.impl;
 
 import db.dao.sex.SexDAO;
-import db.dao.sex.SexDAOImpl;
 import db.pojo.Sex;
-import db.connectionManager.ConnectionManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import services.SexListService;
 
