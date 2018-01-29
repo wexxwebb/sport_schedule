@@ -4,6 +4,7 @@ import common.InsertType;
 import common.Result;
 import db.pojo.State;
 import db.connectionManager.ConnectionManager;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,16 +18,26 @@ public class StateDAOImpl implements StateDAO {
 
     private ConnectionManager connectionManager;
 
-    public StateDAOImpl(ConnectionManager connectionManager) {
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    @Autowired
+    public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
+    }
+
+    public StateDAOImpl() {
+
     }
 
     @Override
     public Result<List<State>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
 
                 ResultSet result = statement.executeQuery(
@@ -51,6 +62,8 @@ public class StateDAOImpl implements StateDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -58,9 +71,10 @@ public class StateDAOImpl implements StateDAO {
     @Override
     public Result<String> insert(State state, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
@@ -85,6 +99,8 @@ public class StateDAOImpl implements StateDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

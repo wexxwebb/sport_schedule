@@ -33,19 +33,19 @@ public class Unmarshalling {
         DataBaseObject dataBaseObject = (DataBaseObject) tableUnmarshaller.call().getObject();
 
         SexDAO sexDAO =
-                new SexDAOImpl(ConnectionManagerImpl.getInstance());
+                new SexDAOImpl();
         dataBaseObject.getSexList().forEach(
                 sex -> sexDAO.insert(sex, RESTORE)
         );
 
         PersonDAO personDAO =
-                new PersonDAOImpl(ConnectionManagerImpl.getInstance());
+                new PersonDAOImpl();
         dataBaseObject.getPersonList().forEach(
                 person -> personDAO.insert(person, RESTORE)
         );
 
         StateDAO stateDAO =
-                new StateDAOImpl(ConnectionManagerImpl.getInstance());
+                new StateDAOImpl();
         dataBaseObject.getStateList().forEach(
                 state -> stateDAO.insert(state, RESTORE)
         );
@@ -57,7 +57,7 @@ public class Unmarshalling {
         );
 
         AdminDAO adminDAO =
-                new AdminDAOImpl(ConnectionManagerImpl.getInstance());
+                new AdminDAOImpl();
         dataBaseObject.getAdminDataList().forEach(
                 adminData -> adminDAO.insert(adminData, RESTORE)
         );
@@ -69,7 +69,7 @@ public class Unmarshalling {
         );
 
         ExerciseDAO exerciseDAO =
-                new ExerciseDAOImpl(ConnectionManagerImpl.getInstance());
+                new ExerciseDAOImpl();
         dataBaseObject.getExerciseList().forEach(
                 exercise -> exerciseDAO.insert(exercise, RESTORE)
         );

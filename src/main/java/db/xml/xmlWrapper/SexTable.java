@@ -21,7 +21,7 @@ public class SexTable extends Table {
     private List<Sex> sexList;
 
     @XmlTransient
-    private SexDAO sexDAO = new SexDAOImpl(ConnectionManagerImpl.getInstance());
+    private SexDAO sexDAO = new SexDAOImpl();
 
     @XmlTransient
     private Logger logger = Logger.getLogger(SexTable.class);

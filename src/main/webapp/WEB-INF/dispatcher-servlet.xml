@@ -20,8 +20,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean class="db.connectionManager.ConnectionManagerImpl"/>
-
     <bean class="com.google.gson.Gson"/>
 
     <mvc:annotation-driven/>

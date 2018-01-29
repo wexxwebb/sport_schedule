@@ -8,6 +8,7 @@ import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Training;
 import db.connectionManager.ConnectionManager;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -22,8 +23,16 @@ public class TrainingDAOImpl implements TrainingDAO {
 
     private static Logger logger = Logger.getLogger(TrainingDAOImpl.class);
 
-    //@Autowired
-    private ConnectionManager connectionManager = ConnectionManagerImpl.getInstance();
+    private ConnectionManager connectionManager;
+
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    @Autowired
+    public void setConnectionManager(ConnectionManager connectionManager) {
+        this.connectionManager = connectionManager;
+    }
 
     public TrainingDAOImpl() {
     }
@@ -41,9 +50,10 @@ public class TrainingDAOImpl implements TrainingDAO {
     @Override
     public Result<List<Training>> getAll(TimePeriod timePeriod) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(
                         "SELECT id," +
@@ -70,6 +80,8 @@ public class TrainingDAOImpl implements TrainingDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -77,9 +89,10 @@ public class TrainingDAOImpl implements TrainingDAO {
     @Override
     public Result<Training> getByid(int id) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(
                         "SELECT id," +
                                 "user_id, " +
@@ -111,6 +124,8 @@ public class TrainingDAOImpl implements TrainingDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, "retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -119,8 +134,9 @@ public class TrainingDAOImpl implements TrainingDAO {
     public Result<Training> insert(Training training, InsertType insertType) {
         int retry = 0;
         while (true) {
+            Connection connection = null;
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
@@ -159,6 +175,8 @@ public class TrainingDAOImpl implements TrainingDAO {
                 retry++;
                 logger.error(new Log(e, training, "retry = " + retry));
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -166,9 +184,10 @@ public class TrainingDAOImpl implements TrainingDAO {
     @Override
     public Result<String> delete(int id) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(
                             "DELETE FROM training WHERE id = ?"
                     );
@@ -185,6 +204,8 @@ public class TrainingDAOImpl implements TrainingDAO {
                 retry++;
                 logger.error(new Log(e, id, "retry = " + retry));
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

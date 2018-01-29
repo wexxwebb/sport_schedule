@@ -7,6 +7,7 @@ import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Sex;
 import db.connectionManager.ConnectionManager;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -23,20 +24,26 @@ public class SexDAOImpl implements SexDAO {
 
     private ConnectionManager connectionManager;
 
-    public SexDAOImpl(ConnectionManager connectionManager) {
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    @Autowired
+    public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
     }
 
     public SexDAOImpl() {
-        connectionManager = ConnectionManagerImpl.getInstance();
+
     }
 
     @Override
     public Result<List<Sex>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
 
                 ResultSet result = statement.executeQuery(
@@ -60,6 +67,8 @@ public class SexDAOImpl implements SexDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -67,9 +76,10 @@ public class SexDAOImpl implements SexDAO {
     @Override
     public Result<String> insert(Sex sex, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
@@ -97,6 +107,8 @@ public class SexDAOImpl implements SexDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, sex, "retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

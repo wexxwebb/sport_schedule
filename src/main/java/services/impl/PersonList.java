@@ -11,15 +11,13 @@ import java.util.List;
 
 public class PersonList {
 
-    private ConnectionManager connectionManager;
-
     public PersonList() {
-        this.connectionManager = ConnectionManagerImpl.getInstance();
+
     }
 
     public List<Person> getPersonList() {
         PersonDAO personDAO =
-                new PersonDAOImpl(connectionManager);
+                new PersonDAOImpl();
         Result<List<Person>> result;
         if ((result = personDAO.getAll()).isSuccess()) {
             return result.get();

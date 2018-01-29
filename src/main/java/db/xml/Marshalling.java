@@ -44,7 +44,7 @@ public class Marshalling {
 
 
         SexDAO sexDAO =
-                new SexDAOImpl(ConnectionManagerImpl.getInstance());
+                new SexDAOImpl();
         Table sexTable = new SexTable(sexDAO.getAll().get());
         sexTable.addListener("UserDataTable");
         threadStart(sexTable, execService, futureList);

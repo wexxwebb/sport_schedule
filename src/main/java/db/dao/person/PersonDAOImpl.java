@@ -6,6 +6,7 @@ import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Person;
 import db.pojo.Sex;
 import db.connectionManager.ConnectionManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -20,20 +21,26 @@ public class PersonDAOImpl implements PersonDAO {
 
     private ConnectionManager connectionManager;
 
-    public PersonDAOImpl(ConnectionManager connectionManager) {
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    @Autowired
+    public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
     }
 
     public PersonDAOImpl() {
-        this.connectionManager = ConnectionManagerImpl.getInstance();
+
     }
 
     @Override
     public Result<List<Person>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(
                         "SELECT p.id, " +
@@ -66,6 +73,8 @@ public class PersonDAOImpl implements PersonDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -73,9 +82,10 @@ public class PersonDAOImpl implements PersonDAO {
     @Override
     public Result<Person> insert(Person person, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
@@ -115,6 +125,8 @@ public class PersonDAOImpl implements PersonDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

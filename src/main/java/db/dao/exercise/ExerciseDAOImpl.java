@@ -9,6 +9,7 @@ import db.connectionManager.ConnectionManager;
 import db.pojo.ExerciseData;
 import db.pojo.Training;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -29,20 +30,21 @@ public class ExerciseDAOImpl implements ExerciseDAO {
         return connectionManager;
     }
 
-    public void setConnectionManager() {
-        this.connectionManager = ConnectionManagerImpl.getInstance();
+    @Autowired
+    public void setConnectionManager(ConnectionManager connectionManager) {
+        this.connectionManager = connectionManager;
     }
 
-    public ExerciseDAOImpl(ConnectionManager connectionManager) {
-        this.connectionManager = connectionManager;
+    public ExerciseDAOImpl() {
     }
 
     @Override
     public Result<List<Exercise>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(
                         "SELECT id," +
@@ -72,6 +74,8 @@ public class ExerciseDAOImpl implements ExerciseDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -79,9 +83,10 @@ public class ExerciseDAOImpl implements ExerciseDAO {
     @Override
     public Result<List<Exercise>> getByTrainingId(int trainingId) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(
                         "SELECT e.id, ed.id AS ed_id, e.exercise_id, e.training_id, " +
                                 "t.create_date, t.training_date, t.user_id, " +
@@ -125,8 +130,10 @@ public class ExerciseDAOImpl implements ExerciseDAO {
                 return new Result<>(null, false, "Невозможно соединение с базой данных");
             } catch (SQLException e) {
                 retry++;
-                if (retry > 5) return new Result<>(null, false, "При запросе произошла ошибка");
+                if (retry > 5) return new Result<>(null, false, "При ыполнении запроса произошла ошибка");
                 logger.error(new Log(e, "trainingId = " + trainingId));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -134,11 +141,10 @@ public class ExerciseDAOImpl implements ExerciseDAO {
     @Override
     public Result<Exercise> insert(Exercise exercise, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
-                String sql = null;
-
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
@@ -169,9 +175,7 @@ public class ExerciseDAOImpl implements ExerciseDAO {
                 if (resultSet.next()) {
                     exercise.setId(resultSet.getInt("id"));
                 }
-
                 return new Result<>(exercise, true, "Inserted");
-
             } catch (ClassNotFoundException e) {
                 logger.error(e);
                 return new Result<>(null, false, e.getMessage());
@@ -179,6 +183,8 @@ public class ExerciseDAOImpl implements ExerciseDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, exercise, "retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -186,9 +192,10 @@ public class ExerciseDAOImpl implements ExerciseDAO {
     @Override
     public Result<String> delete(int id) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(
                         "DELETE FROM exercise WHERE id = ?"
                 );
@@ -209,6 +216,8 @@ public class ExerciseDAOImpl implements ExerciseDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, "id = " + id, "retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

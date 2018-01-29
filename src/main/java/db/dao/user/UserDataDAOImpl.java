@@ -7,6 +7,7 @@ import db.connectionManager.ConnectionManager;
 import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.UserData;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -21,23 +22,28 @@ public class UserDataDAOImpl implements UserDataDAO {
 
     private static Logger logger = Logger.getLogger(UserDataDAOImpl.class);
 
-    //@Autowired
-    private ConnectionManager connectionManager = ConnectionManagerImpl.getInstance();
+    private ConnectionManager connectionManager;
 
     public ConnectionManager getConnectionManager() {
         return connectionManager;
     }
 
+    @Autowired
     public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
+    }
+
+    public UserDataDAOImpl() {
+
     }
 
     @Override
     public Result<List<UserData>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(
                         "SELECT id," +
@@ -68,6 +74,8 @@ public class UserDataDAOImpl implements UserDataDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -75,9 +83,10 @@ public class UserDataDAOImpl implements UserDataDAO {
     @Override
     public Result<String> insert(UserData user, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
@@ -117,6 +126,8 @@ public class UserDataDAOImpl implements UserDataDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, user));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -124,9 +135,10 @@ public class UserDataDAOImpl implements UserDataDAO {
     @Override
     public Result<UserData> getById(int id) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(
                         "SELECT id," +
                                 "person_id, " +
@@ -157,6 +169,8 @@ public class UserDataDAOImpl implements UserDataDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -164,9 +178,10 @@ public class UserDataDAOImpl implements UserDataDAO {
     @Override
     public Result<UserData> getByLogin(String login) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(
                         "SELECT id," +
                                 "person_id, " +
@@ -197,6 +212,8 @@ public class UserDataDAOImpl implements UserDataDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

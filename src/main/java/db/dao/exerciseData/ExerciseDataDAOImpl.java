@@ -7,6 +7,7 @@ import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.ExerciseData;
 import db.connectionManager.ConnectionManager;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -27,20 +28,22 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
         return connectionManager;
     }
 
+    @Autowired
     public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
     }
 
     public ExerciseDataDAOImpl() {
-        this.connectionManager = ConnectionManagerImpl.getInstance();
+
     }
 
     @Override
     public Result<List<ExerciseData>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
 
                 ResultSet result = statement.executeQuery(
@@ -64,6 +67,8 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -71,9 +76,10 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     @Override
     public Result<ExerciseData> insert(ExerciseData exerciseDataData, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement ps = null;
                 if (insertType == NEW) {
                     ps = connection.prepareStatement(
@@ -105,16 +111,18 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, exerciseDataData, "retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
 
     public Result<List<ExerciseData>> searchByName(String term) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
-
+                connection = connectionManager.getConnection();
                 PreparedStatement ps = connection.prepareStatement(
                         "SELECT " +
                                 "id, " +
@@ -141,6 +149,8 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -148,9 +158,10 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     @Override
     public Result<ExerciseData> getById(int id) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement ps = connection.prepareStatement(
                         "SELECT " +
                                 "id, " +
@@ -179,6 +190,8 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, "id =" + id, "retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -186,9 +199,10 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     @Override
     public Result<String> delete(int id) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement ps = connection.prepareStatement(
                         "DELETE FROM exercise_data " +
                                 "WHERE id = ?"
@@ -208,6 +222,8 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, "id =" + id, "delete retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -215,9 +231,10 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     @Override
     public Result<ExerciseData> update(ExerciseData exerciseData) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 PreparedStatement ps = connection.prepareStatement(
                         "UPDATE exercise_data SET name = ? WHERE id = ? RETURNING id, name"
                 );
@@ -244,6 +261,8 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
                 logger.error(new Log(e, exerciseData, "update retry = " + retry));
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }

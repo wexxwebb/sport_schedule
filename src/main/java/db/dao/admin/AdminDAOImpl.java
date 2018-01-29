@@ -4,6 +4,7 @@ import common.InsertType;
 import common.Result;
 import db.pojo.AdminData;
 import db.connectionManager.ConnectionManager;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -15,39 +16,47 @@ public class AdminDAOImpl implements AdminDAO {
 
     private ConnectionManager connectionManager;
 
-    public AdminDAOImpl(ConnectionManager connectionManager) {
+    @Autowired
+    public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
+    }
+
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
+    }
+
+    public AdminDAOImpl() {
+
     }
 
     @Override
     public Result<List<AdminData>> getAll() {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 Statement statement = connection.createStatement();
-
                 ResultSet result = statement.executeQuery(
-                        "SELECT " +
-                                "id, " +
-                                "user_id " +
-                                "FROM admin_data"
+                        "SELECT id, user_id FROM admin_data"
                 );
-
-                List<AdminData> sexList = new ArrayList<>();
+                List<AdminData> adminDataList = new ArrayList<>();
                 while (result.next()) {
                     AdminData adminData = new AdminData(
                             result.getInt("id"),
                             result.getInt("user_id")
                     );
-                    sexList.add(adminData);
+                    adminDataList.add(adminData);
                 }
-                return new Result<>(sexList, true, "Success");
+                connectionManager.closeConnection(connection);
+                return new Result<>(adminDataList, true, "Success");
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
@@ -55,9 +64,10 @@ public class AdminDAOImpl implements AdminDAO {
     @Override
     public Result<String> insert(AdminData adminData, InsertType insertType) {
         int retry = 0;
+        Connection connection = null;
         while (true) {
             try {
-                Connection connection = connectionManager.getConnection();
+                connection = connectionManager.getConnection();
                 int[] count;
                 if (insertType == RESTORE) {
                     PreparedStatement preparedStatement = connection.prepareStatement(
@@ -75,17 +85,18 @@ public class AdminDAOImpl implements AdminDAO {
                     preparedStatement.addBatch();
                     count = preparedStatement.executeBatch();
                 }
-                return new Result<>(
-                        String.format("Inserted %d lines", count[0]),
-                        true,
-                        "Success"
-                );
+                connectionManager.closeConnection(connection);
+                return new Result<>(String.format("Inserted %d lines", count[0]),
+                            true,
+                            "Success");
 
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+            } finally {
+                connectionManager.closeConnection(connection);
             }
         }
     }
