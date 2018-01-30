@@ -31,17 +31,11 @@
         <csrf disabled="true"/>
     </http>
 
+    <beans:bean id="customAuthProvider" class="util.CustomAuthProvider"/>
+
     <authentication-manager>
-        <!--<authentication-provider ref="myCustomAuthProvider">-->
-        <authentication-provider>
-            <!--<password-encoder ref="encoder"/>-->
-            <!--<jdbc-user-service data-source-ref="dataSourse"-->
-            <!--users-by-username-query="SELECT login AS username, password, enabled FROM user_data WHERE login = ?"-->
-            <!--authorities-by-username-query="SELECT login AS username, role FROM user_data WHERE login = ?"></jdbc-user-service>-->
-            <user-service>
-                <user name="admin" password="admin" authorities="ROLE_USER, ROLE_ADMIN" />
-                <user name="user" password="user" authorities="ROLE_USER" />
-            </user-service>
+        <authentication-provider ref="customAuthProvider">
+
         </authentication-provider>
     </authentication-manager>
 
