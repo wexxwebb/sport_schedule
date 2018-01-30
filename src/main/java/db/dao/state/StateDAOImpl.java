@@ -1,10 +1,13 @@
 package db.dao.state;
 
 import common.InsertType;
+import common.Logged;
 import common.Result;
 import db.pojo.State;
 import db.connectionManager.ConnectionManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,8 +16,11 @@ import java.util.List;
 import static common.InsertType.NEW;
 import static common.InsertType.RESTORE;
 
-
+@Component
 public class StateDAOImpl implements StateDAO {
+
+    @Logged
+    private Logger logger;
 
     private ConnectionManager connectionManager;
 

@@ -1,6 +1,7 @@
 package services.impl;
 
 import com.google.gson.Gson;
+import common.Logged;
 import common.Result;
 import db.dao.exercise.ExerciseDAO;
 import db.dao.exerciseData.ExerciseDataDAO;
@@ -8,6 +9,7 @@ import db.dao.training.TrainingDAO;
 import db.pojo.Exercise;
 import db.pojo.ExerciseData;
 import db.pojo.Training;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services.ExerciseServise;
@@ -18,6 +20,9 @@ import static common.InsertType.NEW;
 
 @Service
 public class ExerciseServiseImpl implements ExerciseServise {
+
+    @Logged
+    private Logger logger;
 
     @Autowired
     private ExerciseDAO exerciseDAO;

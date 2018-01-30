@@ -1,10 +1,6 @@
 package db.dao.training;
 
-import common.InsertType;
-import common.Log;
-import common.Result;
-import common.TimePeriod;
-import db.connectionManager.ConnectionManagerImpl;
+import common.*;
 import db.pojo.Training;
 import db.connectionManager.ConnectionManager;
 import org.apache.log4j.Logger;
@@ -21,7 +17,8 @@ import static common.InsertType.RESTORE;
 @Component
 public class TrainingDAOImpl implements TrainingDAO {
 
-    private static Logger logger = Logger.getLogger(TrainingDAOImpl.class);
+    @Logged
+    private static Logger logger;
 
     private ConnectionManager connectionManager;
 

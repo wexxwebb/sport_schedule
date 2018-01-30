@@ -1,6 +1,8 @@
 package controller;
 
+import common.Logged;
 import common.Result;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,9 @@ import java.util.Map;
 
 @Controller
 public class RegisterController {
+
+    @Logged
+    private Logger logger;
 
     @Autowired
     private RegisterServiceImpl registerService;
@@ -43,7 +48,7 @@ public class RegisterController {
                         last_name, sex, birthday);
         ModelAndView modelAndView = new ModelAndView();
         if (result.isSuccess()) {
-            modelAndView.setViewName("/login");
+            modelAndView.setViewName("public/login");
             return modelAndView;
         }
         modelAndView.setViewName("public/register");

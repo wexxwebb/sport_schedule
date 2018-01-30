@@ -15,7 +15,7 @@ public class CustomAuthProvider implements AuthenticationProvider {
 
     private UserDataDAO userDataDAO;
 
-    //private CustomPasswordEncoder passwordEncoder;
+    private CustomPasswordEncoder passwordEncoder;
 
     public UserDataDAO getUserDataDAO() {
         return userDataDAO;
@@ -26,14 +26,14 @@ public class CustomAuthProvider implements AuthenticationProvider {
         this.userDataDAO = userDataDAO;
     }
 
-//    public CustomPasswordEncoder getPasswordEncoder() {
-//        return passwordEncoder;
-//    }
-//
-//    @Autowired
-//    public void setPasswordEncoder(CustomPasswordEncoder passwordEncoder) {
-//        this.passwordEncoder = passwordEncoder;
-//    }
+    public CustomPasswordEncoder getPasswordEncoder() {
+        return passwordEncoder;
+    }
+
+    @Autowired
+    public void setPasswordEncoder(CustomPasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
+    }
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
@@ -41,9 +41,10 @@ public class CustomAuthProvider implements AuthenticationProvider {
         String password = authentication.getCredentials().toString();
         ArrayList list = new ArrayList();
         String pass = userDataDAO.getByLogin(name).get().getPassword();
+
         list.add(new SimpleGrantedAuthority("role_user"));
-        //if (passwordEncoder.matches(password, pass)) {
-        if (password.equals(pass)) {
+        if (passwordEncoder.matches(password, pass)) {
+        //if (password.equals(pass)) {
             return new UsernamePasswordAuthenticationToken(name, pass, list);
         }
         return null;

@@ -33,6 +33,8 @@ public class CustomPasswordEncoder implements PasswordEncoder {
 
     public static void main(String[] args) {
         CustomPasswordEncoder passwordEncoder = new CustomPasswordEncoder();
-        System.out.println(passwordEncoder.encode("man"));
+        String pass = "max";
+        System.out.println(pass);
+        System.out.println(passwordEncoder.encode(pass));
     }
 }

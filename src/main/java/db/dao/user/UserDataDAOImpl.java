@@ -2,9 +2,9 @@ package db.dao.user;
 
 import common.InsertType;
 import common.Log;
+import common.Logged;
 import common.Result;
 import db.connectionManager.ConnectionManager;
-import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.UserData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,8 @@ import static common.InsertType.RESTORE;
 @Component
 public class UserDataDAOImpl implements UserDataDAO {
 
-    private static Logger logger = Logger.getLogger(UserDataDAOImpl.class);
+    @Logged
+    private static Logger logger;
 
     private ConnectionManager connectionManager;
 
@@ -203,6 +204,7 @@ public class UserDataDAOImpl implements UserDataDAO {
                             resultSet.getInt("state_id"),
                             resultSet.getObject("date_reg").toString()
                     );
+                    logger.info("Test logger spring))) ");
                     return new Result<>(userData, true, "Success");
                 } else {
                     return new Result<>(null, false, String.format("User with login = %s not found", login));

@@ -1,11 +1,13 @@
 package db.dao.person;
 
 import common.InsertType;
+import common.Logged;
 import common.Result;
 import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Person;
 import db.pojo.Sex;
 import db.connectionManager.ConnectionManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +20,9 @@ import static common.InsertType.RESTORE;
 
 @Component
 public class PersonDAOImpl implements PersonDAO {
+
+    @Logged
+    private Logger logger;
 
     private ConnectionManager connectionManager;
 

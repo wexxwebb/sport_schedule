@@ -15,5 +15,5 @@ public interface TrainingDAO {
 
     Result<String> delete(int id);
 
-    public Result<Training> getByid(int id);
+    Result<Training> getByid(int id);
 }

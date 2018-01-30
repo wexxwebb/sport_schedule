@@ -2,6 +2,7 @@ package db.dao.exercise;
 
 import common.InsertType;
 import common.Log;
+import common.Logged;
 import common.Result;
 import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Exercise;
@@ -22,7 +23,8 @@ import static common.InsertType.RESTORE;
 @Component
 public class ExerciseDAOImpl implements ExerciseDAO {
 
-    private static Logger logger = Logger.getLogger(ExerciseDAOImpl.class);
+    @Logged
+    private Logger logger;
 
     private ConnectionManager connectionManager;
 

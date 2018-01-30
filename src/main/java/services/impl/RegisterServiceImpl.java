@@ -1,5 +1,6 @@
 package services.impl;
 
+import common.Logged;
 import common.RegisterDataCheck;
 import common.Result;
 import db.dao.person.PersonDAO;
@@ -10,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services.RegisterService;
+import util.CustomPasswordEncoder;
 
 import java.util.Map;
 
@@ -18,7 +20,8 @@ import static common.InsertType.NEW;
 @Service
 public class RegisterServiceImpl implements RegisterService {
 
-    static private Logger logger = Logger.getLogger(RegisterServiceImpl.class);
+    @Logged
+    private Logger logger;
 
     @Autowired
     private PersonDAO personDAO;
@@ -38,11 +41,12 @@ public class RegisterServiceImpl implements RegisterService {
                     birthday,
                     Integer.parseInt(sex)
             );
+            CustomPasswordEncoder passwordEncoder = new CustomPasswordEncoder();
             person = personDAO.insert(person, NEW).get();
             UserData userData = new UserData(
                     person.getId(),
                     login,
-                    password,
+                    passwordEncoder.encode(password),
                     1
             );
             userDataDAO.insert(userData, NEW);

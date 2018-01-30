@@ -1,9 +1,11 @@
 package db.dao.admin;
 
 import common.InsertType;
+import common.Logged;
 import common.Result;
 import db.pojo.AdminData;
 import db.connectionManager.ConnectionManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.*;
@@ -13,6 +15,9 @@ import java.util.List;
 import static common.InsertType.RESTORE;
 
 public class AdminDAOImpl implements AdminDAO {
+
+    @Logged
+    private Logger logger;
 
     private ConnectionManager connectionManager;
 

@@ -1,9 +1,11 @@
 package services.impl;
 
 import com.google.gson.Gson;
+import common.Logged;
 import common.Result;
 import db.dao.training.TrainingDAO;
 import db.pojo.Training;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services.TrainingService;
@@ -12,6 +14,9 @@ import static common.InsertType.NEW;
 
 @Service
 public class TrainingServiceImpl implements TrainingService {
+
+    @Logged
+    private Logger logger;
 
     @Autowired
     private TrainingDAO trainingDAO;

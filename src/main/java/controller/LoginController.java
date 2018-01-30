@@ -1,5 +1,6 @@
 package controller;
 
+import common.Logged;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,7 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class LoginController {
 
-    private Logger logger = Logger.getLogger(LoginController.class);
+    @Logged
+    private Logger logger;
 
     @Autowired
     private LoginService loginService;

@@ -4,6 +4,9 @@
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="org.springframework.stereotype.Controller" />
     </list>
+    <writeAnnotations>
+      <writeAnnotation name="common.Logged" />
+    </writeAnnotations>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/build/libs/exploded/sport_schedule-1.0-SNAPSHOT.war/WEB-INF/web.xml" />

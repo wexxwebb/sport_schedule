@@ -1,8 +1,10 @@
 package services.impl;
 
+import common.Logged;
 import common.Result;
 import db.dao.training.TrainingDAO;
 import db.pojo.Training;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import services.DashboardService;
@@ -17,6 +19,9 @@ import static common.TimePeriod.PAST;
 
 @Component
 public class DashboardServiceImpl implements DashboardService {
+
+    @Logged
+    private Logger logger;
 
     @Autowired
     private TrainingDAO trainingDAO;

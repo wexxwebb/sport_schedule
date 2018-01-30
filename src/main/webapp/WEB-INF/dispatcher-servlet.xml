@@ -22,6 +22,8 @@
 
     <bean class="com.google.gson.Gson"/>
 
+    <bean class="common.LoggedAnnotationPostProcessor"/>
+
     <mvc:annotation-driven/>
     <mvc:resources mapping="/style/**" location="/style/"/>
 

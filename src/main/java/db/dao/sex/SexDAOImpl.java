@@ -2,6 +2,7 @@ package db.dao.sex;
 
 import common.InsertType;
 import common.Log;
+import common.Logged;
 import common.Result;
 import db.connectionManager.ConnectionManagerImpl;
 import db.pojo.Sex;
@@ -20,7 +21,8 @@ import static common.InsertType.RESTORE;
 @Component
 public class SexDAOImpl implements SexDAO {
 
-    private Logger logger = Logger.getLogger(SexDAOImpl.class);
+    @Logged
+    private Logger logger;
 
     private ConnectionManager connectionManager;
 

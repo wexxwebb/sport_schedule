@@ -32,6 +32,7 @@
     </http>
 
     <beans:bean id="customAuthProvider" class="util.CustomAuthProvider"/>
+    <beans:bean class="util.CustomPasswordEncoder"/>
 
     <authentication-manager>
         <authentication-provider ref="customAuthProvider">
