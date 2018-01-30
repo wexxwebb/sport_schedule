@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import services.ExerciseServise;
-import services.TrainingService;
+import service.ExerciseServise;
+import service.TrainingService;
 
 import java.util.List;
 

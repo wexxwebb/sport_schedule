@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <beans:component-scan base-package="controller"/>
-    <beans:component-scan base-package="services"/>
+    <beans:component-scan base-package="service"/>
     <beans:component-scan base-package="db"/>
 
     <bean id="viewResolver"

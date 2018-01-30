@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import services.SexListService;
-import services.impl.RegisterServiceImpl;
+import service.SexListService;
+import service.impl.RegisterServiceImpl;
 
 import java.util.Map;
 
@@ -43,7 +43,7 @@ public class RegisterController {
                         last_name, sex, birthday);
         ModelAndView modelAndView = new ModelAndView();
         if (result.isSuccess()) {
-            modelAndView.setViewName("/login");
+            modelAndView.setViewName("redirect:public/auth");
             return modelAndView;
         }
         modelAndView.setViewName("public/register");
