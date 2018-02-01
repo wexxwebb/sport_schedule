@@ -52,6 +52,7 @@
                                 <td>${user.person.firstName}</td>
                                 <td>${user.person.sex.sex}</td>
                                 <td style="text-align: center;">${user.person.birthday}</td>
+                                <%--todo add blocking/unblocking users --%>
                             </tr>
                             </c:forEach>
                         </tbody>

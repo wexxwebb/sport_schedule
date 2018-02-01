@@ -63,7 +63,7 @@ public class CustomAuthProvider implements AuthenticationProvider {
             if (passwordEncoder.matches(password, result.get().getPassword())) {
                 UserDetails userDetails = userDetailsService.loadUserByUsername(result.get().getLogin());
                 list.addAll(userDetails.getAuthorities());
-                list.add(new SimpleGrantedAuthority("role_user"));
+                list.add(new SimpleGrantedAuthority("ROLE_USER"));
                 return new UsernamePasswordAuthenticationToken(userDetails, userDetails.getPassword(), list);
             }
         }

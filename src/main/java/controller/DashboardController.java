@@ -3,13 +3,18 @@ package controller;
 import common.Logged;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.expression.SecurityExpressionRoot;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import services.DashboardService;
 import util.InnerUser;
+import util.SecurityExprRootExt;
+
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
 public class DashboardController {
@@ -28,7 +33,15 @@ public class DashboardController {
         this.dashboardService = dashboardService;
     }
 
-    @RequestMapping(value = "/inner/dashboard", method = RequestMethod.GET)
+    @RequestMapping(value = "/inner/dispatcher", method = GET)
+    public String dispatchUser(@AuthenticationPrincipal InnerUser user) {
+        if (user.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
+            return "redirect:../admin/users";
+        }
+        return "redirect:dashboard";
+    }
+
+    @RequestMapping(value = "/inner/dashboard", method = GET)
     public ModelAndView getDashboard(@AuthenticationPrincipal InnerUser user) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/dashboard");

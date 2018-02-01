@@ -1,5 +1,6 @@
 package util;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,7 +19,7 @@ public class InnerUser implements UserDetails {
     private boolean enabled;
     private boolean locked;
     private boolean expired;
-    private Collection<GrantedAuthority> authorities;
+    private Collection<? extends GrantedAuthority> authorities;
 
     private void getUserFromContext(InnerUser innerUser) {
         this.id = innerUser.getId();
@@ -30,6 +31,7 @@ public class InnerUser implements UserDetails {
         this.firstName = innerUser.getFirstName();
         this.lastName = innerUser.getLastName();
         this.birthday = innerUser.getBirthday();
+        this.authorities = innerUser.getAuthorities();
     }
 
     public InnerUser() {
