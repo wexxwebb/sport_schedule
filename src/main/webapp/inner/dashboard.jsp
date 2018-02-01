@@ -45,6 +45,7 @@
         <div class="container">
             <div class="row">
                 <h3 class="h-main">Список тренировок</h3>
+                <h5 class="h-main">Привет, ${firstName}</h5>
             </div>
             <div class="row" style="margin-top: 30px">
                 <div class="col-md-4 col-lg-4">
@@ -203,7 +204,7 @@
             function addTraining() {
                 $.ajax({url: "${pageContext.request.contextPath}/inner/addTraining",
                         method: "POST",
-                        data: {user_id: 1, date: document.getElementById("datepicker").value},
+                        data: {user_id: ${userId}, date: document.getElementById("datepicker").value},
                         success: function (result) {
                             var currentDay = new Date();
                             currentDay.setHours(0, 0, 0, 0);

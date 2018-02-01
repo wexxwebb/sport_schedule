@@ -50,9 +50,9 @@ public class ExerciseController {
 
         ModelAndView modelAndView = new ModelAndView();
 
-        Result<Training> trainingResult = trainingService.getById(trainingId);
-        if (trainingResult.isSuccess()) {
-            modelAndView.addObject("training", trainingResult.get());
+        Result<Training> result = trainingService.getById(trainingId);
+        if (result.isSuccess()) {
+            modelAndView.addObject("training", result.get());
         } else {
             modelAndView.addObject("trainingError", "Ошибка");
         }

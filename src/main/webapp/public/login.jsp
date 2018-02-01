@@ -40,10 +40,12 @@
                     <form method="post" action="${pageContext.request.contextPath}/login">
                         <div class="log-in-group">
                             <div class="form-group" style="display: inline-block">
-                                <input type="login" name="login" class="form-control iput-auth" placeholder="Имя пользователя">
+                                <input type="login" name="login" class="form-control iput-auth"
+                                       placeholder="Имя пользователя" onclick="this.select()">
                             </div>
                             <div class="form-group" style="display: inline-block">
-                                <input type="password" name="password" class="form-control iput-auth" placeholder="Пароль">
+                                <input type="password" name="password" class="form-control iput-auth"
+                                       placeholder="Пароль" onclick="this.select()">
                                 <span class="reg-error">${requestScope.authError}</span>
                             </div>
                             <div class="inline-block">

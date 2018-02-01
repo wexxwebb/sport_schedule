@@ -9,32 +9,11 @@ import java.security.NoSuchAlgorithmException;
 public class CustomPasswordEncoder implements PasswordEncoder {
     @Override
     public String encode(CharSequence rawPassword) {
-
         return BCrypt.hashpw(rawPassword.toString(), BCrypt.gensalt(12));
     }
 
     @Override
     public boolean matches(CharSequence rawPassword, String encodedPassword) {
         return BCrypt.checkpw(rawPassword.toString(), encodedPassword);
-    }
-
-    private String getMD5(CharSequence rawPassword) {
-        String result = null;
-        try {
-            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
-            messageDigest.reset();
-            messageDigest.update(rawPassword.toString().getBytes());
-            result = new String(messageDigest.digest());
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        return result;
-    }
-
-    public static void main(String[] args) {
-        CustomPasswordEncoder passwordEncoder = new CustomPasswordEncoder();
-        String pass = "max";
-        System.out.println(pass);
-        System.out.println(passwordEncoder.encode(pass));
     }
 }

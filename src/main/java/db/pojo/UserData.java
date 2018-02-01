@@ -40,6 +40,16 @@ public class UserData {
         this.dateReg = dateReg;
     }
 
+    public UserData(int id, Person person, int personId, String login, String password, int stateId, String dateReg) {
+        this.id = id;
+        this.person = person;
+        this.personId = personId;
+        this.login = login;
+        this.password = password;
+        this.stateId = stateId;
+        this.dateReg = dateReg;
+    }
+
     public UserData(int personId, String login, String password, int stateId) {
         this.personId = personId;
         this.login = login;

@@ -38,9 +38,9 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getTodayTrainingList() {
+    public List<Training> getTodayTrainingList(int userId) {
         Result<List<Training>> result;
-        if ((result = trainingDAO.getAll(TODAY)).isSuccess()) {
+        if ((result = trainingDAO.getAll(userId, TODAY)).isSuccess()) {
             return result.get();
         } else {
             return new ArrayList<>();
@@ -48,9 +48,9 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getFutureTrainingList() {
+    public List<Training> getFutureTrainingList(int userId) {
         Result<List<Training>> result;
-        if ((result = trainingDAO.getAll(FUTURE)).isSuccess()) {
+        if ((result = trainingDAO.getAll(userId, FUTURE)).isSuccess()) {
             return result.get();
         } else {
             return new ArrayList<>();
@@ -58,9 +58,9 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getPastTriningList() {
+    public List<Training> getPastTriningList(int userId) {
         Result<List<Training>> result;
-        if ((result = trainingDAO.getAll(PAST)).isSuccess()) {
+        if ((result = trainingDAO.getAll(userId, PAST)).isSuccess()) {
             return result.get();
         } else {
             return new ArrayList<>();

@@ -1,12 +1,18 @@
 package util;
 
+import common.Result;
 import db.dao.user.UserDataDAO;
+import db.pojo.UserData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import util.CustomPasswordEncoder;
 
 import java.util.ArrayList;
@@ -16,6 +22,17 @@ public class CustomAuthProvider implements AuthenticationProvider {
     private UserDataDAO userDataDAO;
 
     private CustomPasswordEncoder passwordEncoder;
+
+    private UserDetailsService userDetailsService;
+
+    public UserDetailsService getUserDetailsService() {
+        return userDetailsService;
+    }
+
+    @Autowired
+    public void setUserDetailsService(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
 
     public UserDataDAO getUserDataDAO() {
         return userDataDAO;
@@ -39,13 +56,16 @@ public class CustomAuthProvider implements AuthenticationProvider {
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String name = authentication.getName();
         String password = authentication.getCredentials().toString();
-        ArrayList list = new ArrayList();
-        String pass = userDataDAO.getByLogin(name).get().getPassword();
+        ArrayList<GrantedAuthority> list = new ArrayList<>();
 
-        list.add(new SimpleGrantedAuthority("role_user"));
-        if (passwordEncoder.matches(password, pass)) {
-        //if (password.equals(pass)) {
-            return new UsernamePasswordAuthenticationToken(name, pass, list);
+        Result<UserData> result = userDataDAO.getByLogin(name);
+        if (result.isSuccess()) {
+            if (passwordEncoder.matches(password, result.get().getPassword())) {
+                UserDetails userDetails = userDetailsService.loadUserByUsername(result.get().getLogin());
+                list.addAll(userDetails.getAuthorities());
+                list.add(new SimpleGrantedAuthority("role_user"));
+                return new UsernamePasswordAuthenticationToken(userDetails, userDetails.getPassword(), list);
+            }
         }
         return null;
     }

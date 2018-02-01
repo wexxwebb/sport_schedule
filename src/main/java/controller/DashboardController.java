@@ -3,11 +3,13 @@ package controller;
 import common.Logged;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import services.DashboardService;
+import util.InnerUser;
 
 @Controller
 public class DashboardController {
@@ -27,12 +29,14 @@ public class DashboardController {
     }
 
     @RequestMapping(value = "/inner/dashboard", method = RequestMethod.GET)
-    public ModelAndView getDashboard() {
+    public ModelAndView getDashboard(@AuthenticationPrincipal InnerUser user) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/dashboard");
-        modelAndView.addObject("pastTrainingList", dashboardService.getPastTriningList());
-        modelAndView.addObject("todayTrainingList", dashboardService.getTodayTrainingList());
-        modelAndView.addObject("futureTrainingList", dashboardService.getFutureTrainingList());
+        modelAndView.addObject("firstName", user.getFirstName());
+        modelAndView.addObject("userId", user.getId());
+        modelAndView.addObject("pastTrainingList", dashboardService.getPastTriningList(user.getId()));
+        modelAndView.addObject("todayTrainingList", dashboardService.getTodayTrainingList(user.getId()));
+        modelAndView.addObject("futureTrainingList", dashboardService.getFutureTrainingList(user.getId()));
 
         return modelAndView;
     }

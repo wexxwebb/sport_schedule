@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface TrainingDAO {
 
-    Result<List<Training>> getAll(TimePeriod timePeriod);
+    Result<List<Training>> getAll(int userId, TimePeriod timePeriod);
 
     Result<Training> insert(Training training, InsertType insertType);
 

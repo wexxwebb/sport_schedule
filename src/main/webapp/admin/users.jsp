@@ -45,14 +45,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <jsp:useBean id="personList" scope="request" type="java.util.List"/>
-                            <c:forEach var="person" items="${personList}">
+                            <c:forEach var="user" items="${userList}">
                             <tr>
-                                <td>${person.value}</td>
-                                <td>${person.lastName}</td>
-                                <td>${person.firstName}</td>
-                                <td>${person.sex.sex}</td>
-                                <td style="text-align: center;">${person.birthday}</td>
+                                <td>${user.person.id}</td>
+                                <td>${user.person.lastName}</td>
+                                <td>${user.person.firstName}</td>
+                                <td>${user.person.sex.sex}</td>
+                                <td style="text-align: center;">${user.person.birthday}</td>
                             </tr>
                             </c:forEach>
                         </tbody>

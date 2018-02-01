@@ -34,18 +34,18 @@ public class TrainingDAOImpl implements TrainingDAO {
     public TrainingDAOImpl() {
     }
 
-    private String chooseTime(TimePeriod timePeriod) {
+    private String chooseTime(int userId, TimePeriod timePeriod) {
         switch (timePeriod) {
-            case ALL: return "";
-            case FUTURE: return " WHERE training_date > current_date";
-            case TODAY: return " WHERE training_date = current_date";
-            case PAST: return " WHERE training_date < current_date";
+            case ALL: return " WHERE user_id = " + userId;
+            case FUTURE: return " WHERE training_date > current_date AND user_id = " + userId;
+            case TODAY: return " WHERE training_date = current_date AND user_id = " + userId;
+            case PAST: return " WHERE training_date < current_date AND user_id = " + userId;
         }
         return "";
     }
 
     @Override
-    public Result<List<Training>> getAll(TimePeriod timePeriod) {
+    public Result<List<Training>> getAll(int userId, TimePeriod timePeriod) {
         int retry = 0;
         Connection connection = null;
         while (true) {
@@ -57,7 +57,7 @@ public class TrainingDAOImpl implements TrainingDAO {
                                 "user_id, " +
                                 "create_date, " +
                                 "training_date " +
-                                "FROM training tr " + chooseTime(timePeriod)
+                                "FROM training tr " + chooseTime(userId, timePeriod)
                 );
 
                 List<Training> trainingList = new ArrayList<>();
