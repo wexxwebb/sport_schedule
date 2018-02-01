@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="back:main" external.linked.project.path="$MODULE_DIR$/../../back" external.root.project.path="$MODULE_DIR$/../../back" external.system.id="GRADLE" external.system.module.group="back" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../back/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../back/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../back/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../back/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="front_main" />
+  </component>
+</module>

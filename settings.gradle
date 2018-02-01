@@ -1,5 +1,0 @@
-rootProject.name = 'sport_schedule'
-include 'frontend'
-include 'backend'
-include 'backend'
-

@@ -2,8 +2,6 @@ package controller;
 
 import common.Logged;
 import common.Result;
-import db.pojo.Exercise;
-import db.pojo.Training;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,36 +10,35 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import services.ExerciseServise;
+import services.ExerciseService;
 import services.TrainingService;
 
 import java.util.List;
 
-@SuppressWarnings("ALL")
 @Controller
 public class ExerciseController {
 
     @Logged
     private Logger logger;
 
-    @Autowired
-    private ExerciseServise exerciseServise;
+    private ExerciseService exerciseService;
 
-    @Autowired
     private TrainingService trainingService;
 
-    public ExerciseServise getExerciseServise() {
-        return exerciseServise;
+    public ExerciseService getExerciseService() {
+        return exerciseService;
     }
 
-    public void setExerciseServise(ExerciseServise exerciseServise) {
-        this.exerciseServise = exerciseServise;
+    @Autowired
+    public void setExerciseService(ExerciseService exerciseService) {
+        this.exerciseService = exerciseService;
     }
 
     public TrainingService getTrainingService() {
         return trainingService;
     }
 
+    @Autowired
     public void setTrainingService(TrainingService trainingService) {
         this.trainingService = trainingService;
     }
@@ -51,7 +48,7 @@ public class ExerciseController {
 
         ModelAndView modelAndView = new ModelAndView();
 
-        Result<Training> result = trainingService.getById(trainingId);
+        Result<db.pojo.Training> result = trainingService.getById(trainingId);
         if (result.isSuccess()) {
             modelAndView.addObject("training", result.get());
         } else {
@@ -60,7 +57,7 @@ public class ExerciseController {
 
         modelAndView.setViewName("/inner/trainingConsist");
 
-        Result<List<Exercise>> exerciseResult = exerciseServise.getByTrainindId(trainingId);
+        Result<List<db.pojo.Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
         if (exerciseResult.isSuccess()) {
             modelAndView.addObject("exerciseList", exerciseResult.get());
             return modelAndView;
@@ -79,7 +76,7 @@ public class ExerciseController {
                               @RequestParam(value = "weigth") int weigth) {
 
         Result<String> result =
-                exerciseServise.addExercise(exerciseid, trainingId,
+                exerciseService.addExercise(exerciseid, trainingId,
                         approach, repetition, weigth);
         if (result.isSuccess()) {
             return result.get();
@@ -91,7 +88,7 @@ public class ExerciseController {
     @RequestMapping(value = "/inner/delExercise", method = RequestMethod.POST)
     @ResponseBody
     public String delExercise(@RequestParam(value = "id") int id) {
-        Result<String> result = exerciseServise.delExercise(id);
+        Result<String> result = exerciseService.delExercise(id);
         return result.get();
     }
 }

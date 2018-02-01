@@ -17,13 +17,13 @@ public class TrainingController {
     @Logged
     private Logger logger;
 
-    @Autowired
     private TrainingService trainingService;
 
     public TrainingService getTrainingService() {
         return trainingService;
     }
 
+    @Autowired
     public void setTrainingService(TrainingService trainingService) {
         this.trainingService = trainingService;
     }

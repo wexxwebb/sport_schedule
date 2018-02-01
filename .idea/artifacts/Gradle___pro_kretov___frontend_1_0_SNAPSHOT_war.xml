@@ -2,7 +2,7 @@
   <artifact type="war" name="Gradle : pro.kretov : frontend-1.0-SNAPSHOT.war">
     <output-path>$PROJECT_DIR$/frontend/build/libs</output-path>
     <properties id="gradle-properties">
-      <options external-project-path="$PROJECT_DIR$" />
+      <options external-project-path="$PROJECT_DIR$/frontend" />
     </properties>
     <root id="archive" name="frontend-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="Gradle : pro.kretov : frontend-1.0-SNAPSHOT.war (exploded)" />

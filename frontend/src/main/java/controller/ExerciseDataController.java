@@ -1,6 +1,6 @@
 package controller;
 
-import db.pojo.ExerciseData;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,24 +8,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import services.ExerciseDataService;
+
 
 import java.util.List;
 
 @Controller
 public class ExerciseDataController {
 
+    private services.ExerciseDataService exerciseDataService;
 
-
-
-    @Autowired
-    private ExerciseDataService exerciseDataService;
-
-    public ExerciseDataService getExerciseDataService() {
+    public services.ExerciseDataService getExerciseDataService() {
         return exerciseDataService;
     }
 
-    public void setExerciseDataService(ExerciseDataService exerciseDataService) {
+    @Autowired
+    public void setExerciseDataService(services.ExerciseDataService exerciseDataService) {
         this.exerciseDataService = exerciseDataService;
     }
 
@@ -35,12 +32,11 @@ public class ExerciseDataController {
         return exerciseDataService.searchExerciseData(term);
     }
 
-
     @RequestMapping(value = "/inner/exerciseData", method = RequestMethod.GET)
     public ModelAndView getExerciseDataList() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/exerciseData");
-        List<ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
+        List<db.pojo.ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
         if (exerciseDataList != null) {
             modelAndView.addObject("exerciseDataList", exerciseDataList);
             return modelAndView;
