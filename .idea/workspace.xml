@@ -7,17 +7,158 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a8c52d-4a73-4d29-92dc-045b79103faf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/util/SecurityExprRootExt.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___pro_kretov___frontend_1_0_SNAPSHOT_war.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___pro_kretov___frontend_1_0_SNAPSHOT_war__exploded_.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/backend.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/frontend.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/frontend/frontend_main.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/frontend/frontend_test.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseDataController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/LoginController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/RegisterController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/TrainingController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/UsersController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/admin/users.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/favicon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/inner/dashboard.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/inner/exerciseData.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/inner/trainingConsist.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/public/login.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/public/register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap-theme.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap-theme.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.standalone.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.standalone.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.standalone.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker.standalone.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.standalone.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.standalone.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.standalone.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/css/bootstrap-datepicker3.standalone.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/js/bootstrap-datepicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/js/bootstrap-datepicker.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ar.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.az.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.bg.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.bs.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ca.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.cs.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.cy.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.da.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.de.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.el.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.en-AU.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.en-GB.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.eo.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.es.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.et.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.eu.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.fa.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.fi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.fo.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.fr-CH.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.fr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.gl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.he.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.hr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.hu.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.hy.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.id.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.is.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.it-CH.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.it.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ja.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ka.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.kh.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.kk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ko.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.kr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.lt.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.lv.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.me.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.mk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.mn.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ms.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.nb.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.nl-BE.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.nl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.no.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.pl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.pt-BR.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.pt.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ro.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.rs-latin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.rs.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.ru.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sq.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sr-latin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sv.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.sw.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.th.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.tr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.uk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.vi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.zh-CN.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/datepicker/locales/bootstrap-datepicker.zh-TW.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/js/npm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/style/style.css" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___pro_kretov___sport_schedule_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___pro_kretov___sport_schedule_1_0_SNAPSHOT_war__exploded_.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/CustomAuthProvider.java" afterPath="$PROJECT_DIR$/src/main/java/util/CustomAuthProvider.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/InnerUser.java" afterPath="$PROJECT_DIR$/src/main/java/util/InnerUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/users.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/users.jsp" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/get/TestGetAll.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/get/TestGetBy.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestAdmin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestExercise.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestExerciseData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestPerson.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestSex.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestState.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestTraining.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/consoleTest/persist/TestUser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/frontend/.gradle/" />
+    <ignored path="$PROJECT_DIR$/frontend/build/" />
+    <ignored path="$PROJECT_DIR$/frontend/out/" />
+    <ignored path="$PROJECT_DIR$/backend/.gradle/" />
+    <ignored path="$PROJECT_DIR$/backend/build/" />
+    <ignored path="$PROJECT_DIR$/backend/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,11 +284,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/users.jsp">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+            <state relative-caret-position="512">
+              <caret line="32" column="87" lean-forward="false" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -214,6 +355,14 @@
               <ExternalProjectPojo>
                 <option name="name" value="sport_schedule" />
                 <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":backend" />
+                <option name="path" value="$PROJECT_DIR$/backend" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":frontend" />
+                <option name="path" value="$PROJECT_DIR$/frontend" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -286,7 +435,7 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'sport_schedule'." />
+                <option name="description" value="Displays the tasks runnable from root project 'sport_schedule' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -368,14 +517,283 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/backend">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':backend'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':backend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':backend'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':backend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':backend'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':backend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':backend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':backend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':backend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/backend" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/frontend">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':frontend'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':frontend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':frontend'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':frontend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':frontend'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':frontend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':frontend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':frontend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':frontend'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/frontend" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4549536806000" />
+        <entry key="$PROJECT_DIR$" value="7585856074000" />
+        <entry key="$PROJECT_DIR$/backend/build.gradle" value="2000239269" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3226475003" />
+        <entry key="$PROJECT_DIR$/frontend/build.gradle" value="2166769529" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="2940434009" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="72124494" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -389,6 +807,20 @@
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/backend">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/backend" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/frontend">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/frontend" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -550,7 +982,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/db/dao/state/StateDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/dao/sex/SexDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/dao/person/PersonDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" />
@@ -601,6 +1032,7 @@
         <option value="$PROJECT_DIR$/src/main/java/util/InnerUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/DashboardController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/users.jsp" />
+        <option value="$PROJECT_DIR$/frontend/build.gradle" />
       </list>
     </option>
   </component>
@@ -710,17 +1142,25 @@
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -728,14 +1168,7 @@
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -745,18 +1178,12 @@
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
@@ -764,134 +1191,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="inner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sport_schedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sport_schedule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -939,11 +1238,11 @@
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp\pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/main/java" />
+      <recent name="$PROJECT_DIR$/frontend/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/pages/inner" />
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp\inner" />
       <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\resources" />
-      <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\test\resources" />
-      <recent name="C:\Users\admin\IdeaProjects\sport_schedule\src\main\webapp" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="common" />
@@ -1309,7 +1608,7 @@
       <workItem from="1517168642716" duration="13295000" />
       <workItem from="1517216939951" duration="8397000" />
       <workItem from="1517376815306" duration="41480000" />
-      <workItem from="1517461093157" duration="4974000" />
+      <workItem from="1517461093157" duration="8616000" />
     </task>
     <servers />
   </component>
@@ -1346,7 +1645,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446386000" />
+    <option name="totallyTimeSpent" value="450028000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1367,6 +1666,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31640625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1379,9 +1679,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20052083" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23567708" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21354167" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4518229" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2203514" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14275256" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1391,7 +1691,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31640625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1536,104 +1835,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/impl/DashboardServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c620ead93220cae89562bd3eda6ec875c43e1db/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c620ead93220cae89562bd3eda6ec875c43e1db/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/core/context/SecurityContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/UserInside.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/CustomUser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/inner/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <marker date="1517425622562" expanded="true" signature="13206:13252" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/CustomPasswordEncoderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/AdminData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/dao/state/StateDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/dao/state/StateDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e98f84b0-aaeb-4410-8183-04144d4b10e6/console_8.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="90" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/pojo/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="33" column="58" lean-forward="false" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.3.RELEASE/2804ac6a00705bed0836fe5826e0496ace681469/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebSecurityExpressionRoot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1823,9 +2024,9 @@
         <state relative-caret-position="80">
           <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#412#413#0" expanded="false" />
+            <element signature="e#449#450#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1931,8 +2132,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/users.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="863">
           <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_xml/dataBaseXML/DataBaseObject.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/admin/users.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/UsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/TrainingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="87" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="34" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="87" lean-forward="false" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
           <folding />
         </state>
       </provider>

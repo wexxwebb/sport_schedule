@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend.iml" group="backend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/backend_main.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/backend_main.iml" group="backend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/backend_test.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/backend_test.iml" group="backend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frontend.iml" filepath="$PROJECT_DIR$/.idea/modules/frontend.iml" group="frontend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frontend/frontend_main.iml" filepath="$PROJECT_DIR$/.idea/modules/frontend/frontend_main.iml" group="frontend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frontend/frontend_test.iml" filepath="$PROJECT_DIR$/.idea/modules/frontend/frontend_test.iml" group="frontend" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sport_schedule.iml" filepath="$PROJECT_DIR$/.idea/modules/sport_schedule.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sport_schedule_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sport_schedule_main.iml" group="sport_schedule" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sport_schedule_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sport_schedule_test.iml" group="sport_schedule" />
