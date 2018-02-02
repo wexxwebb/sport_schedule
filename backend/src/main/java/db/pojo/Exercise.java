@@ -1,6 +1,8 @@
 package db.pojo;
 
-public interface Exercise {
+import java.io.Serializable;
+
+public interface Exercise extends Serializable {
     Training getTraining();
 
     void setTraining(Training training);
