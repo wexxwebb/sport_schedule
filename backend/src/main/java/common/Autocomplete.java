@@ -1,6 +1,8 @@
 package common;
 
-public class Autocomplete {
+import java.io.Serializable;
+
+public class Autocomplete implements Serializable {
     private String label;
     private String id;
 

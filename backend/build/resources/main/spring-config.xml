@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="db"/>
+    <bean class="com.google.gson.Gson"/>
 
     <bean class="common.LoggedAnnotationPostProcessor"/>
 
@@ -60,14 +64,5 @@
         <property name="serviceInterface" value="services.UserService"/>
         <property name="registryPort" value="64994"/>
     </bean>
-
-    <bean id="sample" class="test_sample.SampleImpl"/>
-    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
-        <property name="service" ref="sample"/>
-        <property name="serviceName" value="sampleService"/>
-        <property name="serviceInterface" value="test_sample.Sample"/>
-        <property name="registryPort" value="64993"/>
-    </bean>
-
 
 </beans>

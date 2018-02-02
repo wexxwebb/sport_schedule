@@ -37,4 +37,10 @@ public class UserServiceImpl implements UserService {
             return new ArrayList<>();
         }
     }
+
+    @Override
+    public Result<UserData> getUserByLogin(String login) {
+        return userDataDAO.getByLogin(login);
+    }
+
 }
