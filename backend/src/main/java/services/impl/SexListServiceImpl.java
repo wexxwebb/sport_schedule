@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services.SexListService;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Service

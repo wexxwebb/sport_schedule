@@ -4,9 +4,10 @@ import common.InsertType;
 import common.Result;
 import db.pojo.ExerciseData;
 
+import java.io.Serializable;
 import java.util.List;
 
-public interface ExerciseDataDAO {
+public interface ExerciseDataDAO extends Serializable {
 
     Result<List<ExerciseData>> getAll();
 

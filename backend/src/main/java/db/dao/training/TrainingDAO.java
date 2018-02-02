@@ -5,9 +5,10 @@ import common.Result;
 import common.TimePeriod;
 import db.pojo.Training;
 
+import java.io.Serializable;
 import java.util.List;
 
-public interface TrainingDAO {
+public interface TrainingDAO extends Serializable {
 
     Result<List<Training>> getAll(int userId, TimePeriod timePeriod);
 

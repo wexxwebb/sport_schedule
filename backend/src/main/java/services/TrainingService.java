@@ -3,7 +3,9 @@ package services;
 import common.Result;
 import db.pojo.Training;
 
-public interface TrainingService {
+import java.io.Serializable;
+
+public interface TrainingService extends Serializable {
 
     Result<String> addTraining(int userId, String date);
 

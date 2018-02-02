@@ -2,9 +2,10 @@ package services;
 
 import db.pojo.ExerciseData;
 
+import java.io.Serializable;
 import java.util.List;
 
-public interface ExerciseDataService {
+public interface ExerciseDataService extends Serializable {
 
     String searchExerciseData(String term);
 

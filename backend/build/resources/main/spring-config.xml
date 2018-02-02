@@ -61,4 +61,13 @@
         <property name="registryPort" value="64994"/>
     </bean>
 
+    <bean id="sample" class="test_sample.SampleImpl"/>
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="service" ref="sample"/>
+        <property name="serviceName" value="sampleService"/>
+        <property name="serviceInterface" value="test_sample.Sample"/>
+        <property name="registryPort" value="64993"/>
+    </bean>
+
+
 </beans>

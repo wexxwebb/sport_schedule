@@ -4,8 +4,8 @@ import common.InsertType;
 import common.Log;
 import common.Logged;
 import common.Result;
-import db.pojo.Sex;
 import db.connectionManager.ConnectionManager;
+import db.pojo.Sex;
 import db.pojo.SexImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +26,10 @@ public class SexDAOImpl implements SexDAO {
 
     private ConnectionManager connectionManager;
 
+    public SexDAOImpl() {
+
+    }
+
     public ConnectionManager getConnectionManager() {
         return connectionManager;
     }
@@ -33,10 +37,6 @@ public class SexDAOImpl implements SexDAO {
     @Autowired
     public void setConnectionManager(ConnectionManager connectionManager) {
         this.connectionManager = connectionManager;
-    }
-
-    public SexDAOImpl() {
-
     }
 
     @Override
@@ -63,12 +63,15 @@ public class SexDAOImpl implements SexDAO {
                     );
                     sexList.add(sex);
                 }
+                logger.debug("Sex list reading from database");
                 return new Result<>(sexList, true, "Success");
             } catch (ClassNotFoundException e) {
+                logger.error(new Log(e, "Database driver lost"));
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());
+                logger.error(new Log(e, "Database query executing error"));
             } finally {
                 connectionManager.closeConnection(connection);
             }

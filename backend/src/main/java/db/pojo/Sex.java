@@ -1,6 +1,8 @@
 package db.pojo;
 
-public interface Sex {
+import java.io.Serializable;
+
+public interface Sex extends Serializable {
     int getId();
 
     void setId(int id);

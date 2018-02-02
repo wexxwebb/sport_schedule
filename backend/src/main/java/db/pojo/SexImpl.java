@@ -2,10 +2,11 @@ package db.pojo;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.Serializable;
 
 @XmlRootElement
 @XmlType(propOrder = {"id", "sex"})
-public class SexImpl implements Sex {
+public class SexImpl implements Sex, Serializable {
 
     private int id;
 

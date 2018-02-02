@@ -33,7 +33,7 @@ public class DashboardController {
     @RequestMapping(value = "/inner/dispatcher", method = GET)
     public String dispatchUser(@AuthenticationPrincipal InnerUser user) {
         if (user.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
-            return "redirect:../admin/users";
+            return "redirect:./admin/users";
         }
         return "redirect:dashboard";
     }

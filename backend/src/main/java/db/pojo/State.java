@@ -1,6 +1,8 @@
 package db.pojo;
 
-public interface State {
+import java.io.Serializable;
+
+public interface State extends Serializable {
     boolean isEnabled();
 
     void setEnabled(boolean enabled);

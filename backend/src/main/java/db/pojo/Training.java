@@ -1,6 +1,8 @@
 package db.pojo;
 
-public interface Training {
+import java.io.Serializable;
+
+public interface Training extends Serializable {
     UserData getUser();
 
     void setUser(UserData user);

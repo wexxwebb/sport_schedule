@@ -1,6 +1,8 @@
 package db.pojo;
 
-public interface AdminData {
+import java.io.Serializable;
+
+public interface AdminData extends Serializable {
     UserData getUser();
 
     void setUser(UserData user);
