@@ -13,7 +13,18 @@
     <database id="4" parent="1" name="loan">
       <ObjectId>16950</ObjectId>
     </database>
-    <role id="5" parent="1" name="postgres">
+    <database id="5" parent="1" name="hibernate_sample">
+      <ObjectId>25142</ObjectId>
+    </database>
+    <database id="6" parent="1" name="mobile_phones">
+      <ObjectId>25157</ObjectId>
+    </database>
+    <database id="7" parent="1" name="sport_schedule_hibernate">
+      <ObjectId>25272</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <role id="8" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <Inherit>1</Inherit>
@@ -24,117 +35,157 @@
       <ConnectionLimit>-1</ConnectionLimit>
       <BypassRls>1</BypassRls>
     </role>
-    <schema id="6" parent="2" name="public">
+    <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-01-30.13:24:21.949</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-02-03.13:31:55.141</IntrospectionTimestamp>
       <IntrospectionStateNumber>1551</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="7" parent="2" name="pg_catalog">
+    <schema id="10" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
     </schema>
-    <schema id="8" parent="2" name="pg_toast">
+    <schema id="11" parent="2" name="pg_toast">
       <ObjectId>99</ObjectId>
     </schema>
-    <schema id="9" parent="2" name="pg_temp_1">
+    <schema id="12" parent="2" name="pg_temp_1">
       <ObjectId>11816</ObjectId>
     </schema>
-    <schema id="10" parent="2" name="pg_toast_temp_1">
+    <schema id="13" parent="2" name="pg_toast_temp_1">
       <ObjectId>11817</ObjectId>
     </schema>
-    <schema id="11" parent="2" name="information_schema">
+    <schema id="14" parent="2" name="information_schema">
       <ObjectId>12121</ObjectId>
     </schema>
-    <sequence id="12" parent="6" name="admin_data_id_seq">
+    <schema id="15" parent="7" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.13:32:41.732</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1815</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="16" parent="7" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.12:26:46.853</IntrospectionTimestamp>
+      <IntrospectionStateNumber>658</IntrospectionStateNumber>
+    </schema>
+    <schema id="17" parent="7" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.12:26:46.853</IntrospectionTimestamp>
+      <IntrospectionStateNumber>609</IntrospectionStateNumber>
+    </schema>
+    <schema id="18" parent="7" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.12:26:46.853</IntrospectionTimestamp>
+    </schema>
+    <schema id="19" parent="7" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.12:26:46.853</IntrospectionTimestamp>
+    </schema>
+    <schema id="20" parent="7" name="information_schema">
+      <ObjectId>12121</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.12:26:46.853</IntrospectionTimestamp>
+      <IntrospectionStateNumber>609</IntrospectionStateNumber>
+    </schema>
+    <sequence id="21" parent="9" name="admin_data_id_seq">
       <ObjectId>16837</ObjectId>
       <StateNumber>935</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="13" parent="6" name="exercise_data_id_seq">
+    <sequence id="22" parent="9" name="exercise_data_id_seq">
       <ObjectId>16849</ObjectId>
       <StateNumber>937</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="14" parent="6" name="exercise_id_seq">
+    <sequence id="23" parent="9" name="exercise_id_seq">
       <ObjectId>16843</ObjectId>
       <StateNumber>936</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="15" parent="6" name="person_id_seq">
+    <sequence id="24" parent="9" name="person_id_seq">
       <ObjectId>16855</ObjectId>
       <StateNumber>938</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="16" parent="6" name="sex_id_seq">
+    <sequence id="25" parent="9" name="sex_id_seq">
       <ObjectId>16861</ObjectId>
       <StateNumber>939</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="17" parent="6" name="state_id_seq">
+    <sequence id="26" parent="9" name="state_id_seq">
       <ObjectId>16867</ObjectId>
       <StateNumber>940</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="18" parent="6" name="training_id_seq">
+    <sequence id="27" parent="9" name="training_id_seq">
       <ObjectId>16873</ObjectId>
       <StateNumber>941</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="19" parent="6" name="user_data_id_seq">
+    <sequence id="28" parent="9" name="user_data_id_seq">
       <ObjectId>16880</ObjectId>
       <StateNumber>942</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <table id="20" parent="6" name="admin_data">
+    <table id="29" parent="9" name="admin_data">
       <ObjectId>16839</ObjectId>
       <StateNumber>956</StateNumber>
     </table>
-    <table id="21" parent="6" name="exercise">
+    <table id="30" parent="9" name="exercise">
       <ObjectId>16845</ObjectId>
       <StateNumber>958</StateNumber>
     </table>
-    <table id="22" parent="6" name="exercise_data">
+    <table id="31" parent="9" name="exercise_data">
       <ObjectId>16851</ObjectId>
       <StateNumber>957</StateNumber>
     </table>
-    <table id="23" parent="6" name="person">
+    <table id="32" parent="9" name="person">
       <ObjectId>16857</ObjectId>
       <StateNumber>961</StateNumber>
     </table>
-    <table id="24" parent="6" name="sex">
+    <table id="33" parent="9" name="sex">
       <ObjectId>16863</ObjectId>
       <StateNumber>959</StateNumber>
     </table>
-    <table id="25" parent="6" name="state">
+    <table id="34" parent="9" name="state">
       <ObjectId>16869</ObjectId>
       <StateNumber>1494</StateNumber>
     </table>
-    <table id="26" parent="6" name="training">
+    <table id="35" parent="9" name="training">
       <ObjectId>16875</ObjectId>
       <StateNumber>960</StateNumber>
     </table>
-    <table id="27" parent="6" name="user_data">
+    <table id="36" parent="9" name="user_data">
       <ObjectId>16882</ObjectId>
       <StateNumber>962</StateNumber>
     </table>
-    <column id="28" parent="20" name="id">
+    <sequence id="37" parent="15" name="sex_seq">
+      <ObjectId>25285</ObjectId>
+      <StateNumber>1815</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="38" parent="15" name="sex">
+      <ObjectId>25280</ObjectId>
+      <StateNumber>1814</StateNumber>
+    </table>
+    <column id="39" parent="29" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -143,35 +194,35 @@
       <TypeId>23</TypeId>
       <SequenceName>admin_data_id_seq</SequenceName>
     </column>
-    <column id="29" parent="20" name="user_id">
+    <column id="40" parent="29" name="user_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>935</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="30" parent="20" name="pk_admins">
+    <index id="41" parent="29" name="pk_admins">
       <ObjectId>16888</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="31" parent="20" name="user_id_unique">
+    <index id="42" parent="29" name="user_id_unique">
       <ObjectId>16890</ObjectId>
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="32" parent="20" name="pk_admins">
+    <key id="43" parent="29" name="pk_admins">
       <ObjectId>16889</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_admins</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="33" parent="20" name="user_id_unique">
+    <key id="44" parent="29" name="user_id_unique">
       <ObjectId>16891</ObjectId>
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_id_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="34" parent="20" name="fk_admins_users">
+    <foreign-key id="45" parent="29" name="fk_admins_users">
       <ObjectId>16914</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>16882</RefTableId>
@@ -182,7 +233,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="35" parent="21" name="id">
+    <column id="46" parent="30" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -191,53 +242,53 @@
       <TypeId>23</TypeId>
       <SequenceName>exercise_id_seq</SequenceName>
     </column>
-    <column id="36" parent="21" name="exercise_id">
+    <column id="47" parent="30" name="exercise_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>936</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="37" parent="21" name="training_id">
+    <column id="48" parent="30" name="training_id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>936</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="38" parent="21" name="approach">
+    <column id="49" parent="30" name="approach">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>936</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="39" parent="21" name="repetition">
+    <column id="50" parent="30" name="repetition">
       <Position>5</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>936</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="40" parent="21" name="weigth">
+    <column id="51" parent="30" name="weigth">
       <Position>6</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>936</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="41" parent="21" name="pk_exercises">
+    <index id="52" parent="30" name="pk_exercises">
       <ObjectId>16892</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="42" parent="21" name="pk_exercises">
+    <key id="53" parent="30" name="pk_exercises">
       <ObjectId>16893</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_exercises</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="43" parent="21" name="fk_exercises_s_exercises">
+    <foreign-key id="54" parent="30" name="fk_exercises_s_exercises">
       <ObjectId>16919</ObjectId>
       <ColNames>exercise_id</ColNames>
       <RefTableId>16851</RefTableId>
@@ -248,7 +299,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="44" parent="21" name="fk_exercises_trainings">
+    <foreign-key id="55" parent="30" name="fk_exercises_trainings">
       <ObjectId>16924</ObjectId>
       <ColNames>training_id</ColNames>
       <RefTableId>16875</RefTableId>
@@ -259,7 +310,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="45" parent="22" name="id">
+    <column id="56" parent="31" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -268,35 +319,35 @@
       <TypeId>23</TypeId>
       <SequenceName>exercise_data_id_seq</SequenceName>
     </column>
-    <column id="46" parent="22" name="name">
+    <column id="57" parent="31" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>937</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="47" parent="22" name="pk_s_exercises">
+    <index id="58" parent="31" name="pk_s_exercises">
       <ObjectId>16894</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="48" parent="22" name="name_unique">
+    <index id="59" parent="31" name="name_unique">
       <ObjectId>16896</ObjectId>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="49" parent="22" name="pk_s_exercises">
+    <key id="60" parent="31" name="pk_s_exercises">
       <ObjectId>16895</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_s_exercises</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="50" parent="22" name="name_unique">
+    <key id="61" parent="31" name="name_unique">
       <ObjectId>16897</ObjectId>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>name_unique</UnderlyingIndexName>
     </key>
-    <column id="51" parent="23" name="id">
+    <column id="62" parent="32" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -305,46 +356,46 @@
       <TypeId>23</TypeId>
       <SequenceName>person_id_seq</SequenceName>
     </column>
-    <column id="52" parent="23" name="first_name">
+    <column id="63" parent="32" name="first_name">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>938</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="53" parent="23" name="last_name">
+    <column id="64" parent="32" name="last_name">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>938</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="54" parent="23" name="birthday">
+    <column id="65" parent="32" name="birthday">
       <Position>4</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>938</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="55" parent="23" name="sex_id">
+    <column id="66" parent="32" name="sex_id">
       <Position>5</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>938</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="56" parent="23" name="pk_persons">
+    <index id="67" parent="32" name="pk_persons">
       <ObjectId>16898</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="57" parent="23" name="pk_persons">
+    <key id="68" parent="32" name="pk_persons">
       <ObjectId>16899</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_persons</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="58" parent="23" name="fk_person_s_sex">
+    <foreign-key id="69" parent="32" name="fk_person_s_sex">
       <ObjectId>16929</ObjectId>
       <ColNames>sex_id</ColNames>
       <RefTableId>16863</RefTableId>
@@ -355,7 +406,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="59" parent="24" name="id">
+    <column id="70" parent="33" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -364,35 +415,35 @@
       <TypeId>23</TypeId>
       <SequenceName>sex_id_seq</SequenceName>
     </column>
-    <column id="60" parent="24" name="sex">
+    <column id="71" parent="33" name="sex">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>939</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="61" parent="24" name="pk_s_sex">
+    <index id="72" parent="33" name="pk_s_sex">
       <ObjectId>16900</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="62" parent="24" name="index_sex">
+    <index id="73" parent="33" name="index_sex">
       <ObjectId>16902</ObjectId>
       <ColNames>sex</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="63" parent="24" name="pk_s_sex">
+    <key id="74" parent="33" name="pk_s_sex">
       <ObjectId>16901</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_s_sex</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="64" parent="24" name="index_sex">
+    <key id="75" parent="33" name="index_sex">
       <ObjectId>16903</ObjectId>
       <ColNames>sex</ColNames>
       <UnderlyingIndexName>index_sex</UnderlyingIndexName>
     </key>
-    <column id="65" parent="25" name="id">
+    <column id="76" parent="34" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -401,14 +452,14 @@
       <TypeId>23</TypeId>
       <SequenceName>state_id_seq</SequenceName>
     </column>
-    <column id="66" parent="25" name="state">
+    <column id="77" parent="34" name="state">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>940</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="67" parent="25" name="enabled">
+    <column id="78" parent="34" name="enabled">
       <Position>3</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
@@ -416,7 +467,7 @@
       <DefaultExpression>true</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
-    <column id="68" parent="25" name="role">
+    <column id="79" parent="34" name="role">
       <Position>4</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
@@ -424,28 +475,28 @@
       <DefaultExpression>&apos;role_user&apos;::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <index id="69" parent="25" name="pk_s_state">
+    <index id="80" parent="34" name="pk_s_state">
       <ObjectId>16904</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="70" parent="25" name="state_unique">
+    <index id="81" parent="34" name="state_unique">
       <ObjectId>16906</ObjectId>
       <ColNames>state</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="71" parent="25" name="pk_s_state">
+    <key id="82" parent="34" name="pk_s_state">
       <ObjectId>16905</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_s_state</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="72" parent="25" name="state_unique">
+    <key id="83" parent="34" name="state_unique">
       <ObjectId>16907</ObjectId>
       <ColNames>state</ColNames>
       <UnderlyingIndexName>state_unique</UnderlyingIndexName>
     </key>
-    <column id="73" parent="26" name="id">
+    <column id="84" parent="35" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -454,14 +505,14 @@
       <TypeId>23</TypeId>
       <SequenceName>training_id_seq</SequenceName>
     </column>
-    <column id="74" parent="26" name="user_id">
+    <column id="85" parent="35" name="user_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>941</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="75" parent="26" name="create_date">
+    <column id="86" parent="35" name="create_date">
       <Position>3</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
@@ -469,25 +520,25 @@
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1082</TypeId>
     </column>
-    <column id="76" parent="26" name="training_date">
+    <column id="87" parent="35" name="training_date">
       <Position>4</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>941</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="77" parent="26" name="pk_trainings">
+    <index id="88" parent="35" name="pk_trainings">
       <ObjectId>16908</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="78" parent="26" name="pk_trainings">
+    <key id="89" parent="35" name="pk_trainings">
       <ObjectId>16909</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_trainings</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="79" parent="26" name="fk_trainings_users">
+    <foreign-key id="90" parent="35" name="fk_trainings_users">
       <ObjectId>16934</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>16882</RefTableId>
@@ -498,7 +549,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="80" parent="27" name="id">
+    <column id="91" parent="36" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -507,28 +558,28 @@
       <TypeId>23</TypeId>
       <SequenceName>user_data_id_seq</SequenceName>
     </column>
-    <column id="81" parent="27" name="person_id">
+    <column id="92" parent="36" name="person_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>942</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="82" parent="27" name="user_login">
+    <column id="93" parent="36" name="user_login">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>942</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="83" parent="27" name="user_password">
+    <column id="94" parent="36" name="user_password">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1551</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="84" parent="27" name="state_id">
+    <column id="95" parent="36" name="state_id">
       <Position>5</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -536,7 +587,7 @@
       <DefaultExpression>1</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="85" parent="27" name="date_reg">
+    <column id="96" parent="36" name="date_reg">
       <Position>6</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
@@ -544,28 +595,28 @@
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1082</TypeId>
     </column>
-    <index id="86" parent="27" name="pk_users">
+    <index id="97" parent="36" name="pk_users">
       <ObjectId>16910</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="87" parent="27" name="login_unique">
+    <index id="98" parent="36" name="login_unique">
       <ObjectId>16912</ObjectId>
       <ColNames>user_login</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="88" parent="27" name="pk_users">
+    <key id="99" parent="36" name="pk_users">
       <ObjectId>16911</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_users</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="89" parent="27" name="login_unique">
+    <key id="100" parent="36" name="login_unique">
       <ObjectId>16913</ObjectId>
       <ColNames>user_login</ColNames>
       <UnderlyingIndexName>login_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="90" parent="27" name="fk_users_persons">
+    <foreign-key id="101" parent="36" name="fk_users_persons">
       <ObjectId>16939</ObjectId>
       <ColNames>person_id</ColNames>
       <RefTableId>16857</RefTableId>
@@ -576,7 +627,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="91" parent="27" name="fk_users_s_state">
+    <foreign-key id="102" parent="36" name="fk_users_s_state">
       <ObjectId>16944</ObjectId>
       <ColNames>state_id</ColNames>
       <RefTableId>16869</RefTableId>
@@ -587,5 +638,29 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
+    <column id="103" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1814</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="104" parent="38" name="sex">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1814</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="105" parent="38" name="sex_pkey">
+      <ObjectId>25283</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="106" parent="38" name="sex_pkey">
+      <ObjectId>25284</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>sex_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

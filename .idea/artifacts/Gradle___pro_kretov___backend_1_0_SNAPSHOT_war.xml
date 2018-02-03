@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : pro.kretov : backend-1.0-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/backend/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/frontend" />
+    </properties>
+    <root id="archive" name="backend-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Gradle : pro.kretov : backend-1.0-SNAPSHOT.war (exploded)" />
+    </root>
+  </artifact>
+</component>

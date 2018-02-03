@@ -80,7 +80,7 @@ public class SexDAOImpl implements SexDAO {
     }
 
     @Override
-    public Result<String> insert(Sex sex, InsertType insertType) {
+    public Result<Sex> insert(Sex sex, InsertType insertType) {
         int retry = 0;
         Connection connection = null;
         while (true) {
@@ -89,22 +89,25 @@ public class SexDAOImpl implements SexDAO {
                 PreparedStatement preparedStatement = null;
                 if (insertType == NEW) {
                     preparedStatement = connection.prepareStatement(
-                            "INSERT INTO sex (sex) VALUES (?)"
+                            "INSERT INTO sex (sex) VALUES (?) RETURNING id"
                     );
 
                     preparedStatement.setString(1, sex.getSex());
                 } else if (insertType == RESTORE) {
                     preparedStatement = connection.prepareStatement(
-                            "INSERT INTO sex (id, sex) VALUES (?, ?)"
+                            "INSERT INTO sex (id, sex) VALUES (?, ?) RETURNING id"
                     );
                     preparedStatement.setLong(1, sex.getId());
                     preparedStatement.setString(2, sex.getSex());
                 }
 
                 preparedStatement.addBatch();
-                int[] count = preparedStatement.executeBatch();
-
-                return new Result<>(String.format("Inserted %d lines", count[0]), true, "Success");
+                ResultSet resultSet = preparedStatement.executeQuery();
+                if (resultSet.next()) {
+                    sex.setId(resultSet.getLong("id"));
+                    return new Result<>(sex, true, "Success");
+                }
+                return new Result<>(null, false, "Success");
 
             } catch (ClassNotFoundException e) {
                 logger.error(new Log(e, sex));

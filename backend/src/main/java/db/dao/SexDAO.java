@@ -10,6 +10,6 @@ import java.util.List;
 public interface SexDAO extends Serializable {
 
     Result<List<Sex>> getAll();
-    Result<String> insert(Sex sex, InsertType insertType);
+    Result<Sex> insert(Sex sex, InsertType insertType);
     
 }

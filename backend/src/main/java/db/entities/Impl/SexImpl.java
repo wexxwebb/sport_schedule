@@ -2,12 +2,16 @@ package db.entities.Impl;
 
 import db.entities.Sex;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 
 @XmlRootElement
 @XmlType(propOrder = {"id", "sex"})
+
+@Entity
+@Table(name = "SEX")
 public class SexImpl implements Sex, Serializable {
 
     private long id;
@@ -15,7 +19,6 @@ public class SexImpl implements Sex, Serializable {
     private String sex;
 
     public SexImpl() {
-
     }
 
     public SexImpl(long id, String sex) {
@@ -28,6 +31,10 @@ public class SexImpl implements Sex, Serializable {
     }
 
     @Override
+
+    @Id
+    @SequenceGenerator(name = "hibernateSeq", sequenceName = "SEX_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "hibernateSeq")
     public long getId() {
         return id;
     }

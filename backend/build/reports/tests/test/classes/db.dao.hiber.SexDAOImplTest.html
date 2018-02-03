@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class db.dao.hiber.SexDAOImplTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class db.dao.hiber.SexDAOImplTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/db.dao.hiber.html">db.dao.hiber</a> &gt; SexDAOImplTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.003s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="getAll"></a>
+<h3 class="failures">getAll</h3>
+<span class="code">
+<pre>java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sexDAOImpl': Unsatisfied dependency expressed through method 'setSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [database.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:667)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:93)
+	at db.dao.hiber.SexDAOImplTest.&lt;clinit&gt;(SexDAOImplTest.java:16)
+	... 45 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [database.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 60 more
+Caused by: java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+	at org.hibernate.cfg.annotations.EntityBinder.processComplementaryTableDefinitions(EntityBinder.java:1111)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:786)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:249)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:418)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:87)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:691)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:726)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 70 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="insert"></a>
+<h3 class="failures">insert</h3>
+<span class="code">
+<pre>java.lang.NoClassDefFoundError: Could not initialize class db.dao.hiber.SexDAOImplTest
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">getAll</td>
+<td>0.003s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">insert</td>
+<td>0s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2018-02-03 12:41:58 DEBUG StandardEnvironment:106 - Adding PropertySource 'systemProperties' with lowest search precedence
+ 2018-02-03 12:41:58 DEBUG StandardEnvironment:106 - Adding PropertySource 'systemEnvironment' with lowest search precedence
+ 2018-02-03 12:41:58 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [MapPropertySource@243649161 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, java.vm.version=25.161-b12, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/sa/IdeaProjects/sport_schedule/backend, java.runtime.version=1.8.0_161-b12, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.4.0-112-generic, user.home=/home/sa, user.timezone=Europe/Moscow, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test:/home/sa/IdeaProjects/sport_schedule/backend/build/resources/test:/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main:/home/sa/IdeaProjects/sport_schedule/backend/build/resources/main:/home/sa/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.23/6036400a8f2d90dd3ae3a4d09e5136c56002887b/tomcat-jdbc-8.5.23.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.3.RELEASE/7a03e737484ca232d7146852f06d067ac21427ac/spring-security-web-4.2.3.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.3.RELEASE/9f3771903616e33521836fd999d63efbfebf90d/spring-security-config-4.2.3.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c0e47a47036c94d6fdd02696bf52be6d1adbd4d/spring-security-core-4.2.3.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.12.RELEASE/47bbe35a92944aeedf06a388098581272f8db9bd/spring-orm-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.12.RELEASE/5c840abbdc1a1dfd0f79c4a4c25eac0c98e6af22/spring-jdbc-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar:/home/sa/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar:/home/sa/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar:/home/sa/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar:/home/sa/.gradle/caches/modules-2/files-2.1/postgresql/postgresql/9.1-901-1.jdbc4/9bfabe48876ec38f6cbaa6931bad05c64a9ea942/postgresql-9.1-901-1.jdbc4.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.12.RELEASE/986e5dcd4435e780f6be64f8185eaa51523cf851/spring-webmvc-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-remoting/2.0.8/e4b7438ec34a8b377ea31a3099b788b23344b431/spring-remoting-2.0.8.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.12.RELEASE/7147b6839b2bf9db3621b79c73b4dddbe69572b6/spring-tx-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.12.RELEASE/86c29588cca74d0fc848b194cb13fcdfd12bc990/spring-web-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.12.RELEASE/5e6d26f36636f36b7efec1d6a0c5991284fbd95b/spring-context-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.12.RELEASE/b3fef085902993c2ef874c45c7bfd79296d5a5a4/spring-aop-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.12.RELEASE/547dd432d47d0f01d9ccbedc4b705f9f7c1240a/spring-beans-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.12.RELEASE/790f69f6ad7f9da8d4a92c603ad7244c398c8309/spring-expression-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.12.RELEASE/4cebc69478c6d350dbd5af28e3db7d5694f416e3/spring-core-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.12.Final/ea479b6692e22c9b642dd4142db670e92d106544/hibernate-core-5.2.12.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.23/98e7f0610b7b2fb8303f11be0210e3f5a56a7d55/tomcat-juli-8.5.23.jar:/home/sa/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar:/home/sa/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar:/home/sa/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/4441f144a2a1f46ed48fcc6b476a4b6295e6d524/jboss-transaction-api_1.2_spec-1.0.1.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.3.Final/bfc4d6257dbff7a33a357f0de116be6ff951d849/jandex-2.0.3.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.0/183407ff982e9375f1a1c4a51ed0a9307c598fc7/classmate-1.3.0.jar:/home/sa/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar, user.name=sa, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1', java.home=/usr/lib/jvm/java-8-oracle/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_161, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, java.vendor=Oracle Corporation, org.gradle.test.worker=1, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=gnome, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@1147564441 {name='systemEnvironment', properties={PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin, LC_MEASUREMENT=ru_RU.UTF-8, XAUTHORITY=/home/sa/.Xauthority, XMODIFIERS=@im=ibus, LC_TELEPHONE=ru_RU.UTF-8, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, LC_TIME=ru_RU.UTF-8, GTK_IM_MODULE=ibus, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wcXYltdQfd, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, XDG_CURRENT_DESKTOP=Unity, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1866, QT4_IM_MODULE=xim, LC_PAPER=ru_RU.UTF-8, SESSION_MANAGER=local/sa-W65-67SF:@/tmp/.ICE-unix/2165,unix/sa-W65-67SF:/tmp/.ICE-unix/2165, QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1, LOGNAME=sa, JOB=unity-settings-daemon, PWD=/home/sa, DERBY_HOME=/usr/lib/jvm/java-8-oracle/db, IM_CONFIG_PHASE=1, LANGUAGE=en_US, SHELL=/bin/bash, LC_ADDRESS=ru_RU.UTF-8, GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/intellij-idea-ultimate.desktop, INSTANCE=, GTK2_MODULES=overlay-scrollbar, J2SDKDIR=/usr/lib/jvm/java-8-oracle, OLDPWD=/opt/intellij-idea-ultimate/bin, UPSTART_INSTANCE=, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, GTK_MODULES=gail:atk-bridge:unity-gtk-module, J2REDIR=/usr/lib/jvm/java-8-oracle/jre, CLUTTER_IM_MODULE=xim, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, COMPIZ_BIN_PATH=/usr/bin/, SESSIONTYPE=gnome-session, XDG_SESSION_DESKTOP=ubuntu, SHLVL=0, LC_IDENTIFICATION=ru_RU.UTF-8, LC_MONETARY=ru_RU.UTF-8, COMPIZ_CONFIG_PROFILE=ubuntu, QT_IM_MODULE=ibus, UPSTART_JOB=unity7, JAVA_HOME=/usr/lib/jvm/java-8-oracle, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GNOME_KEYRING_CONTROL=, LANG=en_US.UTF-8, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_SESSION_ID=c4, XDG_SESSION_TYPE=x11, DISPLAY=:0, IDEA_JDK=/usr/lib/jvm/java-8-oracle, LC_NAME=ru_RU.UTF-8, GDM_LANG=en_US, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/sa, UPSTART_EVENTS=xsession started, GPG_AGENT_INFO=/home/sa/.gnupg/S.gpg-agent:0:1, DESKTOP_SESSION=ubuntu, SESSION=ubuntu, USER=sa, XDG_MENU_PREFIX=gnome-, GIO_LAUNCHED_DESKTOP_FILE_PID=2626, QT_ACCESSIBILITY=1, LC_NUMERIC=ru_RU.UTF-8, SSH_AUTH_SOCK=/run/user/1000/keyring/ssh, XDG_SEAT=seat0, QT_QPA_PLATFORMTHEME=appmenu-qt5, XDG_VTNR=7, XDG_RUNTIME_DIR=/run/user/1000, HOME=/home/sa, GNOME_KEYRING_PID=}}]
+ 2018-02-03 12:41:58 INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@74f841e3: startup date [Sat Feb 03 12:41:58 MSK 2018]; root of context hierarchy
+ 2018-02-03 12:41:58 DEBUG StandardEnvironment:106 - Adding PropertySource 'systemProperties' with lowest search precedence
+ 2018-02-03 12:41:58 DEBUG StandardEnvironment:106 - Adding PropertySource 'systemEnvironment' with lowest search precedence
+ 2018-02-03 12:41:58 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [MapPropertySource@393652226 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, java.vm.version=25.161-b12, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/sa/IdeaProjects/sport_schedule/backend, java.runtime.version=1.8.0_161-b12, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.4.0-112-generic, user.home=/home/sa, user.timezone=Europe/Moscow, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test:/home/sa/IdeaProjects/sport_schedule/backend/build/resources/test:/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main:/home/sa/IdeaProjects/sport_schedule/backend/build/resources/main:/home/sa/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.23/6036400a8f2d90dd3ae3a4d09e5136c56002887b/tomcat-jdbc-8.5.23.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.3.RELEASE/7a03e737484ca232d7146852f06d067ac21427ac/spring-security-web-4.2.3.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.3.RELEASE/9f3771903616e33521836fd999d63efbfebf90d/spring-security-config-4.2.3.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c0e47a47036c94d6fdd02696bf52be6d1adbd4d/spring-security-core-4.2.3.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.12.RELEASE/47bbe35a92944aeedf06a388098581272f8db9bd/spring-orm-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.12.RELEASE/5c840abbdc1a1dfd0f79c4a4c25eac0c98e6af22/spring-jdbc-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar:/home/sa/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar:/home/sa/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar:/home/sa/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar:/home/sa/.gradle/caches/modules-2/files-2.1/postgresql/postgresql/9.1-901-1.jdbc4/9bfabe48876ec38f6cbaa6931bad05c64a9ea942/postgresql-9.1-901-1.jdbc4.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.12.RELEASE/986e5dcd4435e780f6be64f8185eaa51523cf851/spring-webmvc-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-remoting/2.0.8/e4b7438ec34a8b377ea31a3099b788b23344b431/spring-remoting-2.0.8.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.12.RELEASE/7147b6839b2bf9db3621b79c73b4dddbe69572b6/spring-tx-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.12.RELEASE/86c29588cca74d0fc848b194cb13fcdfd12bc990/spring-web-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.12.RELEASE/5e6d26f36636f36b7efec1d6a0c5991284fbd95b/spring-context-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.12.RELEASE/b3fef085902993c2ef874c45c7bfd79296d5a5a4/spring-aop-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.12.RELEASE/547dd432d47d0f01d9ccbedc4b705f9f7c1240a/spring-beans-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.12.RELEASE/790f69f6ad7f9da8d4a92c603ad7244c398c8309/spring-expression-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.12.RELEASE/4cebc69478c6d350dbd5af28e3db7d5694f416e3/spring-core-4.3.12.RELEASE.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.12.Final/ea479b6692e22c9b642dd4142db670e92d106544/hibernate-core-5.2.12.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.23/98e7f0610b7b2fb8303f11be0210e3f5a56a7d55/tomcat-juli-8.5.23.jar:/home/sa/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar:/home/sa/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar:/home/sa/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/4441f144a2a1f46ed48fcc6b476a4b6295e6d524/jboss-transaction-api_1.2_spec-1.0.1.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.3.Final/bfc4d6257dbff7a33a357f0de116be6ff951d849/jandex-2.0.3.Final.jar:/home/sa/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.0/183407ff982e9375f1a1c4a51ed0a9307c598fc7/classmate-1.3.0.jar:/home/sa/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar:/home/sa/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar, user.name=sa, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1', java.home=/usr/lib/jvm/java-8-oracle/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_161, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, java.vendor=Oracle Corporation, org.gradle.test.worker=1, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=gnome, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@95849548 {name='systemEnvironment', properties={PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin, LC_MEASUREMENT=ru_RU.UTF-8, XAUTHORITY=/home/sa/.Xauthority, XMODIFIERS=@im=ibus, LC_TELEPHONE=ru_RU.UTF-8, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, LC_TIME=ru_RU.UTF-8, GTK_IM_MODULE=ibus, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wcXYltdQfd, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, XDG_CURRENT_DESKTOP=Unity, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1866, QT4_IM_MODULE=xim, LC_PAPER=ru_RU.UTF-8, SESSION_MANAGER=local/sa-W65-67SF:@/tmp/.ICE-unix/2165,unix/sa-W65-67SF:/tmp/.ICE-unix/2165, QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1, LOGNAME=sa, JOB=unity-settings-daemon, PWD=/home/sa, DERBY_HOME=/usr/lib/jvm/java-8-oracle/db, IM_CONFIG_PHASE=1, LANGUAGE=en_US, SHELL=/bin/bash, LC_ADDRESS=ru_RU.UTF-8, GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/intellij-idea-ultimate.desktop, INSTANCE=, GTK2_MODULES=overlay-scrollbar, J2SDKDIR=/usr/lib/jvm/java-8-oracle, OLDPWD=/opt/intellij-idea-ultimate/bin, UPSTART_INSTANCE=, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, GTK_MODULES=gail:atk-bridge:unity-gtk-module, J2REDIR=/usr/lib/jvm/java-8-oracle/jre, CLUTTER_IM_MODULE=xim, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, COMPIZ_BIN_PATH=/usr/bin/, SESSIONTYPE=gnome-session, XDG_SESSION_DESKTOP=ubuntu, SHLVL=0, LC_IDENTIFICATION=ru_RU.UTF-8, LC_MONETARY=ru_RU.UTF-8, COMPIZ_CONFIG_PROFILE=ubuntu, QT_IM_MODULE=ibus, UPSTART_JOB=unity7, JAVA_HOME=/usr/lib/jvm/java-8-oracle, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GNOME_KEYRING_CONTROL=, LANG=en_US.UTF-8, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_SESSION_ID=c4, XDG_SESSION_TYPE=x11, DISPLAY=:0, IDEA_JDK=/usr/lib/jvm/java-8-oracle, LC_NAME=ru_RU.UTF-8, GDM_LANG=en_US, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/sa, UPSTART_EVENTS=xsession started, GPG_AGENT_INFO=/home/sa/.gnupg/S.gpg-agent:0:1, DESKTOP_SESSION=ubuntu, SESSION=ubuntu, USER=sa, XDG_MENU_PREFIX=gnome-, GIO_LAUNCHED_DESKTOP_FILE_PID=2626, QT_ACCESSIBILITY=1, LC_NUMERIC=ru_RU.UTF-8, SSH_AUTH_SOCK=/run/user/1000/keyring/ssh, XDG_SEAT=seat0, QT_QPA_PLATFORMTHEME=appmenu-qt5, XDG_VTNR=7, XDG_RUNTIME_DIR=/run/user/1000, HOME=/home/sa, GNOME_KEYRING_PID=}}]
+ 2018-02-03 12:41:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+ 2018-02-03 12:41:58 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+ 2018-02-03 12:41:58 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+ 2018-02-03 12:41:58 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-4.3.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/security/spring-security-3.0.3.xsd=org/springframework/security/config/spring-security-3.0.3.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/security/spring-security-2.0.1.xsd=org/springframework/security/config/spring-security-2.0.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.xsd=org/springframework/security/config/spring-security-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/security/spring-security-4.2.xsd=org/springframework/security/config/spring-security-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/security/spring-security-2.0.4.xsd=org/springframework/security/config/spring-security-2.0.4.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/security/spring-security-3.2.xsd=org/springframework/security/config/spring-security-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/security/spring-security-4.1.xsd=org/springframework/security/config/spring-security-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/security/spring-security-3.1.xsd=org/springframework/security/config/spring-security-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/security/spring-security-4.0.xsd=org/springframework/security/config/spring-security-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/security/spring-security-2.0.2.xsd=org/springframework/security/config/spring-security-2.0.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/security/spring-security.xsd=org/springframework/security/config/spring-security-4.2.xsd, http://www.springframework.org/schema/security/spring-security-3.0.xsd=org/springframework/security/config/spring-security-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd}
+ 2018-02-03 12:41:58 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.3.xsd
+ 2018-02-03 12:41:58 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+ 2018-02-03 12:41:58 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+ 2018-02-03 12:41:58 DEBUG DefaultBeanDefinitionDocumentReader:92 - Loading bean definitions
+ 2018-02-03 12:41:58 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/security=org.springframework.security.config.SecurityNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+ 2018-02-03 12:41:58 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [db/dao/hiber/] to resources [URL [file:/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test/db/dao/hiber/], URL [file:/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/dao/hiber/]]
+ 2018-02-03 12:41:58 DEBUG PathMatchingResourcePatternResolver:736 - Looking for matching resources in directory tree [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test/db/dao/hiber]
+ 2018-02-03 12:41:58 DEBUG PathMatchingResourcePatternResolver:798 - Searching directory [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test/db/dao/hiber] for files matching pattern [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test/db/dao/hiber/**/*.class]
+ 2018-02-03 12:41:58 DEBUG PathMatchingResourcePatternResolver:736 - Looking for matching resources in directory tree [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/dao/hiber]
+ 2018-02-03 12:41:58 DEBUG PathMatchingResourcePatternResolver:798 - Searching directory [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/dao/hiber] for files matching pattern [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/dao/hiber/**/*.class]
+ 2018-02-03 12:41:58 DEBUG PathMatchingResourcePatternResolver:505 - Resolved location pattern [classpath*:db/dao/hiber/**/*.class] to resources [file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/test/db/dao/hiber/SexDAOImplTest.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/dao/hiber/SexDAOImpl.class]]
+ 2018-02-03 12:41:58 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/dao/hiber/SexDAOImpl.class]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [com.google.gson.Gson#0]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [common.LoggedAnnotationPostProcessor#0]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#0]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#1]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#2]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#3]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#4]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#5]
+ 2018-02-03 12:41:58 DEBUG BeanDefinitionParserDelegate:480 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.remoting.rmi.RmiServiceExporter#6]
+ 2018-02-03 12:41:58 DEBUG XmlBeanDefinitionReader:224 - Loaded 24 bean definitions from location pattern [spring-config.xml]
+ 2018-02-03 12:41:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [database.xml]
+ 2018-02-03 12:41:58 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+ 2018-02-03 12:41:58 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.3.xsd
+ 2018-02-03 12:41:58 DEBUG DefaultBeanDefinitionDocumentReader:92 - Loading bean definitions
+ 2018-02-03 12:41:58 DEBUG XmlBeanDefinitionReader:224 - Loaded 3 bean definitions from location pattern [database.xml]
+ 2018-02-03 12:41:58 DEBUG ClassPathXmlApplicationContext:617 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@74f841e3: org.springframework.beans.factory.support.DefaultListableBeanFactory@59531321: defining beans [sexDAOImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,com.google.gson.Gson#0,common.LoggedAnnotationPostProcessor#0,dashboardService,org.springframework.remoting.rmi.RmiServiceExporter#0,exerciseDataService,org.springframework.remoting.rmi.RmiServiceExporter#1,exerciseService,org.springframework.remoting.rmi.RmiServiceExporter#2,registerService,org.springframework.remoting.rmi.RmiServiceExporter#3,sexListService,org.springframework.remoting.rmi.RmiServiceExporter#4,trainingService,org.springframework.remoting.rmi.RmiServiceExporter#5,userService,org.springframework.remoting.rmi.RmiServiceExporter#6,dataSource,sessionFactory,transactionManager]; root of factory hierarchy
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+ 2018-02-03 12:41:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'common.LoggedAnnotationPostProcessor#0'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'common.LoggedAnnotationPostProcessor#0'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'common.LoggedAnnotationPostProcessor#0' to allow for resolving potential circular references
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'common.LoggedAnnotationPostProcessor#0'
+ 2018-02-03 12:41:59 DEBUG ClassPathXmlApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@35231a31]
+ 2018-02-03 12:41:59 DEBUG ClassPathXmlApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@f419795]
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59531321: defining beans [sexDAOImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,com.google.gson.Gson#0,common.LoggedAnnotationPostProcessor#0,dashboardService,org.springframework.remoting.rmi.RmiServiceExporter#0,exerciseDataService,org.springframework.remoting.rmi.RmiServiceExporter#1,exerciseService,org.springframework.remoting.rmi.RmiServiceExporter#2,registerService,org.springframework.remoting.rmi.RmiServiceExporter#3,sexListService,org.springframework.remoting.rmi.RmiServiceExporter#4,trainingService,org.springframework.remoting.rmi.RmiServiceExporter#5,userService,org.springframework.remoting.rmi.RmiServiceExporter#6,dataSource,sessionFactory,transactionManager]; root of factory hierarchy
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'sexDAOImpl'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'sexDAOImpl'
+ 2018-02-03 12:41:59 DEBUG InjectionMetadata:72 - Registered injected element on class [db.dao.hiber.SexDAOImpl]: AutowiredMethodElement for public void db.dao.hiber.SexDAOImpl.setSessionFactory(org.hibernate.SessionFactory)
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'sexDAOImpl' to allow for resolving potential circular references
+ 2018-02-03 12:41:59 DEBUG InjectionMetadata:86 - Processing injected element of bean 'sexDAOImpl': AutowiredMethodElement for public void db.dao.hiber.SexDAOImpl.setSessionFactory(org.hibernate.SessionFactory)
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'sessionFactory'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'sessionFactory'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'dataSource'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'dataSource'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+ 2018-02-03 12:41:59 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'dataSource'
+ 2018-02-03 12:41:59 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
+ 2018-02-03 12:41:59 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+ 2018-02-03 12:41:59 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+ 2018-02-03 12:41:59 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+ 2018-02-03 12:41:59 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+ 2018-02-03 12:41:59 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+ 2018-02-03 12:41:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+ 2018-02-03 12:41:59 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [db/entities/] to resources [URL [file:/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/]]
+ 2018-02-03 12:41:59 DEBUG PathMatchingResourcePatternResolver:736 - Looking for matching resources in directory tree [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities]
+ 2018-02-03 12:41:59 DEBUG PathMatchingResourcePatternResolver:798 - Searching directory [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities] for files matching pattern [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/**/*.class]
+ 2018-02-03 12:41:59 DEBUG PathMatchingResourcePatternResolver:798 - Searching directory [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl] for files matching pattern [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/**/*.class]
+ 2018-02-03 12:41:59 DEBUG PathMatchingResourcePatternResolver:505 - Resolved location pattern [classpath*:db/entities/**/*.class] to resources [file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/AdminData.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Exercise.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/ExerciseData.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/AdminDataImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/ExerciseDataImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/ExerciseImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/PersonImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/SexImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/StateImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/TrainingImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Impl/UserDataImpl.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Person.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Sex.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/State.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/Training.class], file [/home/sa/IdeaProjects/sport_schedule/backend/build/classes/java/main/db/entities/UserData.class]]
+ 2018-02-03 12:41:59 DEBUG Configuration:724 - Building session factory using internal StandardServiceRegistryBuilder
+ 2018-02-03 12:41:59 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+ 2018-02-03 12:41:59 DEBUG Configuration:652 - Building session factory using provided StandardServiceRegistry
+ 2018-02-03 12:41:59 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+ 2018-02-03 12:41:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@554d126
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@554d126
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@554d126
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@2ab12a7e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@610206ad
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@3a10c1d6
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration byte -&gt; org.hibernate.type.ByteType@45054285
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration byte -&gt; org.hibernate.type.ByteType@45054285
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@45054285
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration character -&gt; org.hibernate.type.CharacterType@282b473
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration char -&gt; org.hibernate.type.CharacterType@282b473
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@282b473
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration short -&gt; org.hibernate.type.ShortType@52441dba
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration short -&gt; org.hibernate.type.ShortType@52441dba
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@52441dba
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration integer -&gt; org.hibernate.type.IntegerType@a69c0e8
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration int -&gt; org.hibernate.type.IntegerType@a69c0e8
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@a69c0e8
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration long -&gt; org.hibernate.type.LongType@6bdf80a4
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration long -&gt; org.hibernate.type.LongType@6bdf80a4
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@6bdf80a4
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration float -&gt; org.hibernate.type.FloatType@1b4ea106
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration float -&gt; org.hibernate.type.FloatType@1b4ea106
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@1b4ea106
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration double -&gt; org.hibernate.type.DoubleType@6efc6b61
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration double -&gt; org.hibernate.type.DoubleType@6efc6b61
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@6efc6b61
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@15880b25
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@15880b25
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@5f88e9ee
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@5f88e9ee
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration string -&gt; org.hibernate.type.StringType@2c9cd0b1
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@2c9cd0b1
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@47655d24
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@5f73a767
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration url -&gt; org.hibernate.type.UrlType@464b4183
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@464b4183
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -&gt; org.hibernate.type.DurationType@62c09e83
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -&gt; org.hibernate.type.DurationType@62c09e83
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -&gt; org.hibernate.type.InstantType@511bbcbd
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -&gt; org.hibernate.type.InstantType@511bbcbd
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@7404e3a6
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@7404e3a6
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -&gt; org.hibernate.type.LocalDateType@22cb6294
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -&gt; org.hibernate.type.LocalDateType@22cb6294
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -&gt; org.hibernate.type.LocalTimeType@246d058f
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -&gt; org.hibernate.type.LocalTimeType@246d058f
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@7faa57d4
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@7faa57d4
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -&gt; org.hibernate.type.OffsetTimeType@2c478af6
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -&gt; org.hibernate.type.OffsetTimeType@2c478af6
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@7d031320
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@7d031320
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration date -&gt; org.hibernate.type.DateType@600014f7
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@600014f7
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration time -&gt; org.hibernate.type.TimeType@7cb6e52c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@7cb6e52c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@266e8687
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@266e8687
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@266e8687
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@3194d03e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@71756a69
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@71756a69
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@71756a69
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@3d45bd8c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration locale -&gt; org.hibernate.type.LocaleType@212cfc2
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@212cfc2
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@61a27930
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@61a27930
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@21f0720e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@21f0720e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration class -&gt; org.hibernate.type.ClassType@48582e3f
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@48582e3f
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@63c02a8
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@63c02a8
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@2719a5ea
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration binary -&gt; org.hibernate.type.BinaryType@121fa1c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@121fa1c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration [B -&gt; org.hibernate.type.BinaryType@121fa1c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@74f32d23
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@74f32d23
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@74f32d23
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -&gt; org.hibernate.type.RowVersionType@7cb3ec79
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration image -&gt; org.hibernate.type.ImageType@26f59d69
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@2dc12077
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@2dc12077
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@2dc12077
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@396ddf4e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@396ddf4e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@396ddf4e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration text -&gt; org.hibernate.type.TextType@16042827
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -&gt; org.hibernate.type.NTextType@41aa8d95
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration blob -&gt; org.hibernate.type.BlobType@3be002e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@3be002e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@3d798c56
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration clob -&gt; org.hibernate.type.ClobType@6082d402
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@6082d402
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -&gt; org.hibernate.type.NClobType@126e3850
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@126e3850
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@62751e9a
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@1a19e165
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@2bf0d48e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration object -&gt; org.hibernate.type.ObjectType@5df7a1cd
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@5df7a1cd
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@28c6e350
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@48dfc64c
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@2bb15df
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@6adceb7e
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@759f5916
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@43c40c4f
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@190bfc05
+ 2018-02-03 12:41:59 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@14017341
+ 2018-02-03 12:41:59 DEBUG DriverManagerDataSource:142 - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5432/sport_schedule_hibernate]
+ 2018-02-03 12:41:59 DEBUG JdbcEnvironmentInitiator:72 - Database -&gt;
+       name : PostgreSQL
+    version : 9.5.10
+      major : 9
+      minor : 5
+ 2018-02-03 12:41:59 DEBUG JdbcEnvironmentInitiator:83 - Driver -&gt;
+       name : PostgreSQL Native Driver
+    version : PostgreSQL 9.1 JDBC4 (build 901)
+      major : 9
+      minor : 1
+ 2018-02-03 12:41:59 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.0
+ 2018-02-03 12:42:00 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+ 2018-02-03 12:42:00 DEBUG IdentifierHelperBuilder:112 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+ 2018-02-03 12:42:00 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+ 2018-02-03 12:42:00 DEBUG BasicTypeRegistry:145 - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@7606f8bf
+ 2018-02-03 12:42:00 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -&gt; org.hibernate.type.PostgresUUIDType@7606f8bf
+ 2018-02-03 12:42:00 INFO  BasicTypeRegistry:148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@63c02a8
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+ 2018-02-03 12:42:00 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+ 2018-02-03 12:42:00 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+ 2018-02-03 12:42:01 DEBUG AnnotationBinder:511 - Binding entity from annotated class: db.entities.Impl.SexImpl
+ 2018-02-03 12:42:01 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+ 2018-02-03 12:42:01 DEBUG EntityBinder:419 - Import with entity name SexImpl
+ 2018-02-03 12:42:01 DEBUG EntityBinder:695 - Bind entity db.entities.Impl.SexImpl on table SEX
+ 2018-02-03 12:42:01 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(SEX), mappingColumn=id, insertable=true, updatable=true, unique=false}
+ 2018-02-03 12:42:01 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+ 2018-02-03 12:42:01 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [db.entities.Impl.SexImpl:id]
+ 2018-02-03 12:42:01 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+ 2018-02-03 12:42:01 DEBUG PropertyBinder:265 - Building property id
+ 2018-02-03 12:42:01 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(SEX), mappingColumn=sex, insertable=true, updatable=true, unique=false}
+ 2018-02-03 12:42:01 DEBUG PropertyBinder:174 - MetadataSourceProcessor property sex with lazy=false
+ 2018-02-03 12:42:01 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [db.entities.Impl.SexImpl:sex]
+ 2018-02-03 12:42:01 DEBUG SimpleValueBinder:411 - building SimpleValue for sex
+ 2018-02-03 12:42:01 DEBUG PropertyBinder:265 - Building property sex
+ 2018-02-03 12:42:01 WARN  ClassPathXmlApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sexDAOImpl': Unsatisfied dependency expressed through method 'setSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [database.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+ 2018-02-03 12:42:01 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59531321: defining beans [sexDAOImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,com.google.gson.Gson#0,common.LoggedAnnotationPostProcessor#0,dashboardService,org.springframework.remoting.rmi.RmiServiceExporter#0,exerciseDataService,org.springframework.remoting.rmi.RmiServiceExporter#1,exerciseService,org.springframework.remoting.rmi.RmiServiceExporter#2,registerService,org.springframework.remoting.rmi.RmiServiceExporter#3,sexListService,org.springframework.remoting.rmi.RmiServiceExporter#4,trainingService,org.springframework.remoting.rmi.RmiServiceExporter#5,userService,org.springframework.remoting.rmi.RmiServiceExporter#6,dataSource,sessionFactory,transactionManager]; root of factory hierarchy
+ </pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.0</a> at Feb 3, 2018 12:42:02 PM</p>
+</div>
+</div>
+</body>
+</html>
