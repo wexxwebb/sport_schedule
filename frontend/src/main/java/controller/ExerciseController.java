@@ -48,7 +48,7 @@ public class ExerciseController {
 
         ModelAndView modelAndView = new ModelAndView();
 
-        Result<db.pojo.Training> result = trainingService.getById(trainingId);
+        Result<db.entities.Training> result = trainingService.getById(trainingId);
         if (result.isSuccess()) {
             modelAndView.addObject("training", result.get());
         } else {
@@ -57,7 +57,7 @@ public class ExerciseController {
 
         modelAndView.setViewName("/inner/trainingConsist");
 
-        Result<List<db.pojo.Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
+        Result<List<db.entities.Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
         if (exerciseResult.isSuccess()) {
             modelAndView.addObject("exerciseList", exerciseResult.get());
             return modelAndView;

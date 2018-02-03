@@ -3,7 +3,7 @@ package db.xml.xmlWrapper;
 import common.Log;
 import db.dao.SexDAO;
 import db.dao.jdbc.SexDAOImpl;
-import db.pojo.Sex;
+import db.entities.Sex;
 import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;

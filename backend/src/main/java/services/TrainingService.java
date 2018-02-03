@@ -1,7 +1,7 @@
 package services;
 
 import common.Result;
-import db.pojo.Training;
+import db.entities.Training;
 
 import java.io.Serializable;
 

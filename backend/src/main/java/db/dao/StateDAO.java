@@ -2,7 +2,7 @@ package db.dao;
 
 import common.InsertType;
 import common.Result;
-import db.pojo.State;
+import db.entities.State;
 
 import java.util.List;
 

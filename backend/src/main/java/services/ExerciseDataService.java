@@ -1,6 +1,6 @@
 package services;
 
-import db.pojo.ExerciseData;
+import db.entities.ExerciseData;
 
 import java.io.Serializable;
 import java.util.List;

@@ -36,7 +36,7 @@ public class ExerciseDataController {
     public ModelAndView getExerciseDataList() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/exerciseData");
-        List<db.pojo.ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
+        List<db.entities.ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
         if (exerciseDataList != null) {
             modelAndView.addObject("exerciseDataList", exerciseDataList);
             return modelAndView;

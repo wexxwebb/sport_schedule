@@ -4,9 +4,9 @@ import common.InsertType;
 import common.Logged;
 import common.Result;
 import db.dao.AdminDAO;
-import db.pojo.AdminData;
+import db.entities.AdminData;
 import db.connectionManager.ConnectionManager;
-import db.pojo.Impl.AdminDataImpl;
+import db.entities.Impl.AdminDataImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 

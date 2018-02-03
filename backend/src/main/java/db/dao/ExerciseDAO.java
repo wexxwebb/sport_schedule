@@ -2,7 +2,7 @@ package db.dao;
 
 import common.InsertType;
 import common.Result;
-import db.pojo.Exercise;
+import db.entities.Exercise;
 
 import java.io.Serializable;
 import java.util.List;

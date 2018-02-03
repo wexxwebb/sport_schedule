@@ -2,8 +2,8 @@ package db.xml.xmlWrapper;
 
 import db.dao.UserDataDAO;
 import db.dao.jdbc.UserDataDAOImpl;
-import db.pojo.UserData;
-import db.pojo.Impl.UserDataImpl;
+import db.entities.UserData;
+import db.entities.Impl.UserDataImpl;
 import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;

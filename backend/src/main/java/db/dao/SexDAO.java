@@ -2,7 +2,7 @@ package db.dao;
 
 import common.InsertType;
 import common.Result;
-import db.pojo.Sex;
+import db.entities.Sex;
 
 import java.io.Serializable;
 import java.util.List;

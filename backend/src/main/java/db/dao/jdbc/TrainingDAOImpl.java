@@ -2,9 +2,9 @@ package db.dao.jdbc;
 
 import common.*;
 import db.dao.TrainingDAO;
-import db.pojo.Training;
+import db.entities.Training;
 import db.connectionManager.ConnectionManager;
-import db.pojo.Impl.TrainingImpl;
+import db.entities.Impl.TrainingImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

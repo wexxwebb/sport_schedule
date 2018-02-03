@@ -3,7 +3,7 @@ package services.impl;
 import common.Logged;
 import common.Result;
 import db.dao.UserDataDAO;
-import db.pojo.UserData;
+import db.entities.UserData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

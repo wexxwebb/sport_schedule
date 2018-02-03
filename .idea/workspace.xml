@@ -7,47 +7,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a8c52d-4a73-4d29-92dc-045b79103faf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/resources/database.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/admin/AdminDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/admin/AdminDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exercise/ExerciseDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exercise/ExerciseDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exerciseData/ExerciseDataDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exerciseData/ExerciseDataDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/person/PersonDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/person/PersonDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/sex/SexDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/sex/SexDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/state/StateDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/state/StateDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/training/TrainingDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/training/TrainingDAOImpl$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/training/TrainingDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/user/UserDataDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/user/UserDataDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminData.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminData.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminDataImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseData.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseData.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseDataImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Person.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Person.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/PersonImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Sex.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Sex.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/SexImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/State.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/State.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/StateImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Training.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Training.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/TrainingImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserData.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserData.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserDataImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Marshalling.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Marshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/AdminDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/AdminDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/ExerciseDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/ExerciseDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/ExerciseDataDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/ExerciseDataDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/PersonDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/PersonDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/SexDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/SexDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/StateDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/StateDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/TrainingDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/TrainingDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/UserDataDAO.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/UserDataDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/AdminDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/AdminDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/ExerciseDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/ExerciseDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/ExerciseDataDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/ExerciseDataDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/PersonDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/PersonDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/SexDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/SexDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/StateDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/StateDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/TrainingDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/TrainingDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/UserDataDAOImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/jdbc/UserDataDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/AdminDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/ExerciseDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/ExerciseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/PersonImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/SexImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/StateImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/TrainingImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Impl/UserDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Person.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Sex.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/State.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Training.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserData.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Unmarshalling.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Unmarshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/AdminDataTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/AdminDataTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/DataBaseObject.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/DataBaseObject.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/ExerciseDataTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/ExerciseDataTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/ExerciseTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/ExerciseTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/PersonTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/PersonTable.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/SexTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/SexTable.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/Table.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/Table.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/StateTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/StateTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/TrainingTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/TrainingTable.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/UserDataTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/UserDataTable.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/DashboardService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/DashboardService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/ExerciseDataService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/ExerciseDataService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/ExerciseService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/ExerciseService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/SexListService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/SexListService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/TrainingService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/TrainingService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/UserService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/UserService.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/DashboardServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/DashboardServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseDataServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseDataServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseServiceImpl.class" />
@@ -56,45 +64,54 @@
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/TrainingServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/TrainingServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/UserServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/admin/AdminDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/admin/AdminDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exercise/ExerciseDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exercise/ExerciseDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exerciseData/ExerciseDataDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exerciseData/ExerciseDataDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/person/PersonDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/person/PersonDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/sex/SexDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/sex/SexDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/state/StateDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/state/StateDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/training/TrainingDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/training/TrainingDAOImpl$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/training/TrainingDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/user/UserDataDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/user/UserDataDAOImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminData.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminData.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminDataImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseData.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseData.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseDataImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Person.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Person.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/PersonImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Sex.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Sex.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/SexImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/State.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/State.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/StateImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Training.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Training.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/TrainingImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserData.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserData.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserDataImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Marshalling.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Marshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/AdminDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/AdminDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/ExerciseDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/ExerciseDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/ExerciseDataDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/ExerciseDataDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/PersonDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/PersonDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/SexDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/SexDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/StateDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/StateDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/TrainingDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/TrainingDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/UserDataDAO.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/UserDataDAO.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/AdminDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/AdminDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/ExerciseDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/ExerciseDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/ExerciseDataDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/ExerciseDataDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/PersonDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/PersonDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/SexDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/SexDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/StateDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/StateDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/TrainingDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/TrainingDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/UserDataDAOImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/dao/jdbc/UserDataDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/AdminDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/ExerciseDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/ExerciseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/PersonImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/SexImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/StateImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/TrainingImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Impl/UserDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Person.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Sex.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/State.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Training.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserData.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Unmarshalling.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Unmarshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/AdminDataTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/AdminDataTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/DataBaseObject.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/DataBaseObject.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/ExerciseDataTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/ExerciseDataTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/ExerciseTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/ExerciseTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/PersonTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/PersonTable.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/SexTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/SexTable.class" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/Table.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/Table.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/StateTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/StateTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/TrainingTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/TrainingTable.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/UserDataTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/UserDataTable.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/DashboardService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/DashboardService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/ExerciseDataService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/ExerciseDataService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/ExerciseService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/ExerciseService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/SexListService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/SexListService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/TrainingService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/TrainingService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/UserService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/UserService.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/DashboardServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/DashboardServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseDataServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseDataServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseServiceImpl.class" />
@@ -102,44 +119,53 @@
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/SexListServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/SexListServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/TrainingServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/TrainingServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/AdminDAO.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAOImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDAO.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAOImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDataDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/PersonDAO.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAOImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/StateDAO.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/StateDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/TrainingDAO.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/TrainingDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/UserDataDAO.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/UserDataDAOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminDataImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/AdminDataImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseDataImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseDataImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/PersonImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/PersonImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/SexImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/SexImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/StateImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/StateImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/TrainingImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/TrainingImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserDataImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/UserDataImpl.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/Marshalling.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/Marshalling.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/Unmarshalling.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/Unmarshalling.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/AdminDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/AdminDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDataDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDataDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/PersonDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/PersonDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/SexDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/SexDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/StateDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/StateDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/TrainingDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/TrainingDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/UserDataDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/UserDataDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/AdminDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/AdminDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDataDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/PersonDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/PersonDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/SexDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/SexDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/StateDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/StateDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/TrainingDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/TrainingDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/UserDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/UserDataDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/AdminDataImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseDataImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/PersonImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/SexImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/StateImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/TrainingImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/UserDataImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/AdminDataTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/AdminDataTable.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/DataBaseObject.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/DataBaseObject.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/ExerciseDataTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/ExerciseDataTable.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/ExerciseTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/ExerciseTable.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/PersonTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/PersonTable.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/SexTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/SexTable.java" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/Table.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/Table.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/StateTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/StateTable.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/TrainingTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/TrainingTable.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/UserDataTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/UserDataTable.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/ExerciseDataService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/ExerciseDataService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/ExerciseService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/ExerciseService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/SexListService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/SexListService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/TrainingService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/TrainingService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/UserService.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" />
@@ -155,18 +181,165 @@
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/DashboardController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/ExerciseController.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/ExerciseController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/ExerciseDataController.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/ExerciseDataController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/util/CustomAuthProvider.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/util/CustomAuthProvider.class" />
       <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/util/CustomUserService.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/util/CustomUserService.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/util/InnerUser.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/util/InnerUser.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/CustomUserService.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/CustomUserService.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/InnerUser.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/InnerUser.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/ExerciseController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/ExerciseDataController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/LoginController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/RegisterController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/TrainingController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/UsersController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/CustomAuthProvider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/CustomUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/InnerUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/dispatcher-servlet.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/gson-2.8.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/log4j-1.2.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/postgresql-9.1-901-1.jdbc4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-aop-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-beans-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-context-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-core-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-expression-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-jdbc-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-remoting-2.0.8.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-config-4.2.3.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-core-4.2.3.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-security-web-4.2.3.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-tx-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-web-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/spring-webmvc-4.3.12.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/tomcat-jdbc-8.5.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/tomcat-juli-8.5.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/spring-security.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/admin/users.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/favicon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/dashboard.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/exerciseData.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/trainingConsist.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/public/login.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/public/register.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.standalone.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.standalone.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.standalone.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker.standalone.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.standalone.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.standalone.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.standalone.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/css/bootstrap-datepicker3.standalone.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/js/bootstrap-datepicker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/js/bootstrap-datepicker.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.az.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.bg.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.bs.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ca.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.cs.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.cy.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.da.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.de.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.el.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.en-AU.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.en-GB.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.eo.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.es.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.et.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.eu.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.fa.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.fi.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.fo.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.fr-CH.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.fr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.gl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.he.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.hr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.hu.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.hy.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.id.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.is.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.it-CH.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.it.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ja.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ka.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.kh.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.kk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ko.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.kr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.lt.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.lv.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.me.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.mk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.mn.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ms.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.nb.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.nl-BE.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.nl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.no.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.pl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.pt-BR.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.pt.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ro.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.rs-latin.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.rs.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.ru.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sq.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sr-latin.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sv.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.sw.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.th.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.tr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.uk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.vi.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.zh-CN.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/datepicker/locales/bootstrap-datepicker.zh-TW.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/js/npm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/style/style.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/frontend/build/libs/frontend-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/frontend/build/libs/frontend-1.0-SNAPSHOT.war" />
-      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/controller/DashboardController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/controller/ExerciseController.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/controller/ExerciseController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/controller/ExerciseDataController.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/controller/ExerciseDataController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/util/CustomAuthProvider.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/util/CustomAuthProvider.class" />
       <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/util/CustomUserService.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/util/CustomUserService.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/util/InnerUser.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/util/InnerUser.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseController.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseController.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseDataController.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseDataController.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/util/CustomAuthProvider.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/util/CustomAuthProvider.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -330,11 +503,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CustomUserService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java">
+      <file leaf-file-name="AdminDataImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/AdminDataImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="352">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -1079,7 +1252,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="front" type="b2602c69:ProjectViewProjectNode" />
@@ -1255,7 +1439,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Frontend">
+  <component name="RunManager" selected="Gradle.frontend [clean build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1570,7 +1754,7 @@
       <workItem from="1517515623447" duration="6248000" />
       <workItem from="1517551459079" duration="11800000" />
       <workItem from="1517593280585" duration="2113000" />
-      <workItem from="1517635602179" duration="3356000" />
+      <workItem from="1517635602179" duration="4630000" />
     </task>
     <servers />
   </component>
@@ -1607,7 +1791,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="498406000" />
+    <option name="totallyTimeSpent" value="499680000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1620,7 +1804,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1640,9 +1823,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29986614" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2981771" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3528646" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31994644" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4205729" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70442706" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1797,13 +1980,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/util/CustomPasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1892,13 +2068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1914,21 +2083,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
@@ -2008,25 +2163,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/AdminDataImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseDataImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/ExerciseDataImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
@@ -2034,7 +2171,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/ExerciseImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
@@ -2044,7 +2181,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/PersonImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/PersonImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="25" column="87" lean-forward="false" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
@@ -2052,7 +2189,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/SexImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/SexImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
@@ -2060,7 +2197,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/StateImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/StateImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
@@ -2068,7 +2205,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/TrainingImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/TrainingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
@@ -2078,7 +2215,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/UserDataImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/UserDataImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
@@ -2115,9 +2252,9 @@
         <state relative-caret-position="63">
           <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
           <folding>
-            <marker date="1517638174304" expanded="true" signature="1317:1432" ph="SELECT id, s... state" />
-            <marker date="1517638174304" expanded="true" signature="2788:2824" ph="INSERT INTO state... " />
-            <marker date="1517638174304" expanded="true" signature="3069:3112" ph="INSERT INTO state... " />
+            <marker date="1517641791597" expanded="true" signature="1325:1440" ph="SELECT id, s... state" />
+            <marker date="1517641791597" expanded="true" signature="2796:2832" ph="INSERT INTO state... " />
+            <marker date="1517641791597" expanded="true" signature="3077:3120" ph="INSERT INTO state... " />
           </folding>
         </state>
       </provider>
@@ -2128,11 +2265,11 @@
           <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1517638174464" expanded="true" signature="1423:1723" ph="SELECT id,ex... exercise" />
-            <marker date="1517638174464" expanded="true" signature="3149:3614" ph="SELECT e.id,... exercise" />
-            <marker date="1517638174464" expanded="true" signature="5964:6118" ph="INSERT INTO exercise... " />
-            <marker date="1517638174464" expanded="true" signature="6665:6813" ph="INSERT INTO exercise... " />
-            <marker date="1517638174464" expanded="true" signature="8411:8444" ph="DELETE FROM exercise... " />
+            <marker date="1517641790473" expanded="true" signature="1439:1739" ph="SELECT id,ex... exercise" />
+            <marker date="1517641790473" expanded="true" signature="3165:3630" ph="SELECT e.id,... exercise" />
+            <marker date="1517641790473" expanded="true" signature="5980:6134" ph="INSERT INTO exercise... " />
+            <marker date="1517641790473" expanded="true" signature="6681:6829" ph="INSERT INTO exercise... " />
+            <marker date="1517641790473" expanded="true" signature="8427:8460" ph="DELETE FROM exercise... " />
           </folding>
         </state>
       </provider>
@@ -2142,9 +2279,9 @@
         <state relative-caret-position="121">
           <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding>
-            <marker date="1517640496969" expanded="true" signature="1375:1704" ph="SELECT p.id,... person" />
-            <marker date="1517640496969" expanded="true" signature="3321:3478" ph="INSERT INTO person... " />
-            <marker date="1517640496969" expanded="true" signature="3946:4097" ph="INSERT INTO person... " />
+            <marker date="1517641790409" expanded="true" signature="1391:1720" ph="SELECT p.id,... person" />
+            <marker date="1517641790409" expanded="true" signature="3337:3494" ph="INSERT INTO person... " />
+            <marker date="1517641790409" expanded="true" signature="3962:4113" ph="INSERT INTO person... " />
           </folding>
         </state>
       </provider>
@@ -2154,9 +2291,9 @@
         <state relative-caret-position="121">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
-            <marker date="1517640497085" expanded="true" signature="1231:1265" ph="SELECT id, u... admin_data" />
-            <marker date="1517640497085" expanded="true" signature="2606:2656" ph="INSERT INTO admin_data... " />
-            <marker date="1517640497085" expanded="true" signature="3076:3119" ph="INSERT INTO admin_data... " />
+            <marker date="1517641791073" expanded="true" signature="1239:1273" ph="SELECT id, u... admin_data" />
+            <marker date="1517641791073" expanded="true" signature="2614:2664" ph="INSERT INTO admin_data... " />
+            <marker date="1517641791073" expanded="true" signature="3084:3127" ph="INSERT INTO admin_data... " />
           </folding>
         </state>
       </provider>
@@ -2175,11 +2312,11 @@
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1517640716178" expanded="true" signature="1422:1741" ph="SELECT ud.id... user_data" />
-            <marker date="1517640716178" expanded="true" signature="3900:4031" ph="INSERT INTO user_data... " />
-            <marker date="1517640716178" expanded="true" signature="4487:4625" ph="INSERT INTO user_data... " />
-            <marker date="1517640716178" expanded="true" signature="6140:6483" ph="SELECT ud.id... user_data" />
-            <marker date="1517640716178" expanded="true" signature="8668:9016" ph="SELECT ud.id... user_data" />
+            <marker date="1517641792769" expanded="true" signature="1438:1757" ph="SELECT ud.id... user_data" />
+            <marker date="1517641792769" expanded="true" signature="3916:4047" ph="INSERT INTO user_data... " />
+            <marker date="1517641792769" expanded="true" signature="4503:4641" ph="INSERT INTO user_data... " />
+            <marker date="1517641792769" expanded="true" signature="6156:6499" ph="SELECT ud.id... user_data" />
+            <marker date="1517641792769" expanded="true" signature="8684:9032" ph="SELECT ud.id... user_data" />
           </folding>
         </state>
       </provider>
@@ -2189,11 +2326,11 @@
         <state relative-caret-position="121">
           <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding>
-            <marker date="1517640911012" expanded="true" signature="1802:2013" ph="SELECT id,us... training" />
-            <marker date="1517640911012" expanded="true" signature="3364:3590" ph="SELECT id,us... training" />
-            <marker date="1517640911012" expanded="true" signature="5317:5466" ph="INSERT INTO training... " />
-            <marker date="1517640911012" expanded="true" signature="5794:5963" ph="INSERT INTO training... " />
-            <marker date="1517640911012" expanded="true" signature="7516:7549" ph="DELETE FROM training... " />
+            <marker date="1517641791289" expanded="true" signature="1810:2021" ph="SELECT id,us... training" />
+            <marker date="1517641791289" expanded="true" signature="3372:3598" ph="SELECT id,us... training" />
+            <marker date="1517641791289" expanded="true" signature="5325:5474" ph="INSERT INTO training... " />
+            <marker date="1517641791289" expanded="true" signature="5802:5971" ph="INSERT INTO training... " />
+            <marker date="1517641791289" expanded="true" signature="7524:7557" ph="DELETE FROM training... " />
           </folding>
         </state>
       </provider>
@@ -2203,13 +2340,13 @@
         <state relative-caret-position="154">
           <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
-            <marker date="1517640861943" expanded="true" signature="1385:1530" ph="SELECT id, n... exercise_data" />
-            <marker date="1517640861943" expanded="true" signature="2836:2892" ph="INSERT INTO exercise_data... " />
-            <marker date="1517640861943" expanded="true" signature="3119:3182" ph="INSERT INTO exercise_data... " />
-            <marker date="1517640861943" expanded="true" signature="4632:4796" ph="SELECT id, n... exercise_data" />
-            <marker date="1517640861943" expanded="true" signature="6120:6278" ph="SELECT id, n... exercise_data" />
-            <marker date="1517640861943" expanded="true" signature="7708:7783" ph="DELETE FROM exercise_data... " />
-            <marker date="1517640861943" expanded="true" signature="8874:8939" ph="UPDATE exercise_data... " />
+            <marker date="1517641790201" expanded="true" signature="1393:1538" ph="SELECT id, n... exercise_data" />
+            <marker date="1517641790201" expanded="true" signature="2844:2900" ph="INSERT INTO exercise_data... " />
+            <marker date="1517641790201" expanded="true" signature="3127:3190" ph="INSERT INTO exercise_data... " />
+            <marker date="1517641790201" expanded="true" signature="4640:4804" ph="SELECT id, n... exercise_data" />
+            <marker date="1517641790201" expanded="true" signature="6128:6286" ph="SELECT id, n... exercise_data" />
+            <marker date="1517641790201" expanded="true" signature="7716:7791" ph="DELETE FROM exercise_data... " />
+            <marker date="1517641790201" expanded="true" signature="8882:8947" ph="UPDATE exercise_data... " />
           </folding>
         </state>
       </provider>
@@ -2219,9 +2356,9 @@
         <state relative-caret-position="154">
           <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
           <folding>
-            <marker date="1517640862031" expanded="true" signature="1322:1456" ph="SELECT id, s... sex" />
-            <marker date="1517640862031" expanded="true" signature="2889:2921" ph="INSERT INTO sex... " />
-            <marker date="1517640862031" expanded="true" signature="3163:3202" ph="INSERT INTO sex... " />
+            <marker date="1517641792345" expanded="true" signature="1330:1464" ph="SELECT id, s... sex" />
+            <marker date="1517641792345" expanded="true" signature="2897:2929" ph="INSERT INTO sex... " />
+            <marker date="1517641792345" expanded="true" signature="3171:3210" ph="INSERT INTO sex... " />
           </folding>
         </state>
       </provider>
@@ -2236,8 +2373,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        <state relative-caret-position="528">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Sex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/ExerciseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Exercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/AdminData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/entities/Impl/AdminDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding />
         </state>
       </provider>
