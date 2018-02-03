@@ -19,13 +19,13 @@ public class TrainingServiceImpl implements TrainingService {
     @Logged
     private Logger logger;
 
-    @Autowired
     private TrainingDAO trainingDAO;
 
     public TrainingDAO getTrainingDAO() {
         return trainingDAO;
     }
 
+    @Autowired
     public void setTrainingDAO(TrainingDAO trainingDAO) {
         this.trainingDAO = trainingDAO;
     }

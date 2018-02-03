@@ -22,13 +22,21 @@ public class ExerciseDataServiceImpl implements ExerciseDataService {
     @Logged
     private Logger logger;
 
-    @Autowired
     private ExerciseDataDAO exerciseDataDAO;
 
-    @Autowired
     private Gson gson;
 
     public ExerciseDataServiceImpl() {
+    }
+
+    @Autowired
+    public void setGson(Gson gson) {
+        this.gson = gson;
+    }
+
+    @Autowired
+    public void setExerciseDataDAO(ExerciseDataDAO exerciseDataDAO) {
+        this.exerciseDataDAO = exerciseDataDAO;
     }
 
     public String searchExerciseData(String term) {

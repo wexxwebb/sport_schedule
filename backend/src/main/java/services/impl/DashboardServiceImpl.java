@@ -21,7 +21,6 @@ public class DashboardServiceImpl implements DashboardService {
     @Logged
     private Logger logger;
 
-    @Autowired
     private TrainingDAO trainingDAO;
 
     public DashboardServiceImpl() {
@@ -31,6 +30,7 @@ public class DashboardServiceImpl implements DashboardService {
         return trainingDAO;
     }
 
+    @Autowired
     public void setTrainingDAO(TrainingDAO trainingDAO) {
         this.trainingDAO = trainingDAO;
     }

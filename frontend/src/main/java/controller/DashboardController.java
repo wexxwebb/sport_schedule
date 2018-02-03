@@ -44,9 +44,12 @@ public class DashboardController {
         modelAndView.setViewName("inner/dashboard");
         modelAndView.addObject("firstName", user.getFirstName());
         modelAndView.addObject("userId", user.getId());
-        modelAndView.addObject("pastTrainingList", dashboardService.getPastTriningList(user.getId()));
-        modelAndView.addObject("todayTrainingList", dashboardService.getTodayTrainingList(user.getId()));
-        modelAndView.addObject("futureTrainingList", dashboardService.getFutureTrainingList(user.getId()));
+        modelAndView.addObject("pastTrainingList",
+                dashboardService.getPastTriningList(user.getId()));
+        modelAndView.addObject("todayTrainingList",
+                dashboardService.getTodayTrainingList(user.getId()));
+        modelAndView.addObject("futureTrainingList",
+                dashboardService.getFutureTrainingList(user.getId()));
 
         return modelAndView;
     }

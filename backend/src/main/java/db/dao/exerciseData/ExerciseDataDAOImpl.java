@@ -36,7 +36,6 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     }
 
     public ExerciseDataDAOImpl() {
-
     }
 
     @Override

@@ -35,7 +35,6 @@ public class UserDataDAOImpl implements UserDataDAO {
     }
 
     public UserDataDAOImpl() {
-
     }
 
     @Override
@@ -78,6 +77,7 @@ public class UserDataDAOImpl implements UserDataDAO {
                     userDataList.add(userData);
                 }
                 return new Result<>(userDataList, true, "Success");
+
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
             } catch (SQLException e) {
@@ -130,6 +130,7 @@ public class UserDataDAOImpl implements UserDataDAO {
 
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
+
             } catch (SQLException e) {
                 retry++;
                 if (retry > 5) return new Result<>(null, false, e.getMessage());

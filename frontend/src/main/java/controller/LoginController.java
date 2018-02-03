@@ -18,8 +18,9 @@ public class LoginController {
     public ModelAndView index(@RequestParam(value = "error", required = false) String error) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("public/login");
-        if (error != null && error != "" && error.equals("access_denied")) {
-            modelAndView.addObject("authError", "Некорректный логин или пароль");
+        if (error != null && !error.equals("") && error.equals("access_denied")) {
+            modelAndView.addObject("authError",
+                    "Некорректный логин или пароль");
         }
         return modelAndView;
     }

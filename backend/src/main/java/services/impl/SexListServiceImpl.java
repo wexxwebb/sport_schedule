@@ -17,13 +17,13 @@ public class SexListServiceImpl implements SexListService {
     @Logged
     private Logger logger;
 
-    @Autowired
     private SexDAO sexDAO;
 
     public SexDAO getSexDAO() {
         return sexDAO;
     }
 
+    @Autowired
     public void setSexDAO(SexDAO sexDAO) {
         this.sexDAO = sexDAO;
     }

@@ -27,7 +27,6 @@ public class SexDAOImpl implements SexDAO {
     private ConnectionManager connectionManager;
 
     public SexDAOImpl() {
-
     }
 
     public ConnectionManager getConnectionManager() {

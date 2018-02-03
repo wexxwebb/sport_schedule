@@ -36,6 +36,5 @@
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.23" level="project" />
     <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
-    <orderEntry type="module" module-name="frontend_main" />
   </component>
 </module>

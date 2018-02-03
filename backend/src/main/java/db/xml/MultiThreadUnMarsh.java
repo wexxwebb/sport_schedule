@@ -29,7 +29,8 @@ public class MultiThreadUnMarsh {
         List<String> xmlPathsStringList = founder.getResourcesList();
 
         List<Future<UnmarshalingResult>> unMarshFutureList = new ArrayList<>();
-        ExecutorService unMarshExec = Executors.newFixedThreadPool(xmlPathsStringList.size());
+        ExecutorService unMarshExec =
+                Executors.newFixedThreadPool(xmlPathsStringList.size());
 
         for (String s : xmlPathsStringList) {
             Path path = Paths.get(s);
@@ -48,12 +49,14 @@ public class MultiThreadUnMarsh {
         }
         logger.info("Tables unmarshaling started");
 
-        BlockingQueue<Table> tableList = new ArrayBlockingQueue<>(unMarshFutureList.size());
+        BlockingQueue<Table> tableList =
+                new ArrayBlockingQueue<>(unMarshFutureList.size());
         ListenerAdd listenerAdd = new ListenerAdd(tableList);
         AtomicBoolean insertStarterPlay = new AtomicBoolean(true);
         ExecutorService exec = Executors.newFixedThreadPool(unMarshFutureList.size());
         List<Future<Boolean>> insertFutureList = new CopyOnWriteArrayList<>();
-        InsertStarter insertStarter = new InsertStarter(insertStarterPlay, tableList, exec, insertFutureList);
+        InsertStarter insertStarter =
+                new InsertStarter(insertStarterPlay, tableList, exec, insertFutureList);
         Thread insertStarterThread = new Thread(insertStarter);
 
         {

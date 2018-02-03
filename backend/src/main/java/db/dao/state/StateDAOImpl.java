@@ -35,7 +35,6 @@ public class StateDAOImpl implements StateDAO {
     }
 
     public StateDAOImpl() {
-
     }
 
     @Override

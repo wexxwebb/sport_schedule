@@ -54,7 +54,6 @@ public class ExerciseController {
         } else {
             modelAndView.addObject("trainingError", "Ошибка");
         }
-
         modelAndView.setViewName("/inner/trainingConsist");
 
         Result<List<db.pojo.Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
@@ -67,13 +66,14 @@ public class ExerciseController {
         }
     }
 
-    @RequestMapping(value = "/inner/addExercise", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/addExercise",
+            method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String addExercise(@RequestParam(value = "exercise_id") int exerciseid,
-                              @RequestParam(value = "training_id") int trainingId,
-                              @RequestParam(value = "approach") int approach,
-                              @RequestParam(value = "repetition") int repetition,
-                              @RequestParam(value = "weigth") int weigth) {
+    public String addExercise(@RequestParam(value = "exercise_id")  int exerciseid,
+                              @RequestParam(value = "training_id")  int trainingId,
+                              @RequestParam(value = "approach")     int approach,
+                              @RequestParam(value = "repetition")   int repetition,
+                              @RequestParam(value = "weigth")       int weigth) {
 
         Result<String> result =
                 exerciseService.addExercise(exerciseid, trainingId,

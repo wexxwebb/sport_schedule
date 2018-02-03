@@ -7,28 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a8c52d-4a73-4d29-92dc-045b79103faf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/common/Autocomplete.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/common/Autocomplete.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/common/Result.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/common/Result.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/annotation-processors.bin" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/fileContent.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/backend_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/backend_main.iml" />
+      <change beforePath="$PROJECT_DIR$/backend/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/backend/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/backend/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/backend/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/backend/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/backend/.gradle/4.0/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/MultiThreadUnMarsh.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/MultiThreadUnMarsh.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/DashboardController.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/exerciseData.jsp" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/exerciseData.jsp" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/frontend-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/frontend/build/libs/frontend-1.0-SNAPSHOT.war" />
-      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/controller/DashboardController.class" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml" afterPath="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -96,28 +96,30 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="sport_schedule@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sport_schedule: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="person: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="sport_schedule_hibernate: database" type="6d9b600a:PostgresImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="sport_schedule@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sport_schedule: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="sport_schedule_hibernate: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="state: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="sport_schedule@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sport_schedule: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="sport_schedule_hibernate: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="training: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sport_schedule@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sport_schedule_hibernate: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -192,11 +194,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminDataImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminDataImpl.java">
+      <file leaf-file-name="spring-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/resources/spring-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="195" column="37" lean-forward="true" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="38" />
+              <folding>
+                <marker date="1517654302903" expanded="true" signature="1772:1983" ph="SELECT id,us... training" />
+                <marker date="1517654302903" expanded="true" signature="3334:3560" ph="SELECT id,us... training" />
+                <marker date="1517654302903" expanded="true" signature="5287:5436" ph="INSERT INTO training... " />
+                <marker date="1517654302903" expanded="true" signature="5763:5932" ph="INSERT INTO training... " />
+                <marker date="1517654302903" expanded="true" signature="7483:7516" ph="DELETE FROM training... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="37" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InnerUser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/Start.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#212#213#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SharedSessionContract.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.12.Final/ef7c133e63b5c033a285b9315b6d80224e9c5de/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/SharedSessionContract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -229,6 +329,7 @@
       <find>todayTraining</find>
       <find>abst</find>
       <find>e</find>
+      <find>127.0.1.1</find>
     </findStrings>
     <replaceStrings>
       <replace>String</replace>
@@ -587,14 +688,13 @@
       <map>
         <entry key="$PROJECT_DIR$/back/build.gradle" value="409722593" />
         <entry key="$PROJECT_DIR$/back/settings.gradle" value="2589950953" />
-        <entry key="$PROJECT_DIR$/backend" value="3035039196000" />
         <entry key="$PROJECT_DIR$/backend/build.gradle" value="2233417847" />
         <entry key="$PROJECT_DIR$/backend/settings.gradle" value="1707595806" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3226475003" />
         <entry key="$PROJECT_DIR$/front/build.gradle" value="309625320" />
         <entry key="$PROJECT_DIR$/front/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/front/settings.gradle" value="2297968903" />
-        <entry key="$PROJECT_DIR$/frontend" value="6070076639000" />
+        <entry key="$PROJECT_DIR$/frontend" value="6070210373000" />
         <entry key="$PROJECT_DIR$/frontend/build.gradle" value="1410710320" />
         <entry key="$PROJECT_DIR$/frontend/settings.gradle" value="4058447346" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
@@ -810,25 +910,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseDataController.java" />
-        <option value="$PROJECT_DIR$/front/src/main/java/contr/SampleImpl.java" />
-        <option value="$PROJECT_DIR$/front/src/main/java/contr/Sample.java" />
-        <option value="$PROJECT_DIR$/back/src/main/java/controller/SampleImpl.java" />
-        <option value="$PROJECT_DIR$/back/src/main/java/controller/Sample.java" />
-        <option value="$PROJECT_DIR$/front/src/main/java/contr/Example.java" />
-        <option value="$PROJECT_DIR$/frontend/build.gradle" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/SexImpl.java" />
-        <option value="$PROJECT_DIR$/backend/build.gradle" />
         <option value="$PROJECT_DIR$/backend/src/main/java/test_sample/Sample.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/test_sample/Quiz.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/test_sample/SampleImpl.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/controller/SampleComtroller.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/webapp/public/sample.jsp" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAO.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAO.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAO.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAO.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAO.java" />
@@ -845,8 +934,6 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/services/RegisterService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/services/ExerciseService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/services/ExerciseDataService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/resources/spring-config.xml" />
         <option value="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/frontend/src/main/webapp/public/register.jsp" />
@@ -854,13 +941,26 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/util/CustomAuthProvider.java" />
-        <option value="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml" />
         <option value="$PROJECT_DIR$/backend/src/main/java/common/Result.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/common/Autocomplete.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/webapp/inner/exerciseData.jsp" />
         <option value="$PROJECT_DIR$/gitignore" />
-        <option value="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/xml/MultiThreadUnMarsh.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" />
       </list>
     </option>
   </component>
@@ -877,11 +977,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="84" />
-    <option name="y" value="249" />
-    <option name="width" value="1295" />
-    <option name="height" value="732" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="52" />
+    <option name="y" value="138" />
+    <option name="width" value="1285" />
+    <option name="height" value="702" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -901,6 +1001,89 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems">
           <expand>
@@ -949,6 +1132,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -960,101 +1144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1075,6 +1164,12 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="test_sample" />
+      <recent name="common" />
+      <recent name="services.impl" />
+      <recent name="services" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="db.pojo" />
     </key>
@@ -1091,13 +1186,6 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/src" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/src/main/resources" />
       <recent name="$PROJECT_DIR$/backend/src/main/java" />
@@ -1109,11 +1197,12 @@
       <recent name="pojo" />
       <recent name="db.dao.pojo" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="test_sample" />
-      <recent name="common" />
-      <recent name="services.impl" />
-      <recent name="services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1128,7 +1217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.frontend [clean build]">
+  <component name="RunManager" selected="Tomcat Server.Frontend">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1479,7 +1568,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="494626000" />
+    <option name="totallyTimeSpent" value="499800000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1491,43 +1580,72 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270415" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25390625" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29986614" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.72337484" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41231593" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2643229" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25549048" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19472913" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7040111" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270415" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25390625" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29986614" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3580729" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41231593" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70442706" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19472913" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1668,310 +1786,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/TrainingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/SexListService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/ExerciseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/ExerciseDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/public/sample.jsp" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/SampleComtroller.java" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="47" column="11" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/test_sample/SampleImpl.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/test_sample/Sample.java" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/public/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/frontend.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/main.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/util/SecurityExprRootExt.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c620ead93220cae89562bd3eda6ec875c43e1db/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/RegisterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/RegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/util/CustomPasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomAuthProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/Autocomplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/Logged.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/LoggedAnnotationPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/RegisterDataCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/SDF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/inner/trainingConsist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/inner/exerciseData.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/inner/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding>
-            <marker date="1517425622000" expanded="true" signature="13206:13252" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1997,7 +1811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2005,6 +1818,427 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-134">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/util/CustomPasswordEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/xml/Unmarshalling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/xml/MultiThreadUnMarsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <marker date="1517654302863" expanded="true" signature="1294:1594" ph="SELECT id,ex... exercise" />
+            <marker date="1517654302863" expanded="true" signature="3020:3485" ph="SELECT e.id,... exercise" />
+            <marker date="1517654302863" expanded="true" signature="5835:5989" ph="INSERT INTO exercise... " />
+            <marker date="1517654302863" expanded="true" signature="6534:6682" ph="INSERT INTO exercise... " />
+            <marker date="1517654302863" expanded="true" signature="8277:8310" ph="DELETE FROM exercise... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <marker date="1517655043936" expanded="true" signature="1356:1501" ph="SELECT id, n... exercise_data" />
+            <marker date="1517655043936" expanded="true" signature="2807:2863" ph="INSERT INTO exercise_data... " />
+            <marker date="1517655043936" expanded="true" signature="3090:3153" ph="INSERT INTO exercise_data... " />
+            <marker date="1517655043936" expanded="true" signature="4602:4766" ph="SELECT id, n... exercise_data" />
+            <marker date="1517655043936" expanded="true" signature="6089:6247" ph="SELECT id, n... exercise_data" />
+            <marker date="1517655043936" expanded="true" signature="7676:7751" ph="DELETE FROM exercise_data... " />
+            <marker date="1517655043936" expanded="true" signature="8842:8907" ph="UPDATE exercise_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1517655043676" expanded="true" signature="1341:1670" ph="SELECT p.id,... person" />
+            <marker date="1517655043676" expanded="true" signature="3287:3444" ph="INSERT INTO person... " />
+            <marker date="1517655043676" expanded="true" signature="3911:4062" ph="INSERT INTO person... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <marker date="1517655043804" expanded="true" signature="1293:1427" ph="SELECT id, s... sex" />
+            <marker date="1517655043804" expanded="true" signature="2860:2892" ph="INSERT INTO sex... " />
+            <marker date="1517655043804" expanded="true" signature="3134:3173" ph="INSERT INTO sex... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1517655044076" expanded="true" signature="1288:1403" ph="SELECT id, s... state" />
+            <marker date="1517655044076" expanded="true" signature="2759:2795" ph="INSERT INTO state... " />
+            <marker date="1517655044076" expanded="true" signature="3040:3083" ph="INSERT INTO state... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/a7a1d480/e98f84b0-aaeb-4410-8183-04144d4b10e6/sport_schedule.public.state">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/a7a1d480/e98f84b0-aaeb-4410-8183-04144d4b10e6/sport_schedule.public.user_data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/xml/marshaling/TableMarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/xml/marshaling/TableUnmarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/xml/marshaling/UnmarshalingResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/RegisterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-652">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/TrainingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/SexListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/RegisterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/ExerciseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/ExerciseDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <marker date="1517655044012" expanded="true" signature="1202:1236" ph="SELECT id, u... admin_data" />
+            <marker date="1517655044012" expanded="true" signature="2514:2564" ph="INSERT INTO admin_data... " />
+            <marker date="1517655044012" expanded="true" signature="2982:3025" ph="INSERT INTO admin_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding>
+            <marker date="1517655044196" expanded="true" signature="1297:1616" ph="SELECT ud.id... user_data" />
+            <marker date="1517655044196" expanded="true" signature="3776:3907" ph="INSERT INTO user_data... " />
+            <marker date="1517655044196" expanded="true" signature="4361:4499" ph="INSERT INTO user_data... " />
+            <marker date="1517655044196" expanded="true" signature="6012:6355" ph="SELECT ud.id... user_data" />
+            <marker date="1517655044196" expanded="true" signature="8540:8888" ph="SELECT ud.id... user_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/RegisterDataCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/TimePeriod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.12.Final/ef7c133e63b5c033a285b9315b6d80224e9c5de/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/SharedSessionContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#212#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/common/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="195" column="37" lean-forward="true" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="38" />
+          <folding>
+            <marker date="1517654302903" expanded="true" signature="1772:1983" ph="SELECT id,us... training" />
+            <marker date="1517654302903" expanded="true" signature="3334:3560" ph="SELECT id,us... training" />
+            <marker date="1517654302903" expanded="true" signature="5287:5436" ph="INSERT INTO training... " />
+            <marker date="1517654302903" expanded="true" signature="5763:5932" ph="INSERT INTO training... " />
+            <marker date="1517654302903" expanded="true" signature="7483:7516" ph="DELETE FROM training... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
           <folding />
         </state>
       </provider>

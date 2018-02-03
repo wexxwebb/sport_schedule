@@ -32,7 +32,6 @@ public class AdminDAOImpl implements AdminDAO {
     }
 
     public AdminDAOImpl() {
-
     }
 
     @Override
@@ -54,7 +53,6 @@ public class AdminDAOImpl implements AdminDAO {
                     );
                     adminDataList.add(adminData);
                 }
-                connectionManager.closeConnection(connection);
                 return new Result<>(adminDataList, true, "Success");
             } catch (ClassNotFoundException e) {
                 return new Result<>(null, false, e.getMessage());
@@ -91,7 +89,6 @@ public class AdminDAOImpl implements AdminDAO {
                     preparedStatement.addBatch();
                     count = preparedStatement.executeBatch();
                 }
-                connectionManager.closeConnection(connection);
                 return new Result<>(String.format("Inserted %d lines", count[0]),
                             true,
                             "Success");

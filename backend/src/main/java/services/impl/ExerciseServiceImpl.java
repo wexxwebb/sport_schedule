@@ -23,25 +23,29 @@ public class ExerciseServiceImpl implements ExerciseService {
     @Logged
     private Logger logger;
 
-    @Autowired
     private ExerciseDAO exerciseDAO;
 
-    @Autowired
     private ExerciseDataDAO exerciseDataDAO;
 
-    private Gson gson = new Gson();
+    private Gson gson;
 
-    public ExerciseDAO getExerciseDAO() {
-        return exerciseDAO;
+    @Autowired
+    public void setExerciseDataDAO(ExerciseDataDAO exerciseDataDAO) {
+        this.exerciseDataDAO = exerciseDataDAO;
     }
 
+    @Autowired
+    public void setGson(Gson gson) {
+        this.gson = gson;
+    }
+
+    @Autowired
     public void setExerciseDAO(ExerciseDAO exerciseDAO) {
         this.exerciseDAO = exerciseDAO;
     }
 
     public ExerciseServiceImpl() {
     }
-
 
     @Override
     public Result<String> addExercise(int exerciseId, int trainingId, int approach, int repetition, int weight) {

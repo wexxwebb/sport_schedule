@@ -37,7 +37,6 @@ public class PersonDAOImpl implements PersonDAO {
     }
 
     public PersonDAOImpl() {
-
     }
 
     @Override

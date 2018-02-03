@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import services.ExerciseDataService;
 
 
 import java.util.List;
@@ -15,9 +16,9 @@ import java.util.List;
 @Controller
 public class ExerciseDataController {
 
-    private services.ExerciseDataService exerciseDataService;
+    private ExerciseDataService exerciseDataService;
 
-    public services.ExerciseDataService getExerciseDataService() {
+    public ExerciseDataService getExerciseDataService() {
         return exerciseDataService;
     }
 
@@ -26,7 +27,8 @@ public class ExerciseDataController {
         this.exerciseDataService = exerciseDataService;
     }
 
-    @RequestMapping(value = "/inner/searchExerciseData", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/searchExerciseData",
+            method = RequestMethod.GET, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String searchExerciseData(@RequestParam(value = "term") String term) {
         return exerciseDataService.searchExerciseData(term);
@@ -41,17 +43,20 @@ public class ExerciseDataController {
             modelAndView.addObject("exerciseDataList", exerciseDataList);
             return modelAndView;
         }
-        modelAndView.addObject("error", "Ошибка при обращении к базе данных");
+        modelAndView.addObject("error",
+                "Ошибка при обращении к базе данных");
         return modelAndView;
     }
 
-    @RequestMapping(value = "/inner/addExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/addExerciseData",
+            method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addExerciseData(@RequestParam(value = "name") String name) {
         return exerciseDataService.addExerciseData(name);
     }
 
-    @RequestMapping(value = "/inner/delExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/delExerciseData",
+            method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String delExerciseData(@RequestParam(value = "id") int id) {
         return exerciseDataService.delExerciseData(id);
