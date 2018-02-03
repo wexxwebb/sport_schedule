@@ -7,11 +7,11 @@ public interface AdminData extends Serializable {
 
     void setUser(UserData user);
 
-    int getId();
+    long getId();
 
-    void setId(int id);
+    void setId(long id);
 
-    int getUserId();
+    long getUserId();
 
-    void setUserId(int userId);
+    void setUserId(long userId);
 }

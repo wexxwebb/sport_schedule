@@ -1,10 +1,9 @@
 package db.xml;
 
-import db.dao.sex.SexDAO;
-import db.dao.sex.SexDAOImpl;
-import db.connectionManager.ConnectionManagerImpl;
-import db.dao.user.UserDataDAO;
-import db.dao.user.UserDataDAOImpl;
+import db.dao.SexDAO;
+import db.dao.jdbc.SexDAOImpl;
+import db.dao.UserDataDAO;
+import db.dao.jdbc.UserDataDAOImpl;
 import db.xml.marshaling.MarshallingResult;
 import db.xml.marshaling.TableMarshaller;
 import db.xml.marshaling.TableUnmarshaller;

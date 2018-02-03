@@ -9,7 +9,7 @@ import java.util.Collection;
 @SuppressWarnings("unused")
 public class InnerUser implements UserDetails {
 
-    private int id;
+    private long id;
     private String password;
     private String username;
     private String firstName;
@@ -41,7 +41,7 @@ public class InnerUser implements UserDetails {
         return (InnerUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
     }
 
-    public InnerUser(int id, String username, String password, String firstName,
+    public InnerUser(long id, String username, String password, String firstName,
                      String lastName, String birthday, boolean enabled, boolean locked,
                      boolean expired, Collection<GrantedAuthority> authorities) {
         this.id = id;
@@ -56,7 +56,7 @@ public class InnerUser implements UserDetails {
         this.authorities = authorities;
     }
 
-    public int getId() {
+    public long getId() {
         return this.id;
     }
 

@@ -7,21 +7,21 @@ public interface Exercise extends Serializable {
 
     void setTraining(Training training);
 
-    int getExerciseId();
+    long getExerciseId();
 
-    void setExerciseId(int exerciseId);
+    void setExerciseId(long exerciseId);
 
     ExerciseData getExerciseData();
 
     void setExerciseData(ExerciseData exercise);
 
-    int getTrainingId();
+    long getTrainingId();
 
-    void setTrainingId(int trainingId);
+    void setTrainingId(long trainingId);
 
-    int getId();
+    long getId();
 
-    void setId(int id);
+    void setId(long id);
 
     int getApproach();
 

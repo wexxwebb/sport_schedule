@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface DashboardService extends Serializable {
 
-    List<Training> getTodayTrainingList(int userId);
-    List<Training> getFutureTrainingList(int userId);
-    List<Training> getPastTriningList(int userId);
+    List<Training> getTodayTrainingList(long userId);
+    List<Training> getFutureTrainingList(long userId);
+    List<Training> getPastTriningList(long userId);
 }

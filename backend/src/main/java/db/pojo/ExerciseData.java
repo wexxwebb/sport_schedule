@@ -3,9 +3,9 @@ package db.pojo;
 import java.io.Serializable;
 
 public interface ExerciseData extends Serializable {
-    int getId();
+    long getId();
 
-    void setId(int id);
+    void setId(long id);
 
     String getName();
 

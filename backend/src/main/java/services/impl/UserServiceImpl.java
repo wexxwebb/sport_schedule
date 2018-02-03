@@ -2,7 +2,7 @@ package services.impl;
 
 import common.Logged;
 import common.Result;
-import db.dao.user.UserDataDAO;
+import db.dao.UserDataDAO;
 import db.pojo.UserData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

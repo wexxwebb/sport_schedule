@@ -4,9 +4,9 @@ import com.google.gson.Gson;
 import common.Autocomplete;
 import common.Logged;
 import common.Result;
-import db.dao.exerciseData.ExerciseDataDAO;
+import db.dao.ExerciseDataDAO;
 import db.pojo.ExerciseData;
-import db.pojo.ExerciseDataImpl;
+import db.pojo.Impl.ExerciseDataImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,7 +38,7 @@ public class ExerciseDataServiceImpl implements ExerciseDataService {
             for (int i = 0; i < result.get().size(); i++) {
                 autocompletes[i] =
                         new Autocomplete(result.get().get(i).getName(),
-                                Integer.toString(result.get().get(i).getId()));
+                                Long.toString(result.get().get(i).getId()));
             }
             return gson.toJson(autocompletes);
         } else

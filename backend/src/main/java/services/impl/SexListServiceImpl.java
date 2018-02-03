@@ -1,14 +1,13 @@
 package services.impl;
 
 import common.Logged;
-import db.dao.sex.SexDAO;
+import db.dao.SexDAO;
 import db.pojo.Sex;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services.SexListService;
 
-import java.io.Serializable;
 import java.util.List;
 
 @Service

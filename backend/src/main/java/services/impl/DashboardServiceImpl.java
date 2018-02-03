@@ -2,7 +2,7 @@ package services.impl;
 
 import common.Logged;
 import common.Result;
-import db.dao.training.TrainingDAO;
+import db.dao.TrainingDAO;
 import db.pojo.Training;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +36,7 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getTodayTrainingList(int userId) {
+    public List<Training> getTodayTrainingList(long userId) {
         Result<List<Training>> result;
         if ((result = trainingDAO.getAll(userId, TODAY)).isSuccess()) {
             return result.get();
@@ -46,7 +46,7 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getFutureTrainingList(int userId) {
+    public List<Training> getFutureTrainingList(long userId) {
         Result<List<Training>> result;
         if ((result = trainingDAO.getAll(userId, FUTURE)).isSuccess()) {
             return result.get();
@@ -56,7 +56,7 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<Training> getPastTriningList(int userId) {
+    public List<Training> getPastTriningList(long userId) {
         Result<List<Training>> result;
         if ((result = trainingDAO.getAll(userId, PAST)).isSuccess()) {
             return result.get();

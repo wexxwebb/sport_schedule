@@ -1,10 +1,9 @@
 package db.xml.xmlWrapper;
 
 import common.Log;
-import db.dao.sex.SexDAO;
-import db.dao.sex.SexDAOImpl;
+import db.dao.SexDAO;
+import db.dao.jdbc.SexDAOImpl;
 import db.pojo.Sex;
-import db.connectionManager.ConnectionManagerImpl;
 import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;
@@ -37,7 +36,7 @@ public class SexTable extends Table {
     public Boolean call() {
         while (idCanInsert.isEmpty()) {
             try {
-                int id = idCanInsert.take();
+                Long id = idCanInsert.take();
                 for (Sex sex : sexList) {
                     if (sex.getId() == id) {
                         sexDAO.insert(sex, RESTORE);

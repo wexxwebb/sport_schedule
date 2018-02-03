@@ -3,9 +3,9 @@ package db.pojo;
 import java.io.Serializable;
 
 public interface Person extends Serializable {
-    int getId();
+    long getId();
 
-    void setId(int id);
+    void setId(long id);
 
     String getFirstName();
 
@@ -23,9 +23,9 @@ public interface Person extends Serializable {
 
     void setSex(Sex sex);
 
-    int getSexId();
+    long getSexId();
 
-    void setSexId(int sexId);
+    void setSexId(long sexId);
 
     @Override
     String toString();

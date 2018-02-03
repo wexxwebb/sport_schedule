@@ -11,9 +11,9 @@ public interface State extends Serializable {
 
     void setRole(String role);
 
-    int getId();
+    long getId();
 
-    void setId(int id);
+    void setId(long id);
 
     String getState();
 

@@ -3,17 +3,17 @@ package db.pojo;
 import java.io.Serializable;
 
 public interface UserData extends Serializable {
-    int getId();
+    long getId();
 
-    void setId(int id);
+    void setId(long id);
 
     Person getPerson();
 
     void setPerson(Person person);
 
-    int getPersonId();
+    long getPersonId();
 
-    void setPersonId(int personId);
+    void setPersonId(long personId);
 
     String getLogin();
 
@@ -27,9 +27,9 @@ public interface UserData extends Serializable {
 
     void setState(State state);
 
-    int getStateId();
+    long getStateId();
 
-    void setStateId(int stateId);
+    void setStateId(long stateId);
 
     String getDateReg();
 

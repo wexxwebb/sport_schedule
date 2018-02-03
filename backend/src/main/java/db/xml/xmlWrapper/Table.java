@@ -2,7 +2,6 @@ package db.xml.xmlWrapper;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -20,7 +19,7 @@ public abstract class Table implements Callable<Boolean> {
     private Set<Table> listenerSet = new HashSet<>();
 
     @XmlTransient
-    protected BlockingQueue<Integer> idCanInsert = new ArrayBlockingQueue<>(10);
+    protected BlockingQueue<Long> idCanInsert = new ArrayBlockingQueue<Long>(10);
 
     public boolean isReady() {
         List<String> classNames =
@@ -28,11 +27,11 @@ public abstract class Table implements Callable<Boolean> {
         return classNames.containsAll(this.getListenerNameList());
     }
 
-    public void dispatch(int id) {
+    public void dispatch(long id) {
         listenerSet.forEach((table) -> table.insertId(id));
     }
 
-    public void insertId(int id) {
+    public void insertId(long id) {
         idCanInsert.add(id);
     }
 

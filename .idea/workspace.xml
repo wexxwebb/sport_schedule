@@ -7,13 +7,146 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a8c52d-4a73-4d29-92dc-045b79103faf" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/src/main/resources/database.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/common/Autocomplete.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/common/Autocomplete.class" />
-      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/common/Result.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/common/Result.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/admin/AdminDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/admin/AdminDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exercise/ExerciseDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exercise/ExerciseDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exerciseData/ExerciseDataDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/exerciseData/ExerciseDataDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/person/PersonDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/person/PersonDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/sex/SexDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/sex/SexDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/state/StateDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/state/StateDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/training/TrainingDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/training/TrainingDAOImpl$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/training/TrainingDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/user/UserDataDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/dao/user/UserDataDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminData.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminData.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/AdminDataImpl.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Exercise.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseData.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseData.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/ExerciseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Person.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Person.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/PersonImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Sex.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Sex.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/SexImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/State.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/State.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/StateImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Training.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/Training.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/TrainingImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserData.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserData.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/pojo/UserDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Marshalling.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Marshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Unmarshalling.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/Unmarshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/SexTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/SexTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/Table.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/Table.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/UserDataTable.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/db/xml/xmlWrapper/UserDataTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/DashboardService.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/DashboardService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/DashboardServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/DashboardServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseDataServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseDataServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/ExerciseServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/RegisterServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/RegisterServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/SexListServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/SexListServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/TrainingServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/TrainingServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/backend/build/classes/java/main/services/impl/UserServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/admin/AdminDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/admin/AdminDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exercise/ExerciseDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exercise/ExerciseDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exerciseData/ExerciseDataDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/exerciseData/ExerciseDataDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/person/PersonDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/person/PersonDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/sex/SexDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/sex/SexDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/state/StateDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/state/StateDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/training/TrainingDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/training/TrainingDAOImpl$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/training/TrainingDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/user/UserDataDAO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/dao/user/UserDataDAOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminData.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminData.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/AdminDataImpl.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Exercise.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseData.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseData.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/ExerciseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Person.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Person.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/PersonImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Sex.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Sex.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/SexImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/State.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/State.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/StateImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Training.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/Training.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/TrainingImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserData.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserData.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/pojo/UserDataImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Marshalling.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Marshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Unmarshalling.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/Unmarshalling.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/SexTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/SexTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/Table.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/Table.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/UserDataTable.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/db/xml/xmlWrapper/UserDataTable.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/DashboardService.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/DashboardService.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/DashboardServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/DashboardServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseDataServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseDataServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/ExerciseServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/RegisterServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/RegisterServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/SexListServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/SexListServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/TrainingServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/TrainingServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/out/production/classes/services/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/backend/out/production/classes/services/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/AdminDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDataDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/PersonDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/StateDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/state/StateDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/StateDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/TrainingDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/TrainingDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAO.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/UserDataDAO.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/UserDataDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminDataImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/AdminDataImpl.java" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseDataImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseDataImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/PersonImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/PersonImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/SexImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/SexImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/StateImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/StateImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/TrainingImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/TrainingImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserDataImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/UserDataImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/Marshalling.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/Marshalling.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/Unmarshalling.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/Unmarshalling.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/SexTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/SexTable.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/Table.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/Table.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/UserDataTable.java" afterPath="$PROJECT_DIR$/backend/src/main/java/db/xml/xmlWrapper/UserDataTable.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/DashboardServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/RegisterServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/RegisterServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/services/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/backend/src/main/java/services/impl/UserServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/annotation-processors.bin" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/fileHashes/fileHashes.bin" />
@@ -23,12 +156,17 @@
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/frontend/.gradle/4.0/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/controller/DashboardController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/util/CustomUserService.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/util/CustomUserService.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/util/InnerUser.class" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/util/InnerUser.class" />
       <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/controller/DashboardController.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/CustomUserService.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/CustomUserService.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/InnerUser.class" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/classes/util/InnerUser.class" />
       <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/WEB-INF/lib/pro.kretov-backend-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/exerciseData.jsp" afterPath="$PROJECT_DIR$/frontend/build/libs/exploded/frontend-1.0-SNAPSHOT.war/inner/exerciseData.jsp" />
       <change beforePath="$PROJECT_DIR$/frontend/build/libs/frontend-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/frontend/build/libs/frontend-1.0-SNAPSHOT.war" />
       <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/controller/DashboardController.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/controller/DashboardController.class" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/util/CustomUserService.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/util/CustomUserService.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/out/production/classes/util/InnerUser.class" afterPath="$PROJECT_DIR$/frontend/out/production/classes/util/InnerUser.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java" afterPath="$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -192,11 +330,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminDataImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminDataImpl.java">
+      <file leaf-file-name="CustomUserService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="266">
+              <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -212,10 +350,10 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="JUnit4 Test Class" />
-        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -810,36 +948,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/main/java/controller/ExerciseDataController.java" />
-        <option value="$PROJECT_DIR$/front/src/main/java/contr/SampleImpl.java" />
-        <option value="$PROJECT_DIR$/front/src/main/java/contr/Sample.java" />
-        <option value="$PROJECT_DIR$/back/src/main/java/controller/SampleImpl.java" />
-        <option value="$PROJECT_DIR$/back/src/main/java/controller/Sample.java" />
-        <option value="$PROJECT_DIR$/front/src/main/java/contr/Example.java" />
-        <option value="$PROJECT_DIR$/frontend/build.gradle" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/SexImpl.java" />
-        <option value="$PROJECT_DIR$/backend/build.gradle" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/test_sample/Sample.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/test_sample/Quiz.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/test_sample/SampleImpl.java" />
-        <option value="$PROJECT_DIR$/frontend/src/main/java/controller/SampleComtroller.java" />
-        <option value="$PROJECT_DIR$/frontend/src/main/webapp/public/sample.jsp" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAOImpl.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/user/UserDataDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/training/TrainingDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/sex/SexDAOImpl.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/person/PersonDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/exerciseData/ExerciseDataDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Person.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseData.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/services/TrainingService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/services/SexListService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/services/RegisterService.java" />
@@ -861,6 +969,36 @@
         <option value="$PROJECT_DIR$/gitignore" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/controller/DashboardController.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/AdminDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDataDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/PersonDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/SexDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/StateDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/TrainingDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/UserDataDAO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminDataImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseDataImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/ExerciseImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/AdminDataImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseDataImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/PersonImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/SexImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/StateImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/TrainingImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/UserDataImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/StateDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/PersonDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/AdminDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/UserDataDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/TrainingDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDataDAOImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/SexDAOImpl.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java" />
       </list>
     </option>
   </component>
@@ -901,6 +1039,89 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems">
           <expand>
@@ -949,6 +1170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -960,108 +1182,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4338983" />
@@ -1128,7 +1255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.frontend [clean build]">
+  <component name="RunManager" selected="Tomcat Server.Frontend">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1442,7 +1569,8 @@
       <workItem from="1517508175380" duration="2270000" />
       <workItem from="1517515623447" duration="6248000" />
       <workItem from="1517551459079" duration="11800000" />
-      <workItem from="1517593280585" duration="1689000" />
+      <workItem from="1517593280585" duration="2113000" />
+      <workItem from="1517635602179" duration="3356000" />
     </task>
     <servers />
   </component>
@@ -1479,7 +1607,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="494626000" />
+    <option name="totallyTimeSpent" value="498406000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1492,28 +1620,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25390625" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29986614" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2981771" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41231593" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31994644" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.8608838" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2284041" sideWeight="0.1391162" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23279649" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70442706" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19472913" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1521,13 +1654,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270415" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3580729" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24348958" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70442706" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1668,196 +1797,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/exercise/ExerciseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/admin/AdminDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Training.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Sex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/TrainingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/SexListService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/ExerciseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/ExerciseDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/DashboardService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/SexListServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/public/sample.jsp" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/controller/SampleComtroller.java" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="47" column="11" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/test_sample/SampleImpl.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/test_sample/Sample.java" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/webapp/public/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/frontend.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/main.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/util/SecurityExprRootExt.java" />
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/TrainingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c620ead93220cae89562bd3eda6ec875c43e1db/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/RegisterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/RegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/util/CustomPasswordEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1908,7 +1851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1972,13 +1914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Exercise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -2001,10 +1936,308 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminDataImpl.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="32">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/AdminDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/ExerciseDataDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/SexDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/StateDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/TrainingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/UserDataDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/AdminData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/AdminDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/ExerciseImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/PersonImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="87" lean-forward="false" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/SexImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/StateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/TrainingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/pojo/Impl/UserDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/database.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/StateDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+          <folding>
+            <marker date="1517638174304" expanded="true" signature="1317:1432" ph="SELECT id, s... state" />
+            <marker date="1517638174304" expanded="true" signature="2788:2824" ph="INSERT INTO state... " />
+            <marker date="1517638174304" expanded="true" signature="3069:3112" ph="INSERT INTO state... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1517638174464" expanded="true" signature="1423:1723" ph="SELECT id,ex... exercise" />
+            <marker date="1517638174464" expanded="true" signature="3149:3614" ph="SELECT e.id,... exercise" />
+            <marker date="1517638174464" expanded="true" signature="5964:6118" ph="INSERT INTO exercise... " />
+            <marker date="1517638174464" expanded="true" signature="6665:6813" ph="INSERT INTO exercise... " />
+            <marker date="1517638174464" expanded="true" signature="8411:8444" ph="DELETE FROM exercise... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/PersonDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <marker date="1517640496969" expanded="true" signature="1375:1704" ph="SELECT p.id,... person" />
+            <marker date="1517640496969" expanded="true" signature="3321:3478" ph="INSERT INTO person... " />
+            <marker date="1517640496969" expanded="true" signature="3946:4097" ph="INSERT INTO person... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/AdminDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <marker date="1517640497085" expanded="true" signature="1231:1265" ph="SELECT id, u... admin_data" />
+            <marker date="1517640497085" expanded="true" signature="2606:2656" ph="INSERT INTO admin_data... " />
+            <marker date="1517640497085" expanded="true" signature="3076:3119" ph="INSERT INTO admin_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/services/impl/ExerciseDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/UserDataDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1517640716178" expanded="true" signature="1422:1741" ph="SELECT ud.id... user_data" />
+            <marker date="1517640716178" expanded="true" signature="3900:4031" ph="INSERT INTO user_data... " />
+            <marker date="1517640716178" expanded="true" signature="4487:4625" ph="INSERT INTO user_data... " />
+            <marker date="1517640716178" expanded="true" signature="6140:6483" ph="SELECT ud.id... user_data" />
+            <marker date="1517640716178" expanded="true" signature="8668:9016" ph="SELECT ud.id... user_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/TrainingDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <marker date="1517640911012" expanded="true" signature="1802:2013" ph="SELECT id,us... training" />
+            <marker date="1517640911012" expanded="true" signature="3364:3590" ph="SELECT id,us... training" />
+            <marker date="1517640911012" expanded="true" signature="5317:5466" ph="INSERT INTO training... " />
+            <marker date="1517640911012" expanded="true" signature="5794:5963" ph="INSERT INTO training... " />
+            <marker date="1517640911012" expanded="true" signature="7516:7549" ph="DELETE FROM training... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/ExerciseDataDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <marker date="1517640861943" expanded="true" signature="1385:1530" ph="SELECT id, n... exercise_data" />
+            <marker date="1517640861943" expanded="true" signature="2836:2892" ph="INSERT INTO exercise_data... " />
+            <marker date="1517640861943" expanded="true" signature="3119:3182" ph="INSERT INTO exercise_data... " />
+            <marker date="1517640861943" expanded="true" signature="4632:4796" ph="SELECT id, n... exercise_data" />
+            <marker date="1517640861943" expanded="true" signature="6120:6278" ph="SELECT id, n... exercise_data" />
+            <marker date="1517640861943" expanded="true" signature="7708:7783" ph="DELETE FROM exercise_data... " />
+            <marker date="1517640861943" expanded="true" signature="8874:8939" ph="UPDATE exercise_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/db/dao/jdbc/SexDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+          <folding>
+            <marker date="1517640862031" expanded="true" signature="1322:1456" ph="SELECT id, s... sex" />
+            <marker date="1517640862031" expanded="true" signature="2889:2921" ph="INSERT INTO sex... " />
+            <marker date="1517640862031" expanded="true" signature="3163:3202" ph="INSERT INTO sex... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/InnerUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/util/CustomUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding />
         </state>
       </provider>
