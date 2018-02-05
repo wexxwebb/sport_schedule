@@ -3,18 +3,17 @@ package services.impl;
 import common.Logged;
 import common.RegisterDataCheck;
 import common.Result;
-import db.dao.PersonDAO;
-import db.dao.UserDataDAO;
-import db.entities.Person;
+import db.dao._interfaces.PersonDAO;
+import db.dao._interfaces.UserDataDAO;
 import db.entities.Impl.PersonImpl;
-import db.entities.UserData;
 import db.entities.Impl.UserDataImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import services.RegisterService;
+import services._interfaces.RegisterService;
 import util.CustomPasswordEncoder;
 
+import java.sql.Date;
 import java.util.Map;
 
 import static common.InsertType.NEW;
@@ -37,19 +36,17 @@ public class RegisterServiceImpl implements RegisterService {
 
         RegisterDataCheck regCheck = checkData(login, password, passwordApprove, name, lastName, sex, birthday);
         if (regCheck.isValid()) {
-            Person person = new PersonImpl(
-                    name,
-                    lastName,
-                    birthday,
-                    Integer.parseInt(sex)
+            PersonImpl person = new PersonImpl(
+//                    name,
+//                    lastName,
+//                    birthday
             );
             CustomPasswordEncoder passwordEncoder = new CustomPasswordEncoder();
-            person = personDAO.insert(person, NEW).get();
-            UserData userData = new UserDataImpl(
-                    person.getId(),
-                    login,
-                    passwordEncoder.encode(password),
-                    1
+            person = personDAO.insert(person, NEW);
+            UserDataImpl userData = new UserDataImpl(
+//                    person.getId(),
+//                    login,
+//                    passwordEncoder.encode(password)
             );
             userDataDAO.insert(userData, NEW);
             logger.info("New registration");
@@ -90,7 +87,7 @@ public class RegisterServiceImpl implements RegisterService {
         RegisterDataCheck regCheck = new RegisterDataCheck();
 
         if (login != null && !login.isEmpty())
-            if (!userDataDAO.getByLogin(login).isSuccess()) regCheck.setLogin(true);
+            if (userDataDAO.getByLogin(login) != null) regCheck.setLogin(true);
 
         if (password != null && passwordApprove != null && !password.isEmpty() && !passwordApprove.isEmpty())
             if (password.equals(passwordApprove)) regCheck.setPassword(true);

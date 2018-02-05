@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import services.TrainingService;
+import services._interfaces.TrainingService;
 
 @Controller
 public class TrainingController {
@@ -32,9 +32,9 @@ public class TrainingController {
     @ResponseBody
     public String addTraining(@RequestParam(value = "user_id") int userId,
                               @RequestParam(value = "date") String date) {
-        Result<String> result;
-        if ((result = trainingService.addTraining(userId, date)).isSuccess()) {
-            return result.get();
+        String result = trainingService.addTraining(userId, date);
+        if (result != null) {
+            return result;
         } else {
             return "";
         }
@@ -44,7 +44,7 @@ public class TrainingController {
     @ResponseBody
     public String delTraining(@RequestParam(value = "id") int id) {
 
-        if (trainingService.delTraining(id).isSuccess()) {
+        if (trainingService.delTraining(id)) {
             return "1";
         } else {
             return "0";

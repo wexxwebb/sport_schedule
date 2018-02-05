@@ -1,6 +1,7 @@
 package controller;
 
 
+import db.entities.inter.ExerciseData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import services._interfaces.ExerciseDataService;
 
 
 import java.util.List;
@@ -15,14 +17,14 @@ import java.util.List;
 @Controller
 public class ExerciseDataController {
 
-    private services.ExerciseDataService exerciseDataService;
+    private ExerciseDataService exerciseDataService;
 
-    public services.ExerciseDataService getExerciseDataService() {
+    public ExerciseDataService getExerciseDataService() {
         return exerciseDataService;
     }
 
     @Autowired
-    public void setExerciseDataService(services.ExerciseDataService exerciseDataService) {
+    public void setExerciseDataService(ExerciseDataService exerciseDataService) {
         this.exerciseDataService = exerciseDataService;
     }
 
@@ -36,7 +38,7 @@ public class ExerciseDataController {
     public ModelAndView getExerciseDataList() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/exerciseData");
-        List<db.entities.ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
+        List<ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
         if (exerciseDataList != null) {
             modelAndView.addObject("exerciseDataList", exerciseDataList);
             return modelAndView;

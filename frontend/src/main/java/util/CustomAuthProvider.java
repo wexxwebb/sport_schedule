@@ -1,7 +1,7 @@
 package util;
 
 import common.Result;
-import db.entities.UserData;
+import db.entities.inter.UserData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -11,8 +11,9 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import services.UserService;
+import services._interfaces.UserService;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 public class CustomAuthProvider implements AuthenticationProvider {
@@ -40,7 +41,7 @@ public class CustomAuthProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        String name = authentication.getName();
+        Date name = authentication.getName();
         String password = authentication.getCredentials().toString();
 
         Result<UserData> result = userService.getUserByLogin(name);

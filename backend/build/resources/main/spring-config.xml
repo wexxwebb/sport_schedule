@@ -7,7 +7,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="db.dao.hiber"/>
 
     <bean class="com.google.gson.Gson"/>
 
@@ -17,7 +16,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="dashboardService"/>
         <property name="serviceName" value="dashboardService"/>
-        <property name="serviceInterface" value="services.DashboardService"/>
+        <property name="serviceInterface" value="services._interfaces.DashboardService"/>
         <property name="registryPort" value="65000"/>
     </bean>
 
@@ -25,7 +24,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="exerciseDataService"/>
         <property name="serviceName" value="exerciseDataService"/>
-        <property name="serviceInterface" value="services.ExerciseDataService"/>
+        <property name="serviceInterface" value="services._interfaces.ExerciseDataService"/>
         <property name="registryPort" value="64999"/>
     </bean>
 
@@ -33,7 +32,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="exerciseService"/>
         <property name="serviceName" value="exerciseService"/>
-        <property name="serviceInterface" value="services.ExerciseService"/>
+        <property name="serviceInterface" value="services._interfaces.ExerciseService"/>
         <property name="registryPort" value="64998"/>
     </bean>
 
@@ -41,7 +40,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="registerService"/>
         <property name="serviceName" value="registerService"/>
-        <property name="serviceInterface" value="services.RegisterService"/>
+        <property name="serviceInterface" value="services._interfaces.RegisterService"/>
         <property name="registryPort" value="64997"/>
     </bean>
 
@@ -49,7 +48,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="sexListService"/>
         <property name="serviceName" value="sexListService"/>
-        <property name="serviceInterface" value="services.SexListService"/>
+        <property name="serviceInterface" value="services._interfaces.SexListService"/>
         <property name="registryPort" value="64996"/>
     </bean>
 
@@ -57,7 +56,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="trainingService"/>
         <property name="serviceName" value="trainingService"/>
-        <property name="serviceInterface" value="services.TrainingService"/>
+        <property name="serviceInterface" value="services._interfaces.TrainingService"/>
         <property name="registryPort" value="64995"/>
     </bean>
 
@@ -65,7 +64,7 @@
     <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="service" ref="userService"/>
         <property name="serviceName" value="userService"/>
-        <property name="serviceInterface" value="services.UserService"/>
+        <property name="serviceInterface" value="services._interfaces.UserService"/>
         <property name="registryPort" value="64994"/>
     </bean>
 

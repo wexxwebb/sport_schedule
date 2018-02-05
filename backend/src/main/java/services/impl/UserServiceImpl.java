@@ -2,13 +2,14 @@ package services.impl;
 
 import common.Logged;
 import common.Result;
-import db.dao.UserDataDAO;
-import db.entities.UserData;
+import db.dao._interfaces.UserDataDAO;
+import db.entities.inter.UserData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services.UserService;
+import services._interfaces.UserService;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,6 @@ public class UserServiceImpl implements UserService {
     }
 
     public UserServiceImpl() {
-
     }
 
     public List<UserData> getUserList() {
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Result<UserData> getUserByLogin(String login) {
+    public db.entities.Impl.UserDataImpl getUserByLogin(String login) {
         return userDataDAO.getByLogin(login);
     }
 

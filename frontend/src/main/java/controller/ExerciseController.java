@@ -2,6 +2,8 @@ package controller;
 
 import common.Logged;
 import common.Result;
+import db.entities.inter.Exercise;
+import db.entities.inter.Training;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import services.ExerciseService;
-import services.TrainingService;
+import services._interfaces.ExerciseService;
+import services._interfaces.TrainingService;
 
 import java.util.List;
 
@@ -48,16 +50,16 @@ public class ExerciseController {
 
         ModelAndView modelAndView = new ModelAndView();
 
-        Result<db.entities.Training> result = trainingService.getById(trainingId);
-        if (result.isSuccess()) {
-            modelAndView.addObject("training", result.get());
+        Training training = trainingService.getById(trainingId);
+        if (training != null) {
+            modelAndView.addObject("training", training);
         } else {
             modelAndView.addObject("trainingError", "Ошибка");
         }
 
         modelAndView.setViewName("/inner/trainingConsist");
 
-        Result<List<db.entities.Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
+        Result<List<Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
         if (exerciseResult.isSuccess()) {
             modelAndView.addObject("exerciseList", exerciseResult.get());
             return modelAndView;

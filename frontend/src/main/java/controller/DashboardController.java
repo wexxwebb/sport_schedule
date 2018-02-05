@@ -8,7 +8,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import services.DashboardService;
+import services._interfaces.DashboardService;
 import util.InnerUser;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -44,7 +44,7 @@ public class DashboardController {
         modelAndView.setViewName("inner/dashboard");
         modelAndView.addObject("firstName", user.getFirstName());
         modelAndView.addObject("userId", user.getId());
-        modelAndView.addObject("pastTrainingList", dashboardService.getPastTriningList(user.getId()));
+        modelAndView.addObject("pastTrainingList", dashboardService.getPastTrainingList(user.getId()));
         modelAndView.addObject("todayTrainingList", dashboardService.getTodayTrainingList(user.getId()));
         modelAndView.addObject("futureTrainingList", dashboardService.getFutureTrainingList(user.getId()));
 

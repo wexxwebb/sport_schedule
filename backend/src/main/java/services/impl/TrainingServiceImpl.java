@@ -2,16 +2,13 @@ package services.impl;
 
 import com.google.gson.Gson;
 import common.Logged;
-import common.Result;
-import db.dao.TrainingDAO;
-import db.entities.Training;
+import db.dao._interfaces.TrainingDAO;
 import db.entities.Impl.TrainingImpl;
+import db.entities.inter.Training;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import services.TrainingService;
-
-import static common.InsertType.NEW;
+import services._interfaces.TrainingService;
 
 @Service
 public class TrainingServiceImpl implements TrainingService {
@@ -19,44 +16,35 @@ public class TrainingServiceImpl implements TrainingService {
     @Logged
     private Logger logger;
 
-    @Autowired
+    private Gson gson;
+
     private TrainingDAO trainingDAO;
 
-    public TrainingDAO getTrainingDAO() {
-        return trainingDAO;
+    @Autowired
+    public void setGson(Gson gson) {
+        this.gson = gson;
     }
 
+    @Autowired
     public void setTrainingDAO(TrainingDAO trainingDAO) {
         this.trainingDAO = trainingDAO;
     }
 
     @Override
-    public Result<String> addTraining(int userId, String date) {
-
+    public String addTraining(int userId, String date) {
         Training training = new TrainingImpl(userId, date);
-        Result<Training> result;
-        if ((result = trainingDAO.insert(training, NEW)).isSuccess()) {
-            Gson gson = new Gson();
-            return new Result<>(gson.toJson(result.get(), TrainingImpl.class), true, "Success");
-        } else {
-            return new Result<>(null, false, "Error");
-        }
+        training = trainingDAO.insert(training);
+        return gson.toJson(training);
     }
 
     @Override
-    public Result<String> delTraining(int id) {
-        if (trainingDAO.delete(id).isSuccess()) {
-            return new Result<>("1", true, "Success");
-        }
-        return new Result<>("0", false, "Success");
+    public boolean delTraining(int id) {
+        return trainingDAO.delete(id);
     }
 
-    public Result<Training> getById(int id) {
-        Result<Training> result;
-        if ((result = trainingDAO.getByid(id)).isSuccess()) {
-            return result;
-        } else {
-            return new Result<>(null, false, "Нет данных для отображения");
-        }
+    @Override
+    public Training getById(int id) {
+        return trainingDAO.getByid(id);
     }
 }
+

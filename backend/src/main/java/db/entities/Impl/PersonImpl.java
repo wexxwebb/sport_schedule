@@ -1,52 +1,74 @@
 package db.entities.Impl;
 
 
-import db.entities.Person;
-import db.entities.Sex;
+import db.entities.inter.Person;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+
+import java.sql.Date;
+
+import static javax.persistence.CascadeType.ALL;
+import static javax.persistence.GenerationType.SEQUENCE;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"id", "firstName", "lastName", "sexId", "birthday"})
+@XmlType(propOrder = {"id", "firstName", "lastName", "birthday"})
 
+@Entity(name = "Person")
+@Table(name = "person")
 public class PersonImpl implements Person {
 
     private long id;
     private String firstName;
     private String lastName;
-    private String birthday;
+    private Date birthday;
+    private UserDataImpl userData;
     @XmlTransient
-    private Sex sex;
-    private long sexId;
+    private SexImpl sex;
 
     public PersonImpl() {
     }
 
-    public PersonImpl(long id, String firstName, String lastName, String birthday, long sexId) {
+    public PersonImpl(long id, String firstName, String lastName, Date birthday) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
-        this.sexId = sexId;
     }
 
-    public PersonImpl(long id, String firstName, String lastName, String birthday, Sex sex) {
+    public PersonImpl(long id, String firstName, String lastName, Date birthday, SexImpl sex) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
         this.sex = sex;
-        this.sexId = sex.getId();
     }
 
-    public PersonImpl(String firstName, String lastName, String birthday, long sexId) {
+    public PersonImpl(String firstName, String lastName, Date birthday, SexImpl sex) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
-        this.sexId = sexId;
+        this.sex = sex;
     }
 
+    public PersonImpl(String firstName, String lastName, Date birthday) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+    }
+
+    public PersonImpl(String firstName, String lastName, Date birthday, UserDataImpl userData, SexImpl sex) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        this.userData = userData;
+        this.sex = sex;
+    }
+
+    @Id
+    @SequenceGenerator(name = "hibernateSeq", sequenceName = "person_data_seq", allocationSize = 1)
+    @GeneratedValue(strategy = SEQUENCE, generator = "hibernateSeq")
     @Override
     public long getId() {
         return id;
@@ -78,33 +100,35 @@ public class PersonImpl implements Person {
     }
 
     @Override
-    public String getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
     @Override
-    public void setBirthday(String birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
+    @ManyToOne(optional = true, cascade = ALL)
     @Override
-    public Sex getSex() {
+    public SexImpl getSex() {
         return sex;
     }
 
     @Override
-    public void setSex(Sex sex) {
+    public void setSex(SexImpl sex) {
         this.sex = sex;
     }
 
+    @OneToOne(optional = false, mappedBy = "person")
     @Override
-    public long getSexId() {
-        return sexId;
+    public UserDataImpl getUserData() {
+        return userData;
     }
 
     @Override
-    public void setSexId(long sexId) {
-        this.sexId = sexId;
+    public void setUserData(UserDataImpl userData) {
+        this.userData = userData;
     }
 
     @Override
@@ -114,7 +138,6 @@ public class PersonImpl implements Person {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birthday=" + birthday +
-                ", sexId=" + sexId +
                 '}';
     }
 
@@ -126,8 +149,7 @@ public class PersonImpl implements Person {
                 if (this.id == ((Person) obj).getId())
                     if (this.getFirstName().equals(((Person) obj).getFirstName()))
                         if (this.getLastName().equals(((Person) obj).getLastName()))
-                            if (this.getSexId() == ((Person) obj).getSexId())
-                                if (this.getBirthday().equals(((Person) obj).getBirthday())) return true;
+                            return this.getBirthday().equals(((Person) obj).getBirthday());
             }
         }
         return false;

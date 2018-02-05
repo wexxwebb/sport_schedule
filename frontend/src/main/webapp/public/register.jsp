@@ -60,10 +60,10 @@
                                 <span class="reg-error">${lastNameError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
-                                <select name="sex" class="form-control iput-auth">
+                                <select name="name" class="form-control iput-auth">
                                     <option value="" disabled selected>Пол</option>
-                                    <c:forEach var="sex" items="${sexList}">
-                                        <option ${sex.id == requestScope.sex ? "selected" : ""} value="${sex.id}">${sex.sex}</option>
+                                    <c:forEach var="name" items="${sexList}">
+                                        <option ${name.id == requestScope.name ? "selected" : ""} value="${name.id}">${name.name}</option>
                                     </c:forEach>
                                 </select>
                                 <span class="reg-error">${sexError}</span>

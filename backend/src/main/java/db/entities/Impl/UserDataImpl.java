@@ -1,66 +1,72 @@
 package db.entities.Impl;
 
 
-import db.entities.Person;
-import db.entities.State;
-import db.entities.UserData;
+import db.entities.inter.UserData;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.sql.Date;
+
+import static javax.persistence.FetchType.EAGER;
+import static javax.persistence.GenerationType.SEQUENCE;
 
 @XmlRootElement
-@XmlType(propOrder = {"id", "personId", "login", "password", "stateId", "dateReg"})
+@XmlType(propOrder = {"id", "login", "password", "dateReg"})
 @XmlAccessorType(XmlAccessType.FIELD)
+
+@Entity(name = "UserData")
+@Table(name = "user_data")
 public class UserDataImpl implements UserData {
 
     private long id;
     @XmlTransient
-    private Person person;
-    private long personId;
+    private PersonImpl person;
     private String login;
     private String password;
     @XmlTransient
-    private State state;
-    private long stateId;
-    private String dateReg;
+    private Date dateReg;
+    private boolean enabled;
+    private String role;
 
     public UserDataImpl() {
     }
 
-    public UserDataImpl(long id, int personId, String login, String password, int stateId, String dateReg) {
+    public UserDataImpl(long id, String login, String password, Date dateReg) {
         this.id = id;
-        this.personId = personId;
         this.login = login;
         this.password = password;
-        this.stateId = stateId;
         this.dateReg = dateReg;
     }
 
-    public UserDataImpl(long id, Person person, String login, String password, State state, String dateReg) {
+    public UserDataImpl(long id, PersonImpl person, String login, String password, Date dateReg) {
         this.id = id;
         this.person = person;
         this.login = login;
         this.password = password;
-        this.state = state;
         this.dateReg = dateReg;
     }
 
-    public UserDataImpl(long id, Person person, long personId, String login, String password, long stateId, String dateReg) {
-        this.id = id;
+    public UserDataImpl(PersonImpl person, String login, String password, Date dateReg) {
         this.person = person;
-        this.personId = personId;
         this.login = login;
         this.password = password;
-        this.stateId = stateId;
         this.dateReg = dateReg;
     }
 
-    public UserDataImpl(long personId, String login, String password, long stateId) {
-        this.personId = personId;
+    public UserDataImpl(String login, String password, Date dateReg) {
         this.login = login;
         this.password = password;
-        this.stateId = stateId;
+        this.dateReg = dateReg;
     }
 
+    public UserDataImpl(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    @Id
+    @SequenceGenerator(name = "hibernateSeq", sequenceName = "user_data_seq", allocationSize = 1)
+    @GeneratedValue(strategy = SEQUENCE, generator = "hibernateSeq")
     @Override
     public long getId() {
         return id;
@@ -71,24 +77,15 @@ public class UserDataImpl implements UserData {
         this.id = id;
     }
 
+    @OneToOne(optional = false, fetch = EAGER)
     @Override
-    public Person getPerson() {
+    public PersonImpl getPerson() {
         return person;
     }
 
     @Override
-    public void setPerson(Person person) {
+    public void setPerson(PersonImpl person) {
         this.person = person;
-    }
-
-    @Override
-    public long getPersonId() {
-        return personId;
-    }
-
-    @Override
-    public void setPersonId(long personId) {
-        this.personId = personId;
     }
 
     @Override
@@ -112,43 +109,41 @@ public class UserDataImpl implements UserData {
     }
 
     @Override
-    public State getState() {
-        return state;
-    }
-
-    @Override
-    public void setState(State state) {
-        this.state = state;
-    }
-
-    @Override
-    public long getStateId() {
-        return stateId;
-    }
-
-    @Override
-    public void setStateId(long stateId) {
-        this.stateId = stateId;
-    }
-
-    @Override
-    public String getDateReg() {
+    public Date getDateReg() {
         return dateReg;
     }
 
     @Override
-    public void setDateReg(String dateReg) {
+    public void setDateReg(Date dateReg) {
         this.dateReg = dateReg;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    @Override
+    public String getRole() {
+        return role;
+    }
+
+    @Override
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @Override
     public String toString() {
         return "UserData{" +
                 "id=" + id +
-                ", personId=" + personId +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
-                ", stateId=" + stateId +
                 ", dateReg=" + dateReg +
                 '}';
     }

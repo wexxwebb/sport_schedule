@@ -1,50 +1,42 @@
 package db.entities.Impl;
 
 
-import db.entities.Training;
-import db.entities.UserData;
+import db.entities.inter.Training;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.sql.Date;
 
 @XmlRootElement
 public class TrainingImpl implements Training {
 
     private long id;
-    private long userId;
-    private UserData user;
-    private String createDate;
-    private String trainingDate;
+    private transient UserDataImpl userData;
+    private Date createDate;
+    private Date trainingDate;
 
     public TrainingImpl() {
     }
 
-    public TrainingImpl(long id, long userId, String createDate, String trainingDate) {
+    public TrainingImpl(long id, UserDataImpl userData, Date createDate, Date trainingDate) {
         this.id = id;
-        this.userId = userId;
+        this.userData = userData;
         this.createDate = createDate;
         this.trainingDate = trainingDate;
     }
 
-    public TrainingImpl(long id, UserData user, String createDate, String trainingDate) {
-        this.id = id;
-        this.user = user;
-        this.createDate = createDate;
-        this.trainingDate = trainingDate;
-    }
-
-    public TrainingImpl(long userId, String trainingDate) {
-        this.userId = userId;
+    public TrainingImpl(UserDataImpl userData, Date trainingDate) {
+        this.userData = userData;
         this.trainingDate = trainingDate;
     }
 
     @Override
-    public UserData getUser() {
-        return user;
+    public UserDataImpl getUser() {
+        return userData;
     }
 
     @Override
-    public void setUser(UserData user) {
-        this.user = user;
+    public void setUser(UserDataImpl userData) {
+        this.userData = userData;
     }
 
     @Override
@@ -57,36 +49,23 @@ public class TrainingImpl implements Training {
         this.id = id;
     }
 
-
     @Override
-    public long getUserId() {
-        return userId;
-    }
-
-    @Override
-    public void setUserId(long userId) {
-        this.userId = userId;
-    }
-
-
-    @Override
-    public String getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
     @Override
-    public void setCreateDate(String createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
-
     @Override
-    public String getTrainingDate() {
+    public Date getTrainingDate() {
         return trainingDate;
     }
 
     @Override
-    public void setTrainingDate(String trainingDate) {
+    public void setTrainingDate(Date trainingDate) {
         this.trainingDate = trainingDate;
     }
 
@@ -94,7 +73,6 @@ public class TrainingImpl implements Training {
     public String toString() {
         return "{" +
                 "\"id\": " + id +
-                ", \"userId\": " + userId +
                 ", \"createDate\": " + "\"" + createDate + "\"" +
                 ", \"trainingDate\": " + "\"" + trainingDate + "\"" +
                 "}";

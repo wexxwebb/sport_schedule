@@ -3,15 +3,15 @@ package services.impl;
 import com.google.gson.Gson;
 import common.Logged;
 import common.Result;
-import db.dao.ExerciseDAO;
-import db.dao.ExerciseDataDAO;
-import db.entities.Exercise;
-import db.entities.ExerciseData;
+import db.dao._interfaces.ExerciseDAO;
+import db.dao._interfaces.ExerciseDataDAO;
+import db.entities.inter.Exercise;
+import db.entities.inter.ExerciseData;
 import db.entities.Impl.ExerciseImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import services.ExerciseService;
+import services._interfaces.ExerciseService;
 
 import java.util.List;
 

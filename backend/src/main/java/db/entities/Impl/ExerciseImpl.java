@@ -1,8 +1,8 @@
 package db.entities.Impl;
 
-import db.entities.Exercise;
-import db.entities.ExerciseData;
-import db.entities.Training;
+import db.entities.inter.Exercise;
+import db.entities.inter.ExerciseData;
+import db.entities.inter.Training;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
