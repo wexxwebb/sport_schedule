@@ -1,23 +1,19 @@
 package db.entities._inter;
 
+import db.entities.Impl.ExerciseDataImpl;
+import db.entities.Impl.TrainingImpl;
+
 import java.io.Serializable;
 
 public interface Exercise extends Serializable {
+
     Training getTraining();
 
-    void setTraining(Training training);
-
-    long getExerciseId();
-
-    void setExerciseId(long exerciseId);
+    void setTraining(TrainingImpl training);
 
     ExerciseData getExerciseData();
 
-    void setExerciseData(ExerciseData exercise);
-
-    long getTrainingId();
-
-    void setTrainingId(long trainingId);
+    void setExerciseData(ExerciseDataImpl exercise);
 
     long getId();
 

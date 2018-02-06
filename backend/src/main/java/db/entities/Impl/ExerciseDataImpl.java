@@ -23,6 +23,9 @@ public class ExerciseDataImpl implements ExerciseData {
         this.name = name;
     }
 
+    public ExerciseDataImpl(long id) {
+        this.id = id;
+    }
 
     public ExerciseDataImpl(String name) {
         this.name = name;

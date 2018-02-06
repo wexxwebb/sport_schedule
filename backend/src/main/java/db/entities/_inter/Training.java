@@ -1,9 +1,11 @@
 package db.entities._inter;
 
+import db.entities.Impl.ExerciseImpl;
 import db.entities.Impl.UserDataImpl;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.Collection;
 
 public interface Training extends Serializable {
 
@@ -22,6 +24,10 @@ public interface Training extends Serializable {
     Date getTrainingDate();
 
     void setTrainingDate(Date trainingDate);
+
+    Collection<ExerciseImpl> getExerciseCollection();
+
+    void setExerciseCollection(Collection<ExerciseImpl> exerciseCollection);
 
     @Override
     String toString();

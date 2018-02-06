@@ -5,6 +5,8 @@ import common.Logged;
 import common.Result;
 import db.dao._inter.ExerciseDAO;
 import db.dao._inter.ExerciseDataDAO;
+import db.entities.Impl.ExerciseDataImpl;
+import db.entities.Impl.TrainingImpl;
 import db.entities._inter.Exercise;
 import db.entities._inter.ExerciseData;
 import db.entities.Impl.ExerciseImpl;
@@ -42,11 +44,11 @@ public class ExerciseServiceImpl implements ExerciseService {
     public ExerciseServiceImpl() {
     }
 
-
     @Override
     public Result<String> addExercise(int exerciseId, int trainingId, int approach, int repetition, int weight) {
 
-        ExerciseImpl exercise = new ExerciseImpl(exerciseId, trainingId, approach, repetition, weight);
+        ExerciseImpl exercise = new ExerciseImpl(new ExerciseDataImpl(exerciseId),
+                new TrainingImpl(trainingId), approach, repetition, weight);
         Result<Exercise> result;
 //        if ((result = exerciseDAO.insert(exercise, NEW)).isSuccess()) {
 //            ExerciseData exerciseData = exerciseDataDAO.getById(exercise.getExerciseId());

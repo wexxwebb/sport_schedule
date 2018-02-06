@@ -1,7 +1,6 @@
 package db.dao._inter;
 
-import common.InsertType;
-import common.Result;
+import db.entities.Impl.ExerciseImpl;
 import db.entities._inter.Exercise;
 
 import java.io.Serializable;
@@ -9,11 +8,11 @@ import java.util.List;
 
 public interface ExerciseDAO extends Serializable {
 
-    Result<List<Exercise>> getAll();
+    List<ExerciseImpl> getAll();
 
-    Result<Exercise> insert(Exercise exercise, InsertType insertType);
+    ExerciseImpl insert(ExerciseImpl exercise);
 
-    Result<List<Exercise>> getByTrainingId(int trainingId);
+    List<ExerciseImpl> getByTrainingId(int trainingId);
 
-    Result<String> delete(int id);
+    boolean delete(int id);
 }

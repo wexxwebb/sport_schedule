@@ -41,7 +41,7 @@ public class TrainingDAOImpl implements TrainingDAO {
     }
 
     private List<Training> _getAll(Session session, long userId) {
-        Query query = session.createQuery("FROM Training WHERE user_id = :user_id");
+        Query query = session.createQuery("from Training where user_id = :user_id");
         query.setParameter("user_id", userId);
         return query.getResultList();
     }

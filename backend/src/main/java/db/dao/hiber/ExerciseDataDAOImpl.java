@@ -3,11 +3,11 @@ package db.dao.hiber;
 import common.Logged;
 import db.dao._inter.ExerciseDataDAO;
 import db.entities.Impl.ExerciseDataImpl;
-import db.entities.Impl.TrainingImpl;
 import db.entities._inter.ExerciseData;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.NativeQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -51,8 +51,15 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     }
 
     @Override
-    public List<ExerciseData> searchByName(String term) {
-        return null;
+    public List<ExerciseDataImpl> searchByName(String term) {
+        return doIt(this::_searchByName, term, sessionFactory);
+    }
+
+    private List<ExerciseDataImpl> _searchByName(Session session, String term) {
+        NativeQuery query = session.createNativeQuery(
+                "SELECT * FROM exercise_data WHERE name ILIKE :_ilike", ExerciseDataImpl.class);
+        query.setParameter("_ilike", "%" + term + "%");
+        return query.list();
     }
 
     @Override

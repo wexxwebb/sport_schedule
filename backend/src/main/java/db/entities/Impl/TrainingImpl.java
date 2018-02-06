@@ -6,7 +6,9 @@ import db.entities._inter.Training;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.sql.Date;
+import java.util.Collection;
 
+import static javax.persistence.FetchType.EAGER;
 import static javax.persistence.FetchType.LAZY;
 import static javax.persistence.GenerationType.SEQUENCE;
 
@@ -19,8 +21,13 @@ public class TrainingImpl implements Training {
     private UserDataImpl userData;
     private Date createDate;
     private Date trainingDate;
+    private Collection<ExerciseImpl> exerciseCollection;
 
     public TrainingImpl() {
+    }
+
+    public TrainingImpl(long id) {
+        this.id = id;
     }
 
     public TrainingImpl(long id, UserDataImpl userData, Date createDate, Date trainingDate) {
@@ -78,6 +85,17 @@ public class TrainingImpl implements Training {
     @Override
     public void setTrainingDate(Date trainingDate) {
         this.trainingDate = trainingDate;
+    }
+
+    @OneToMany(mappedBy = "training", fetch = EAGER)
+    @Override
+    public Collection<ExerciseImpl> getExerciseCollection() {
+        return exerciseCollection;
+    }
+
+    @Override
+    public void setExerciseCollection(Collection<ExerciseImpl> exerciseCollection) {
+        this.exerciseCollection = exerciseCollection;
     }
 
     @Override

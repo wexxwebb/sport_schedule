@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class Autocomplete implements Serializable {
     private String label;
-    private String id;
+    private long id;
 
-    public Autocomplete(String label, String id) {
+    public Autocomplete(String label, long id) {
         this.label = label;
         this.id = id;
     }
@@ -19,11 +19,11 @@ public class Autocomplete implements Serializable {
         this.label = label;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

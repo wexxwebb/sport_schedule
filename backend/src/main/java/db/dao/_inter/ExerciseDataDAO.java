@@ -15,8 +15,7 @@ public interface ExerciseDataDAO extends Serializable {
     @Nullable
     ExerciseDataImpl insert(ExerciseDataImpl exerciseData);
 
-    @Nullable
-    List<ExerciseData> searchByName(String term);
+    List<ExerciseDataImpl> searchByName(String term);
 
     @Nullable
     ExerciseData getById(long id);
