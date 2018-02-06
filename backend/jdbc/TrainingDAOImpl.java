@@ -1,8 +1,8 @@
 package db.dao.jdbc;
 
 import common.*;
-import db.dao._interfaces.TrainingDAO;
-import db.entities.inter.Training;
+import db.dao._inter.TrainingDAO;
+import db.entities._inter.Training;
 import db.connectionManager.ConnectionManager;
 import db.entities.Impl.TrainingImpl;
 import org.apache.log4j.Logger;

@@ -1,6 +1,6 @@
 package db.entities.Impl;
 
-import db.entities.inter.Sex;
+import db.entities._inter.Sex;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -12,7 +12,7 @@ import java.util.Collection;
 @XmlType(propOrder = {"id", "name"})
 
 @Entity(name = "Sex")
-@Table(name = "pex")
+@Table(name = "sex")
 public class SexImpl implements Sex, Serializable {
 
     private long id;
@@ -25,6 +25,10 @@ public class SexImpl implements Sex, Serializable {
     public SexImpl(long id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public SexImpl(long id) {
+        this.id = id;
     }
 
     public SexImpl(String name) {

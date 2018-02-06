@@ -1,7 +1,7 @@
 package controller;
 
 
-import db.entities.inter.ExerciseData;
+import db.entities._inter.ExerciseData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import services._interfaces.ExerciseDataService;
+import services._inter.ExerciseDataService;
 
 
 import java.util.List;
@@ -38,7 +38,7 @@ public class ExerciseDataController {
     public ModelAndView getExerciseDataList() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("inner/exerciseData");
-        List<ExerciseData> exerciseDataList = exerciseDataService.getExerciseDatalist();
+        List<ExerciseData> exerciseDataList = exerciseDataService.getExerciseDataList();
         if (exerciseDataList != null) {
             modelAndView.addObject("exerciseDataList", exerciseDataList);
             return modelAndView;
@@ -55,7 +55,7 @@ public class ExerciseDataController {
 
     @RequestMapping(value = "/inner/delExerciseData", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String delExerciseData(@RequestParam(value = "id") int id) {
+    public String delExerciseData(@RequestParam(value = "id") long id) {
         return exerciseDataService.delExerciseData(id);
     }
 

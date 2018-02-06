@@ -1,7 +1,6 @@
 package util;
 
-import common.Result;
-import db.entities.inter.UserData;
+import db.entities._inter.UserData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -11,9 +10,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import services._interfaces.UserService;
+import services._inter.UserService;
 
-import java.sql.Date;
 import java.util.ArrayList;
 
 public class CustomAuthProvider implements AuthenticationProvider {
@@ -41,13 +39,13 @@ public class CustomAuthProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        Date name = authentication.getName();
+        String name = authentication.getName();
         String password = authentication.getCredentials().toString();
 
-        Result<UserData> result = userService.getUserByLogin(name);
-        if (result.isSuccess()) {
-            if (passwordEncoder.matches(password, result.get().getPassword())) {
-                UserDetails userDetails = userDetailsService.loadUserByUsername(result.get().getLogin());
+        UserData userData = userService.getUserByLogin(name);
+        if (userData != null) {
+            if (passwordEncoder.matches(password, userData.getPassword())) {
+                UserDetails userDetails = userDetailsService.loadUserByUsername(userData.getLogin());
                 ArrayList<GrantedAuthority> list = new ArrayList<>(userDetails.getAuthorities());
                 list.add(new SimpleGrantedAuthority("ROLE_USER"));
                 return new UsernamePasswordAuthenticationToken(userDetails, userDetails.getPassword(), list);

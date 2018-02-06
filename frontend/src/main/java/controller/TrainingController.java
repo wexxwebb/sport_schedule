@@ -1,7 +1,6 @@
 package controller;
 
 import common.Logged;
-import common.Result;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import services._interfaces.TrainingService;
+import services._inter.TrainingService;
 
 @Controller
 public class TrainingController {
@@ -43,11 +42,6 @@ public class TrainingController {
     @RequestMapping(value = "inner/delTraining", method = RequestMethod.POST)
     @ResponseBody
     public String delTraining(@RequestParam(value = "id") int id) {
-
-        if (trainingService.delTraining(id)) {
-            return "1";
-        } else {
-            return "0";
-        }
+        return trainingService.delTraining(id);
     }
 }

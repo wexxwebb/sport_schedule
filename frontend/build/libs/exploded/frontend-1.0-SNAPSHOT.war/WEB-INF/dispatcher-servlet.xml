@@ -14,37 +14,37 @@
 
     <bean id="dashboardService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:65000/dashboardService"/>
-        <property name="serviceInterface" value="services._interfaces.DashboardService"/>
+        <property name="serviceInterface" value="services._inter.DashboardService"/>
     </bean>
 
     <bean id="exerciseDataService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:64999/exerciseDataService"/>
-        <property name="serviceInterface" value="services._interfaces.ExerciseDataService"/>
+        <property name="serviceInterface" value="services._inter.ExerciseDataService"/>
     </bean>
 
     <bean id="exerciseService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:64998/exerciseService"/>
-        <property name="serviceInterface" value="services._interfaces.ExerciseService"/>
+        <property name="serviceInterface" value="services._inter.ExerciseService"/>
     </bean>
 
     <bean id="registerService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:64997/registerService"/>
-        <property name="serviceInterface" value="services._interfaces.RegisterService"/>
+        <property name="serviceInterface" value="services._inter.RegisterService"/>
     </bean>
 
     <bean id="sexListService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:64996/sexListService"/>
-        <property name="serviceInterface" value="services._interfaces.SexListService"/>
+        <property name="serviceInterface" value="services._inter.SexListService"/>
     </bean>
 
     <bean id="trainingService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:64995/trainingService"/>
-        <property name="serviceInterface" value="services._interfaces.TrainingService"/>
+        <property name="serviceInterface" value="services._inter.TrainingService"/>
     </bean>
 
     <bean id="userService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceUrl" value="rmi://localhost:64994/userService"/>
-        <property name="serviceInterface" value="services._interfaces.UserService"/>
+        <property name="serviceInterface" value="services._inter.UserService"/>
     </bean>
 
     <bean id="viewResolver"

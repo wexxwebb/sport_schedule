@@ -2,11 +2,9 @@ package db.dao.hiber;
 
 import common.InsertType;
 import common.Logged;
-import common.Result;
-import db.dao.DAO;
-import db.dao._interfaces.UserDataDAO;
+import db.dao._inter.UserDataDAO;
 import db.entities.Impl.UserDataImpl;
-import db.entities.inter.UserData;
+import db.entities._inter.UserData;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -14,9 +12,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.sql.Date;
 import java.util.List;
-import java.util.function.BiFunction;
 
 import static db.dao.DAO.doIt;
 
@@ -34,7 +30,7 @@ public class UserDataDAOImpl implements UserDataDAO {
     }
 
     @Override
-    public Result<List<UserData>> getAll() {
+    public List<UserData> getAll() {
         return null;
     }
 

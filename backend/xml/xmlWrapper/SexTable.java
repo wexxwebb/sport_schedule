@@ -1,9 +1,9 @@
 package db.xml.xmlWrapper;
 
 import common.Log;
-import db.dao._interfaces.SexDAO;
+import db.dao._inter.SexDAO;
 import db.dao.jdbc.SexDAOImpl;
-import db.entities.inter.Sex;
+import db.entities._inter.Sex;
 import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;

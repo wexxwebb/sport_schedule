@@ -1,3 +1,5 @@
+<%@ page import="common.SDF" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <!--
   Created by IntelliJ IDEA.
   User: admin

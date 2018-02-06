@@ -1,12 +1,12 @@
 package services.impl;
 
 import common.Logged;
-import db.dao._interfaces.SexDAO;
-import db.entities.inter.Sex;
+import db.dao._inter.SexDAO;
+import db.entities._inter.Sex;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import services._interfaces.SexListService;
+import services._inter.SexListService;
 
 import java.util.List;
 

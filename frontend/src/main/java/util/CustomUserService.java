@@ -1,8 +1,7 @@
 package util;
 
 
-import common.Result;
-import db.entities.inter.UserData;
+import db.entities._inter.UserData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -10,7 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import services._interfaces.UserService;
+import services._inter.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,19 +27,19 @@ public class CustomUserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        Result<UserData> result = userService.getUserByLogin(username);
-        if (result.isSuccess()) {
+        UserData userData = userService.getUserByLogin(username);
+        if (userData != null) {
 
             List<GrantedAuthority> grantedAuthorityList = new ArrayList<>();
-            grantedAuthorityList.add(new SimpleGrantedAuthority(result.get().getState().getRole()));
+            grantedAuthorityList.add(new SimpleGrantedAuthority(userData.getRole()));
 
             return new InnerUser(
-                    result.get().getId(),
-                    result.get().getLogin(),
-                    result.get().getPassword(),
-                    result.get().getPerson().getFirstName(),
-                    result.get().getPerson().getLastName(),
-                    result.get().getPerson().getBirthday(),
+                    userData.getId(),
+                    userData.getLogin(),
+                    userData.getPassword(),
+                    userData.getPerson().getFirstName(),
+                    userData.getPerson().getLastName(),
+                    userData.getPerson().getBirthday(),
                     true,
                     false,
                     false,

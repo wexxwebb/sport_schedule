@@ -46,7 +46,6 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:4.3.12.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.23" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-core:5.2.12.Final" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.23" level="project" />

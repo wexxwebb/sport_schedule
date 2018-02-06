@@ -1,17 +1,18 @@
 package services.impl;
 
 import common.Logged;
-import db.dao._interfaces.TrainingDAO;
-import db.entities.inter.Training;
+import db.dao._inter.UserDataDAO;
+import db.entities._inter.Training;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services._interfaces.DashboardService;
+import services._inter.DashboardService;
 
+import java.util.Calendar;
 import java.util.List;
+import java.util.stream.Collectors;
 
-import static common.TimePeriod.*;
-
+import static java.util.Calendar.*;
 
 @Component
 public class DashboardServiceImpl implements DashboardService {
@@ -19,28 +20,80 @@ public class DashboardServiceImpl implements DashboardService {
     @Logged
     private Logger logger;
 
-    private TrainingDAO trainingDAO;
+    private UserDataDAO userDataDAO;
 
     public DashboardServiceImpl() {
     }
 
     @Autowired
-    public void setTrainingDAO(TrainingDAO trainingDAO) {
-        this.trainingDAO = trainingDAO;
+    public void setUserDataDAO(UserDataDAO userDataDAO) {
+        this.userDataDAO = userDataDAO;
     }
 
     @Override
     public List<Training> getTodayTrainingList(long userId) {
-        return trainingDAO.getAll(userId, TODAY);
+        final Calendar startToday = Calendar.getInstance();
+        startToday.set(HOUR_OF_DAY, 0);
+        startToday.set(MINUTE, 0);
+        startToday.set(SECOND, 0);
+        startToday.set(MILLISECOND, 0);
+        final Calendar endToday = Calendar.getInstance();
+        startToday.set(HOUR_OF_DAY, 0);
+        endToday.set(MINUTE, 59);
+        endToday.set(SECOND, 59);
+        endToday.set(MILLISECOND, 999);
+
+        return userDataDAO.getById(userId)
+                .getTrainingCollection()
+                .stream()
+                .filter(training ->
+                        training.getTrainingDate().getTime() >= startToday.getTimeInMillis() &&
+                                training.getTrainingDate().getTime() <= endToday.getTimeInMillis())
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Training> getFutureTrainingList(long userId) {
-        return trainingDAO.getAll(userId, FUTURE);
+        final Calendar endToday = Calendar.getInstance();
+        endToday.set(HOUR_OF_DAY, 23);
+        endToday.set(MINUTE, 59);
+        endToday.set(SECOND, 59);
+        endToday.set(MILLISECOND, 0);
+        return userDataDAO.getById(userId)
+                .getTrainingCollection()
+                .stream()
+                .filter(training ->
+                        training.getTrainingDate().getTime() > endToday.getTimeInMillis())
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Training> getPastTrainingList(long userId) {
-        return trainingDAO.getAll(userId, PAST);
+        final Calendar startToday = Calendar.getInstance();
+        startToday.set(HOUR_OF_DAY, 0);
+        startToday.set(MINUTE, 0);
+        startToday.set(SECOND, 0);
+        startToday.set(MILLISECOND, 0);
+        return userDataDAO.getById(userId)
+                .getTrainingCollection()
+                .stream()
+                .filter(training ->
+                        training.getTrainingDate().getTime() < startToday.getTimeInMillis())
+                .collect(Collectors.toList());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

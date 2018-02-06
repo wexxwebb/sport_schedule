@@ -1,11 +1,13 @@
 package db.entities.Impl;
 
 
-import db.entities.inter.UserData;
+import db.entities._inter.UserData;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.Collection;
 
 import static javax.persistence.FetchType.EAGER;
 import static javax.persistence.GenerationType.SEQUENCE;
@@ -27,8 +29,13 @@ public class UserDataImpl implements UserData {
     private Date dateReg;
     private boolean enabled;
     private String role;
+    private Collection<TrainingImpl> trainingCollection = new ArrayList<>();
 
     public UserDataImpl() {
+    }
+
+    public UserDataImpl(long id) {
+        this.id = id;
     }
 
     public UserDataImpl(long id, String login, String password, Date dateReg) {
@@ -53,10 +60,21 @@ public class UserDataImpl implements UserData {
         this.dateReg = dateReg;
     }
 
-    public UserDataImpl(String login, String password, Date dateReg) {
+    public UserDataImpl(String login, String password, Date dateReg, boolean enabled, String role) {
         this.login = login;
         this.password = password;
         this.dateReg = dateReg;
+        this.enabled = enabled;
+        this.role = role;
+    }
+
+    public UserDataImpl(PersonImpl person, String login, String password, Date dateReg, boolean enabled, String role) {
+        this.person = person;
+        this.login = login;
+        this.password = password;
+        this.dateReg = dateReg;
+        this.enabled = enabled;
+        this.role = role;
     }
 
     public UserDataImpl(String login, String password) {
@@ -136,6 +154,17 @@ public class UserDataImpl implements UserData {
     @Override
     public void setRole(String role) {
         this.role = role;
+    }
+
+    @OneToMany(mappedBy = "userData", fetch = EAGER)
+    @Override
+    public Collection<TrainingImpl> getTrainingCollection() {
+        return trainingCollection;
+    }
+
+    @Override
+    public void setTrainingCollection(Collection<TrainingImpl> trainingCollection) {
+        this.trainingCollection = trainingCollection;
     }
 
     @Override

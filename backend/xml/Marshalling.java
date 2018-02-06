@@ -1,8 +1,8 @@
 package db.xml;
 
-import db.dao._interfaces.SexDAO;
+import db.dao._inter.SexDAO;
 import db.dao.jdbc.SexDAOImpl;
-import db.dao._interfaces.UserDataDAO;
+import db.dao._inter.UserDataDAO;
 import db.dao.jdbc.UserDataDAOImpl;
 import db.xml.marshaling.MarshallingResult;
 import db.xml.marshaling.TableMarshaller;

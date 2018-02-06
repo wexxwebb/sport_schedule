@@ -4,6 +4,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.sql.Date;
 import java.util.Collection;
 
 @SuppressWarnings("unused")
@@ -14,7 +15,7 @@ public class InnerUser implements UserDetails {
     private String username;
     private String firstName;
     private String lastName;
-    private String birthday;
+    private Date birthday;
     private boolean enabled;
     private boolean locked;
     private boolean expired;
@@ -42,7 +43,7 @@ public class InnerUser implements UserDetails {
     }
 
     public InnerUser(long id, String username, String password, String firstName,
-                     String lastName, String birthday, boolean enabled, boolean locked,
+                     String lastName, Date birthday, boolean enabled, boolean locked,
                      boolean expired, Collection<GrantedAuthority> authorities) {
         this.id = id;
         this.password = password;
@@ -68,7 +69,7 @@ public class InnerUser implements UserDetails {
         return lastName;
     }
 
-    public String getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 

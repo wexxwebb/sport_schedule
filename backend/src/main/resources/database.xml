@@ -7,8 +7,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="db.dao.hiber"/>
-    <bean class="common.LoggedAnnotationPostProcessor"/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.postgresql.Driver"/>
@@ -23,7 +21,7 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.hbm2ddl.auto">
-                    create-drop
+                    update
                 </prop>
                 <prop key="dialect">
                     org.hibernate.dialect.PostgreSQL9Dialect

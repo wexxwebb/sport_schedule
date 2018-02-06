@@ -1,10 +1,15 @@
 package db.entities.Impl;
 
-import db.entities.inter.ExerciseData;
+import db.entities._inter.ExerciseData;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import static javax.persistence.GenerationType.SEQUENCE;
+
 @XmlRootElement
+@Entity(name = "ExerciseData")
+@Table(name = "exercise_data")
 public class ExerciseDataImpl implements ExerciseData {
 
     private long id;
@@ -18,10 +23,14 @@ public class ExerciseDataImpl implements ExerciseData {
         this.name = name;
     }
 
+
     public ExerciseDataImpl(String name) {
         this.name = name;
     }
 
+    @Id
+    @SequenceGenerator(name = "hibernateSeq", sequenceName = "training_data_seq", allocationSize = 1)
+    @GeneratedValue(strategy = SEQUENCE, generator = "hibernateSeq")
     @Override
     public long getId() {
         return id;

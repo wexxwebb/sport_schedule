@@ -1,9 +1,9 @@
 package db.dao.hiber;
 
 import common.Logged;
-import db.dao._interfaces.SexDAO;
+import db.dao._inter.SexDAO;
 import db.entities.Impl.SexImpl;
-import db.entities.inter.Sex;
+import db.entities._inter.Sex;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

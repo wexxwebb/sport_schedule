@@ -50,7 +50,7 @@
                                 <td>${user.person.id}</td>
                                 <td>${user.person.lastName}</td>
                                 <td>${user.person.firstName}</td>
-                                <td>${user.person.sex.sex}</td>
+                                <td>${user.person.name.name}</td>
                                 <td style="text-align: center;">${user.person.birthday}</td>
                                 <%--todo add blocking/unblocking users --%>
                             </tr>

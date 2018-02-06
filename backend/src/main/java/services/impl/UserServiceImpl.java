@@ -1,16 +1,14 @@
 package services.impl;
 
 import common.Logged;
-import common.Result;
-import db.dao._interfaces.UserDataDAO;
-import db.entities.inter.UserData;
+import db.dao._inter.UserDataDAO;
+import db.entities.Impl.UserDataImpl;
+import db.entities._inter.UserData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import services._interfaces.UserService;
+import services._inter.UserService;
 
-import java.sql.Date;
-import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -26,20 +24,12 @@ public class UserServiceImpl implements UserService {
         this.userDataDAO = userDataDAO;
     }
 
-    public UserServiceImpl() {
-    }
-
     public List<UserData> getUserList() {
-        Result<List<UserData>> result;
-        if ((result = userDataDAO.getAll()).isSuccess()) {
-            return result.get();
-        } else {
-            return new ArrayList<>();
-        }
+        return userDataDAO.getAll();
     }
 
     @Override
-    public db.entities.Impl.UserDataImpl getUserByLogin(String login) {
+    public UserDataImpl getUserByLogin(String login) {
         return userDataDAO.getByLogin(login);
     }
 

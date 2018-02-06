@@ -1,6 +1,6 @@
 package db.xml.xmlWrapper;
 
-import db.entities.inter.State;
+import db.entities._inter.State;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

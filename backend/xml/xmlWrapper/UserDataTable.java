@@ -1,8 +1,8 @@
 package db.xml.xmlWrapper;
 
-import db.dao._interfaces.UserDataDAO;
+import db.dao._inter.UserDataDAO;
 import db.dao.jdbc.UserDataDAOImpl;
-import db.entities.inter.UserData;
+import db.entities._inter.UserData;
 import org.apache.log4j.Logger;
 
 import javax.xml.bind.annotation.*;

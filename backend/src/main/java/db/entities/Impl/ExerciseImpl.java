@@ -1,12 +1,13 @@
 package db.entities.Impl;
 
-import db.entities.inter.Exercise;
-import db.entities.inter.ExerciseData;
-import db.entities.inter.Training;
+import db.entities._inter.Exercise;
+import db.entities._inter.ExerciseData;
+import db.entities._inter.Training;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
+
 public class ExerciseImpl implements Exercise {
 
     private long id;

@@ -38,7 +38,7 @@
         <div class="row" style="margin-top: 40px;">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div style="width: 250px; margin: auto">
-                    <form method="post" action="${pageContext.request.contextPath}/register">
+                    <form method="post" action="./register">
                         <div class="log-in-group">
                             <div class="form-group" style="display: inline-block">
                                 <input name="login" type="text" class="form-control iput-auth" placeholder="Имя пользователя" value="${requestScope.login}">
@@ -52,18 +52,18 @@
                                 <input name="password_approve" type="password" class="form-control iput-auth" placeholder="Подтверждение пароля" value="${requestScope.passwordApprove}">
                             </div>
                             <div class="form-group" style="display: inline-block">
-                                <input name="name" type="text" class="form-control iput-auth" placeholder="Имя" value="${requestScope.name}">
-                                <span class="reg-error">${nameError}</span>
+                                <input name="first_name" type="text" class="form-control iput-auth" placeholder="Имя" value="${requestScope.firstName}">
+                                <span class="reg-error">${firstNameError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
                                 <input name="last_name" type="text" class="form-control iput-auth" placeholder="Фамилия" value="${requestScope.lastName}">
                                 <span class="reg-error">${lastNameError}</span>
                             </div>
                             <div class="form-group" style="display: inline-block">
-                                <select name="name" class="form-control iput-auth">
+                                <select name="sex" class="form-control iput-auth">
                                     <option value="" disabled selected>Пол</option>
-                                    <c:forEach var="name" items="${sexList}">
-                                        <option ${name.id == requestScope.name ? "selected" : ""} value="${name.id}">${name.name}</option>
+                                    <c:forEach var="sex" items="${sexList}">
+                                        <option ${sex.id == requestScope.sex ? "selected" : ""} value="${sex.id}">${sex.name}</option>
                                     </c:forEach>
                                 </select>
                                 <span class="reg-error">${sexError}</span>

@@ -1,6 +1,6 @@
 package db.xml.xmlWrapper;
 
-import db.entities.inter.ExerciseData;
+import db.entities._inter.ExerciseData;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

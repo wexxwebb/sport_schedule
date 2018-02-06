@@ -2,8 +2,8 @@ package db.dao.hiber;
 
 import common.InsertType;
 import common.Result;
-import db.dao._interfaces.ExerciseDAO;
-import db.entities.inter.Exercise;
+import db.dao._inter.ExerciseDAO;
+import db.entities._inter.Exercise;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

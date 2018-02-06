@@ -1,7 +1,7 @@
 package db.entities.Impl;
 
 
-import db.entities.inter.Person;
+import db.entities._inter.Person;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;

@@ -1,8 +1,8 @@
 package db.dao.hiber;
 
-import db.dao._interfaces.SexDAO;
+import db.dao._inter.SexDAO;
 import db.entities.Impl.SexImpl;
-import db.entities.inter.Sex;
+import db.entities._inter.Sex;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

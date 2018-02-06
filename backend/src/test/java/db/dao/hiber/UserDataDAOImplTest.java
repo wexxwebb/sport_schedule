@@ -1,22 +1,25 @@
 package db.dao.hiber;
 
 import common.SDF;
-import db.dao._interfaces.PersonDAO;
-import db.dao._interfaces.SexDAO;
-import db.dao._interfaces.UserDataDAO;
+import db.dao._inter.PersonDAO;
+import db.dao._inter.SexDAO;
+import db.dao._inter.TrainingDAO;
+import db.dao._inter.UserDataDAO;
 import db.entities.Impl.PersonImpl;
 import db.entities.Impl.SexImpl;
+import db.entities.Impl.TrainingImpl;
 import db.entities.Impl.UserDataImpl;
-import db.entities.inter.UserData;
+import db.entities._inter.UserData;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import util.CustomPasswordEncoder;
 
 import java.sql.Date;
 
 import static common.InsertType.NEW;
-import static org.junit.Assert.*;
 
 public class UserDataDAOImplTest {
 
@@ -24,7 +27,7 @@ public class UserDataDAOImplTest {
     @Before
     public void init() {
         context = new ClassPathXmlApplicationContext(
-                "database.xml");
+                "database-test.xml", "spring-config.xml");
     }
 
     @Test
@@ -32,11 +35,16 @@ public class UserDataDAOImplTest {
         SexDAO sexDAO = context.getBean(SexDAOImpl.class);
         PersonDAO personDAO = context.getBean(PersonDAOImpl.class);
         UserDataDAO userDataDAO = context.getBean(UserDataDAOImpl.class);
+        TrainingDAO trainingDAO = context.getBean(TrainingDAOImpl.class);
+        PasswordEncoder passwordEncoder = context.getBean(CustomPasswordEncoder.class);
+
         SexImpl sex = new SexImpl(1, "Мужской");
         PersonImpl person = new PersonImpl("Александр", "Кретов",
                 new Date(SDF.getDate("1989-01-08").get().getTime()), sex);
-        UserDataImpl userData = new UserDataImpl("alex", "alex",
-                new Date(SDF.getDate("2018-01-01").get().getTime()));
+        UserDataImpl userData = new UserDataImpl("alex", passwordEncoder.encode("alex"),
+                new Date(SDF.getDate("2018-01-01").get().getTime()), true, "ROLE_ADMIN");
+        TrainingImpl training = new TrainingImpl(userData, new Date((new java.util.Date()).getTime()),
+                new Date((new java.util.Date()).getTime()));
 
         userData.setPerson(person);
         person.setUserData(userData);
@@ -44,11 +52,11 @@ public class UserDataDAOImplTest {
         sex = sexDAO.insert(sex);
         person = personDAO.insert(person, NEW);
         userData = userDataDAO.insert(userData, NEW);
+        training = trainingDAO.insert(training);
 
         UserData userFromDB = userDataDAO.getByLogin("alex");
+        System.out.println(training);
         System.out.println(userFromDB);
-
-
 
     }
 
