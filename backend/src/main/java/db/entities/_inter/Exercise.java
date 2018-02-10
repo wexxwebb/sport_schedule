@@ -27,7 +27,8 @@ public interface Exercise extends Serializable {
 
     void setRepetition(int repetition);
 
-    int getWeigth();
+    int getWeight();
 
-    void setWeigth(int weigth);
+    void setWeight(int weight);
+
 }

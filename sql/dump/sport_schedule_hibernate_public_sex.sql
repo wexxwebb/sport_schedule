@@ -1,0 +1,1 @@
+INSERT INTO public.sex (id, name) VALUES (1, 'Мужской');

@@ -1,17 +1,18 @@
 package services._inter;
 
 import db.entities._inter.ExerciseData;
+import services.excep.ServiceIsNotAvailableException;
 
 import java.io.Serializable;
 import java.util.List;
 
 public interface ExerciseDataService extends Serializable {
 
-    String searchExerciseData(String term);
+    String searchExerciseData(String term) throws ServiceIsNotAvailableException;
 
-    String addExerciseData(String name);
+    String addExerciseData(String name) throws ServiceIsNotAvailableException;
 
-    String delExerciseData(long id);
+    void delExerciseData(long id) throws ServiceIsNotAvailableException;
 
-    List<ExerciseData> getExerciseDataList();
+    List<ExerciseData> getExerciseDataList() throws ServiceIsNotAvailableException;
 }

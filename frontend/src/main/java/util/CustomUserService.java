@@ -10,9 +10,12 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import services._inter.UserService;
+import services.excep.ServiceIsNotAvailableException;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static common.Messages.DATA_ACCESS_ERROR;
 
 @Component
 public class CustomUserService implements UserDetailsService {
@@ -27,9 +30,13 @@ public class CustomUserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        UserData userData = userService.getUserByLogin(username);
+        UserData userData;
+        try {
+            userData = userService.getUserByLogin(username);
+        } catch (ServiceIsNotAvailableException e) {
+            throw new UsernameNotFoundException(DATA_ACCESS_ERROR, e);
+        }
         if (userData != null) {
-
             List<GrantedAuthority> grantedAuthorityList = new ArrayList<>();
             grantedAuthorityList.add(new SimpleGrantedAuthority(userData.getRole()));
 

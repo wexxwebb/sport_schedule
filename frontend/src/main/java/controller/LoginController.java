@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import static common.Messages.ACCESS_DENIED;
+
 @Controller
 public class LoginController {
 
@@ -18,7 +20,8 @@ public class LoginController {
     public ModelAndView index(@RequestParam(value = "error", required = false) String error) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("public/login");
-        if (error != null && error != "" && error.equals("access_denied")) {
+        if (error != null && !error.isEmpty() && error.equals("access_denied")) {
+            logger.debug(ACCESS_DENIED);
             modelAndView.addObject("authError", "Некорректный логин или пароль");
         }
         return modelAndView;

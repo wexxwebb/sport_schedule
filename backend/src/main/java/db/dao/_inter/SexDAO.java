@@ -1,5 +1,6 @@
 package db.dao._inter;
 
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.SexImpl;
 import db.entities._inter.Sex;
 
@@ -8,8 +9,8 @@ import java.util.List;
 
 public interface SexDAO extends Serializable {
 
-    List<Sex> getAll();
+    List<Sex> getAll() throws DataIsNotAvailableException;
 
-    SexImpl insert(SexImpl sex);
+    SexImpl insert(SexImpl sex) throws DataIsNotAvailableException;
 
 }

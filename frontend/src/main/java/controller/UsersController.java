@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import services._inter.UserService;
+import services.excep.ServiceIsNotAvailableException;
 
+import static common.Messages.SERVICE_ERROR;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
@@ -19,7 +21,7 @@ public class UsersController {
     private UserService userService;
 
     @Autowired
-    public void setUserService(UserService userService) {
+    public UsersController(UserService userService) {
         this.userService = userService;
     }
 
@@ -27,7 +29,12 @@ public class UsersController {
     public ModelAndView getUsers() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("admin/users");
-        modelAndView.addObject("userList", userService.getUserList());
+        try {
+            modelAndView.addObject("userList", userService.getUserList());
+        } catch (ServiceIsNotAvailableException e) {
+            logger.error(SERVICE_ERROR);
+            modelAndView.addObject("error", SERVICE_ERROR);
+        }
         return modelAndView;
     }
 }

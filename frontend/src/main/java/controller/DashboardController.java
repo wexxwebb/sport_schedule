@@ -9,9 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import services._inter.DashboardService;
+import services.excep.ServiceIsNotAvailableException;
 import util.InnerUser;
 
-import static org.springframework.security.config.annotation.web.messaging.MessageSecurityMetadataSourceRegistry.hasRole;
+import static common.Messages.SERVICE_ERROR;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
@@ -22,22 +23,16 @@ public class DashboardController {
 
     private DashboardService dashboardService;
 
-    public DashboardService getDashboardService() {
-        return dashboardService;
-    }
-
     @Autowired
-    public void setDashboardService(DashboardService dashboardService) {
+    public DashboardController(DashboardService dashboardService) {
         this.dashboardService = dashboardService;
     }
 
     @RequestMapping(value = "/inner/dispatcher", method = GET)
     public String dispatchUser(@AuthenticationPrincipal InnerUser user) {
-//        if (user.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
-//            return "redirect:../admin/users";
-//        }
-        (new SimpleGrantedAuthority("ROLE_USER")).
-
+        if (user.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
+            return "redirect:../admin/users";
+        }
         return "redirect:dashboard";
     }
 
@@ -47,10 +42,14 @@ public class DashboardController {
         modelAndView.setViewName("inner/dashboard");
         modelAndView.addObject("firstName", user.getFirstName());
         modelAndView.addObject("userId", user.getId());
-        modelAndView.addObject("pastTrainingList", dashboardService.getPastTrainingList(user.getId()));
-        modelAndView.addObject("todayTrainingList", dashboardService.getTodayTrainingList(user.getId()));
-        modelAndView.addObject("futureTrainingList", dashboardService.getFutureTrainingList(user.getId()));
-
+        try {
+            modelAndView.addObject("pastTrainingList", dashboardService.getPastTrainingList(user.getId()));
+            modelAndView.addObject("todayTrainingList", dashboardService.getTodayTrainingList(user.getId()));
+            modelAndView.addObject("futureTrainingList", dashboardService.getFutureTrainingList(user.getId()));
+        } catch (ServiceIsNotAvailableException e) {
+            logger.debug(SERVICE_ERROR);
+            modelAndView.addObject("error", SERVICE_ERROR);
+        }
         return modelAndView;
     }
 }

@@ -1,14 +1,15 @@
 package services._inter;
 
+import db.entities.Impl.PersonImpl;
 import db.entities.Impl.UserDataImpl;
-import db.entities._inter.UserData;
+import services.excep.ServiceIsNotAvailableException;
 
 import java.io.Serializable;
 import java.util.List;
 
 public interface UserService extends Serializable {
 
-    List<UserData> getUserList();
+    List<PersonImpl> getUserList() throws ServiceIsNotAvailableException;
 
-    UserDataImpl getUserByLogin(String login);
+    UserDataImpl getUserByLogin(String login) throws ServiceIsNotAvailableException;
 }

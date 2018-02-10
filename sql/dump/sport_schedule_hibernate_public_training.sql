@@ -1,0 +1,10 @@
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (1, '2018-02-05', '2018-02-05', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (2, '2018-02-06', '2018-02-06', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (3, '2018-02-07', '2018-02-07', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (7, '2018-02-06', '2018-02-01', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (8, '2018-02-06', '2018-02-14', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (12, '2018-02-06', '2018-02-01', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (13, '2018-02-06', '2018-02-28', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (15, '2018-02-06', '2018-02-06', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (16, '2018-02-06', '2018-02-06', 1);
+INSERT INTO public.training (id, createdate, trainingdate, userdata_id) VALUES (17, '2018-02-06', '2018-02-06', 1);

@@ -29,7 +29,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body onload="document.getElementById('login').focus()">
     <div class="container">
         <div class="row">
             <div class="col-md-12"><h1 class="h-main">Расписание тренировок</h1></div>
@@ -40,7 +40,7 @@
                     <form method="post" action="${pageContext.request.contextPath}/login">
                         <div class="log-in-group">
                             <div class="form-group" style="display: inline-block">
-                                <input type="login" name="login" class="form-control iput-auth"
+                                <input id="login" type="login" name="login" class="form-control iput-auth"
                                        placeholder="Имя пользователя" onclick="this.select()">
                             </div>
                             <div class="form-group" style="display: inline-block">

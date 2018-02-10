@@ -5,6 +5,7 @@ import common.Formatted;
 import common.Logged;
 import common.SDF;
 import db.dao._inter.TrainingDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.TrainingImpl;
 import db.entities.Impl.UserDataImpl;
 import db.entities._inter.Training;
@@ -12,9 +13,11 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services._inter.TrainingService;
+import services.excep.ServiceIsNotAvailableException;
 
 import java.sql.Date;
 
+@SuppressWarnings("Duplicates")
 @Service
 public class TrainingServiceImpl implements TrainingService {
 
@@ -27,29 +30,42 @@ public class TrainingServiceImpl implements TrainingService {
     private TrainingDAO trainingDAO;
 
     @Autowired
-    public void setTrainingDAO(TrainingDAO trainingDAO) {
+    public TrainingServiceImpl(TrainingDAO trainingDAO) {
         this.trainingDAO = trainingDAO;
     }
 
     @Override
-    public String addTraining(long userId, String date) {
+    public String addTraining(long userId, String date) throws ServiceIsNotAvailableException {
         TrainingImpl training = new TrainingImpl(new UserDataImpl(userId),
                 new Date(System.currentTimeMillis()), new Date(SDF.getDate(date).get().getTime()));
-        training = trainingDAO.insert(training);
-        return gson.toJson(training);
-    }
-
-    @Override
-    public String delTraining(long id) {
-        if (trainingDAO.delete(id)) {
-            return "1";
+        try {
+            training = trainingDAO.insert(training);
+            return gson.toJson(training);
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
         }
-        return "0";
     }
 
     @Override
-    public Training getById(long id) {
-        return trainingDAO.getById(id);
+    public boolean delTraining(long id) throws ServiceIsNotAvailableException {
+        try {
+            trainingDAO.delete(id);
+            return true;
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
+        }
+    }
+
+    @Override
+    public Training getById(long id) throws ServiceIsNotAvailableException {
+        try {
+            return trainingDAO.getById(id);
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
+        }
     }
 }
 

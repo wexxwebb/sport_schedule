@@ -1,17 +1,14 @@
 package services._inter;
 
-import common.Result;
-import db.entities._inter.Exercise;
+import services.excep.ServiceIsNotAvailableException;
 
 import java.io.Serializable;
-import java.util.List;
 
 public interface ExerciseService extends Serializable {
 
-    Result<String> addExercise(int trainingId, int exerciseId, int approach,
-                               int repetition, int weight);
+    String addExercise(long trainingId, long exerciseId, int approach,
+                       int repetition, int weight) throws ServiceIsNotAvailableException;
 
-    Result<String> delExercise(int id);
+    void delExercise(long id) throws ServiceIsNotAvailableException;
 
-    Result<List<Exercise>> getByTrainindId(int trainingId);
 }

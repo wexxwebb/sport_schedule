@@ -8,5 +8,11 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/sport_schedule</jdbc-url>
       <default-dialect>PostgreSQL</default-dialect>
     </data-source>
+    <data-source source="LOCAL" name="sport_schedule_hibernate@localhost" uuid="beb818eb-745d-4cf0-b729-2683dac12738">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/sport_schedule_hibernate</jdbc-url>
+    </data-source>
   </component>
 </project>

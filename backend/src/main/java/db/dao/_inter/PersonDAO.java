@@ -1,16 +1,14 @@
 package db.dao._inter;
 
-import common.InsertType;
-import common.Result;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.PersonImpl;
-import db.entities._inter.Person;
 
 import java.io.Serializable;
 import java.util.List;
 
 public interface PersonDAO extends Serializable {
 
-    Result<List<Person>> getAll();
+    List<PersonImpl> getAll() throws DataIsNotAvailableException;
 
-    PersonImpl insert(PersonImpl person, InsertType insertType);
+    PersonImpl insert(PersonImpl person) throws DataIsNotAvailableException;
 }

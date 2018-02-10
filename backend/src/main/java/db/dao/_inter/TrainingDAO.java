@@ -1,23 +1,18 @@
 package db.dao._inter;
 
-import common.TimePeriod;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.TrainingImpl;
-import db.entities._inter.Training;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.Serializable;
 import java.util.List;
 
 public interface TrainingDAO extends Serializable {
 
-    @Nullable
-    List<Training> getAll(long userId, TimePeriod timePeriod);
+    List<TrainingImpl> getAll(long userId) throws DataIsNotAvailableException;
 
-    @Nullable
-    TrainingImpl insert(TrainingImpl training);
+    TrainingImpl insert(TrainingImpl training) throws DataIsNotAvailableException;
 
-    boolean delete(long id);
+    boolean delete(long id) throws DataIsNotAvailableException;
 
-    @Nullable
-    Training getById(long id);
+    TrainingImpl getById(long id) throws DataIsNotAvailableException;
 }

@@ -1,0 +1,1 @@
+INSERT INTO public.user_data (id, datereg, enabled, login, password, role, person_id) VALUES (1, '2018-01-01', true, 'alex', '$2a$12$gJ0pwKDNv9dedDnYpggBA.wFv8Q2/qi.8g9BCwjMOHkrn7fCfNWU6', 'ROLE_ADMIN', 1);

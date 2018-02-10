@@ -1,27 +1,21 @@
 package db.dao._inter;
 
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.ExerciseDataImpl;
-import db.entities._inter.ExerciseData;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.Serializable;
 import java.util.List;
 
 public interface ExerciseDataDAO extends Serializable {
 
-    @Nullable
-    List<ExerciseDataImpl> getAll();
+    List<ExerciseDataImpl> getAll() throws DataIsNotAvailableException;
 
-    @Nullable
-    ExerciseDataImpl insert(ExerciseDataImpl exerciseData);
+    ExerciseDataImpl insert(ExerciseDataImpl exerciseData) throws DataIsNotAvailableException;
 
-    List<ExerciseDataImpl> searchByName(String term);
+    List<ExerciseDataImpl> searchByName(String term) throws DataIsNotAvailableException;
 
-    @Nullable
-    ExerciseData getById(long id);
+    ExerciseDataImpl getById(long id) throws DataIsNotAvailableException;
 
-    boolean delete(long id);
+    boolean delete(long id) throws DataIsNotAvailableException;
 
-    @Nullable
-    ExerciseData update(ExerciseDataImpl exerciseData);
 }

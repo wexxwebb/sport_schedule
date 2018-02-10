@@ -1,12 +1,10 @@
 package db.dao.hiber;
 
-import common.InsertType;
 import common.Logged;
-import common.Result;
 import db.dao.DAO;
 import db.dao._inter.PersonDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.PersonImpl;
-import db.entities._inter.Person;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -24,22 +22,27 @@ public class PersonDAOImpl implements PersonDAO {
     private SessionFactory sessionFactory;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public PersonDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
     @Override
-    public Result<List<Person>> getAll() {
+    public List<PersonImpl> getAll() throws DataIsNotAvailableException {
         return null;
     }
 
     @Override
-    public PersonImpl insert(PersonImpl person, InsertType insertType) {
-        return DAO.doIt(this::_insert, person, sessionFactory);
+    public PersonImpl insert(PersonImpl person) throws DataIsNotAvailableException {
+        try {
+            return DAO.doIt(this::_insert, person, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private PersonImpl _insert(Session session, PersonImpl person) {
-        person.setId((long)session.save(person));
+        person.setId((long) session.save(person));
         return person;
     }
 }

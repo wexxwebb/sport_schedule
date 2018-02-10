@@ -7,6 +7,7 @@
     </list>
     <writeAnnotations>
       <writeAnnotation name="common.Logged" />
+      <writeAnnotation name="common.Formatted" />
     </writeAnnotations>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">

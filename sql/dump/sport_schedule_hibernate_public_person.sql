@@ -1,0 +1,1 @@
+INSERT INTO public.person (id, birthday, firstname, lastname, sex_id) VALUES (1, '1989-01-08', 'Александр', 'Кретов', 1);

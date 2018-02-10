@@ -1,7 +1,7 @@
 package controller;
 
 import common.Logged;
-import common.Result;
+import db.entities.Impl.ExerciseImpl;
 import db.entities._inter.Exercise;
 import db.entities._inter.Training;
 import org.apache.log4j.Logger;
@@ -14,8 +14,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import services._inter.ExerciseService;
 import services._inter.TrainingService;
+import services.excep.ServiceIsNotAvailableException;
 
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import static common.Messages.SERVICE_ERROR;
 
 @Controller
 public class ExerciseController {
@@ -27,70 +31,56 @@ public class ExerciseController {
 
     private TrainingService trainingService;
 
-    public ExerciseService getExerciseService() {
-        return exerciseService;
-    }
-
     @Autowired
-    public void setExerciseService(ExerciseService exerciseService) {
+    public ExerciseController(ExerciseService exerciseService, TrainingService trainingService) {
         this.exerciseService = exerciseService;
-    }
-
-    public TrainingService getTrainingService() {
-        return trainingService;
-    }
-
-    @Autowired
-    public void setTrainingService(TrainingService trainingService) {
         this.trainingService = trainingService;
     }
 
     @RequestMapping(value = "/inner/trainingConsist", method = RequestMethod.GET)
     public ModelAndView getTrainingConsist(@RequestParam(value = "trainingId") int trainingId) {
-
         ModelAndView modelAndView = new ModelAndView();
-
-        Training training = trainingService.getById(trainingId);
-        if (training != null) {
+        Training training;
+        try {
+            training = trainingService.getById(trainingId);
             modelAndView.addObject("training", training);
-        } else {
-            modelAndView.addObject("trainingError", "Ошибка");
+        } catch (ServiceIsNotAvailableException e) {
+            logger.debug(SERVICE_ERROR);
+            modelAndView.addObject("trainingError", SERVICE_ERROR);
+            return modelAndView;
         }
-
         modelAndView.setViewName("/inner/trainingConsist");
-
-        Result<List<Exercise>> exerciseResult = exerciseService.getByTrainindId(trainingId);
-        if (exerciseResult.isSuccess()) {
-            modelAndView.addObject("exerciseList", exerciseResult.get());
-            return modelAndView;
-        } else {
-            modelAndView.addObject("error", exerciseResult.getMessage());
-            return modelAndView;
-        }
+        modelAndView.addObject("exerciseList", new ArrayList<Exercise>(training.getExerciseCollection().stream().sorted((o1, o2) -> o1.getId() <= o2.getId() ? -1 : 1).collect(Collectors.toList())));
+        return modelAndView;
     }
 
-    @RequestMapping(value = "/inner/addExercise", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    @RequestMapping(value = "/inner/addExercise",
+            method = RequestMethod.POST,
+            produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String addExercise(@RequestParam(value = "exercise_id") int exerciseid,
-                              @RequestParam(value = "training_id") int trainingId,
+    public String addExercise(@RequestParam(value = "exercise_id") long exerciseId,
+                              @RequestParam(value = "training_id") long trainingId,
                               @RequestParam(value = "approach") int approach,
                               @RequestParam(value = "repetition") int repetition,
-                              @RequestParam(value = "weigth") int weigth) {
+                              @RequestParam(value = "weight") int weight) {
 
-        Result<String> result =
-                exerciseService.addExercise(exerciseid, trainingId,
-                        approach, repetition, weigth);
-        if (result.isSuccess()) {
-            return result.get();
-        } else {
-            return "";
+        try {
+            return exerciseService.addExercise(exerciseId, trainingId, approach, repetition, weight);
+        } catch (ServiceIsNotAvailableException e) {
+            logger.debug(SERVICE_ERROR);
+            return SERVICE_ERROR;
         }
     }
 
     @RequestMapping(value = "/inner/delExercise", method = RequestMethod.POST)
     @ResponseBody
-    public String delExercise(@RequestParam(value = "id") int id) {
-        Result<String> result = exerciseService.delExercise(id);
-        return result.get();
+    public String delExercise(@RequestParam(value = "id") long id) {
+        try {
+            exerciseService.delExercise(id);
+            return "1";
+        } catch (ServiceIsNotAvailableException e) {
+            logger.debug(SERVICE_ERROR);
+            return SERVICE_ERROR;
+        }
     }
 }

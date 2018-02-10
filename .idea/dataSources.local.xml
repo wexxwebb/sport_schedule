@@ -10,5 +10,14 @@
       <user-name>postgres</user-name>
       <introspection-schemas>sport_schedule:public|sport_schedule_hibernate:public</introspection-schemas>
     </data-source>
+    <data-source name="sport_schedule_hibernate@localhost" uuid="beb818eb-745d-4cf0-b729-2683dac12738">
+      <database-info product="PostgreSQL" version="9.5.10" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>sport_schedule_hibernate:public</introspection-schemas>
+    </data-source>
   </component>
 </project>

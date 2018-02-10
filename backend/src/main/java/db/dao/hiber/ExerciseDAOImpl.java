@@ -1,34 +1,38 @@
 package db.dao.hiber;
 
+import common.Logged;
 import db.dao._inter.ExerciseDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.ExerciseImpl;
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 import static db.dao.DAO.doIt;
 
 @Component
 public class ExerciseDAOImpl implements ExerciseDAO {
 
+    @Logged
+    private Logger logger;
+
     private SessionFactory sessionFactory;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public ExerciseDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
     @Override
-    public List<ExerciseImpl> getAll() {
-        return null;
-    }
-
-    @Override
-    public ExerciseImpl insert(ExerciseImpl exercise) {
-        return doIt(this::_insert, exercise, sessionFactory);
+    public ExerciseImpl insert(ExerciseImpl exercise) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_insert, exercise, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private ExerciseImpl _insert(Session session, ExerciseImpl exercise) {
@@ -37,12 +41,18 @@ public class ExerciseDAOImpl implements ExerciseDAO {
     }
 
     @Override
-    public List<ExerciseImpl> getByTrainingId(int trainingId) {
-        return null;
+    public boolean delete(long id) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_delete, id, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
-    @Override
-    public boolean delete(int id) {
-        return false;
+    private boolean _delete(Session session, long id) {
+        ExerciseImpl exercise = session.get(ExerciseImpl.class, id);
+        session.delete(exercise);
+        return true;
     }
 }

@@ -1,11 +1,11 @@
 package db.dao.hiber;
 
 import common.Logged;
-import common.TimePeriod;
 import db.dao._inter.TrainingDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.TrainingImpl;
-import db.entities._inter.Training;
 import org.apache.log4j.Logger;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,29 +26,38 @@ public class TrainingDAOImpl implements TrainingDAO {
     private SessionFactory sessionFactory;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public TrainingDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
     /**
-     * @param userId     user's ID
-     * @param timePeriod time period can be ALL, PAST, TODAY, FUTURE
-     * @return List of items Training
+     * @param userId user's ID
+     * @return List of items TrainingImpl
      */
     @Override
-    public List<Training> getAll(long userId, TimePeriod timePeriod) {
-        return doIt(this::_getAll, userId, sessionFactory);
+    public List<TrainingImpl> getAll(long userId) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_getAll, userId, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
-    private List<Training> _getAll(Session session, long userId) {
+    private List<TrainingImpl> _getAll(Session session, long userId) {
         Query query = session.createQuery("from Training where user_id = :user_id");
         query.setParameter("user_id", userId);
         return query.getResultList();
     }
 
     @Override
-    public TrainingImpl insert(TrainingImpl training) {
-        return doIt(this::_insert, training, sessionFactory);
+    public TrainingImpl insert(TrainingImpl training) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_insert, training, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private TrainingImpl _insert(Session session, TrainingImpl training) {
@@ -57,8 +66,13 @@ public class TrainingDAOImpl implements TrainingDAO {
     }
 
     @Override
-    public boolean delete(long id) {
-        return doIt(this::_delete, id, sessionFactory);
+    public boolean delete(long id) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_delete, id, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private boolean _delete(Session session, long id) {
@@ -68,7 +82,18 @@ public class TrainingDAOImpl implements TrainingDAO {
     }
 
     @Override
-    public Training getById(long id) {
-        return null;
+    public TrainingImpl getById(long id) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_getById, id, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
+    }
+
+    private TrainingImpl _getById(Session session, long id) {
+        TrainingImpl training = session.load(TrainingImpl.class, id);
+        Hibernate.initialize(training.getExerciseCollection());
+        return training;
     }
 }

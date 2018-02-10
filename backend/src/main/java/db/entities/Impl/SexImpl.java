@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Collection;
 
 @XmlRootElement
@@ -17,7 +18,7 @@ public class SexImpl implements Sex, Serializable {
 
     private long id;
     private String name;
-    private Collection<PersonImpl> personCollection;
+    private Collection<PersonImpl> personCollection = new ArrayList<>();
 
     public SexImpl() {
     }
@@ -35,11 +36,10 @@ public class SexImpl implements Sex, Serializable {
         this.name = name;
     }
 
-    @Override
-
     @Id
     @SequenceGenerator(name = "hibernateSeq", sequenceName = "sex_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "hibernateSeq")
+    @Override
     public long getId() {
         return id;
     }

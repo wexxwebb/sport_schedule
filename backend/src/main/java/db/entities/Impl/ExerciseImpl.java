@@ -5,6 +5,11 @@ import db.entities._inter.Exercise;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import java.util.Collection;
+
+import static javax.persistence.CascadeType.ALL;
+import static javax.persistence.FetchType.EAGER;
+import static javax.persistence.FetchType.LAZY;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @XmlRootElement
@@ -17,7 +22,7 @@ public class ExerciseImpl implements Exercise {
     private TrainingImpl training;
     private int approach;
     private int repetition;
-    private int weigth;
+    private int weight;
 
     public ExerciseImpl() {
     }
@@ -32,20 +37,20 @@ public class ExerciseImpl implements Exercise {
         this.training = training;
         this.approach = approach;
         this.repetition = repetition;
-        this.weigth = weight;
+        this.weight = weight;
     }
 
     public ExerciseImpl(long id, ExerciseDataImpl exercise, TrainingImpl training,
-                        int approach, int repetition, int weigth) {
+                        int approach, int repetition, int weight) {
         this.id = id;
         this.exercise = exercise;
         this.training = training;
         this.approach = approach;
         this.repetition = repetition;
-        this.weigth = weigth;
+        this.weight = weight;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @Override
     public TrainingImpl getTraining() {
         return training;
@@ -56,6 +61,7 @@ public class ExerciseImpl implements Exercise {
         this.training = training;
     }
 
+    @ManyToOne(targetEntity = ExerciseDataImpl.class, fetch = EAGER)
     @Override
     public ExerciseDataImpl getExerciseData() {
         return exercise;
@@ -100,13 +106,13 @@ public class ExerciseImpl implements Exercise {
     }
 
     @Override
-    public int getWeigth() {
-        return weigth;
+    public int getWeight() {
+        return weight;
     }
 
     @Override
-    public void setWeigth(int weigth) {
-        this.weigth = weigth;
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     @Override
@@ -115,7 +121,7 @@ public class ExerciseImpl implements Exercise {
                 "id=" + id +
                 ", approach=" + approach +
                 ", repetition=" + repetition +
-                ", weigth=" + weigth +
+                ", weight=" + weight +
                 '}';
     }
 }

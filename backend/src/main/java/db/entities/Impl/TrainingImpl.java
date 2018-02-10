@@ -6,6 +6,7 @@ import db.entities._inter.Training;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.Collection;
 
 import static javax.persistence.FetchType.EAGER;
@@ -21,7 +22,7 @@ public class TrainingImpl implements Training {
     private UserDataImpl userData;
     private Date createDate;
     private Date trainingDate;
-    private Collection<ExerciseImpl> exerciseCollection;
+    private Collection<ExerciseImpl> exerciseCollection = new ArrayList<>();
 
     public TrainingImpl() {
     }
@@ -43,7 +44,7 @@ public class TrainingImpl implements Training {
         this.trainingDate = trainingDate;
     }
 
-    @ManyToOne(fetch = LAZY)
+    @ManyToOne(fetch = EAGER)
     @Override
     public UserDataImpl getUserData() {
         return userData;
@@ -87,7 +88,7 @@ public class TrainingImpl implements Training {
         this.trainingDate = trainingDate;
     }
 
-    @OneToMany(mappedBy = "training", fetch = EAGER)
+    @OneToMany(mappedBy = "training", fetch = LAZY)
     @Override
     public Collection<ExerciseImpl> getExerciseCollection() {
         return exerciseCollection;

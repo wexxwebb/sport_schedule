@@ -2,6 +2,7 @@ package db.dao.hiber;
 
 import common.Logged;
 import db.dao._inter.SexDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.SexImpl;
 import db.entities._inter.Sex;
 import org.apache.log4j.Logger;
@@ -25,7 +26,7 @@ public class SexDAOImpl implements SexDAO {
     private SessionFactory sessionFactory;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public SexDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
@@ -34,8 +35,13 @@ public class SexDAOImpl implements SexDAO {
      */
 
     @Override
-    public List<Sex> getAll() {
-        return doIt(this::_getAll, null, sessionFactory);
+    public List<Sex> getAll() throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_getAll, null, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private List<Sex> _getAll(Session session, Object object) {
@@ -48,8 +54,13 @@ public class SexDAOImpl implements SexDAO {
      * @return POJO with inserted id
      */
     @Override
-    public SexImpl insert(SexImpl sex) {
-        return doIt(this::_insert, sex, sessionFactory);
+    public SexImpl insert(SexImpl sex) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_insert, sex, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private SexImpl _insert(Session session, SexImpl sex) {

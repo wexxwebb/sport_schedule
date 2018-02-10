@@ -4,67 +4,79 @@ import com.google.gson.Gson;
 import common.Autocomplete;
 import common.Logged;
 import db.dao._inter.ExerciseDataDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.ExerciseDataImpl;
 import db.entities._inter.ExerciseData;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import services._inter.ExerciseDataService;
+import services.excep.ServiceIsNotAvailableException;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("Duplicates")
 @Service
 public class ExerciseDataServiceImpl implements ExerciseDataService {
 
     @Logged
     private Logger logger;
 
-    @Autowired
     private ExerciseDataDAO exerciseDataDAO;
 
-    @Autowired
     private Gson gson;
 
-    public ExerciseDataServiceImpl() {
+    @Autowired
+    public ExerciseDataServiceImpl(ExerciseDataDAO exerciseDataDAO, Gson gson) {
+        this.exerciseDataDAO = exerciseDataDAO;
+        this.gson = gson;
     }
 
-    public String searchExerciseData(String term) {
-
-        List<ExerciseDataImpl> exerciseDataList = exerciseDataDAO.searchByName(term);
-        if (exerciseDataList != null) {
+    public String searchExerciseData(String term) throws ServiceIsNotAvailableException {
+        try {
+            List<ExerciseDataImpl> exerciseDataList = exerciseDataDAO.searchByName(term);
             Object[] autocomplete = exerciseDataList
-                    .stream().map(exerciseData -> new Autocomplete(exerciseData.getName(), exerciseData.getId()))
+                    .stream().map(
+                            exerciseData -> new Autocomplete(exerciseData.getName(), exerciseData.getId()))
                     .toArray();
             return gson.toJson(autocomplete);
-        } else
-            return "";
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
+        }
     }
 
     @Override
-    public String addExerciseData(String name) {
+    public String addExerciseData(String name) throws ServiceIsNotAvailableException {
         ExerciseDataImpl exerciseData = new ExerciseDataImpl(name);
-        exerciseData = exerciseDataDAO.insert(exerciseData);
-        if (exerciseData != null) {
+        try {
+            exerciseData = exerciseDataDAO.insert(exerciseData);
             return gson.toJson(exerciseData);
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
         }
-        return "0";
     }
 
     @Override
-    public String delExerciseData(long id) {
-        if (exerciseDataDAO.delete(id)) {
-            return "1";
+    public void delExerciseData(long id) throws ServiceIsNotAvailableException {
+        try {
+            exerciseDataDAO.delete(id);
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
         }
-        return "0";
     }
 
     @Override
-    public List<ExerciseData> getExerciseDataList() {
-        List<ExerciseDataImpl> exerciseDataList = exerciseDataDAO.getAll();
-        if (exerciseDataList != null) {
+    public List<ExerciseData> getExerciseDataList() throws ServiceIsNotAvailableException {
+        try {
+            List<ExerciseDataImpl> exerciseDataList = exerciseDataDAO.getAll();
             return new ArrayList<>(exerciseDataList);
+        } catch (DataIsNotAvailableException e) {
+            logger.error(e);
+            throw new ServiceIsNotAvailableException(e);
         }
-        return null;
     }
 }

@@ -157,7 +157,7 @@ public class UserDataImpl implements UserData {
         this.role = role;
     }
 
-    @OneToMany(mappedBy = "userData", fetch = EAGER)
+    @OneToMany(mappedBy = "userData", fetch = EAGER) //userData - обращение по имени поля
     @Override
     public Collection<TrainingImpl> getTrainingCollection() {
         return trainingCollection;

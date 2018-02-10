@@ -2,9 +2,10 @@ package db.dao.hiber;
 
 import common.Logged;
 import db.dao._inter.ExerciseDataDAO;
+import db.dao.excep.DataIsNotAvailableException;
 import db.entities.Impl.ExerciseDataImpl;
-import db.entities._inter.ExerciseData;
 import org.apache.log4j.Logger;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.NativeQuery;
@@ -26,13 +27,18 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     private SessionFactory sessionFactory;
 
     @Autowired
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public ExerciseDataDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
     @Override
-    public List<ExerciseDataImpl> getAll() {
-        return doIt(this::_getAll, sessionFactory);
+    public List<ExerciseDataImpl> getAll() throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_getAll, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private List<ExerciseDataImpl> _getAll(Session session) {
@@ -41,18 +47,28 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     }
 
     @Override
-    public ExerciseDataImpl insert(ExerciseDataImpl exerciseData) {
-        return doIt(this::_insert, exerciseData, sessionFactory);
+    public ExerciseDataImpl insert(ExerciseDataImpl exerciseData) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_insert, exerciseData, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private ExerciseDataImpl _insert(Session session, ExerciseDataImpl exerciseData) {
-        exerciseData.setId((long)session.save(exerciseData));
-        return exerciseData;
+        exerciseData.setId((long) session.save(exerciseData));
+        return (ExerciseDataImpl) Hibernate.unproxy(exerciseData);
     }
 
     @Override
-    public List<ExerciseDataImpl> searchByName(String term) {
-        return doIt(this::_searchByName, term, sessionFactory);
+    public List<ExerciseDataImpl> searchByName(String term) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_searchByName, term, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private List<ExerciseDataImpl> _searchByName(Session session, String term) {
@@ -63,23 +79,33 @@ public class ExerciseDataDAOImpl implements ExerciseDataDAO {
     }
 
     @Override
-    public ExerciseData getById(long id) {
-        return null;
+    public ExerciseDataImpl getById(long id) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_getById, id, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
+    }
+
+    private ExerciseDataImpl _getById(Session session, long id) {
+        return session.get(ExerciseDataImpl.class, id);
     }
 
     @Override
-    public boolean delete(long id) {
-        return doIt(this::_delete, id, sessionFactory);
+    public boolean delete(long id) throws DataIsNotAvailableException {
+        try {
+            return doIt(this::_delete, id, sessionFactory);
+        } catch (Exception e) {
+            logger.error(e);
+            throw new DataIsNotAvailableException(e);
+        }
     }
 
     private boolean _delete(Session session, long id) {
-        ExerciseDataImpl exerciseData = session.load(ExerciseDataImpl.class, id);
+        ExerciseDataImpl exerciseData = session.get(ExerciseDataImpl.class, id);
         session.delete(exerciseData);
         return true;
     }
 
-    @Override
-    public ExerciseData update(ExerciseDataImpl exerciseData) {
-        return null;
-    }
 }
